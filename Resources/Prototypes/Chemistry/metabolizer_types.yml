@@ -6,6 +6,10 @@
   name: metabolizer-type-animal
 
 - type: metabolizerType
+  id: Vampiric
+  name: metabolizer-type-vampiric
+
+- type: metabolizerType
   id: Bloodsucker
   name: metabolizer-type-bloodsucker
 
