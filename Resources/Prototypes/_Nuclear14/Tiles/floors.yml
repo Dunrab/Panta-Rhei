@@ -755,6 +755,20 @@
   thermalConductivity: 0.04
   heatCapacity: 10000
   weather: false #floofstation
+  
+- type: tile
+  id: FloorMS13CarpetVioletDiamond
+  name: carpet violet diamond
+  sprite: /Textures/_Nuclear14/Tiles/ms13/Carpet/carpet_fancy_violet_diamond.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepCarpet
+  # itemDrop: FloorTileItemCarpetRed
+  thermalConductivity: 0.04
+  heatCapacity: 10000
+  weather: false #floofstation
 
 # Paths and Roads
 # Concrete
