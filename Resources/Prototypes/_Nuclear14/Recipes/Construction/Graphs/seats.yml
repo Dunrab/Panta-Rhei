@@ -296,8 +296,8 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 2
+              prototype: SheetSteel1 
+              amount: 1 # Floofstation - failed increases in price after being deconstructed, so reduced steel to 1 
             - !type:SpawnPrototype
               prototype: MaterialCloth1
               amount: 1
@@ -327,7 +327,7 @@
           completed:
             - !type:SpawnPrototype
               prototype: SheetPlastic1
-              amount: 2
+              amount: 1 # Floofstation - failed increases in price after being deconstructed, so reduced plastic to 1 
           steps:
             - tool: Welding
               doAfter: 1
