@@ -244,7 +244,7 @@
 
 - type: stealTargetGroup #Floofstation
   id: SalvageShuttleConsoleCircuitboard #Floofstation
-  name: salvage shuttle console board
+  name: salvshuttleboard #Floofstation
   sprite:
     sprite: Objects/Misc/module.rsi
     state: cpuboard
