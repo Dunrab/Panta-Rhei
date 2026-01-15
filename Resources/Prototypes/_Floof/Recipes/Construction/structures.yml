@@ -6,10 +6,6 @@
   startNode: start
   targetNode: railingWood
   category: construction-category-structures
-  description: woodenrailing-descrption
-  icon:
-    sprite: _Floof/Structures/Walls/railing.rsi
-    state: wood_side
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -24,9 +20,6 @@
   targetNode: railingWoodCorner
   category: construction-category-structures
   description: woodenrailingcorner-descprtion
-  icon:
-    sprite: _Floof/Structures/Walls/railing.rsi
-    state: wood_corner
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -41,9 +34,6 @@
   targetNode: railingWoodCornerSmall
   category: construction-category-structures
   description: woodenrailingcornersmall-descrption
-  icon:
-    sprite: _Floof/Structures/Walls/railing.rsi
-    state: wood_corner_small
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -57,10 +47,6 @@
   startNode: start
   targetNode: railingWoodRound
   category: construction-category-structures
-  description: woodenrailinground-descprtion
-  icon:
-    sprite: _Floof/Structures/Walls/railing.rsi
-    state: wood_round
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
