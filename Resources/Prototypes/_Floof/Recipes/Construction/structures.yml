@@ -1,12 +1,12 @@
 #I don't know why this is here, we should probably move this at some point.
 - type: construction
-  name: wooden railing
+  name: woodenrailing
   id: RailingWood
   graph: RailingWood
   startNode: start
   targetNode: railingWood
   category: construction-category-structures
-  description: Basic railing meant to protect you from falling.
+  description: woodenrailing-descrption
   icon:
     sprite: _Floof/Structures/Walls/railing.rsi
     state: wood_side
@@ -17,13 +17,13 @@
   - !type:TileNotBlocked
 
 - type: construction
-  name: wooden railing corner
+  name: woodenrailingcorner
   id: RailingWoodCorner
   graph: RailingWood
   startNode: start
   targetNode: railingWoodCorner
   category: construction-category-structures
-  description: Basic railing meant to protect you from falling.
+  description: woodenrailingcorner-descprtion
   icon:
     sprite: _Floof/Structures/Walls/railing.rsi
     state: wood_corner
@@ -34,13 +34,13 @@
   - !type:TileNotBlocked
 
 - type: construction
-  name: wooden railing corner small
+  name: woodenrailingcornersmall
   id: RailingWoodCornerSmall
   graph: RailingWood
   startNode: start
   targetNode: railingWoodCornerSmall
   category: construction-category-structures
-  description: Basic railing meant to protect you from falling.
+  description: woodenrailingcornersmall-descrption
   icon:
     sprite: _Floof/Structures/Walls/railing.rsi
     state: wood_corner_small
@@ -51,13 +51,13 @@
   - !type:TileNotBlocked
 
 - type: construction
-  name: wooden railing round
+  name: woodenrailinground
   id: RailingWoodRound
   graph: RailingWood
   startNode: start
   targetNode: railingWoodRound
   category: construction-category-structures
-  description: Basic railing meant to protect you from falling.
+  description: woodenrailinground-descprtion
   icon:
     sprite: _Floof/Structures/Walls/railing.rsi
     state: wood_round
