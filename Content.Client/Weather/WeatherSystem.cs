@@ -33,7 +33,10 @@ public sealed class WeatherSystem : SharedWeatherSystem
         var ent = _playerManager.LocalEntity;
 
         if (ent == null)
+        {
+            weather.Stream = _audio.Stop(weather.Stream); // Vulpstation
             return;
+        }
 
         var mapUid = Transform(uid).MapUid;
         var entXform = Transform(ent.Value);
@@ -45,8 +48,14 @@ public sealed class WeatherSystem : SharedWeatherSystem
             return;
         }
 
+        // Vulpstation - who thought it was a good idea to only calculate occlusion on the first tick?
         if (!Timing.IsFirstTimePredicted || weatherProto.Sound == null)
+            // || weather.Stream is not null) // Don't ever generate more than one weather sound.
             return;
+
+        // Vulpstation
+        if (weather.Stream is not null and not { Valid: true })
+            weather.Stream = null;
 
         weather.Stream ??= _audio.PlayGlobal(weatherProto.Sound, Filter.Local(), true)?.Entity;
 

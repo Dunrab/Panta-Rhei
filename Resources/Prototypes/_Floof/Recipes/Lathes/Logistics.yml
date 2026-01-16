@@ -1,0 +1,7 @@
+- type: latheRecipe
+  id: SalvageShuttleConsoleCircuitboard
+  result: SalvageShuttleConsoleCircuitboard
+  completetime: 3
+  materials:
+    Plastic: 250
+    Glass: 150
