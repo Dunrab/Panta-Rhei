@@ -20,7 +20,7 @@
 - type: localizedDataset
   id: WeatherWinterWarm
   values:
-    prefix: weather-winter-hot-
+    prefix: weather-winter-warm-
     count: 3
 
 # -68°C
