@@ -10,7 +10,7 @@
 
 - type: construction
   id: ClosetSteelSecureIdLockable
-  name: secure closet (id-lock)
+  name: closet-Steel-ecure-id-lockable
   graph: ClosetSteelSecure
   startNode: start
   targetNode: idLockable
