@@ -48,9 +48,7 @@ public sealed class WeatherSystem : SharedWeatherSystem
             return;
         }
 
-        // Vulpstation - who thought it was a good idea to only calculate occlusion on the first tick?
         if (!Timing.IsFirstTimePredicted || weatherProto.Sound == null)
-            // || weather.Stream is not null) // Don't ever generate more than one weather sound.
             return;
 
         // Vulpstation
