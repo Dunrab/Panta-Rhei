@@ -4,6 +4,8 @@ using Content.Shared._Vulp.Weather;
 using Content.Shared.Alert;
 using Content.Shared.Body.Components;
 using Content.Shared.Damage;
+using Content.Shared.Damage.Components;
+using Content.Shared.Damage.Systems;
 using Content.Shared.Maps;
 using Content.Shared.Mobs.Components;
 using Content.Shared.NPC;
@@ -87,12 +89,12 @@ public sealed partial class WeatherDamageMobs : WeatherFunction
 
             var resultingDamage = Damage * updateTimeSeconds;
             damageSystem.TryChangeDamage(
-                uid,
+                (uid, damageable),
                 resultingDamage,
                 false,
                 false,
-                damageable,
                 null,
+                false,
                 false,
                 false,
                 2f); // TODO: what is a good value for partMultiplier?
