@@ -1,0 +1,152 @@
+#Pre-rebase
+
+# 2024-08-16 Floof Only Please message @FracturedSwords on discord if there are any merge conflicts upcoming
+SpawnMobArcticFoxSiobhan: SpawnMobArcticFoxSeb
+MobArcticFoxSiobhan: MobArcticFoxSeb
+
+# 2024-12-15: Leash now supports changing the length intrinsically
+ShortLeash: LeashBasic
+
+# 2025-03-25
+Plushiegirlfailure: PlushieMothRandom
+PlushieFeistyBartender: PlushieMothRandom
+PlushieCoolVulp: PlushieMothRandom
+PlushieNoticeableSecurityOfficer: PlushieMothRandom
+
+##################################
+# Below is for the floof rebase. #
+##################################
+
+#Need to port over still
+CargoTechFab: null #i believe this is disbaled in a delta-v migration
+PrizeCounter: null
+PrizeTicket30: null
+PrizeTicket60: null
+PrizeBall: null
+SpawnMobArcticFoxSeb: MobArcticFoxSiobhan # do we want to bring seb over?
+CardBoxSyndicate: null
+CardBoxBlack: null
+CardBoxNanotrasen: null
+HandheldFax: null #this seems to be mapped to train in error need to remove this, but setting this to null till its removed
+AirlockNanotrasenRepresentativeCommandGlassLocked: AirlockCommandGlassLocked
+MaterialReclaimer: null
+SheetPGlass10: SheetPGlass1 # for some reaosn they removed stacks of ten for this material so we need to remake it
+Shower: null
+SignIceCream: null # i believe this was added during an arena update PR will have to pull this out of that
+SolidReinforcedSecretDoor: null # removed the Reinforced variant of this door, we will have to bring this over
+GeigerCounterWallMount: null
+VendingMachineFitness: VendingMachineSnack # vending machine that we dont have over here yet
+
+#Senior Roles
+SpawnPointSeniorEngineer: SpawnPointStationEngineer #setting to a standard till we add senior roles
+SpawnPointSeniorOfficer: SpawnPointSecurityOfficer #setting to a standard till we add senior roles
+SpawnPointSeniorSeniorPhyiscian: SpawnPointMedicalDoctor #setting to a standard till we add senior roles
+SpawnPointInventorySpecialist: null #setting to a standard till we add senior roles
+
+#plushies
+PlushieSharkPinkBonk: null #missing plushie that was hard mapped
+PlushieShadowkin: null #missing plushie that was hard mapped
+PlushieBlackFox: null #missing plushie that was hard mapped
+PaperTemplateJusticeTrialDocketTestimony: null #missing plushie that was hard mapped
+
+#Command Roles
+SpawnPointAdminAssistant: null
+SpawnPointNanotrasenRepresentative: null
+
+#AI law board
+OverlordCircuitBoard: null
+JermovCircuitBoard: null
+
+#borgs
+Quadborgendoskeleton: null
+SpawnPointServiceQuadborg: null
+SpawnPointMedicalQuadborg: null
+
+#cigar
+CigarBluespace: CigarGold
+
+#clothing
+ClothingHeadHatChefIdris: null
+ClothingHeadHatChefNt: null
+ClothingHeadHatChefOrion: null
+ClothingUniformJumpsuitChefOrion: null
+ClothingOuterJacketChefOrion: null
+ClothingUniformFlamenco: null
+ClothingUniformClassicalMaidDress: null
+
+#lewd stuff
+CrateLewd: null
+CrateLewdKink: null
+LewdLootSpawnerAll: null
+StripperPole: null
+WhipTealCrotch: null
+LewdLootSpawnerKinky: null
+LewdLootSpawnerToys: null
+ClothingHandsSexCompGlovesBlue: null
+ClothingHandsSexCompGlovesRed: null
+ClothingHeadSexCompCirclet: null
+ClothingOuterSexCompBeltGold: null
+ClothingUnderSexCompBootsBlue: null
+ClothingUnderSexCompBootsRed: null
+ClothingUniformSexCompBlue: null
+ClothingUniformSexCompRed: null
+
+#insturments
+DrumkitInstrument: null
+
+#food
+FoodMealCarpSushi: null
+IceCreamBananaSplit: null
+IceCreamWatermelon: null
+IceCreamChoco: null
+IceCreamCoffee: null
+HumpShroomSeeds: null
+FoodSnackAncientPizza: null
+DrinkBoykisserEnergy: null
+
+#lockers - need to bring these over all maps have these
+LockerBartenderFilled: LockerBoozeFilled
+LockerClownFilled: LockerClown
+LockerJanitorFilled: LockerJanitor
+LockerMimeFilled: LockerMime
+
+#books
+HyperlinkBookJusticeSop: null
+
+#Supermatter engine, till we get super matter replace it with the food item as a placeholder
+Supermatter: FoodCakeSuppermatter
+
+#shadowkin stuff
+PortalShadowkinSpawner: null #lets the shadowkin go to thier little station
+DarkTile: null #is the dark tile placed under the portals
+
+#paperwork
+PaperTemplateEpistemicsPsionicSelfIdentification: Paper
+
+####################################################
+# Everything below here does not need to be ported #
+####################################################
+
+#Delta-v changed these names
+OracleSpawner: Oracle
+SophicScribeSpawner: SophicScribe
+BonfireLit: Bonfire
+BoxFolderMedical: BoxFolderWhite
+BoxFolderSecurity: BoxFolderRed
+BoxFolderHop: BoxFolderBlue
+BoxFolderJustice: BoxFolderBlue
+BoxMagazinePistolRubber:  MagazineBoxPistolRubber
+BoxLightbulbColorMixed:  BoxLightbulbColorfulMixed
+BoxLighttubeColorMixed: BoxLighttubeColorfulMixed
+
+#N14 from floof to floof rebase
+ClosetGrey2: N14ClosetGrey2
+DecorFloorGlass4: N14DecorFloorGlass4
+DecorFloorGlass6: N14DecorFloorGlass6
+SignBar2: N14SignBar
+Torch2: N14Torch
+TorchWall: N14TorchWall
+FitnessWeightsBench1: N14FitnessWeightsBench1
+FitnessWeightLifter: N14FitnessWeightLifter
+DecorFloorSkeleton: N14DecorFloorSkeleton
+DecorFloorPaper1: N14DecorFloorPaper1
