@@ -93243,22 +93243,6 @@ entities:
     - type: Transform
       pos: 4.456359,-358.63803
       parent: 2
-- proto: HandheldFax
-  entities:
-  - uid: 16022
-    components:
-    - type: Transform
-      pos: 2.5,-276.5
-      parent: 2
-    - type: FaxMachine
-      name: Logi
-  - uid: 17622
-    components:
-    - type: Transform
-      pos: -9.5,-277.5
-      parent: 2
-    - type: FaxMachine
-      name: Mailroom
 - proto: HandheldHealthAnalyzerUnpowered
   entities:
   - uid: 11213
