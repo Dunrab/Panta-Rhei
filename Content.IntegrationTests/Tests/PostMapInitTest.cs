@@ -107,7 +107,15 @@ namespace Content.IntegrationTests.Tests
             "Submarine", //DeltaV
             "Terra", //DeltaV
             "TheHive", // DeltaV
-            "Tortuga" // DeltaV
+            "Tortuga", // DeltaV
+            "Amber", //Floofstation
+            "Core", //Floofstation
+            "Kettle", //Floofstation
+            "Meta", //Floofstation
+            "Rad", //Floofstation
+            "Train", //Floofstation
+            "Fland", //Floofstation
+            "Getaway" //Floofstation
         };
 
         private static readonly ProtoId<EntityCategoryPrototype> DoNotMapCategory = "DoNotMap";
