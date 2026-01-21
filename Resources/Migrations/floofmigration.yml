@@ -18,7 +18,6 @@ PlushieNoticeableSecurityOfficer: PlushieMothRandom
 ##################################
 
 #Need to port over still
-CargoTechFab: null #i believe this is disbaled in a delta-v migration
 PrizeCounter: null
 PrizeTicket30: null
 PrizeTicket60: null
@@ -35,7 +34,11 @@ Shower: null
 SignIceCream: null # i believe this was added during an arena update PR will have to pull this out of that
 SolidReinforcedSecretDoor: null # removed the Reinforced variant of this door, we will have to bring this over
 GeigerCounterWallMount: null
-VendingMachineFitness: VendingMachineSnack # vending machine that we dont have over here yet
+ChairBarber: null
+BarberSignPole: null
+FitnessPunchingBagBopClown: N14FitnessPunchingBag #not sure where this is from but going to replace it with the n14 punching bag
+ClosetWallRadiationFilled: null
+WoodSecretDoor: null
 
 #Senior Roles
 SpawnPointSeniorEngineer: SpawnPointStationEngineer #setting to a standard till we add senior roles
@@ -43,11 +46,23 @@ SpawnPointSeniorOfficer: SpawnPointSecurityOfficer #setting to a standard till w
 SpawnPointSeniorSeniorPhyiscian: SpawnPointMedicalDoctor #setting to a standard till we add senior roles
 SpawnPointInventorySpecialist: null #setting to a standard till we add senior roles
 
+#paradox anoms
+SpawnPointGhostParadoxAnomaly: null
+
 #plushies
 PlushieSharkPinkBonk: null #missing plushie that was hard mapped
 PlushieShadowkin: null #missing plushie that was hard mapped
 PlushieBlackFox: null #missing plushie that was hard mapped
 PaperTemplateJusticeTrialDocketTestimony: null #missing plushie that was hard mapped
+PlushieCatTuxedo: null
+PlushieGirlyCorgi: null
+PlushieAbductor: null
+PlushieDeer: null
+PlushieMarbleFox: null
+PlushieTrystan: null # this plushie will probably have to be removed entirely
+PlushieCoffeeFox: null
+PlushieArachne: null
+PlushieOrangeFox: null
 
 #Command Roles
 SpawnPointAdminAssistant: null
@@ -61,9 +76,24 @@ JermovCircuitBoard: null
 Quadborgendoskeleton: null
 SpawnPointServiceQuadborg: null
 SpawnPointMedicalQuadborg: null
+BorgModulePka: null # this may be renamed
+
+#machines
+PrinterDoc: MachineFrameDestroyed # document priner
+CargoTechFab: MachineFrameDestroyed #i believe this is disbaled in a delta-v migration
+
+#vending machines:
+VendingMachineSolsnack: VendingMachineSnack # vending machine that we dont have over here yet
+VendingMachineFitness: VendingMachineSnack # vending machine that we dont have over here yet
+
+#circuit boards
+FaxMachineCircuitboard: null
+SurveillanceCameraWirelessRouterBase: null
+CargoTechFabCircuitboard: null
 
 #cigar
 CigarBluespace: CigarGold
+CigarBluespaceSpent: null
 
 #clothing
 ClothingHeadHatChefIdris: null
@@ -73,6 +103,17 @@ ClothingUniformJumpsuitChefOrion: null
 ClothingOuterJacketChefOrion: null
 ClothingUniformFlamenco: null
 ClothingUniformClassicalMaidDress: null
+ClothingClothWrap: null
+ClothingHeadHatSodaJerk: null
+ClothingNeckBlackBoetie: null
+ClothingNeckCollarPink: null
+ClothingNeckRedBoetie: null
+ClothingUniformStripedThongPurple: null
+ClothingUniformStripedThongRainbow: null
+ClothingUniformStripedThongWhite: null
+ClothingUniformThongPlain: null
+ClothingUnderSocksCoderValid: null
+ClothingUniformLoinClothWhite: null
 
 #lewd stuff
 CrateLewd: null
@@ -90,6 +131,7 @@ ClothingUnderSexCompBootsBlue: null
 ClothingUnderSexCompBootsRed: null
 ClothingUniformSexCompBlue: null
 ClothingUniformSexCompRed: null
+CrateLewdToys: null
 
 #insturments
 DrumkitInstrument: null
@@ -100,9 +142,23 @@ IceCreamBananaSplit: null
 IceCreamWatermelon: null
 IceCreamChoco: null
 IceCreamCoffee: null
-HumpShroomSeeds: null
+IceCreamCoconut: null
+IceCreamGreenTea: null
+IceCreamBowl: null
+IceCreamGilded: null
+IceCreamVanilla: null
+IceCreamSolar: null
 FoodSnackAncientPizza: null
+FoodSnackOortrocks: null
+HumpShroomSeeds: null
+SpesosTreeSeeds: null
+
+#drinks
 DrinkBoykisserEnergy: null
+DrinkEggnogBottleFull: null
+DrinkEggnogGlass: null
+DrinkSyndicateEggnogBottleFull: null
+DrinkKoboldKorkscrewGlass: null
 
 #lockers - need to bring these over all maps have these
 LockerBartenderFilled: LockerBoozeFilled
@@ -120,8 +176,24 @@ Supermatter: FoodCakeSuppermatter
 PortalShadowkinSpawner: null #lets the shadowkin go to thier little station
 DarkTile: null #is the dark tile placed under the portals
 
-#paperwork
+#paperwork - gonna set these to be just regualr paper till we bring these over
 PaperTemplateEpistemicsPsionicSelfIdentification: Paper
+PaperTemplateLogisticsCargoRequest: Paper
+
+#weapons
+WeaponBrassKnucklesWhoopie: null
+
+#xenos:
+DehydratedCCRouny: null
+
+#machine parts - seems deltav dose not use matter bins, maniuplators and capcitors anymore
+AdvancedCapacitorStockPart: MicroManipulatorStockPart
+AdvancedMatterBinStockPart: MicroManipulatorStockPart
+NanoManipulatorStockPart: MicroManipulatorStockPart
+
+#ammo
+MagazineLightRifleLowCapacity: MagazineLightRifle # delta-v does not have light capcity mags so we will have to use full size for now
+MagazineLightRifleLowCapacityEmpty: MagazineLightRifleEmpty # delta-v does not have light capcity mags so we will have to use full size for now
 
 ####################################################
 # Everything below here does not need to be ported #
@@ -135,9 +207,12 @@ BoxFolderMedical: BoxFolderWhite
 BoxFolderSecurity: BoxFolderRed
 BoxFolderHop: BoxFolderBlue
 BoxFolderJustice: BoxFolderBlue
+BoxFolderLogistics: BoxFolderYellow
 BoxMagazinePistolRubber:  MagazineBoxPistolRubber
 BoxLightbulbColorMixed:  BoxLightbulbColorfulMixed
 BoxLighttubeColorMixed: BoxLighttubeColorfulMixed
+Gauze10Lingering: Gauze # delta-v dosent have lingering gauze so replacing with regular gauze
+JetpackMicroFilled: JetpackMiniFilled # mini jetpacks got renamed
 
 #N14 from floof to floof rebase
 ClosetGrey2: N14ClosetGrey2
@@ -150,3 +225,6 @@ FitnessWeightsBench1: N14FitnessWeightsBench1
 FitnessWeightLifter: N14FitnessWeightLifter
 DecorFloorSkeleton: N14DecorFloorSkeleton
 DecorFloorPaper1: N14DecorFloorPaper1
+CrateFreezer2: N14CrateFreezer
+FitnessPunchingBag: N14FitnessPunchingBag
+DecorFloorTrashbags5: N14DecorFloorTrashbags5
