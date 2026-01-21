@@ -3,7 +3,7 @@ meta:
   postmapinit: false
 tilemap:
   0: Space
-  11: CultFloorConcealed
+  11: FloorWoodHouse
   1: FloorArcadeBlue
   2: FloorArcadeBlue2
   26: FloorArcadeRed
