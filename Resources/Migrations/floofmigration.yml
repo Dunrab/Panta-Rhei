@@ -1,11 +1,11 @@
 #Pre-rebase
 
 # 2024-08-16 Floof Only Please message @FracturedSwords on discord if there are any merge conflicts upcoming
-SpawnMobArcticFoxSiobhan: SpawnMobArcticFoxSeb
-MobArcticFoxSiobhan: MobArcticFoxSeb
+#SpawnMobArcticFoxSiobhan: SpawnMobArcticFoxSeb
+#MobArcticFoxSiobhan: MobArcticFoxSeb
 
 # 2024-12-15: Leash now supports changing the length intrinsically
-ShortLeash: LeashBasic
+#ShortLeash: LeashBasic
 
 # 2025-03-25
 Plushiegirlfailure: PlushieMothRandom
@@ -194,6 +194,9 @@ NanoManipulatorStockPart: MicroManipulatorStockPart
 #ammo
 MagazineLightRifleLowCapacity: MagazineLightRifle # delta-v does not have light capcity mags so we will have to use full size for now
 MagazineLightRifleLowCapacityEmpty: MagazineLightRifleEmpty # delta-v does not have light capcity mags so we will have to use full size for now
+
+#leashes
+LeashBasic: null
 
 ####################################################
 # Everything below here does not need to be ported #

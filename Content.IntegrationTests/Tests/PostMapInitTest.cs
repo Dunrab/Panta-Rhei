@@ -114,6 +114,7 @@ namespace Content.IntegrationTests.Tests
             "Meta", //Floofstation
             "Rad", //Floofstation
             "Train", //Floofstation
+            "Saltern", //Floofstation
             "Fland", //Floofstation
             "Getaway" //Floofstation
         };
