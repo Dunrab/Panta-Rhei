@@ -9,15 +9,13 @@
       stationProto: StandardNanotrasenStation
       components:
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Floof/Shuttles/Evac/emergency.yml
+          emergencyShuttlePath: /Maps/Floof/Shuttles/Evac/emergency_meta.yml
         - type: StationNameSetup
           mapNameTemplate: '{0} Edge Station {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: 'DV'
         - type: StationJobs
-          overflowJobs:
-            - Passenger
           availableJobs:
 #            Anomaly: [ 4, 4 ] # Floofstation
           #service

@@ -17,8 +17,6 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Floof/Shuttles/Evac/emergency_meta.yml
         - type: StationJobs
-          overflowJobs:
-            - Passenger
           availableJobs:
 #            Anomaly: [ 4, 4 ] # FloofStation
             #service

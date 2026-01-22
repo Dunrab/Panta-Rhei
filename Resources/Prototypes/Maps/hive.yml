@@ -16,8 +16,6 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Floof/Shuttles/Evac/NTES_Seal.yml
         - type: StationJobs
-          overflowJobs:
-            - Passenger
           availableJobs:
           #civilian
             Passenger: [ -1, -1 ]
@@ -74,7 +72,7 @@
             Librarian: [ 1, 1 ]
           #supply
             Quartermaster: [ 1, 1 ]
-            InventorySpecialist: [ 1, 1 ] #FloofStation
+#            InventorySpecialist: [ 1, 1 ] #FloofStation
             CargoTechnician: [ 2, 3 ]
             SalvageSpecialist: [ 2, 3 ]
             Courier: [ 2, 2 ]

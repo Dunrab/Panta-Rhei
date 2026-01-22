@@ -16,8 +16,6 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Floof/Shuttles/Evac/evac_train.yml #floofstation
         - type: StationJobs
-          overflowJobs:
-            - Passenger
           availableJobs:
             #service
             Captain: [ 1, 1 ]

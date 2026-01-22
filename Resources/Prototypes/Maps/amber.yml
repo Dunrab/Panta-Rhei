@@ -3,7 +3,7 @@
   mapName: 'Amber'
   mapPath: /Maps/Floof/amber.yml
   minPlayers: 20
-  maxPLayers: 50
+  maxPlayers: 50
   stations:
     Amber:
       stationProto: StandardNanotrasenStation

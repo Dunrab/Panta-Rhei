@@ -16,9 +16,6 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Floof/Shuttles/Evac/NTES_UCLB.yml
         - type: StationJobs
-          overflowJobs:
-            - Passenger
-            #- Anomaly
           availableJobs:
             #Anomaly: [ 4, 4 ] # Floofstation
             # Service

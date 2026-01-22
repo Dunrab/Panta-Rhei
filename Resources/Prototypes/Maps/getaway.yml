@@ -18,11 +18,9 @@
           !type:NanotrasenNameGenerator
           prefixCreator: 'FS'
       - type: StationJobs
-        overflowJobs:
-        - Passenger
         availableJobs:
           Passenger: [ -1, -1 ]
-          Anomaly: [ 4, 4 ] # Floofstation
+#          Anomaly: [ 4, 4 ] # Floofstation
           Captain: [ 1, 1 ]
           #BlueshieldOfficer: [ 1, 1] #Floof - uncomment once implemented on Floof maps
           #NanotrasenRepresentative: [ 1, 1 ] #Floof - uncomment once implemented on Floof maps
