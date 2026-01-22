@@ -71,16 +71,16 @@
           #supply
             Quartermaster: [ 1, 1 ]
 #            InventorySpecialist: [ 1, 1 ] #FloofStation
-            MailCarrier: [ 1, 2 ]
+            Courier: [ 1, 2 ]
             SalvageSpecialist: [ 2, 3 ]
             CargoTechnician: [ 2, 4 ]
           #civilian
             Passenger: [ -1, -1 ]
           # Justice added by FloofStation
-            ChiefJustice: [ 1, 1 ] #FloofStation
-            Clerk: [ 1, 1 ] #FloofStation
+#            ChiefJustice: [ 1, 1 ] #FloofStation - needs to be mapped to this map
+#            Clerk: [ 1, 1 ] #FloofStation - needs to be mapped to this map
             Lawyer: [ 2, 2 ] #FloofStation
-            Prosecutor: [ 1, 1 ] #FloofStation
+#            Prosecutor: [ 1, 1 ] #FloofStation - needs to be mapped to this map
             # Silicon
             # StationAi: [ 1, 1 ] #Floofstation - uncomment when we want enabled
             Borg: [ 1, 2 ]

@@ -76,7 +76,7 @@
 #           InventorySpecialist: [ 1, 1 ] #FloofStation
             CargoTechnician: [ 2, 4 ]
             SalvageSpecialist: [ 3, 4 ]
-            MailCarrier: [ 2, 2 ]
+            Courier: [ 2, 2 ]
           # Justice added by FloofStation
             ChiefJustice: [ 1, 1 ] #FloofStation
             Clerk: [ 1, 1 ] #FloofStation

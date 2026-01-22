@@ -69,7 +69,7 @@
             Quartermaster: [ 1, 1 ]
             #InventorySpecialist: [ 1, 1 ] #FloofStation
             SalvageSpecialist: [ 2, 4 ]
-            MailCarrier: [ 1, 2 ]
+            Courier: [ 1, 2 ]
             # Civilian
             Clown: [ 1, 2 ]
             Mime: [ 1, 2 ]

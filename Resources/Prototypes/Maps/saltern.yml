@@ -78,6 +78,7 @@
 #            InventorySpecialist: [ 1, 1 ] #FloofStation
             SalvageSpecialist: [ 1, 3 ]
             CargoTechnician: [ 2, 4 ]
+            Courier: [ 1, 2 ]
             #civillian
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]

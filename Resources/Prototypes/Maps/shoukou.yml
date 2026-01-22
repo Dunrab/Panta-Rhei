@@ -82,6 +82,6 @@
           Quartermaster: [ 1, 1 ]
 #          InventorySpecialist: [ 1, 1 ] #FloofStation
           SalvageSpecialist: [ 5, 5 ]
-          MailCarrier: [ 2, 2 ]
+          Courier: [ 2, 2 ]
           CargoTechnician: [ 3, 3 ]
 

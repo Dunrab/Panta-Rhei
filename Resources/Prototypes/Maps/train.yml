@@ -65,7 +65,7 @@
 #            InventorySpecialist: [ 1, 1 ] #FloofStation
             SalvageSpecialist: [ 3, 3 ]
             CargoTechnician: [ 3, 3 ]
-            MailCarrier: [ 1, 2 ]
+            Courier: [ 1, 2 ]
             #civilian
             Passenger: [ -1, -1 ]
             Clown: [ 1, 1 ]
