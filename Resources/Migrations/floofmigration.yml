@@ -18,10 +18,6 @@ PlushieNoticeableSecurityOfficer: PlushieMothRandom
 ##################################
 
 #Need to port over still
-PrizeCounter: null
-PrizeTicket30: null
-PrizeTicket60: null
-PrizeBall: null
 SpawnMobArcticFoxSeb: MobArcticFoxSiobhan # do we want to bring seb over?
 CardBoxSyndicate: null
 CardBoxBlack: null
@@ -83,8 +79,8 @@ PrinterDoc: MachineFrameDestroyed # document priner
 CargoTechFab: MachineFrameDestroyed #i believe this is disbaled in a delta-v migration
 
 #vending machines:
-VendingMachineSolsnack: VendingMachineSnack # vending machine that we dont have over here yet
-VendingMachineFitness: VendingMachineSnack # vending machine that we dont have over here yet
+VendingMachineSolsnack: null # vending machine that we dont have over here yet
+VendingMachineFitness: null # vending machine that we dont have over here yet
 
 #circuit boards
 FaxMachineCircuitboard: null
@@ -138,16 +134,6 @@ DrumkitInstrument: null
 
 #food
 FoodMealCarpSushi: null
-IceCreamBananaSplit: null
-IceCreamWatermelon: null
-IceCreamChoco: null
-IceCreamCoffee: null
-IceCreamCoconut: null
-IceCreamGreenTea: null
-IceCreamBowl: null
-IceCreamGilded: null
-IceCreamVanilla: null
-IceCreamSolar: null
 FoodSnackAncientPizza: null
 FoodSnackOortrocks: null
 HumpShroomSeeds: null
@@ -196,7 +182,7 @@ MagazineLightRifleLowCapacity: MagazineLightRifle # delta-v does not have light 
 MagazineLightRifleLowCapacityEmpty: MagazineLightRifleEmpty # delta-v does not have light capcity mags so we will have to use full size for now
 
 #leashes
-LeashBasic: null
+#LeashBasic: null
 
 ####################################################
 # Everything below here does not need to be ported #
