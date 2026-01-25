@@ -19540,21 +19540,6 @@ entities:
     - type: Transform
       pos: 1.2543312,-21.71789
       parent: 2
-- proto: ClothingNeckStethoscope
-  entities:
-  - uid: 7984
-    components:
-    - type: Transform
-      pos: -18.617838,-8.200684
-      parent: 2
-    - type: Stethoscope
-      actionEntity: 7985
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 7985
 - proto: ClothingNeckTieRed
   entities:
   - uid: 8201
@@ -22708,21 +22693,6 @@ entities:
     - type: Transform
       pos: -51.5,-17.5
       parent: 2
-- proto: DoubleEmergencyOxygenTankFilled
-  entities:
-  - uid: 7918
-    components:
-    - type: Transform
-      pos: 50.542027,-20.300407
-      parent: 2
-    - type: GasTank
-      toggleActionEntity: 7919
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 7919
 - proto: Dresser
   entities:
   - uid: 359
@@ -24309,25 +24279,6 @@ entities:
     - type: Transform
       pos: 52.388493,-8.404823
       parent: 2
-  - uid: 8210
-    components:
-    - type: Transform
-      pos: 13.500471,-18.288767
-      parent: 2
-    - type: HandheldLight
-      toggleActionEntity: 8211
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 8211
-    - type: ActionsContainer
   - uid: 8617
     components:
     - type: Transform
@@ -24350,25 +24301,6 @@ entities:
     - type: Transform
       pos: -35.598877,2.7195663
       parent: 2
-  - uid: 2361
-    components:
-    - type: Transform
-      pos: -38.56472,13.878742
-      parent: 2
-    - type: HandheldLight
-      toggleActionEntity: 2622
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 2622
-    - type: ActionsContainer
   - uid: 7791
     components:
     - type: Transform
