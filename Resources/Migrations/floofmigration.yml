@@ -12,6 +12,7 @@ Plushiegirlfailure: PlushieMothRandom
 PlushieFeistyBartender: PlushieMothRandom
 PlushieCoolVulp: PlushieMothRandom
 PlushieNoticeableSecurityOfficer: PlushieMothRandom
+PlushieTrystan: PlushieMothRandom
 
 ##################################
 # Below is for the floof rebase. #
@@ -44,21 +45,6 @@ SpawnPointInventorySpecialist: null #setting to a standard till we add senior ro
 
 #paradox anoms
 SpawnPointGhostParadoxAnomaly: null
-
-#plushies
-PlushieSharkPinkBonk: null #missing plushie that was hard mapped
-PlushieShadowkin: null #missing plushie that was hard mapped
-PlushieBlackFox: null #missing plushie that was hard mapped
-PaperTemplateJusticeTrialDocketTestimony: null #missing plushie that was hard mapped
-PlushieCatTuxedo: null
-PlushieGirlyCorgi: null
-PlushieAbductor: null
-PlushieDeer: null
-PlushieMarbleFox: null
-PlushieTrystan: null # this plushie will probably have to be removed entirely
-PlushieCoffeeFox: null
-PlushieArachne: null
-PlushieOrangeFox: null
 
 #Command Roles
 SpawnPointAdminAssistant: null
@@ -182,7 +168,11 @@ MagazineLightRifleLowCapacity: MagazineLightRifle # delta-v does not have light 
 MagazineLightRifleLowCapacityEmpty: MagazineLightRifleEmpty # delta-v does not have light capcity mags so we will have to use full size for now
 
 #leashes
-#LeashBasic: null
+LeashBasic: null
+LeashAdvanced: null
+
+#collar
+ClothingNeckCollarCC: null
 
 ####################################################
 # Everything below here does not need to be ported #
