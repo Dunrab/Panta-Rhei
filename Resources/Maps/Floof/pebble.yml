@@ -50680,31 +50680,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 29.438976,29.771719
       parent: 2
-- proto: LampGold
-  entities:
-  - uid: 7648
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 18.5,-5.5
-      parent: 2
-  - uid: 7649
-    components:
-    - type: Transform
-      pos: -7.4099,-23.062817
-      parent: 2
-  - uid: 7650
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 31.591747,-3.1487255
-      parent: 2
-  - uid: 7651
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -30.544514,17.498264
-      parent: 2
 - proto: LargeBeaker
   entities:
   - uid: 7652

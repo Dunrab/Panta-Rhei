@@ -116153,20 +116153,6 @@ entities:
     - type: Transform
       pos: -27.36055,-17.145275
       parent: 2
-- proto: LampGold
-  entities:
-  - uid: 15028
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -20.415575,-23.08205
-      parent: 2
-  - uid: 15030
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -54.53851,-26.031878
-      parent: 2
 - proto: LampInterrogator
   entities:
   - uid: 15031

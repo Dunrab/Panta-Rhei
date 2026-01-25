@@ -94431,29 +94431,6 @@ entities:
     - type: Transform
       pos: -7.310762,-123.94716
       parent: 2
-- proto: LampGold
-  entities:
-  - uid: 12732
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -2.4564776,-204.18784
-      parent: 2
-  - uid: 13915
-    components:
-    - type: Transform
-      pos: -13.5078535,-253.96864
-      parent: 2
-  - uid: 17247
-    components:
-    - type: Transform
-      pos: 5.487414,-330.11176
-      parent: 2
-  - uid: 17426
-    components:
-    - type: Transform
-      pos: 13.557619,-313.1605
-      parent: 2
 - proto: LampInterrogator
   entities:
   - uid: 11304
