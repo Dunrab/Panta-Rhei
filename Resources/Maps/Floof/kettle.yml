@@ -10206,12 +10206,6 @@ entities:
     components:
     - type: Transform
       parent: 17788
-- proto: ActionToggleLight
-  entities:
-  - uid: 26423
-    components:
-    - type: Transform
-      parent: 26422
 - proto: AirAlarm
   entities:
   - uid: 1489

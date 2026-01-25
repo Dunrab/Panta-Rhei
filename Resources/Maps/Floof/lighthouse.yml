@@ -7431,12 +7431,6 @@ entities:
     - type: Transform
       pos: 14.549229,-26.422525
       parent: 2
-- proto: ActionToggleLight
-  entities:
-  - uid: 12203
-    components:
-    - type: Transform
-      parent: 13112
 - proto: AirAlarm
   entities:
   - uid: 5
@@ -98426,33 +98420,6 @@ entities:
     - type: Transform
       pos: -8.543983,-39.179214
       parent: 2
-- proto: LampBanana
-  entities:
-  - uid: 13112
-    components:
-    - type: Transform
-      pos: 8.517173,10.838038
-      parent: 2
-    - type: HandheldLight
-      toggleActionEntity: 12203
-    - type: ContainerContainer
-      containers:
-        cellslot_cell_container: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 12203
-    - type: Physics
-      canCollide: True
-    - type: ActionsContainer
 - proto: LampInterrogator
   entities:
   - uid: 13116
