@@ -2685,28 +2685,6 @@ entities:
     - type: Transform
       pos: 20.620842,-6.433382
       parent: 2
-- proto: ActionStethoscope
-  entities:
-  - uid: 7985
-    components:
-    - type: Transform
-      parent: 7984
-- proto: ActionToggleInternals
-  entities:
-  - uid: 7919
-    components:
-    - type: Transform
-      parent: 7918
-- proto: ActionToggleLight
-  entities:
-  - uid: 2622
-    components:
-    - type: Transform
-      parent: 2361
-  - uid: 8211
-    components:
-    - type: Transform
-      parent: 8210
 - proto: AirAlarm
   entities:
   - uid: 7647
