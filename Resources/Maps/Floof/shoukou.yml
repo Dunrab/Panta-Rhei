@@ -4,8 +4,8 @@ meta:
   engineVersion: 267.3.0
   forkId: ""
   forkVersion: ""
-  time: 01/22/2026 15:59:29
-  entityCount: 26968
+  time: 01/25/2026 04:31:15
+  entityCount: 26963
 maps:
 - 1
 grids:
@@ -6213,24 +6213,6 @@ entities:
     components:
     - type: Transform
       parent: 23841
-- proto: ActionToggleLight
-  entities:
-  - uid: 4
-    components:
-    - type: Transform
-      parent: 3
-  - uid: 9473
-    components:
-    - type: Transform
-      parent: 20003
-  - uid: 20793
-    components:
-    - type: Transform
-      parent: 20792
-  - uid: 20795
-    components:
-    - type: Transform
-      parent: 20794
 - proto: AirAlarm
   entities:
   - uid: 5
@@ -8656,7 +8638,7 @@ entities:
       pos: 34.5,-5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -41770.707
+      secondsUntilStateChange: -41833.8
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -8696,7 +8678,7 @@ entities:
       pos: -36.5,-36.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -72540.64
+      secondsUntilStateChange: -72603.734
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -9084,7 +9066,7 @@ entities:
       pos: -32.5,-41.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -71969.46
+      secondsUntilStateChange: -72032.555
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -9280,7 +9262,7 @@ entities:
       pos: -20.5,-13.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -98227.1
+      secondsUntilStateChange: -98290.195
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -9721,7 +9703,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -126077.016
+      secondsUntilStateChange: -126140.11
       state: Opening
   - uid: 7972
     components:
@@ -9916,7 +9898,7 @@ entities:
       pos: 13.5,12.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -77432.87
+      secondsUntilStateChange: -77495.96
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -10020,7 +10002,7 @@ entities:
       pos: -4.5,-3.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -82288.3
+      secondsUntilStateChange: -82351.39
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -10504,7 +10486,7 @@ entities:
       pos: 19.5,10.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -1018.6065
+      secondsUntilStateChange: -1081.7
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -11205,7 +11187,7 @@ entities:
       pos: 81.5,2.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -120545.47
+      secondsUntilStateChange: -120608.56
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -11376,7 +11358,7 @@ entities:
       pos: 6.5,19.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -86637.555
+      secondsUntilStateChange: -86700.65
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -11608,7 +11590,7 @@ entities:
       pos: 10.5,18.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -86461.09
+      secondsUntilStateChange: -86524.19
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -71184,7 +71166,7 @@ entities:
       pos: 9.5,27.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -133480.23
+      secondsUntilStateChange: -133543.33
       state: Closing
     - type: DeviceNetwork
       deviceLists:
@@ -71454,7 +71436,7 @@ entities:
       pos: -36.5,-22.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -347858.22
+      secondsUntilStateChange: -347921.3
       state: Closing
   - uid: 5912
     components:
@@ -72088,7 +72070,7 @@ entities:
       pos: -40.5,-0.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -278087.12
+      secondsUntilStateChange: -278150.22
       state: Closing
     - type: DeviceNetwork
       deviceLists:
@@ -72479,50 +72461,6 @@ entities:
       parent: 2
 - proto: Floodlight
   entities:
-  - uid: 20792
-    components:
-    - type: Transform
-      pos: 15.269633,-50.300644
-      parent: 2
-    - type: Physics
-      angularDamping: 0
-      linearDamping: 0
-    - type: HandheldLight
-      toggleActionEntity: 20793
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 20793
-    - type: ActionsContainer
-  - uid: 20794
-    components:
-    - type: Transform
-      pos: 27.072155,-44.924355
-      parent: 2
-    - type: Physics
-      angularDamping: 0
-      linearDamping: 0
-    - type: HandheldLight
-      toggleActionEntity: 20795
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 20795
-    - type: ActionsContainer
   - uid: 23880
     components:
     - type: Transform
@@ -122031,7 +121969,7 @@ entities:
       pos: -48.5,-18.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -2301.1719
+      secondsUntilStateChange: -2364.2654
       state: Opening
   - uid: 10197
     components:
@@ -126304,7 +126242,7 @@ entities:
       pos: -1.5,2.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -92622.125
+      secondsUntilStateChange: -92685.22
       state: Opening
   - uid: 23486
     components:
@@ -126312,7 +126250,7 @@ entities:
       pos: -2.5,2.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -82304.96
+      secondsUntilStateChange: -82368.055
       state: Opening
   - uid: 26933
     components:
@@ -144957,6 +144895,23 @@ entities:
     - type: Transform
       pos: -18.5,-58.5
       parent: 2
+- proto: SpawnPointChaplain
+  entities:
+  - uid: 4
+    components:
+    - type: Transform
+      pos: 28.5,-27.5
+      parent: 2
+  - uid: 2730
+    components:
+    - type: Transform
+      pos: 29.5,-27.5
+      parent: 2
+  - uid: 2731
+    components:
+    - type: Transform
+      pos: 32.5,-43.5
+      parent: 2
 - proto: SpawnPointChef
   entities:
   - uid: 24710
@@ -145044,13 +144999,6 @@ entities:
     components:
     - type: Transform
       pos: -10.5,2.5
-      parent: 2
-- proto: SpawnPointERTChaplain
-  entities:
-  - uid: 24099
-    components:
-    - type: Transform
-      pos: 32.5,-44.5
       parent: 2
 - proto: SpawnPointForensicMantis
   entities:
@@ -145879,6 +145827,43 @@ entities:
     components:
     - type: Transform
       pos: 10.5,22.5
+      parent: 2
+- proto: SpawnPointServiceWorker
+  entities:
+  - uid: 3
+    components:
+    - type: Transform
+      pos: -9.5,-12.5
+      parent: 2
+  - uid: 4686
+    components:
+    - type: Transform
+      pos: -8.5,-12.5
+      parent: 2
+  - uid: 8819
+    components:
+    - type: Transform
+      pos: -7.5,-12.5
+      parent: 2
+  - uid: 9473
+    components:
+    - type: Transform
+      pos: -12.5,-24.5
+      parent: 2
+  - uid: 9594
+    components:
+    - type: Transform
+      pos: -14.5,-24.5
+      parent: 2
+  - uid: 9623
+    components:
+    - type: Transform
+      pos: -11.5,-28.5
+      parent: 2
+  - uid: 10959
+    components:
+    - type: Transform
+      pos: -7.5,-24.5
       parent: 2
 - proto: SpawnPointStationEngineer
   entities:
@@ -171408,7 +171393,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -204345.08
+      secondsUntilStateChange: -204408.17
       state: Opening
   - uid: 10028
     components:
@@ -171823,7 +171808,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -112466.32
+      secondsUntilStateChange: -112529.414
       state: Opening
   - uid: 26858
     components:
