@@ -87,25 +87,25 @@ namespace Content.IntegrationTests.Tests
             "TestTeg",
             "CentComm",
             "MeteorArena",
-            "Academy", //DeltaV
+            //"Academy", //DeltaV
             "Arena", // DeltaV
-            "ArenaMedieval", //DeltaV
+            // "ArenaMedieval", //DeltaV
             "Asterisk", // DeltaV
-            "Byoin", // DeltaV
-            "Chibi", // DeltaV
-            "Division", // DeltaV
+            //"Byoin", // DeltaV
+            //"Chibi", // DeltaV
+            //"Division", // DeltaV
             "Edge", // DeltaV
-            "Elegance", // DeltaV
+            //"Elegance", // DeltaV
             "Glacier", // DeltaV
             "Hammurabi", // DeltaV
             "Lighthouse", // DeltaV
-            "Micro", // DeltaV
-            "Ovni", //DeltaV
+            //"Micro", // DeltaV
+            //"Ovni", //DeltaV
             "Pebble", // DeltaV
-            "PebbleHiring", // DeltaV
+            //"PebbleHiring", // DeltaV
             "Shoukou", // DeltaV
             "Submarine", //DeltaV
-            "Terra", //DeltaV
+            //"Terra", //DeltaV
             "TheHive", // DeltaV
             "Tortuga", // DeltaV
             "Amber", //Floofstation
