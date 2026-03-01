@@ -39,6 +39,10 @@ public sealed class AutoVoteSystem : EntitySystem
 
     private void CallAutovote()
     {
+        //if we are in debug we do not want to run the auto call
+        #if DEBUG
+        return;
+        #else
         if (!_cfg.GetCVar(FloofCCVars.AutoVoteEnabled))
             return;
 
@@ -52,5 +56,6 @@ public sealed class AutoVoteSystem : EntitySystem
             _voteManager.CreateStandardVote(null, StandardVoteType.Map);
         if (_cfg.GetCVar(FloofCCVars.PresetAutoVoteEnabled))
             _voteManager.CreateStandardVote(null, StandardVoteType.Preset);
+        #endif
     }
 }
