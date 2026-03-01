@@ -8,6 +8,8 @@ using Content.Server.GameTicking;
 
 namespace Content.Server._Floof.AutoVote;
 
+//Originaly from Einstien Engines, see the following pr:
+//https://github.com/Simple-Station/Einstein-Engines/pull/1213
 public sealed class AutoVoteSystem : EntitySystem
 {
     [Dependency] private readonly IConfigurationManager _cfg = default!;
