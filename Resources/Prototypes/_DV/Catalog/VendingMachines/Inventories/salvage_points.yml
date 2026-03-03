@@ -51,9 +51,9 @@
     cost: 1000
   #BEGIN floofstation addtions
   - id: WeaponSniperMosin
-    cost: 1000
+    cost: 5000
   - id: WeaponLaserGun
-    cost: 1500
+    cost: 5500
   - id: WeaponPistolForged
     cost: 5000
   - id: WeaponRevolverForged
