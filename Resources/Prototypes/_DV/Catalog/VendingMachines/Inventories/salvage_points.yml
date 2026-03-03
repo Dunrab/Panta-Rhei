@@ -49,6 +49,18 @@
     cost: 1000
   - id: PKAUpgradeFireRate
     cost: 1000
+  #BEGIN floofstation addtions
+  - id: WeaponSniperMosin
+    cost: 1000
+  - id: SpeedLoaderLightRifle
+    cost: 500
+  - id: WeaponLaserGun
+    cost: 1500
+  - id: WeaponShotgunForged # this one worries me the most
+    cost: 3000
+  - id: BoxLethalshot # this one worries me the most
+    cost: 1500
+  #END floofstation additions
   # TODO: AOE modkit for 2k
   - id: SeismicCharge
     cost: 1250
