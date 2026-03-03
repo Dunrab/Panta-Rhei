@@ -52,14 +52,18 @@
   #BEGIN floofstation addtions
   - id: WeaponSniperMosin
     cost: 1000
-  - id: SpeedLoaderLightRifle
-    cost: 500
   - id: WeaponLaserGun
     cost: 1500
-  - id: WeaponShotgunForged # this one worries me the most
-    cost: 3000
-  - id: BoxLethalshot # this one worries me the most
-    cost: 1500
+  - id: WeaponPistolForged
+    cost: 5000
+  - id: WeaponRevolverForged
+    cost: 5500
+  - id: WeaponShotgunForged
+    cost: 6000
+  - id: WeaponSubMachineGunForged
+    cost: 7000
+  - id: WeaponSniperForged
+    cost: 9000
   #END floofstation additions
   # TODO: AOE modkit for 2k
   - id: SeismicCharge
