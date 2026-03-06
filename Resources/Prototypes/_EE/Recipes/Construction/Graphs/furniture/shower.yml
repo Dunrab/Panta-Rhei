@@ -1,11 +1,11 @@
 - type: construction
-  name: shower-construction-name
+  name: ent-Shower
   id: Shower
   graph: Shower
   startNode: start
   targetNode: shower
   category: construction-category-furniture
-  description: shower-description
+#   description: shower-description
 #  icon:
 #    sprite: _EE/Structures/Furniture/shower.rsi
 #    state: shower
