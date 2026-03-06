@@ -1,6 +1,6 @@
 - type: entity
   name: shower
-  id: shower-construction-name
+  id: Shower
   description: shower-description
   placement:
     mode: SnapgridCenter
