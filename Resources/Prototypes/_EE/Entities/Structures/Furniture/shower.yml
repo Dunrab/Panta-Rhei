@@ -1,7 +1,7 @@
 - type: entity
   name: shower
-  id: Shower
-  description: A shower, complete with bluespace water.
+  id: shower-construction-name
+  description: shower-description
   placement:
     mode: SnapgridCenter
     snap:

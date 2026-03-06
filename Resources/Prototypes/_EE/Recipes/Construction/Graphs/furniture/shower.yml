@@ -1,11 +1,11 @@
 - type: construction
   name: shower
-  id: Shower
+  id: shower-construction-name
   graph: Shower
   startNode: start
   targetNode: shower
   category: construction-category-furniture
-  description: A shower, complete with bluespace water.
+  description: shower-description
   icon:
     sprite: _EE/Structures/Furniture/shower.rsi
     state: shower
