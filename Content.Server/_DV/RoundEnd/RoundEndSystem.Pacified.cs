@@ -1,9 +1,10 @@
 using Content.Server.Explosion.Components;
-//using Content.Server.Flash.Components;
 using Content.Server.GameTicking;
 using Content.Server.Popups;
 using Content.Server.Store.Components;
 using Content.Server.Store.Systems;
+using Content.Shared.Flash.Components;
+using Content.Shared.Trigger.Components;
 using Content.Shared.CombatMode;
 using Content.Shared.CombatMode.Pacification;
 using Content.Shared._DV.CCVars;
@@ -50,11 +51,12 @@ public sealed class PacifiedRoundEnd : EntitySystem
             RemComp<ExplosiveComponent>(uid);
         }
 
-        //var grenadeQuery = EntityQueryEnumerator(ExplosiveComponent);
-        //while (grenadeQuery.MoveNext(out var uid, out var _))
-        //{
-        //    RemComp<ExplosiveComponent>(uid);
-        //}
+        // we need to account for all the types of grenades, to my knowledge all have a TimerTriggerComp
+        var grenadeQuery = _entityManager.EntityQueryEnumerator<TimerTriggerComponent>();
+        while (grenadeQuery.MoveNext(out var uid, out _))
+        {
+            _entityManager.RemoveComponent<TimerTriggerComponent>(uid);
+        }
 
         var flashQuery = EntityQueryEnumerator<FlashComponent>();
         while (flashQuery.MoveNext(out var uid, out var _))
