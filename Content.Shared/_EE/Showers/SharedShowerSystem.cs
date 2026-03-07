@@ -22,6 +22,7 @@ namespace Content.Shared.Showers
         private void OnMapInit(EntityUid uid, ShowerComponent component, MapInitEvent args)
         {
             if (_random.Prob(0.5f))
+            if (_random.Prob(0.1f))
                 component.ToggleShower = true;
             UpdateAppearance(uid);
         }
