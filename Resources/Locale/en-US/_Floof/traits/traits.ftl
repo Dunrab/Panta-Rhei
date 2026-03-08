@@ -25,6 +25,12 @@ trait-description-BionicPryArm =
 trait-dog-accent-name = Dog accent
 trait-dog-accent-desc = Bork.
 
+trait-marked-remove-name = Marked for Removal
+trait-marked-remove-desc = Someone or something wants you REMOVED. Antags can recieve objectives to kill you and keep you dead.
+
+trait-marked-teach-name = Marked for Death
+trait-marked-teach-desc = Someone or something wants you taught a lesson. Antags can recieve objectives to kill you.
+
 trait-name-CyberEyes = Cyber-Eyes Basic System
 trait-description-CyberEyes =
     One or more of your eyes have been replaced with modular cybernetic optical implants.

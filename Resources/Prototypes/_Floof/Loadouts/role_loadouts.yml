@@ -1,5 +1,6 @@
 - type: roleLoadout
   id: JobSeniorEngineer
+  parent: JobBaseLoadout # Euphoria
   groups:
   - GroupTankHarness
   - StationEngineerHead
@@ -19,6 +20,7 @@
 
 - type: roleLoadout
   id: JobSeniorPhysician
+  parent: JobBaseLoadout # Euphoria
   groups:
   - GroupTankHarness
   - MedicalDoctorHead
@@ -40,6 +42,7 @@
 
 - type: roleLoadout
   id: JobSeniorResearcher
+  parent: JobBaseLoadout # Euphoria
   groups:
   - GroupTankHarness
   - ScientistHead
@@ -59,6 +62,7 @@
 
 - type: roleLoadout
   id: JobSeniorOfficer
+  parent: JobBaseLoadout # Euphoria
   groups:
   - SecurityHead
   - SecurityNeck # DeltaV
@@ -80,6 +84,7 @@
 
 - type: roleLoadout
   id: JobInventorySpecialist
+  parent: JobBaseLoadout # Euphoria
   groups:
   - GroupTankHarness
   - CargoTechnicianHead

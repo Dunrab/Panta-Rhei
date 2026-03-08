@@ -1193,3 +1193,55 @@ Entries:
       message: Updated the rules
   id: 147
   time: '2026-03-07T11:59:37.0000000+00:00'
+- author: Tarazicon
+  changes:
+    - type: Add
+      message: Added a new plushie resembling a resident moth engineer!
+    - type: Tweak
+      message: >-
+        Changed wrench and multitool sprites to use the old ones, those looked
+        far better. No more glowing chicken nugget multitool.
+    - type: Fix
+      message: Fixed research disks not having their interaction sounds.
+  id: 148
+  time: '2026-03-07T21:24:06.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: Central command said you are all smelly so they re-installed showers.
+  id: 149
+  time: '2026-03-07T21:33:26.0000000+00:00'
+- author: sprkl
+  changes:
+    - type: Add
+      message: Return of the Marked traits.
+  id: 150
+  time: '2026-03-08T00:07:27.0000000+00:00'
+- author: TheRealMasterChief117
+  changes:
+    - type: Fix
+      message: >-
+        Fixed some guidebook entries appearing with the wrong text. (no
+        localization)
+  id: 151
+  time: '2026-03-08T02:35:30.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Added an ability to flip your body orientation while lying. The default
+        keybind is Ctrl-R.
+    - type: Add
+      message: >-
+        Added a "default walk" toggle to the settings. The setting inverts your
+        walking state.
+    - type: Tweak
+      message: >-
+        The "rotate in world" command is now bound to Middle Mouse Button by
+        default. It used to be bound to R, which conflicted with "toggle
+        knockdown" and would sometimes cause you to rotate nearby furniture
+        while trying to lay down.
+    - type: Fix
+      message: All borgs should be able to crawl now.
+  id: 152
+  time: '2026-03-08T02:37:17.0000000+00:00'
