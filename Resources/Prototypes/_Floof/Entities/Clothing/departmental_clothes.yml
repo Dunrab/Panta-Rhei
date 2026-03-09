@@ -120,6 +120,19 @@
   - type: Clothing
     sprite: _Floof/Clothing/Departmental/Engineering/engithong.rsi
 
+#Senior engineer
+- type: entity
+  parent: ClothingUniformThongBase
+  id: ClothingUniformSeniorEngiThong
+  name: senior engineering thong
+  description: Styled for a engineering, but is this even considered a piece of clothing?
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Departmental/Engineering/seniorengithong.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Departmental/Engineering/seniorengithong.rsi
+
+
 #Head of Engi / Chief Engineer
 - type: entity
   parent: ClothingHandsBase
@@ -471,7 +484,7 @@
     sprite: _Floof/Clothing/Departmental/Logistics/devysuit.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Departmental/Logistics/devysuit.rsi
-    
+
 - type: entity
   parent: ClothingShoesBase
   id: ClothingShoesCourierDevy
@@ -482,7 +495,7 @@
     sprite: _Floof/Clothing/Departmental/Logistics/devyboots.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Departmental/Logistics/devyboots.rsi
-    
+
 - type: entity
   parent: ClothingOuterWinterCoat
   id: ClothingOuterDevy
@@ -493,7 +506,7 @@
     sprite: _Floof/Clothing/Departmental/Logistics/devycoat.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Departmental/Logistics/devycoat.rsi
-    
+
 #Medical Outfits
 #
 #General Medical
