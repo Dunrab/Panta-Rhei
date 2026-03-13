@@ -18,7 +18,7 @@ public sealed partial class ShockOnTriggerComponent : BaseXOnTriggerComponent
     /// Maybe a BeforeTriggerEvent where we modify the target.
     /// </remarks>
     [DataField, AutoNetworkedField]
-    public bool TargetContainer;
+    public bool TargetContainer = true; // Floofstation - set this to true so it targets the container
 
     /// <summary>
     /// The force of an electric shock when the trigger is triggered.

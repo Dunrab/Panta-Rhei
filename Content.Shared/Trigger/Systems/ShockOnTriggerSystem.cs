@@ -11,14 +11,16 @@ public sealed class ShockOnTriggerSystem : XOnTriggerSystem<ShockOnTriggerCompon
 
     protected override void OnTrigger(Entity<ShockOnTriggerComponent> ent, EntityUid target, ref TriggerEvent args)
     {
-        // Floofstation changes start
         // Override the normal target if we target the container
-        if (ent.Comp.TargetContainer || !_container.TryGetContainingContainer(ent.Owner, out var container))
+        if (ent.Comp.TargetContainer)
         {
-            return;
+            // shock whoever is wearing this clothing item
+            if (!_container.TryGetContainingContainer(ent.Owner, out var container))
+                return;
+
+            target = container.Owner;
         }
-        target = container.Owner;
-        // Floofstation changes end
+
         _electrocution.TryDoElectrocution(target, null, ent.Comp.Damage, ent.Comp.Duration, true, ignoreInsulation: true);
         args.Handled = true;
     }
