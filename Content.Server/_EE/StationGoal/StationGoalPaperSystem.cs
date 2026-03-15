@@ -1,8 +1,9 @@
 using System.Text.RegularExpressions;
 using Content.Server.GameTicking;
+using Content.Server.GameTicking.Events;
 using Content.Server.Fax;
 using Content.Server.Station.Systems;
-using Content.Shared.CCVar;
+using Content.Shared._EE.CCVars;
 using Content.Shared.Random;
 using Content.Shared.Random.Helpers;
 using Robust.Shared.Configuration;
@@ -41,8 +42,8 @@ public sealed class StationGoalPaperSystem : EntitySystem
 
     private void OnRoundStarted(RoundStartingEvent ev)
     {
-        if (_config.GetCVar(CCVars.StationGoalsEnabled)
-        	&& _random.Prob(_config.GetCVar(_EE.CCVars.StationGoalsChance))) // changed this to be in the _EE namespace
+        if (_config.GetCVar(EECVars.StationGoalsEnabled)
+        	&& _random.Prob(_config.GetCVar(EECVars.StationGoalsChance))) // changed this to be in the _EE namespace
             SendRandomGoal();
     }
 
