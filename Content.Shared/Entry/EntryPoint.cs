@@ -37,7 +37,7 @@ namespace Content.Shared.Entry
         public override void Init()
         {
             IgnorePrototypes();
-            _prototypeManager.RegisterIgnore("stationGoal"); // Floofstation
+            //_prototypeManager.RegisterIgnore("stationGoal"); // Floofstation
         }
 
         public override void PostInit()
