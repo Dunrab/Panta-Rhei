@@ -158,6 +158,20 @@
   - OuterCoatHyenhSweater
   - ShrimpFishermanSuit
   - OuterCoatPirate
+  - ClothingOuterCoatAcidRaincoat
+  - ClothingOuterCoatAcidRaincoatBlue
+  - ClothingOuterCoatAcidRaincoatGreen
+  - ClothingOuterCoatAcidRaincoatMagenta
+  - ClothingOuterCoatBomberPunkRed
+  - ClothingOuterCoatJacketLeather
+  - ClothingOuterCoatJacketBiker
+  - ClothingOuterCoatJacketJamrock
+  - ClothingOuterCoatBomberAerostatic
+  - ClothingOuterCoatJacketLettermanBlue
+  - ClothingOuterCoatJacketLettermanBrown
+  - ClothingOuterCoatJacketLettermanRed
+  - ClothingOuterCoatJacketLettermanMagenta
+  - ClothingOuterCoatBomberPinkSleeves
 
 # hats
 - type: loadoutGroup

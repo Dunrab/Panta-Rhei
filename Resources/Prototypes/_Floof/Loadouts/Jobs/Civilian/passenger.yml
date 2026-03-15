@@ -546,6 +546,90 @@
 
 # outer clothing (jackets)
 - type: loadout
+  id: ClothingOuterCoatAcidRaincoat
+  equipment:
+    outerClothing: ClothingOuterCoatAcidRaincoat
+  groupBy: "rain coat"
+
+- type: loadout
+  id: ClothingOuterCoatAcidRaincoatBlue
+  equipment:
+    outerClothing: ClothingOuterCoatAcidRaincoatBlue
+  groupBy: "rain coat"
+
+- type: loadout
+  id: ClothingOuterCoatAcidRaincoatGreen
+  equipment:
+    outerClothing: ClothingOuterCoatAcidRaincoatGreen
+  groupBy: "rain coat"
+
+- type: loadout
+  id: ClothingOuterCoatAcidRaincoatMagenta
+  equipment:
+    outerClothing: ClothingOuterCoatAcidRaincoatMagenta
+  groupBy: "rain coat"
+
+- type: loadout
+  id: ClothingOuterCoatBomberPunkRed
+  equipment:
+    outerClothing: ClothingOuterCoatBomberPunkRed
+  groupBy: "jackets"
+
+- type: loadout
+  id: ClothingOuterCoatJacketLeather
+  equipment:
+    outerClothing: ClothingOuterCoatJacketLeather
+  groupBy: "jackets"
+
+- type: loadout
+  id: ClothingOuterCoatJacketBiker
+  equipment:
+    outerClothing: ClothingOuterCoatJacketBiker
+  groupBy: "jackets"
+
+- type: loadout
+  id: ClothingOuterCoatJacketJamrock
+  equipment:
+    outerClothing: ClothingOuterCoatJacketJamrock
+  groupBy: "jackets"
+
+- type: loadout
+  id: ClothingOuterCoatBomberAerostatic
+  equipment:
+    outerClothing: ClothingOuterCoatBomberAerostatic
+  groupBy: "jackets"
+
+- type: loadout
+  id: ClothingOuterCoatJacketLettermanBlue
+  equipment:
+    outerClothing: ClothingOuterCoatJacketLettermanBlue
+  groupBy: "jackets"
+
+- type: loadout
+  id: ClothingOuterCoatJacketLettermanBrown
+  equipment:
+    outerClothing: ClothingOuterCoatJacketLettermanBrown
+  groupBy: "jackets"
+
+- type: loadout
+  id: ClothingOuterCoatJacketLettermanRed
+  equipment:
+    outerClothing: ClothingOuterCoatJacketLettermanRed
+  groupBy: "jackets"
+
+- type: loadout
+  id: ClothingOuterCoatJacketLettermanMagenta
+  equipment:
+    outerClothing: ClothingOuterCoatJacketLettermanMagenta
+  groupBy: "jackets"
+
+- type: loadout
+  id: ClothingOuterCoatBomberPinkSleeves
+  equipment:
+    outerClothing: ClothingOuterCoatBomberPinkSleeves
+  groupBy: "jackets"
+
+- type: loadout
   id: OuterCoatPirate
   equipment:
     outerClothing: ClothingOuterCoatPirate
