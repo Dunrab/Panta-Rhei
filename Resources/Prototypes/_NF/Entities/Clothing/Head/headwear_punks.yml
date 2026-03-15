@@ -14,9 +14,6 @@
     modifiers:
       coefficients:
         Caustic: 0.9
-  - type: HideLayerClothing
-    slots:
-    - Hair
 
 - type: entity
   parent: ClothingHeadHatHoodAcidRaincoat
