@@ -1,6 +1,6 @@
 using Robust.Shared.Prototypes;
 
-namespace Content.Server.StationGoal
+namespace Content.Shared._EE.StationGoal
 {
     [Serializable, Prototype("stationGoal")]
     public sealed partial class StationGoalPrototype : IPrototype

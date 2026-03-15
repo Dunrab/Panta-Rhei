@@ -11,6 +11,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Content.Shared.Dataset;
 using Content.Shared.Fax.Components;
+using Content.Shared._EE.StationGoal;
 
 namespace Content.Server.StationGoal;
 
@@ -78,7 +79,7 @@ public sealed class StationGoalPaperSystem : EntitySystem
         if (_prototype.TryIndex<WeightedRandomPrototype>(goal, out var goalRandom))
             return RecursiveRandom(goalRandom);
 
-        throw new Exception($"StationGoalPaperSystem: Random station goal could not be found from prototypes {RandomPrototype} and {random.ID}");
+        throw new Exception($"StationGoalPaperSystem: Random station goal could not be found from prototypes {RandomPrototype} and {random.ID}"); // erroring here
     }
 
     /// <summary>
