@@ -570,6 +570,12 @@
   groupBy: "rain coat"
 
 - type: loadout
+  id: ClothingOuterCoatAcidRaincoatYellow
+  equipment:
+    outerClothing: ClothingOuterCoatAcidRaincoatYellow
+  groupBy: "rain coat"
+
+- type: loadout
   id: ClothingOuterCoatBomberPunkRed
   equipment:
     outerClothing: ClothingOuterCoatBomberPunkRed
