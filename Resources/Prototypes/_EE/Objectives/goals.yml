@@ -40,7 +40,6 @@
 - type: stationGoal
   id: Zoo
 
-
 - type: weightedRandom
   id: StationGoals
   weights:
@@ -48,13 +47,11 @@
     StationGoalPower: 1
     StationGoalStation: 1
 
-
 - type: weightedRandom
   id: StationGoalDepartment
   weights:
     StationGoalScience: 1
     StationGoalSecurity: 1
-
 
 - type: weightedRandom
   id: StationGoalPower
