@@ -63,7 +63,7 @@
   - type: Clothing
     sprite: _NF/Clothing/OuterClothing/Coats/acid_raincoat_yellow.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHatHoodAcidRaincoatGreen
+    clothingPrototype: ClothingOuterCoatAcidRaincoatYellow
 
 # Jackets
 - type: entity
