@@ -101,7 +101,7 @@ public sealed class StationGoalPaperSystem : EntitySystem
 
             var printout = new FaxPrintout(
                 Loc.GetString("station-goal-fax-paper-header",
-                    ("date", DateTime.Now.AddYears(1000).ToString("yyyy MMMM dd")),
+                    ("date", DateTime.Now.AddYears(550).ToString("yyyy MMMM dd")), // Floofstation - changed this to match the delta-v timing on pdas
                     ("station", string.IsNullOrEmpty(stationId) ? "???" : stationId),
                     ("content", goal.Text),
                     ("name", _random.Pick(signerName.Values))
