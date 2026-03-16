@@ -222,3 +222,17 @@ station-goal-lectures=
     There may be breaks between lectures to allow guests to read brochures and catch their breath.
 
     After the end of the event someone must announce the end of the shift and call the evacuation shuttle.
+
+station-goal-fishing=
+    Dear Station Command, the primary objective for this shift is to maximize the utilization of the station's fishing capabilities. We require a high volume of fishing activity to facilitate the study of local aquatic wildlife.
+
+    Your primary goal is to document all forms of aquatic life present on the station. To support this initiative, we encourage you to construct a dock or pier to provide easy access to fishing spots, space permitting.
+    Furthermore, take constructive liberty to develop this area into a welcoming recreational space, offering the crew a pleasant environment to relax during their downtime.
+
+station-goal-stripclub=
+    Dear Station Command, the primary objective for this shift is to utilize extra space in our stations maintenance to construct a strip club.
+
+    Your primary goal is to construct a strip club in our stations unsued space such as a room in the maintenance tunnels.
+    We are giving full creative liberty to construct how you best see it fit for the station population.
+    The one requirement being that you properly label the area as such using a spray painter.
+    We recommend utilizing some of hte extra service staff or passengers to run the club and any other functions you wish to add to it such as a bar or kitchen.

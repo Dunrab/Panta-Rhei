@@ -40,6 +40,12 @@
 - type: stationGoal
   id: Zoo
 
+- type: stationGoal
+  id: Fishing
+
+- type: stationGoal
+  id: Stripclub
+
 - type: weightedRandom
   id: StationGoals
   weights:
@@ -82,3 +88,5 @@
     Shuttle: 1
     Storage: 1
     Zoo: 1
+    Fishing: 1 # Floofstation station goal
+    Stripclub: 1 # Floofstation station goal
