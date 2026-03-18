@@ -79,7 +79,7 @@ public sealed class StationGoalPaperSystem : EntitySystem
         if (_prototype.TryIndex<WeightedRandomPrototype>(goal, out var goalRandom))
             return RecursiveRandom(goalRandom);
 
-        throw new Exception($"StationGoalPaperSystem: Random station goal could not be found from prototypes {RandomPrototype} and {random.ID}"); // erroring here
+        throw new Exception($"StationGoalPaperSystem: Random station goal could not be found from prototypes {RandomPrototype} and {random.ID}");
     }
 
     /// <summary>
