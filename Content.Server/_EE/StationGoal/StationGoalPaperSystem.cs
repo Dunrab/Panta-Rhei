@@ -4,6 +4,7 @@ using Content.Server.GameTicking.Events;
 using Content.Server.Fax;
 using Content.Server.Station.Systems;
 using Content.Shared._EE.CCVars;
+using Content.Shared._DV.CCVars;
 using Content.Shared.Random;
 using Content.Shared.Random.Helpers;
 using Robust.Shared.Configuration;
@@ -30,8 +31,8 @@ public sealed class StationGoalPaperSystem : EntitySystem
 
     [ValidatePrototypeId<WeightedRandomPrototype>]
     private const string RandomPrototype = "StationGoals";
-    [ValidatePrototypeId<DatasetPrototype>]
-    private const string RandomSignature = "names_last";
+    [ValidatePrototypeId<LocalizedDatasetPrototype>]
+    private const string RandomSignature = "NamesLast";
 
     public override void Initialize()
     {
@@ -90,7 +91,7 @@ public sealed class StationGoalPaperSystem : EntitySystem
     {
         var enumerator = EntityManager.EntityQueryEnumerator<FaxMachineComponent>();
         var wasSent = false;
-        var signerName = _prototype.Index<DatasetPrototype>(RandomSignature);
+        var signerName = _prototype.Index<LocalizedDatasetPrototype>(RandomSignature);
 
         while (enumerator.MoveNext(out var uid, out var fax))
         {
@@ -102,10 +103,10 @@ public sealed class StationGoalPaperSystem : EntitySystem
 
             var printout = new FaxPrintout(
                 Loc.GetString("station-goal-fax-paper-header",
-                    ("date", DateTime.Now.AddYears(550).ToString("yyyy MMMM dd")), // Floofstation - changed this to match the delta-v timing on pdas
+                    ("date", DateTime.Today.AddYears(_config.GetCVar(DCCVars.YearOffset)).ToString("yyyy MMMM dd")), // Floofstation - changed this to match the delta-v timing on pdas
                     ("station", string.IsNullOrEmpty(stationId) ? "???" : stationId),
                     ("content", goal.Text),
-                    ("name", _random.Pick(signerName.Values))
+                    ("name", _random.Pick(signerName))
                 ),
                 Loc.GetString("station-goal-fax-paper-name"),
                 "StationGoalPaper"
