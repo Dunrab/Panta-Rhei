@@ -1,4 +1,4 @@
-﻿#below addtions are for hop
+﻿#below additions are for hop
 - type: loadoutGroup
   id: FloofHopThong
   abstract: true
@@ -23,7 +23,7 @@
   loadouts:
   - UnderSocksCommand
 
-#below addtions are for captain
+#below additions are for captain
 - type: loadoutGroup
   id: FloofCaptainThong
   abstract: true
@@ -56,3 +56,13 @@
   loadouts:
   - CaptainPDA
   - CommanderPDA
+
+#below additions are for chief justice
+- type: loadoutGroup
+  id: FloofCJPDAs
+  name: loadout-group-chief-justice-pdas
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - ChiefJusticePDA
+  - LegalAdvisorPDA

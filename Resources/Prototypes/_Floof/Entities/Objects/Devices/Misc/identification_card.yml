@@ -1,4 +1,4 @@
-
+# freelancer
 - type: entity
   parent: IDCardStandard
   id: FreelancerIDCard
@@ -43,3 +43,12 @@
   components:
   - type: IdCard
     jobTitle: job-alt-title-sheriff
+
+# chief justice
+- type: entity
+  parent: ChiefJusticeIDCard
+  id: LegalAdvisorIDCard
+  name: legaladvisor ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-legal-advisor

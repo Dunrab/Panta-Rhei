@@ -68,3 +68,17 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
         pda-hos
+
+# chief justice
+- type: entity
+  parent: ChiefJusticePDA
+  id: LegalAdvisorPDA
+  name: legal advisor PDA
+  description: Calm, collected and well knowledged.
+  components:
+  - type: Pda
+    id: LegalAdvisorIDCard
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType: !type:String
+        pda-chiefjustice
