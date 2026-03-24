@@ -96,3 +96,43 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
         pda-cmo
+
+# head of personnel
+- type: entity
+  parent: HoPPDA
+  id: ServiceDirectorPDA
+  name: service director PDA
+  description: Looks like it has been chewed on.
+  components:
+  - type: Pda
+    id: ServiceDirectorIDCard
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType: !type:String
+        pda-hop
+
+- type: entity
+  parent: HoPPDA
+  id: ServiceManagerPDA
+  name: service manager PDA
+  description: Looks like it has been chewed on.
+  components:
+  - type: Pda
+    id: ServiceManagerIDCard
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType: !type:String
+        pda-hop
+
+- type: entity
+  parent: HoPPDA
+  id: HeadOfPaperworkPDA
+  name: head of paperwork PDA
+  description: Looks like there are some ink stains on it.
+  components:
+  - type: Pda
+    id: HeadOfPaperworkIDCard
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType: !type:String
+        pda-hop

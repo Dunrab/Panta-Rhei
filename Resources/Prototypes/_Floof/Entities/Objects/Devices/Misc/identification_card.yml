@@ -57,7 +57,32 @@
 - type: entity
   parent: CMOIDCard
   id: DirectorOfCareIDCard
-  name: directorofcare ID card
+  name: director of care ID card
   components:
   - type: IdCard
     jobTitle: job-alt-title-director-of-care
+
+# head of personnel
+- type: entity
+  parent: HoPIDCard
+  id: ServiceDirectorIDCard
+  name: service director ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-service-director
+
+- type: entity
+  parent: HoPIDCard
+  id: ServiceManagerIDCard
+  name: service manager ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-service-manager
+
+- type: entity
+  parent: HoPIDCard
+  id: HeadOfPaperworkIDCard
+  name: head of paperwork ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-head-of-paperwork

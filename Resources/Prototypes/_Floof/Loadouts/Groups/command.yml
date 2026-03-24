@@ -23,6 +23,18 @@
   loadouts:
   - UnderSocksCommand
 
+# hop pdas
+- type: loadoutGroup
+  id: FloofHOPPDAs
+  name: loadout-group-head-of-personnel-pdas
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - HoPPDA
+  - ServiceDirectorPDA
+  - ServiceManagerPDA
+  - HeadOfPaperworkPDA
+
 #below additions are for captain
 - type: loadoutGroup
   id: FloofCaptainThong
