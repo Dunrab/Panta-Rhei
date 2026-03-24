@@ -47,3 +47,12 @@
   maxLimit: 1
   loadouts:
   - UnderSocksCaptain
+
+- type: loadoutGroup
+  id: FloofCaptainPDAs
+  name: loadout-group-captain-pdas
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - CaptainPDA
+  - CommanderPDA

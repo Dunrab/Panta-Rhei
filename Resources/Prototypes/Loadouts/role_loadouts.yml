@@ -10,6 +10,7 @@
   - CaptainOuterClothing
   - CaptainGloves # DeltaV
   - CaptainShoes # DeltaV
+  - FloofCaptainPDAs # Floofstation
   - Survival
   - CaptainJobTrinkets
   - GroupSpeciesBreathTool
@@ -441,6 +442,7 @@
   - HeadofSecurityShoes # DeltaV - winter boots
   - SecurityEyewear # DeltaV - Security eyewear with prescription options
   - SurvivalSecurity
+  - FloofHoSPDAs # Floofstation
   - HeadofSecurityJobTrinkets
   - GroupSpeciesBreathToolSecurity
   - SecurityAllFirearm # DeltaV - loadouts

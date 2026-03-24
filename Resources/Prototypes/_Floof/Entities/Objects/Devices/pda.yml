@@ -13,3 +13,58 @@
     id: FreelancerIDCard
   - type: PdaBorderColor
     borderColor: "#668643"
+
+# Altenrative PDAs for specific roles
+# Captain
+- type: entity
+  parent: CaptainPDA
+  id: CommanderPDA
+  name: commander PDA
+  description: For those who lead the station in style.
+  components:
+  - type: Pda
+    id: CommanderIDCard
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType: !type:String
+        pda-captain
+
+# head of security
+- type: entity
+  parent: HoSPDA
+  id: ChiefOfSecurityPDA
+  name: chief of security PDA
+  description: Respect my authority.
+  components:
+  - type: Pda
+    id: ChiefOfSecurityIDCard
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType: !type:String
+        pda-hos
+
+- type: entity
+  parent: HoSPDA
+  id: SecurityDirectorPDA
+  name: security director PDA
+  description: Respect my authority.
+  components:
+  - type: Pda
+    id: SecurityDirectorIDCard
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType: !type:String
+        pda-hos
+
+- type: entity
+  parent: HoSPDA
+  id: SheriffPDA
+  name: sheriff PDA
+  description: Respect my authority.
+  components:
+  - type: Pda
+    id: SecurityDirectorIDCard
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType: !type:String
+        pda-hos
