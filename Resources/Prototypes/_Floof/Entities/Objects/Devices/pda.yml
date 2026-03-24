@@ -82,3 +82,17 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
         pda-chiefjustice
+
+# chief medical officer
+- type: entity
+  parent: CMOPDA
+  id: DirectorOfCarePDA
+  name: director of care PDA
+  description: Years of medical studies finally paying off.
+  components:
+  - type: Pda
+    id: DirectorOfCareIDCard
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType: !type:String
+        pda-cmo

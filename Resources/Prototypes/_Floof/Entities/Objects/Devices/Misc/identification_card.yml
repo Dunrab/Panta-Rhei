@@ -52,3 +52,12 @@
   components:
   - type: IdCard
     jobTitle: job-alt-title-legal-advisor
+
+# chief medical officer
+- type: entity
+  parent: CMOIDCard
+  id: DirectorOfCareIDCard
+  name: directorofcare ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-director-of-care
