@@ -86,3 +86,41 @@
   components:
   - type: IdCard
     jobTitle: job-alt-title-head-of-paperwork
+
+# mystagogue
+- type: entity
+  parent: RDIDCard
+  id: ResearchDirectorIDCard
+  name: research director ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-research-director
+
+# chief engineer
+- type: entity
+  parent: CEIDCard
+  id: StationArchitectIDCard
+  name: station architect ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-station-architect
+
+- type: entity
+  parent: CEIDCard
+  id: StationForemanIDCard
+  name: station foreman ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-station-foreman
+
+# logistics officer
+
+# the name for QuartermasterIDCard is already fully setup with through upstream, so no need to duplicate it here
+
+- type: entity
+  parent: QuartermasterIDCard
+  id: HeadOfAcquisitionsIDCard
+  name: head of acquisitions ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-head-of-acquisitions

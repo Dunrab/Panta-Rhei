@@ -264,6 +264,7 @@
   - FloofLoGloves # Floofstation let lo have gloves
   - QuartermasterOuterClothing
   - QuartermasterShoes
+  - FloofLOPDAs # Floofstation
   - Glasses
   - Survival
   - QuartermasterJobTrinkets
@@ -318,6 +319,7 @@
   - ChiefEngineerOuterClothing
   - ChiefEngineerGloves # DeltaV
   - ChiefEngineerShoes
+  - FloofCEPDAs # Floofstation
   - SurvivalExtended
   - ChiefEngineerJobTrinkets
   - GroupSpeciesBreathTool
@@ -388,6 +390,7 @@
   - ResearchDirectorOuterClothing
   - ScientistGloves
   - ResearchDirectorShoes
+  - FloofMystaDAs # Floofstation
   - Glasses
   - Survival
   - ResearchDirectorJobTrinkets

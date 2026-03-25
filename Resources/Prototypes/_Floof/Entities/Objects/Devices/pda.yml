@@ -136,3 +136,71 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
         pda-hop
+
+# mystagogue
+- type: entity
+  parent: RnDPDA
+  id: ResearchDirectorPDA
+  name: research director PDA
+  description: Looks like there is an anomaly core lodged into the screen of this pda.
+  components:
+  - type: Pda
+    id: ResearchDirectorIDCard
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType: !type:String
+        pda-rd
+
+# chief engineer
+- type: entity
+  parent: CEPDA
+  id: StationArchitectPDA
+  name: station architect PDA
+  description: This pda is covered in oil, welding fuel and a hard days work.
+  components:
+  - type: Pda
+    id: StationArchitectIDCard
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType: !type:String
+        pda-ce
+
+- type: entity
+  parent: CEPDA
+  id: StationForemanPDA
+  name: station foreman PDA
+  description: This pda is covered in oil, welding fuel and a hard days work.
+  components:
+  - type: Pda
+    id: StationForemanIDCard
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType: !type:String
+        pda-ce
+
+# logistics officer
+- type: entity
+  parent: QuartermasterPDA
+  id: QMPDA
+  name: quartermaster PDA
+  description: Another day at blue collar job moving crate after crate.
+  components:
+  - type: Pda
+    id: QuartermasterIDCard
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType: !type:String
+        pda-qm
+
+- type: entity
+  parent: QuartermasterPDA
+  id: HeadOfAcquisitionsPDA
+  name: head of acquisitions PDA
+  description: This pda has scribbles all over it of places to crates used to sit and where they were getting moved to.
+  components:
+  - type: Pda
+    id: HeadOfAcquisitionsIDCard
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType: !type:String
+        pda-qm
