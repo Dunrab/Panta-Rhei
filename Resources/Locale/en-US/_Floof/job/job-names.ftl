@@ -12,6 +12,7 @@ job-alt-title-service-manager = Service Manager
 job-alt-title-head-of-paperwork = Head of Paperwork
 job-alt-title-research-director = Research Director
 job-alt-title-station-foreman = Station Foreman
+job-alt-title-quartermaster = Quartermaster
 job-alt-title-head-of-acquisitions = Head of Acquisitions
 
 loadout-group-captain-pdas = Captain pda

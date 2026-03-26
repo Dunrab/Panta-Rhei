@@ -186,7 +186,7 @@
   description: Another day at blue collar job moving crate after crate.
   components:
   - type: Pda
-    id: QuartermasterIDCard
+    id: QMIDCard
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String

@@ -114,8 +114,13 @@
     jobTitle: job-alt-title-station-foreman
 
 # logistics officer
-
-# the name for QuartermasterIDCard is already fully setup with through upstream, so no need to duplicate it here
+- type: entity
+  parent: QuartermasterIDCard
+  id: QMIDCard
+  name: quartermaster card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-quartermaster
 
 - type: entity
   parent: QuartermasterIDCard
