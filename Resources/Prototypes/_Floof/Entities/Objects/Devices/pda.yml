@@ -14,37 +14,93 @@
   - type: PdaBorderColor
     borderColor: "#668643"
 
-# Altenrative PDAs for specific roles
-# Captain
+# Alternative PDA base
 - type: entity
-  parent: CaptainPDA
+  parent: BasePDA
+  id: BaseAlternativePDA
+  name: Base Alternative PDA
+  description: Personal Data Assistant.
+  components:
+  - type: Pda
+    id: PassengerIDCard
+  - type: Sprite
+    sprite: _Floof/Objects/Devices/alternative_head_pda.rsi
+    state: pda
+    scale: 1.02, 1.02 # increase the scale to match the size of delta-v pdas
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+      state: "pda"
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      offset: 0.1, 0.0 # 1.5 is WAY TOO FUCKING FAR, like in the next universe far
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      offset: 0.11, 0.1 # 0.125 is too far to the right
+      shader: "unshaded"
+      visible: false
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda
+  - type: Icon
+    sprite: _Floof/Objects/Devices/alternative_head_pda.rsi
+    state: pda
+
+# captain
+- type: entity
+  parent: BaseAlternativePDA
   id: CommanderPDA
   name: commander PDA
   description: For those who lead the station in style.
   components:
   - type: Pda
     id: CommanderIDCard
+    penSlot:
+      startingItem: PenCap # have to give captain their fancy pen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: PdaBorderColor
+    borderColor: "#7C5D00"
   - type: Appearance
     appearanceDataInit:
-      enum.PdaVisuals.PdaType: !type:String
-        pda-captain
+      enum.PdaVisuals.PdaType:
+        !type:String
+        captain
 
 # head of security
 - type: entity
-  parent: HoSPDA
+  parent: BaseAlternativePDA
   id: ChiefOfSecurityPDA
   name: chief of security PDA
   description: Respect my authority.
   components:
   - type: Pda
     id: ChiefOfSecurityIDCard
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+    accentHColor: "#447987"
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
-        pda-hos
+        hos
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - CrimeAssistCartridge # DeltaV
+    - SecWatchCartridge # DeltaV: SecWatch replaces WantedList
+    - LogProbeCartridge
+    - NanoChatCartridge # DeltaV
 
 - type: entity
-  parent: HoSPDA
+  parent: ChiefOfSecurityPDA # parent off the first alternative hos pda to not have a ton of duplicate yaml
   id: SecurityDirectorPDA
   name: security director PDA
   description: Respect my authority.
@@ -54,20 +110,20 @@
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
-        pda-hos
+        hos
 
 - type: entity
-  parent: HoSPDA
+  parent: ChiefOfSecurityPDA # parent off the first alternative hos pda to not have a ton of duplicate yaml
   id: SheriffPDA
   name: sheriff PDA
   description: Respect my authority.
   components:
   - type: Pda
-    id: SecurityDirectorIDCard
+    id: SheriffIDCard
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
-        pda-hos
+        hos
 
 # chief justice
 - type: entity
