@@ -48,6 +48,13 @@
   - type: Icon
     sprite: _Floof/Objects/Devices/alternative_head_pda.rsi
     state: pda
+  - type: CartridgeLoader # Nyanotrasen - Glimmer Monitor
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - NanoChatCartridge
 
 # captain
 - type: entity
@@ -94,10 +101,10 @@
     - NotekeeperCartridge
     - NanoTaskCartridge
     - NewsReaderCartridge
+    - NanoChatCartridge
     - CrimeAssistCartridge # DeltaV
     - SecWatchCartridge # DeltaV: SecWatch replaces WantedList
     - LogProbeCartridge
-    - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: ChiefOfSecurityPDA # parent off the first alternative hos pda to not have a ton of duplicate yaml
@@ -127,35 +134,71 @@
 
 # chief justice
 - type: entity
-  parent: ChiefJusticePDA
+  parent: BaseAlternativePDA
   id: LegalAdvisorPDA
   name: legal advisor PDA
-  description: Calm, collected and well knowledged.
+  description: Calm, collected and well versed in all that is law.
   components:
   - type: Pda
     id: LegalAdvisorIDCard
+    penSlot:
+      startingItem: LuxuryPen # have to give cj their fancy pen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
-        pda-chiefjustice
+        cj
+  - type: PdaBorderColor
+    borderColor: "#470823"
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - NanoChatCartridge
+    - CrimeAssistCartridge
+    - SecWatchCartridge
 
 # chief medical officer
 - type: entity
-  parent: CMOPDA
+  parent: BaseAlternativePDA
   id: DirectorOfCarePDA
   name: director of care PDA
   description: Years of medical studies finally paying off.
   components:
   - type: Pda
     id: DirectorOfCareIDCard
+    penSlot:
+      startingItem: CMOPenLight
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
-        pda-cmo
+        cmo
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentHColor: "#447987"
+    accentVColor: "#447987"
+  - type: CartridgeLoader
+    uiKey: enum.PdaUiKey.Key
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - NanoChatCartridge
+    - MedTekCartridge
 
 # head of personnel
 - type: entity
-  parent: HoPPDA
+  parent: BaseAlternativePDA
   id: ServiceDirectorPDA
   name: service director PDA
   description: Looks like it has been chewed on.
@@ -165,10 +208,13 @@
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
-        pda-hop
+        hop
+  - type: PdaBorderColor
+    borderColor: "#789876"
+    accentHColor: "#447987"
 
 - type: entity
-  parent: HoPPDA
+  parent: ServiceDirectorPDA # parent from the first alternative hop pda to not duplicate yaml
   id: ServiceManagerPDA
   name: service manager PDA
   description: Looks like it has been chewed on.
@@ -178,10 +224,10 @@
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
-        pda-hop
+        hop2
 
 - type: entity
-  parent: HoPPDA
+  parent: ServiceDirectorPDA # parent from the first alternative hop pda to not duplicate yaml
   id: HeadOfPaperworkPDA
   name: head of paperwork PDA
   description: Looks like there are some ink stains on it.
@@ -191,11 +237,11 @@
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
-        pda-hop
+        hop2
 
 # mystagogue
 - type: entity
-  parent: RnDPDA
+  parent: BaseAlternativePDA
   id: ResearchDirectorPDA
   name: research director PDA
   description: Looks like there is an anomaly core lodged into the screen of this pda.
@@ -205,11 +251,23 @@
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
-        pda-rd
+        rd
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentHColor: "#447987"
+    accentVColor: "#8900c9"
+  - type: CartridgeLoader # Nyanotrasen - Glimmer Monitor
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - NanoChatCartridge
+    - GlimmerMonitorCartridge
 
 # chief engineer
 - type: entity
-  parent: CEPDA
+  parent: BaseAlternativePDA
   id: StationArchitectPDA
   name: station architect PDA
   description: This pda is covered in oil, welding fuel and a hard days work.
@@ -219,10 +277,13 @@
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
-        pda-ce
+        ce
+  - type: PdaBorderColor
+    borderColor: "#949137"
+    accentHColor: "#447987"
 
 - type: entity
-  parent: CEPDA
+  parent: StationArchitectPDA
   id: StationForemanPDA
   name: station foreman PDA
   description: This pda is covered in oil, welding fuel and a hard days work.
@@ -232,11 +293,11 @@
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
-        pda-ce
+        ce
 
 # logistics officer
 - type: entity
-  parent: QuartermasterPDA
+  parent: BaseAlternativePDA
   id: QMPDA
   name: quartermaster PDA
   description: Another day at blue collar job moving crate after crate.
@@ -246,10 +307,23 @@
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
-        pda-qm
+        qm
+  - type: PdaBorderColor
+    borderColor: "#e39751"
+    accentVColor: "#a23e3e"
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - NanoChatCartridge
+    - MailMetricsCartridge
+    - StockTradingCartridge
+    - AstroNavCartridge
 
 - type: entity
-  parent: QuartermasterPDA
+  parent: QMPDA
   id: HeadOfAcquisitionsPDA
   name: head of acquisitions PDA
   description: This pda has scribbles all over it of places to crates used to sit and where they were getting moved to.
@@ -259,4 +333,4 @@
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
-        pda-qm
+        qm
