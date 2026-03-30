@@ -5,8 +5,8 @@ using Content.Server.Station.Components;
 using Content.Server.Station.Events;
 using Content.Server.Station.Systems;
 using Robust.Shared.Map;
-using Robust.Shared.Map.Components; // adding this
-using Robust.Shared.Utility; // adding this
+using Robust.Shared.Map.Components;
+using Robust.Shared.Utility;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Content.Shared.Ghost;
@@ -14,15 +14,13 @@ using Content.Server.Goobstation.Ghostbar.Components;
 using Content.Server.Mind;
 using Content.Shared.Mind;
 using Content.Shared.Mind.Components;
-using Robust.Shared.EntitySerialization; // adding this to try to fix MapLoaderSystem not found error
-using Robust.Shared.EntitySerialization.Systems; // adding this to try to fix MapLoaderSystem not found error
-using Robust.Shared.Prototypes; // adding?
+using Robust.Shared.EntitySerialization;
+using Robust.Shared.EntitySerialization.Systems;
+using Robust.Shared.Prototypes;
 using Content.Shared.Roles.Jobs;
 using Content.Shared.Roles;
-using Content.Shared.Roles.Components; // adding this to try to fix JobComponent not found error
+using Content.Shared.Roles.Components;
 using Content.Shared.Inventory;
-
-// nmore additions
 using Content.Shared.Temperature.Components;
 using Content.Server.Body.Components;
 using Content.Server.Atmos.Components;
@@ -54,7 +52,6 @@ public sealed class GhostBarSystem : EntitySystem
     {
         SubscribeLocalEvent<RoundStartingEvent>(OnRoundStart);
         SubscribeNetworkEvent<GhostBarSpawnEvent>(SpawnPlayer);
-        //SubscribeLocalEvent<GhostBarPatronComponent, MindRemovedMessage>(OnPlayerGhosted);
     }
 
     private readonly ResPath _mapPath = new("Maps/Floof/Nonstation/Ghostbar/ghostbar.yml");
@@ -95,7 +92,6 @@ public sealed class GhostBarSystem : EntitySystem
         RemComp<TemperatureComponent>(mobUid);
         RemComp<RespiratorComponent>(mobUid);
         RemComp<BarotraumaComponent>(mobUid);
-        //_entityManager.EnsureComponent<GhostBarPatronComponent>(mobUid);
         _entityManager.EnsureComponent<MindShieldComponent>(mobUid);
         _entityManager.EnsureComponent<AntagImmuneComponent>(mobUid);
 
@@ -109,8 +105,4 @@ public sealed class GhostBarSystem : EntitySystem
         }
     }
 
-    //private void OnPlayerGhosted(EntityUid uid, GhostBarPatronComponent component, MindRemovedMessage args)
-    //{
-    //    _entityManager.DeleteEntity(uid);
-    //}
 }

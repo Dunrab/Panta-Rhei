@@ -6,7 +6,7 @@ using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Timing; // Frontier
 using Robust.Shared.Configuration; // Frontier
 using Content.Client._NF.UserInterface.Systems.Ghost.Controls; // Frontier
-using Content.Client._Goobstation.UserInterface.Systems.Ghost.Controls;
+using Content.Client._Goobstation.UserInterface.Systems.Ghost.Controls; // Goobstation - Ghostbar
 
 namespace Content.Client.UserInterface.Systems.Ghost.Widgets;
 
