@@ -23,9 +23,10 @@ using Content.Shared.Roles.Components;
 using Content.Shared.Inventory;
 using Content.Shared.Temperature.Components;
 using Content.Shared.Abilities.Psionics;
+using Content.Shared._Floof.Language.Components;
+using Content.Shared.Mindshield.Components;
 using Content.Server.Body.Components;
 using Content.Server.Atmos.Components;
-using Content.Shared.Mindshield.Components;
 using Content.Server.Antag.Components;
 
 namespace Content.Server.Goobstation.Ghostbar;
@@ -96,7 +97,7 @@ public sealed class GhostBarSystem : EntitySystem
         _entityManager.EnsureComponent<MindShieldComponent>(mobUid);
         _entityManager.EnsureComponent<AntagImmuneComponent>(mobUid);
 		_entityManager.EnsureComponent<PsionicInsulationComponent>(mobUid); // we don't want people getting mindswapped
-
+        _entityManager.EnsureComponent<UniversalLanguageSpeakerComponent>(mobUid); // give universal since we arent giving them any of their traits/languages
 
         var targetMind = _mindSystem.GetMind(args.SenderSession.UserId);
 
