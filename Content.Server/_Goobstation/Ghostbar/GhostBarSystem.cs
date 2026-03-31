@@ -22,6 +22,7 @@ using Content.Shared.Roles;
 using Content.Shared.Roles.Components;
 using Content.Shared.Inventory;
 using Content.Shared.Temperature.Components;
+using Content.Shared.Abilities.Psionics;
 using Content.Server.Body.Components;
 using Content.Server.Atmos.Components;
 using Content.Shared.Mindshield.Components;
@@ -94,6 +95,7 @@ public sealed class GhostBarSystem : EntitySystem
         RemComp<BarotraumaComponent>(mobUid);
         _entityManager.EnsureComponent<MindShieldComponent>(mobUid);
         _entityManager.EnsureComponent<AntagImmuneComponent>(mobUid);
+		_entityManager.EnsureComponent<PsionicInsulationComponent>(mobUid); // we don't want people getting mindswapped
 
 
         var targetMind = _mindSystem.GetMind(args.SenderSession.UserId);
