@@ -90,6 +90,15 @@ public sealed class GhostBarSystem : EntitySystem
         var randomJob = _random.Pick(_jobPrototypes);
         var profile = _ticker.GetPlayerProfile(args.SenderSession);
         var mobUid = _spawningSystem.SpawnPlayerMob(randomSpawnPoint, randomJob, profile, null);
+        RaiseLocalEvent(new PlayerSpawnCompleteEvent() {
+            Mob = mobUid,
+            Player = args.SenderSession,
+            JobId = randomJob,
+            LateJoin = true,
+            Silent = true,
+            Station = EntityUid.Invalid, // Should probably be fine?
+            Profile = profile
+        });
 
         RemComp<TemperatureComponent>(mobUid);
         RemComp<RespiratorComponent>(mobUid);
