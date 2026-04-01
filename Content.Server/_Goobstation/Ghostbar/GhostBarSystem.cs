@@ -98,7 +98,10 @@ public sealed class GhostBarSystem : EntitySystem
         _entityManager.EnsureComponent<AntagImmuneComponent>(mobUid);
 		_entityManager.EnsureComponent<PsionicInsulationComponent>(mobUid); // we don't want people getting mindswapped
         _entityManager.EnsureComponent<UniversalLanguageSpeakerComponent>(mobUid); // give universal since we arent giving them any of their traits/languages
-
+        EnsureComp<MindShieldComponent>(mobUid);
+        EnsureComp<AntagImmuneComponent>(mobUid);
+		EnsureComp<PsionicInsulationComponent>(mobUid); // we don't want people getting mindswapped
+        EnsureComp<UniversalLanguageSpeakerComponent>(mobUid); // give universal since we arent giving them any of their traits/languages
         var targetMind = _mindSystem.GetMind(args.SenderSession.UserId);
 
 
