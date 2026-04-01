@@ -5,6 +5,7 @@ using Robust.Client.Console;
 using Robust.Client.GameObjects;
 using Robust.Client.Player;
 using Robust.Shared.Player;
+using Content.Shared._Goobstation.Ghostbar.Events;
 
 namespace Content.Client.Ghost
 {

@@ -26,6 +26,7 @@ using Content.Shared.Abilities.Psionics;
 using Content.Shared._Floof.Language.Components;
 using Content.Shared.Mindshield.Components;
 using Content.Shared.GameTicking;
+using Content.Shared._Goobstation.Ghostbar.Events;
 using Content.Server.Body.Components;
 using Content.Server.Atmos.Components;
 using Content.Server.Antag.Components;
@@ -90,15 +91,7 @@ public sealed class GhostBarSystem : EntitySystem
         var randomJob = _random.Pick(_jobPrototypes);
         var profile = _ticker.GetPlayerProfile(args.SenderSession);
         var mobUid = _spawningSystem.SpawnPlayerMob(randomSpawnPoint, randomJob, profile, null);
-        RaiseLocalEvent(new PlayerSpawnCompleteEvent() {
-            Mob = mobUid,
-            Player = args.SenderSession,
-            JobId = randomJob,
-            LateJoin = true,
-            Silent = true,
-            Station = EntityUid.Invalid, // Should probably be fine?
-            Profile = profile
-        });
+		new PlayerSpawnCompleteEvent(mobUid, args.SenderSession, randomJob, true, true, 0, EntityUid.Invalid, profile);
 
         RemComp<TemperatureComponent>(mobUid);
         RemComp<RespiratorComponent>(mobUid);
