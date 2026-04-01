@@ -1674,3 +1674,37 @@ Entries:
       message: Mindswap should no longer pull people into cryosleeping bodies.
   id: 208
   time: '2026-03-28T23:25:03.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: You can now customize loadout item names, descriptions, and colors.
+  id: 209
+  time: '2026-03-31T14:56:25.0000000+00:00'
+- author: Aureuix
+  changes:
+    - type: Tweak
+      message: Made it so foreigners can take more than one additional language.
+  id: 210
+  time: '2026-04-01T11:26:44.0000000+00:00'
+- author: Dogbone10
+  changes:
+    - type: Add
+      message: >-
+        Playable versions of dragons, carps, sharkminnows and raptors are now
+        available. Ask an admin for one!
+  id: 211
+  time: '2026-04-01T11:35:02.0000000+00:00'
+- author: SyaoranFox
+  changes:
+    - type: Fix
+      message: >-
+        Traits will now be applied correctly to your character. Traits that give
+        points happens before traits that take points.
+  id: 212
+  time: '2026-04-01T11:41:19.0000000+00:00'
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added Access Wire back to Airlocks, Computers etc
+  id: 213
+  time: '2026-04-01T11:45:34.0000000+00:00'
