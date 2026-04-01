@@ -25,6 +25,7 @@ using Content.Shared.Temperature.Components;
 using Content.Shared.Abilities.Psionics;
 using Content.Shared._Floof.Language.Components;
 using Content.Shared.Mindshield.Components;
+using Content.Shared.GameTicking;
 using Content.Server.Body.Components;
 using Content.Server.Atmos.Components;
 using Content.Server.Antag.Components;
@@ -85,7 +86,6 @@ public sealed class GhostBarSystem : EntitySystem
             return;
         }
 
-
         var randomSpawnPoint = _random.Pick(spawnPoints);
         var randomJob = _random.Pick(_jobPrototypes);
         var profile = _ticker.GetPlayerProfile(args.SenderSession);
@@ -113,11 +113,9 @@ public sealed class GhostBarSystem : EntitySystem
         EnsureComp<UniversalLanguageSpeakerComponent>(mobUid); // give universal since we arent giving them any of their traits/languages
         var targetMind = _mindSystem.GetMind(args.SenderSession.UserId);
 
-
         if (targetMind != null)
         {
             _mindSystem.TransferTo(targetMind.Value, mobUid, true);
         }
     }
-
 }
