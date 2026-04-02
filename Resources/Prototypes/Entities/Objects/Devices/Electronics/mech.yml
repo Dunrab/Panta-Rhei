@@ -77,7 +77,7 @@
   description: The electrical targeting control for the H.O.N.K. mech.
   components:
     - type: Sprite
-      sprite: Objects/Misc/module.rsi
+      sprite: Objects/Misc/module.rsi #todo may have to relabel this to mcontroller # Goobstation
       state: id_mod
     - type: Tag
       tags:

@@ -303,6 +303,16 @@
     - MechBoards
     - ShuttleBoards
     - EngineeringBoardsGoob #Goob Factorio port
+      # Goobstation Mechs start
+    - GygaxCentralElectronics
+    - GygaxPeripheralsElectronics
+    - GygaxTargetingElectronics
+    - DurandCentralElectronics
+    - DurandPeripheralsElectronics
+    - DurandTargetingElectronics
+    - ClarkeCentralElectronics
+    - ClarkePeripheralsElectronics
+      # Goobstation mechs end
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityBoards
@@ -352,6 +362,8 @@
     - BorgDVModulesStatic # DeltaV - modules
     - BorgModulesStaticShitmed # Shitmed
     - BorgIdentificationStaticDeltaV # DeltaV - Borg IDs
+    - MechAirTank # Goobstation
+    - MechThruster # Goobstation
     dynamicPacks:
     - Robotics
     - BorgModules
@@ -362,11 +374,50 @@
     - Surgery # DeltaV - Share Surgery Parts between Epi and Med.
     - CyberneticsRobotics # DeltaV - Share Surgery Parts between Epi and Med.
     - PsionicProsthetics # DeltaV
+      #Goobstation mechs start
+    - RipleyMKIIHarness # Goobstation Mechs
+    - RipleyUpgradeKit # Goobstation Mechs
+    - ClarkeHarness
+    - ClarkeHead
+    - ClarkeLArm
+    - ClarkeRArm
+    - ClarkeTreads
+    - DurandHarness
+    - DurandArmor
+    - DurandHead
+    - DurandLArm
+    - DurandLLeg
+    - DurandRArm
+    - DurandRLeg
+    - GygaxHarness
+    - GygaxArmor
+    - GygaxHead
+    - GygaxLArm
+    - GygaxLLeg
+    - GygaxRArm
+    - GygaxRLeg
+    - MechEquipmentDrill
+    - MechEquipmentDrillDiamond
+    - MechEquipmentKineticAccelerator
+    - MechEquipmentHonkerBananaMortar
+    - MechEquipmentHonkerMousetrapMortar
+      # Goobstation mechs end
   - type: EmagLatheRecipes # DeltaV
     emagStaticPacks:
     - RoboticsEmagStatic
     # Being DeltaV Additions
     - EVASuit
+      # Goobstation mechs start
+    - WeaponMechCombatImmolationGun
+    - WeaponMechCombatSolarisLaser
+    - WeaponMechCombatFiredartLaser
+    - WeaponMechCombatUltraRifle
+    - WeaponMechCombatShotgun
+    - WeaponMechCombatShotgunIncendiary
+    - WeaponMechCombatDisabler
+    - WeaponMechCombatFlashbangLauncher
+    - WeaponMechCombatMissileRack8
+      # # Goobstation mechs end
     emagDynamicPacks:
     - SecurityCybernetics # having sechud eyes is good for evil people
     - SecurityHardsuits
@@ -473,6 +524,17 @@
     - SpecOpsGoogles # DeltaV
     #- SecurityDisablers # DeltaV - made roundstart
     - AdvancedPsionicProsthetics # DeltaV
+    #goobstation mechs start
+    - WeaponMechCombatImmolationGun
+    - WeaponMechCombatSolarisLaser
+    - WeaponMechCombatFiredartLaser
+    - WeaponMechCombatUltraRifle
+    - WeaponMechCombatShotgun
+    - WeaponMechCombatShotgunIncendiary
+    - WeaponMechCombatDisabler
+    - WeaponMechCombatFlashbangLauncher
+    - WeaponMechCombatMissileRack8
+    #goobstation mechs end
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SyndicateAmmoStatic

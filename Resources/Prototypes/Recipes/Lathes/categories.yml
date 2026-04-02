@@ -115,9 +115,10 @@
   name: lathe-category-marble
 
 # Science
-- type: latheCategory
-  id: Mech
-  name: lathe-category-mechs
+# Commented out for goobstation mechs
+#- type: latheCategory
+#  id: Mech
+#  name: lathe-category-mechs
 
 - type: latheCategory
   id: Modules

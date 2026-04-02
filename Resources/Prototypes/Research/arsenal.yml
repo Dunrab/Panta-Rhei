@@ -33,6 +33,8 @@
   cost: 7500
   recipeUnlocks:
   - WeaponLaserCarbine
+  - WeaponMechCombatFiredartLaser # Goobstation mechs
+  - WeaponMechCombatDisabler # Goobstation mechs
 
 # DeltaV: made nonlethals roundstart, see #2758
 #- type: technology
@@ -135,6 +137,7 @@
   - WeaponLaserCannon
   - WeaponXrayCannon # DeltaV
   - WeaponBeamCannon # DeltaV - Adds Beam cannon
+  - WeaponMechCombatSolarisLaser # Goobstation mechs
 
 # DeltaV: merged with concentrated laser weaponry
 #- type: technology
@@ -214,6 +217,7 @@
   - PortableRecharger
   - GamblagatorCapacitor # DeltaV - added for superweapon
   - WeaponEnergyGunAdvanced # DeltaV - Advanced Energy Gun
+  - WeaponMechCombatImmolationGun # Goobstation
 
 - type: technology
   id: ThermalWeaponry
@@ -243,3 +247,19 @@
   - ShuttleGunDusterCircuitboard
   technologyPrerequisites:
   - BasicShuttleArmament
+
+# Goobstation mechs
+- type: technology
+  id: SalvageWeapons
+  name: research-technology-salvage-weapons
+  icon:
+    sprite: Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 1
+  cost: 5000
+  recipeUnlocks:
+  - WeaponProtoKineticAccelerator
+  - ShuttleGunKineticCircuitboard
+  - MechEquipmentKineticAccelerator # Goobstation
+  # These are roundstart but not replenishable for salvage
