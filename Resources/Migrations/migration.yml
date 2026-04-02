@@ -659,10 +659,10 @@ BarSignWhiskeyEchoesAlignTile: BarSignWhiskeyEchoes
 ClothingNeckHeadphones: ClothingMultipleHeadphones
 
 # 2025-07-17
-RipleyChassis: null
-HonkerChassis: null
-HamtrChassis: null
-VimChassis: null
+#RipleyChassis: null # Floofstation Comment out for mechs
+#HonkerChassis: null # Floofstation Comment out for mechs
+#HamtrChassis: null # Floofstation Comment out for mechs
+#VimChassis: null # Floofstation Comment out for mechs
 
 # 2025-08-01
 FoodDonutJellySlugcat: FoodDonutJellyScurret
