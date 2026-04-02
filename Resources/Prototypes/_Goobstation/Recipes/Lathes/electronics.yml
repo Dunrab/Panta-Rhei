@@ -88,3 +88,16 @@
   parent: BaseSilverCircuitboardRecipe
   id: DurandTargetingElectronics
   result: DurandTargetingElectronics
+
+# Mech recpie packs
+- type: latheRecipePack
+  id: MechBoardsPack
+  recipes:
+  - ClarkeCentralElectronics
+  - ClarkePeripheralsElectronics
+  - GygaxCentralElectronics
+  - GygaxPeripheralsElectronics
+  - GygaxTargetingElectronics
+  - DurandCentralElectronics
+  - DurandPeripheralsElectronics
+  - DurandTargetingElectronics

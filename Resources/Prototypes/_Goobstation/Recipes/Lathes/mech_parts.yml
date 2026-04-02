@@ -245,3 +245,41 @@
   materials:
     Steel: 1000
     Glass: 150
+
+# Mech recpie packs
+- type: latheRecipePack
+  id: MechPartsPack
+  recipes:
+  - MechAirTank
+  - MechThruster
+
+# mech construction pats pack
+- type: latheRecipePack
+  id: MechConstructionPartsPack
+  recipes:
+  - RipleyMKIIHarness
+  - RipleyUpgradeKit
+  - ClarkeHarness
+  - ClarkeHead
+  - ClarkeLArm
+  - ClarkeRArm
+  - ClarkeTreads
+  - DurandHarness
+  - DurandArmor
+  - DurandHead
+  - DurandLArm
+  - DurandLLeg
+  - DurandRArm
+  - DurandRLeg
+  - GygaxHarness
+  - GygaxArmor
+  - GygaxHead
+  - GygaxLArm
+  - GygaxLLeg
+  - GygaxRArm
+  - GygaxRLeg
+  - MechEquipmentDrill
+  - MechEquipmentDrillDiamond
+  - MechEquipmentKineticAccelerator
+  - MechEquipmentHonkerBananaMortar
+  - MechEquipmentHonkerMousetrapMortar
