@@ -12,6 +12,7 @@ using Content.Shared.Examine;
 using Content.Shared.Hands;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Item; // Delta-V: Felinids in duffelbags can't shoot.
+using Content.Shared.Mech.Components; // Goobstation
 using Content.Shared.Popups;
 using Content.Shared.Projectiles;
 using Content.Shared.Tag;
@@ -168,6 +169,16 @@ public abstract partial class SharedGunSystem : EntitySystem
             return;
         }
 
+        // Goobstation mechs start
+        var user = args.SenderSession.AttachedEntity;
+
+        if (user == null)
+            return;
+
+        if (TryComp<MechPilotComponent>(user.Value, out var mechPilot))
+            user = mechPilot.Mech;
+        // Goobstation mechs end
+
         if (userGun != gun)
             return;
 
@@ -200,6 +211,15 @@ public abstract partial class SharedGunSystem : EntitySystem
         {
             gunEntity = entity;
             gunComp = gun;
+            return true;
+        }
+
+        if (TryComp<MechComponent>(entity, out var mech) &&
+            mech.CurrentSelectedEquipment.HasValue &&
+            TryComp<GunComponent>(mech.CurrentSelectedEquipment.Value, out var mechGun))
+        {
+            gunEntity = mech.CurrentSelectedEquipment.Value;
+            gunComp = mechGun;
             return true;
         }
 

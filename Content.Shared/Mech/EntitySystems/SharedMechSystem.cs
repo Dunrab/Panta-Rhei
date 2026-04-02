@@ -32,6 +32,17 @@ using Content.Shared.Inventory.VirtualItem;
 using Robust.Shared.Configuration;
 using Content.Shared.Implants.Components;
 
+// Goobstation Change
+using Content.Shared.CCVar;
+using Content.Shared._Goobstation.CCVar;
+using Content.Shared.Emag.Systems;
+using Content.Shared.Weapons.Ranged.Events;
+using Content.Shared.Hands.Components;
+using Content.Shared.Hands.EntitySystems;
+using Content.Shared.Inventory.VirtualItem;
+using Robust.Shared.Configuration;
+using Content.Shared.Implants.Components;
+
 namespace Content.Shared.Mech.EntitySystems;
 
 /// <summary>
@@ -69,6 +80,7 @@ public abstract partial class SharedMechSystem : EntitySystem
         SubscribeLocalEvent<MechComponent, GetAdditionalAccessEvent>(OnGetAdditionalAccess);
         SubscribeLocalEvent<MechComponent, DragDropTargetEvent>(OnDragDrop);
         SubscribeLocalEvent<MechComponent, CanDropTargetEvent>(OnCanDragDrop);
+        SubscribeLocalEvent<MechComponent, GotEmaggedEvent>(OnEmagged);
 
         SubscribeLocalEvent<MechPilotComponent, GetMeleeWeaponEvent>(OnGetMeleeWeapon);
         SubscribeLocalEvent<MechPilotComponent, CanAttackFromContainerEvent>(OnCanAttackFromContainer);
@@ -166,6 +178,7 @@ public abstract partial class SharedMechSystem : EntitySystem
         _actions.AddAction(pilot, ref component.MechCycleActionEntity, component.MechCycleAction, mech);
         _actions.AddAction(pilot, ref component.MechUiActionEntity, component.MechUiAction, mech);
         _actions.AddAction(pilot, ref component.MechEjectActionEntity, component.MechEjectAction, mech);
+        _actions.AddAction(pilot, ref component.ToggleActionEntity, component.ToggleAction, mech); //Goobstation Mech Lights toggle action
     }
 
     private void RemoveUser(EntityUid mech, EntityUid pilot)
@@ -546,6 +559,15 @@ public abstract partial class SharedMechSystem : EntitySystem
         args.Handled = true;
 
         args.CanDrop |= !component.Broken && CanInsert(uid, args.Dragged, component);
+    }
+
+    private void OnEmagged(EntityUid uid, MechComponent component, ref GotEmaggedEvent args) // Goobstation
+    {
+        if (!component.BreakOnEmag)
+            return;
+        args.Handled = true;
+        component.EquipmentWhitelist = null;
+        Dirty(uid, component);
     }
 
 }
