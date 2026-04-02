@@ -148,14 +148,6 @@ public abstract partial class SharedGunSystem : EntitySystem
             return;
         }
 
-        // Goobstation mechs start
-        if (TryComp<MechPilotComponent>(user.Value, out var mechPilot))
-            user = mechPilot.Mech;
-
-        if (!TryGetGun(user.Value, out var ent2, out gun) ||
-            HasComp<ItemComponent>(user))
-        // Goobstation mechs start
-
         if (ent != GetEntity(msg.Gun))
             return;
 
@@ -164,6 +156,14 @@ public abstract partial class SharedGunSystem : EntitySystem
         AttemptShoot(user.Value, ent, gun);
         if (msg.Continuous)
             gun.ShotCounter = 0;
+
+        // Goobstation mechs start
+        if (TryComp<MechPilotComponent>(user.Value, out var mechPilot))
+            user = mechPilot.Mech;
+
+        if (!TryGetGun(user.Value, out ent, out gun) ||
+            HasComp<ItemComponent>(user));
+        // Goobstation mechs start
     }
 
     private void OnStopShootRequest(RequestStopShootEvent ev, EntitySessionEventArgs args)
