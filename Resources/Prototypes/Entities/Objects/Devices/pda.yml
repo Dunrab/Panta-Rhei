@@ -838,6 +838,14 @@
   components:
   - type: Pda
     id: ParamedicIDCard
+    # Floofstation additions start
+    penSlot:
+      startingItem: PenLightBase
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+    # Floofstation additions end
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
