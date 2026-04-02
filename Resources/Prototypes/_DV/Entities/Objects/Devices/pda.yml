@@ -452,14 +452,6 @@
   components:
   - type: Pda
     id: PharmacistIDCard
-    # Floofstation additions start
-    penSlot:
-      startingItem: PenLightBase
-      priority: -1
-      whitelist:
-        tags:
-        - Write
-    # Floofstation additions end
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
@@ -481,14 +473,6 @@
   components:
   - type: Pda
     id: PsychiatristIDCard
-    # Floofstation additions start
-    penSlot:
-      startingItem: PenLightBase
-      priority: -1
-      whitelist:
-        tags:
-        - Write
-    # Floofstation additions end
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
@@ -502,14 +486,6 @@
   components:
   - type: Pda
     id: TherapistIDCard
-    # Floofstation additions start
-    penSlot:
-      startingItem: PenLightBase
-      priority: -1
-      whitelist:
-        tags:
-        - Write
-    # Floofstation additions end
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
@@ -523,14 +499,6 @@
   components:
   - type: Pda
     id: SocialWorkerIDCard
-    # Floofstation additions start
-    penSlot:
-      startingItem: PenLightBase
-      priority: -1
-      whitelist:
-        tags:
-        - Write
-    # Floofstation additions end
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
@@ -545,14 +513,6 @@
   description: Smells faintly like burnt flesh and anesthesia.
   components:
   - type: Pda
-    # Floofstation additions start
-    penSlot:
-      startingItem: PenLightBase
-      priority: -1
-      whitelist:
-        tags:
-        - Write
-    # Floofstation additions end
     id: SurgeonIDCard
   - type: Appearance
     appearanceDataInit:
