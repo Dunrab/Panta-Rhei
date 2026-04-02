@@ -28,6 +28,11 @@
   - type: BatteryAmmoProvider
     proto: CartridgeLightRifle
     fireCost: 9
+  - type: BatterySelfRecharger
+    autoRechargeRate: 25
+  - type: Battery
+    maxCharge: 100
+    startingCharge: 0
   - type: MagazineVisuals
     magState: mag
     steps: 5
@@ -52,6 +57,11 @@
   - type: BatteryAmmoProvider
     proto: RedMediumLaser
     fireCost: 19
+  - type: BatterySelfRecharger
+    autoRechargeRate: 25
+  - type: Battery
+    maxCharge: 100
+    startingCharge: 0
   - type: MagazineVisuals
     magState: mag
     steps: 5
@@ -90,6 +100,11 @@
   - type: BatteryAmmoProvider
     proto: BulletDisabler
     fireCost: 19
+  - type: BatterySelfRecharger
+    autoRechargeRate: 25
+  - type: Battery
+    maxCharge: 100
+    startingCharge: 0
   - type: MagazineVisuals
     magState: mag
     steps: 5

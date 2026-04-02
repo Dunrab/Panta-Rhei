@@ -18,6 +18,11 @@
   - type: BatteryAmmoProvider
     proto: Pulse
     fireCost: 40
+  - type: BatterySelfRecharger
+    autoRechargeRate: 25
+  - type: Battery
+    maxCharge: 100
+    startingCharge: 0
   - type: Appearance
   - type: AmmoCounter
 
@@ -41,6 +46,11 @@
   - type: BatteryAmmoProvider
     proto: RedHeavyLaser
     fireCost: 99
+  - type: BatterySelfRecharger
+    autoRechargeRate: 25
+  - type: Battery
+    maxCharge: 100
+    startingCharge: 0
   - type: Appearance
   - type: AmmoCounter
 
@@ -64,6 +74,10 @@
   - type: BatteryAmmoProvider
     proto: RedMediumLaser
     fireCost: 59
+  - type: BatterySelfRecharger
+    autoRechargeRate: 25
+  - type: Battery
+    maxCharge: 100
   - type: Appearance
   - type: AmmoCounter
 
@@ -87,6 +101,11 @@
   - type: BatteryAmmoProvider
     proto: RedLaser
     fireCost: 39
+  - type: BatterySelfRecharger
+    autoRechargeRate: 25
+  - type: Battery
+    maxCharge: 100
+    startingCharge: 0
   - type: Appearance
   - type: AmmoCounter
 
@@ -113,6 +132,11 @@
   - type: BatteryAmmoProvider
     proto: TeslaGunBullet
     fireCost: 99
+  - type: BatterySelfRecharger
+    autoRechargeRate: 25
+  - type: Battery
+    maxCharge: 100
+    startingCharge: 0
   - type: Appearance
   - type: AmmoCounter
 
@@ -136,6 +160,11 @@
   - type: BatteryAmmoProvider
     proto: BulletDisabler
     fireCost: 29
+  - type: BatterySelfRecharger
+    autoRechargeRate: 25
+  - type: Battery
+    maxCharge: 100
+    startingCharge: 0
   - type: Appearance
   - type: AmmoCounter
 
@@ -159,6 +188,11 @@
   - type: BatteryAmmoProvider
     proto: BulletTaser
     fireCost: 19
+  - type: BatterySelfRecharger
+    autoRechargeRate: 25
+  - type: Battery
+    maxCharge: 100
+    startingCharge: 0
   - type: Appearance
   - type: AmmoCounter
 
@@ -182,6 +216,11 @@
   - type: BatteryAmmoProvider
     proto: ShellShotgun
     fireCost: 99
+  - type: BatterySelfRecharger
+    autoRechargeRate: 25
+  - type: Battery
+    maxCharge: 100
+    startingCharge: 0
   - type: Appearance
   - type: AmmoCounter
 
@@ -205,6 +244,11 @@
   - type: BatteryAmmoProvider
     proto: ShellShotgunIncendiary
     fireCost: 99
+  - type: BatterySelfRecharger
+    autoRechargeRate: 25
+  - type: Battery
+    maxCharge: 100
+    startingCharge: 0
   - type: Appearance
   - type: AmmoCounter
 
@@ -228,6 +272,11 @@
   - type: BatteryAmmoProvider
     proto: CartridgeLightRifle
     fireCost: 15
+  - type: BatterySelfRecharger
+    autoRechargeRate: 25
+  - type: Battery
+    maxCharge: 100
+    startingCharge: 0
   - type: Appearance
   - type: AmmoCounter
 
@@ -251,6 +300,11 @@
   - type: BatteryAmmoProvider
     proto: BulletWeakRocket
     fireCost: 25
+  - type: BatterySelfRecharger
+    autoRechargeRate: 25
+  - type: Battery
+    maxCharge: 100
+    startingCharge: 0
   - type: Appearance
   - type: AmmoCounter
 
@@ -274,6 +328,11 @@
   - type: BatteryAmmoProvider
     proto: GrenadeBlast
     fireCost: 100
+  - type: BatterySelfRecharger
+    autoRechargeRate: 25
+  - type: Battery
+    maxCharge: 100
+    startingCharge: 0
   - type: Appearance
   - type: AmmoCounter
 
@@ -299,5 +358,10 @@
   - type: BatteryAmmoProvider
     proto: GrenadeFlash
     fireCost: 30
+  - type: BatterySelfRecharger
+    autoRechargeRate: 25
+  - type: Battery
+    maxCharge: 100
+    startingCharge: 0
   - type: Appearance
   - type: AmmoCounter

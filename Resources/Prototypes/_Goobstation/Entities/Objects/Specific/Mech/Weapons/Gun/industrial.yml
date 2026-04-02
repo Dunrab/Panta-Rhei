@@ -18,6 +18,11 @@
   - type: BatteryAmmoProvider
     proto: BulletKineticShuttle
     fireCost: 0.1
+  - type: BatterySelfRecharger
+    autoRechargeRate: 25
+  - type: Battery
+    maxCharge: 100
+    startingCharge: 0
   - type: Appearance
   - type: AmmoCounter
 # TODO: Plasma Cutter

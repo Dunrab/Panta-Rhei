@@ -3,9 +3,11 @@
   parent: BaseMechEquipment
   abstract: true
   components:
+# Starlight start
   - type: Battery
     maxCharge: 100 # Battery is charged by mech
     startingCharge: 100
+# Starlight end
   - type: Appearance
   - type: StaticPrice
     price: 1
