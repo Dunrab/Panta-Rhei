@@ -35,7 +35,7 @@ lathe-category-white-tile = White
 lathe-category-wood-tile = Wood
 
 # Science
-lathe-category-mechs = Mechs
+#lathe-category-mechs = Mechs # Goobstation mechs
 lathe-category-modules = Modules
 lathe-category-robotics = Robotics
 
