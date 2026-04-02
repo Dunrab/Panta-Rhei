@@ -143,10 +143,18 @@ public abstract partial class SharedGunSystem : EntitySystem
         if (user == null ||
             !_combatMode.IsInCombatMode(user) ||
             !TryGetGun(user.Value, out var ent, out var gun) ||
-            HasComp<ItemComponent>(user)) // Delta-V: Felinids in duffelbags can't shoot.
+            HasComp<ItemComponent>(user) ||  !_combatMode.IsInCombatMode(user)) // Delta-V: Felinids in duffelbags can't shoot.
         {
             return;
         }
+
+        // Goobstation mechs start
+        if (TryComp<MechPilotComponent>(user.Value, out var mechPilot))
+            user = mechPilot.Mech;
+
+        if (!TryGetGun(user.Value, out var ent2, out gun) ||
+            HasComp<ItemComponent>(user))
+        // Goobstation mechs start
 
         if (ent != GetEntity(msg.Gun))
             return;
@@ -177,6 +185,9 @@ public abstract partial class SharedGunSystem : EntitySystem
 
         if (TryComp<MechPilotComponent>(user.Value, out var mechPilot))
             user = mechPilot.Mech;
+
+        if (!TryGetGun(user.Value, out var ent, out gun))
+            return;
         // Goobstation mechs end
 
         if (userGun != gun)

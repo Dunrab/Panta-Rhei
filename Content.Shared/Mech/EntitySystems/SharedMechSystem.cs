@@ -25,16 +25,6 @@ using Robust.Shared.Timing;
 // Goobstation Change
 using Content.Shared.CCVar;
 using Content.Shared._Goobstation.CCVar;
-using Content.Shared.Weapons.Ranged.Events;
-using Content.Shared.Hands.Components;
-using Content.Shared.Hands.EntitySystems;
-using Content.Shared.Inventory.VirtualItem;
-using Robust.Shared.Configuration;
-using Content.Shared.Implants.Components;
-
-// Goobstation Change
-using Content.Shared.CCVar;
-using Content.Shared._Goobstation.CCVar;
 using Content.Shared.Emag.Systems;
 using Content.Shared.Weapons.Ranged.Events;
 using Content.Shared.Hands.Components;
@@ -87,7 +77,7 @@ public abstract partial class SharedMechSystem : EntitySystem
         SubscribeLocalEvent<MechPilotComponent, AttackAttemptEvent>(OnAttackAttempt);
         SubscribeLocalEvent<MechPilotComponent, EntGotRemovedFromContainerMessage>(OnEntGotRemovedFromContainer);
         SubscribeLocalEvent<MechEquipmentComponent, ShotAttemptedEvent>(OnShotAttempted); // Goobstation
-        Subs.CVar(_config, GoobCVars.MechGunOutsideMech, value => _canUseMechGunOutside = value, true); // Goobstation
+        Subs.CVar(_config, GoobCVars.MechGunOutsideMech, value => _canUseMechGunOutside = value, false); // Goobstation
 
         InitializeRelay();
     }
