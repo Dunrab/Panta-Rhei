@@ -43,14 +43,15 @@
   - type: ContainerContainer
     containers:
       mech-assembly-container: !type:Container
-  - type: Mech # Was MechAssembly
-    finishedPrototype: RipleyMKIIChassis
-    requiredParts:
-      RipleyMKIIUpgradeKit: false
-      RipleyLArm: false
-      RipleyRArm: false
-      RipleyLLeg: false
-      RipleyRLeg: false
+  - type: MechAssemblyVisuals
+    statePrefix: RipleyMKIIChassis
+  - type: PartAssembly
+    parts:
+      RipleyMkII:
+      - RipleyLArm
+      - RipleyRArm
+      - RipleyLLeg
+      - RipleyRLeg
   - type: Sprite
     state: ripleymkii_harness+o
     noRot: true
@@ -65,7 +66,7 @@
   - type: ContainerContainer
     containers:
       battery-container: !type:Container
-  - type: Mech #MechAssemblyVisuals
+  - type: MechAssemblyVisuals
     statePrefix: ripleymkii
   - type: Sprite
     noRot: true
@@ -124,13 +125,15 @@
   - type: ContainerContainer
     containers:
       mech-assembly-container: !type:Container
-  - type: Mech #MechAssembly
-    finishedPrototype: ClarkeChassis
-    requiredParts:
-      ClarkeHead: false
-      ClarkeLArm: false
-      ClarkeRArm: false
-      ClarkeTreads: false
+  - type: MechAssemblyVisuals
+    statePrefix: ClarkeChassis
+  - type: PartAssembly
+    parts:
+      Clarke:
+      - ClarkeHead
+      - ClarkeLArm
+      - ClarkeRArm
+      - ClarkeTreads
   - type: Sprite
     state: clarke_harness+o
     noRot: true
@@ -193,7 +196,7 @@
   - type: ContainerContainer
     containers:
       battery-container: !type:Container
-  - type: Mech #MechAssemblyVisuals
+  - type: MechAssemblyVisuals
     statePrefix: clarke
   - type: Sprite
     noRot: true
@@ -256,14 +259,16 @@
   - type: ContainerContainer
     containers:
       mech-assembly-container: !type:Container
-  - type: Mech #MechAssembly
-    finishedPrototype: DurandChassis
-    requiredParts:
-      DurandHead: false
-      DurandLArm: false
-      DurandRArm: false
-      DurandLLeg: false
-      DurandRLeg: false
+  - type: MechAssemblyVisuals
+    statePrefix: DurandChassis
+  - type: PartAssembly
+    parts:
+      Durand:
+      - DurandHead
+      - DurandLArm
+      - DurandRArm
+      - DurandLLeg
+      - DurandRLeg
   - type: Sprite
     state: durand_harness+o
     noRot: true
@@ -338,7 +343,7 @@
   - type: ContainerContainer
     containers:
       battery-container: !type:Container
-  - type: Mech #MechAssemblyVisuals
+  - type: MechAssemblyVisuals
     statePrefix: durand
   - type: Sprite
     noRot: true
@@ -401,14 +406,16 @@
   - type: ContainerContainer
     containers:
       mech-assembly-container: !type:Container
-  - type: Mech #MechAssembly
-    finishedPrototype: GygaxChassis
-    requiredParts:
-      GygaxHead: false
-      GygaxLArm: false
-      GygaxRArm: false
-      GygaxLLeg: false
-      GygaxRLeg: false
+  - type: MechAssemblyVisuals
+    statePrefix: GygaxChassis
+  - type: PartAssembly
+    parts:
+      Gygax:
+      - GygaxHead
+      - GygaxLArm
+      - GygaxRArm
+      - GygaxLLeg
+      - GygaxRLeg
   - type: Sprite
     state: gygax_harness+o
     noRot: true
@@ -483,7 +490,7 @@
   - type: ContainerContainer
     containers:
       battery-container: !type:Container
-  - type: Mech #MechAssemblyVisuals
+  - type: MechAssemblyVisuals
     statePrefix: gygax
   - type: Sprite
     noRot: true
