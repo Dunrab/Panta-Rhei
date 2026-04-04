@@ -303,6 +303,8 @@
     - MechBoards
     - ShuttleBoards
     - EngineeringBoardsGoob #Goob Factorio port
+    - ServiceAssemblerPack # Frontier Service Assembler
+    - MedicalAssemblerPack # Frontier Medical Assembler
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityBoards
