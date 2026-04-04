@@ -594,6 +594,7 @@
     # End DeltaV Additions
     # Floofstation section
     - BasicTranslation
+    - MedicalAssemblerPack # Frontier Medical Assembler
     # Floofstation section end
   - type: Machine
     board: MedicalTechFabCircuitboard
