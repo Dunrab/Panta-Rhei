@@ -31,6 +31,7 @@
     <Folder Include="_Euphoria\" />
     <Folder Include="_Floof\Lewd\" />
     <Folder Include="_Goobstation\Power\" />
+    <Folder Include="_NF\Acess\Systems\" />
   </ItemGroup>
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
 </Project>
