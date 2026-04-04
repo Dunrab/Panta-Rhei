@@ -76,12 +76,12 @@ namespace Content.Client.Kitchen.UI
                                                          ("time", Loc.GetString("microwave-menu-instant-button")));
                 }
             };
+            // Frontier: UI customization
+            _menu.Title = Loc.GetString(_menuTitle);
+            _menu.LeftFooter.Text = Loc.GetString(_leftFlavorText);
+            // End Frontier
         }
 
-        // Frontier: UI customization
-        //_menu.Title = Loc.GetString(_menuTitle);
-        //_menu.LeftFooter.Text = Loc.GetString(_leftFlavorText);
-        // End Frontier
 
         protected override void UpdateState(BoundUserInterfaceState state)
         {
