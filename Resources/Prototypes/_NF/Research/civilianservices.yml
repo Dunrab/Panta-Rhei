@@ -34,4 +34,3 @@
   id: MedicalAssemblerPack
   recipes:
   - MedicalAssemblerMachineCircuitboard
-  - BlankMediPen
