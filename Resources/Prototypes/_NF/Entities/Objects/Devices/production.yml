@@ -8,8 +8,6 @@
     state: service
   - type: MachineBoard
     prototype: KitchenElectricRange
-    requirements:
-      Capacitor: 3
     stackRequirements:
       Steel: 5
       Glass: 2
@@ -25,8 +23,6 @@
     state: service
   - type: MachineBoard
     prototype: SyndicateKitchenElectricRange
-    requirements:
-      Capacitor: 3
     stackRequirements:
       Steel: 5
       Glass: 2
@@ -42,8 +38,6 @@
     state: service
   - type: MachineBoard
     prototype: KitchenAssembler
-    requirements:
-      Capacitor: 1
     stackRequirements:
       Glass: 2
       Cable: 2
@@ -58,8 +52,6 @@
     state: medical
   - type: MachineBoard
     prototype: MedicalAssembler
-    requirements:
-      Capacitor: 3
     stackRequirements:
       Steel: 5
       Glass: 2

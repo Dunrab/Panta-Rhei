@@ -12,7 +12,7 @@
     lightningChance: 0
     beginCookingSound: /Audio/_NF/Machines/egg-timer.ogg
     foodDoneSound: /Audio/Machines/ding.ogg
-    loopingSound: /Audio/_NF/Effects/silence.ogg
+    loopingSound: /Audio/_NF/Effects/silence.ogg # need to change this sound
     validRecipeTypes: Oven
     canHeat: true
     canIrradiate: false
