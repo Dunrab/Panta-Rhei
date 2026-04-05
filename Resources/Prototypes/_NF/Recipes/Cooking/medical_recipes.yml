@@ -102,7 +102,7 @@
     BlankMediPen: 1
   reagents:
     Saline: 20
-    DexalinPlus: 20
+    Salbutamol: 20 # Delta-v renamed DexPlus
   recipeType: MedicalAssembler
 
 #Frontier pen recipes
