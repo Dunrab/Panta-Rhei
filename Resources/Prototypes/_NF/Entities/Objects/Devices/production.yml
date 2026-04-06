@@ -12,6 +12,7 @@
       Steel: 5
       Glass: 2
       Cable: 4
+      Manipulator: 2
 
 - type: entity
   id: SyndicateElectricRangeMachineCircuitboard
@@ -27,6 +28,7 @@
       Steel: 5
       Glass: 2
       Cable: 4
+      Manipulator: 2
 
 - type: entity
   id: KitchenAssemblerMachineCircuitboard
@@ -39,8 +41,10 @@
   - type: MachineBoard
     prototype: KitchenAssembler
     stackRequirements:
+      Steel: 4
       Glass: 2
       Cable: 2
+      Manipulator: 2
 
 - type: entity
   id: MedicalAssemblerMachineCircuitboard
@@ -56,3 +60,4 @@
       Steel: 5
       Glass: 2
       Cable: 4
+      Manipulator: 4
