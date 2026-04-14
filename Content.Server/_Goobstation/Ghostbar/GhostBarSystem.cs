@@ -112,6 +112,6 @@ public sealed class GhostBarSystem : EntitySystem
     // Delete the players character if they choose to ghost while at the ghostbar using the GhostBarPlayerComponent
     private void PlayerGhostedFromGhostbar(Entity<GhostBarPlayerComponent> ent, ref MindRemovedMessage args)
     {
-        _entityManager.DeleteEntity(ent);
+        QueueDel(ent);
     }
 }
