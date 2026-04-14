@@ -30,7 +30,6 @@ using Content.Shared._Goobstation.Ghostbar.Events;
 using Content.Server.Body.Components;
 using Content.Server.Atmos.Components;
 using Content.Server.Antag.Components;
-using NetCord;
 
 namespace Content.Server.Goobstation.Ghostbar;
 
