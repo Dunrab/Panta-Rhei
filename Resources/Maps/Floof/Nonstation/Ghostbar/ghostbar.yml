@@ -4,7 +4,7 @@ meta:
   engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/14/2026 14:59:24
+  time: 04/14/2026 15:07:46
   entityCount: 3116
 maps:
 - 2036
@@ -1289,7 +1289,7 @@ entities:
       pos: 4.5,9.5
       parent: 4
     - type: Door
-      secondsUntilStateChange: -16975.025
+      secondsUntilStateChange: -17056.768
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1439,12 +1439,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 18.5,9.5
       parent: 4
-  - uid: 3087
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 0.5,4.5
-      parent: 4
 - proto: AlwaysPoweredLightLED
   entities:
   - uid: 25
@@ -1470,8 +1464,8 @@ entities:
   - uid: 28
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 7.5,15.5
+      rot: 3.141592653589793 rad
+      pos: 8.5,13.5
       parent: 4
   - uid: 32
     components:
@@ -1511,12 +1505,6 @@ entities:
     components:
     - type: Transform
       pos: 10.5,19.5
-      parent: 4
-  - uid: 1550
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 14.5,17.5
       parent: 4
   - uid: 2116
     components:
@@ -14424,6 +14412,16 @@ entities:
     components:
     - type: Transform
       pos: 19.5,17.5
+      parent: 4
+  - uid: 1550
+    components:
+    - type: Transform
+      pos: 1.5,7.5
+      parent: 4
+  - uid: 3087
+    components:
+    - type: Transform
+      pos: -0.5,7.5
       parent: 4
 - proto: Railing
   entities:
