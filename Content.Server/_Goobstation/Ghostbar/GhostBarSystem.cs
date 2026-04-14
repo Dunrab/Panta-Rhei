@@ -98,13 +98,8 @@ public sealed class GhostBarSystem : EntitySystem
         RemComp<TemperatureComponent>(mobUid);
         RemComp<RespiratorComponent>(mobUid);
         RemComp<BarotraumaComponent>(mobUid);
-        _entityManager.EnsureComponent<MindShieldComponent>(mobUid);
-        _entityManager.EnsureComponent<AntagImmuneComponent>(mobUid);
-		_entityManager.EnsureComponent<PsionicInsulationComponent>(mobUid); // we don't want people getting mindswapped
-        _entityManager.EnsureComponent<UniversalLanguageSpeakerComponent>(mobUid); // giving universal just in case for RP purposes
-        _entityManager.EnsureComponent<GhostBarPlayerComponent>(mobUid); // give the player mob the ghostbarplayer comp so they can be tracked
         EnsureComp<MindShieldComponent>(mobUid);
-        EnsureComp<AntagImmuneComponent>(mobUid);
+        EnsureComp<AntagImmuneComponent>(mobUid); // self explanatory why we dont want players becoming antags at the ghostbar
 		EnsureComp<PsionicInsulationComponent>(mobUid); // we don't want people getting mindswapped
         EnsureComp<UniversalLanguageSpeakerComponent>(mobUid); // giving universal just in case for RP purposes
         EnsureComp<GhostBarPlayerComponent>(mobUid); // give the player mob the ghostbarplayer comp so they can be tracked
