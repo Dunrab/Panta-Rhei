@@ -30,6 +30,7 @@ using Content.Shared._Goobstation.Ghostbar.Events;
 using Content.Server.Body.Components;
 using Content.Server.Atmos.Components;
 using Content.Server.Antag.Components;
+using NetCord;
 
 namespace Content.Server.Goobstation.Ghostbar;
 
@@ -56,6 +57,7 @@ public sealed class GhostBarSystem : EntitySystem
     {
         SubscribeLocalEvent<RoundStartingEvent>(OnRoundStart);
         SubscribeNetworkEvent<GhostBarSpawnEvent>(SpawnPlayer);
+        SubscribeLocalEvent<GhostBarPlayerComponent, MindRemovedMessage>(PlayerGhostedFromGhostbar);
     }
 
     private readonly ResPath _mapPath = new("Maps/Floof/Nonstation/Ghostbar/ghostbar.yml");
@@ -99,16 +101,23 @@ public sealed class GhostBarSystem : EntitySystem
         _entityManager.EnsureComponent<MindShieldComponent>(mobUid);
         _entityManager.EnsureComponent<AntagImmuneComponent>(mobUid);
 		_entityManager.EnsureComponent<PsionicInsulationComponent>(mobUid); // we don't want people getting mindswapped
-        _entityManager.EnsureComponent<UniversalLanguageSpeakerComponent>(mobUid); // give universal since we arent giving them any of their traits/languages
+        _entityManager.EnsureComponent<UniversalLanguageSpeakerComponent>(mobUid); // giving universal just in case for RP purposes
+        _entityManager.EnsureComponent<GhostBarPlayerComponent>(mobUid); // give the player mob the ghostbarplayer comp so they can be tracked
         EnsureComp<MindShieldComponent>(mobUid);
         EnsureComp<AntagImmuneComponent>(mobUid);
 		EnsureComp<PsionicInsulationComponent>(mobUid); // we don't want people getting mindswapped
-        EnsureComp<UniversalLanguageSpeakerComponent>(mobUid); // give universal since we arent giving them any of their traits/languages
+        EnsureComp<UniversalLanguageSpeakerComponent>(mobUid); // giving universal just in case for RP purposes
+        EnsureComp<GhostBarPlayerComponent>(mobUid); // give the player mob the ghostbarplayer comp so they can be tracked
         var targetMind = _mindSystem.GetMind(args.SenderSession.UserId);
 
         if (targetMind != null)
         {
             _mindSystem.TransferTo(targetMind.Value, mobUid, true);
         }
+    }
+    // Delete the players character if they choose to ghost while at the ghostbar using the GhostBarPlayerComponent
+    private void PlayerGhostedFromGhostbar(Entity<GhostBarPlayerComponent> ent, ref MindRemovedMessage args)
+    {
+        _entityManager.DeleteEntity(ent);
     }
 }
