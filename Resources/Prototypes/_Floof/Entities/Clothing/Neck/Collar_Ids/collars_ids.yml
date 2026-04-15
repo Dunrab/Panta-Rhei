@@ -29,6 +29,13 @@
 
 # blue collar
 - type: entity
+  parent: [ClothingNeckCollarBlack, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarBlackPetId
+  name: black pet id collar
+  description: A cute black collar that holds a pets id.
+
+# blue collar
+- type: entity
   parent: [ClothingNeckCollarBlue, ClothingNeckCollarBasetId]
   id: ClothingNeckCollarBluePetId
   name: blue pet id collar

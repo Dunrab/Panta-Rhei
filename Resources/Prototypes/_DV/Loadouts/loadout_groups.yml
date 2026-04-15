@@ -974,6 +974,7 @@
 # PDAs
 - type: loadoutGroup
   id: PassengerPDADelta
+  parent: FloofPetCollarPdas
   name: loadout-group-passenger-id-delta
   loadouts:
   - PassengerPDA
