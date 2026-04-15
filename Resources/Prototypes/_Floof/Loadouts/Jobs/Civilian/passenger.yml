@@ -1663,18 +1663,28 @@
   id: ClothingNeckCollarBlackPetId
   equipment:
     neck: ClothingNeckCollarBlackPetId
+  groupBy: "petids"
 
 - type: loadout
   id: ClothingNeckCollarBluePetId
   equipment:
     neck: ClothingNeckCollarBluePetId
+  groupBy: "petids"
+
+- type: loadout
+  id: ClothingNeckCollarPinkPetId
+  equipment:
+    neck: ClothingNeckCollarPinkPetId
+  groupBy: "petids"
 
 - type: loadout
   id: ClothingNeckCollarSyndiPetId
   equipment:
     neck: ClothingNeckCollarSyndiPetId
+  groupBy: "petids"
 
 - type: loadout
   id: ClothingNeckCollarShockPetId
   equipment:
     neck: ClothingNeckCollarShockPetId
+  groupBy: "petids"
