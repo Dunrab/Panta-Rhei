@@ -1,0 +1,30 @@
+﻿- type: entity
+  parent: [ ClothingNeckCollarBase, PassengerPDA ]
+  id: ClothingNeckCollarBlackPetId
+  name: black pet id collar
+  description: A cute black collar that holds a pets id.
+  components:
+  - type: Sprite
+    sprite: _Floof/Mobs/Species/Arachne/blank.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+      sprite: _Floof/Clothing/Neck/Collars/collar_black.rsi
+      state: icon # Note: it's also set by the visualizer
+    - map: [ "enum.PdaVisualLayers.Flashlight" ]
+      state: "blank" # Something here, maybe a blank sprite
+      shader: "unshaded"
+      visible: false
+    - map: [ "enum.PdaVisualLayers.IdLight" ]
+      state: "blank" # Something here, could be another blank sprite
+      shader: "unshaded"
+      visible: false
+  - type: Icon
+    sprite: _Floof/Clothing/Neck/Collars/collar_black.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Floof/Clothing/Neck/Collars/collar_black.rsi
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        icon
