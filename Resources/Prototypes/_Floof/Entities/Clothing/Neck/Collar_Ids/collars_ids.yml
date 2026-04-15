@@ -1,30 +1,56 @@
-﻿- type: entity
-  parent: [ ClothingNeckCollarBase, PassengerPDA ]
-  id: ClothingNeckCollarBlackPetId
+﻿# base pet id collar (also is the black collar)
+- type: entity
+  parent: PassengerPDA
+  id: ClothingNeckCollarBasetId
+  abstract: true
   name: black pet id collar
   description: A cute black collar that holds a pets id.
   components:
   - type: Sprite
-    sprite: _Floof/Mobs/Species/Arachne/blank.rsi
+    sprite: _Floof/Clothing/Neck/Collars/collar_black.rsi
     layers:
     - map: [ "enum.PdaVisualLayers.Base" ]
-      sprite: _Floof/Clothing/Neck/Collars/collar_black.rsi
-      state: icon # Note: it's also set by the visualizer
+      state: icon
     - map: [ "enum.PdaVisualLayers.Flashlight" ]
-      state: "blank" # Something here, maybe a blank sprite
+      sprite: _Floof/Mobs/Species/Arachne/blank.rsi # using a blank sprite for pda layers
+      state: "blank" # using a blank sprite for pda layers
       shader: "unshaded"
       visible: false
     - map: [ "enum.PdaVisualLayers.IdLight" ]
-      state: "blank" # Something here, could be another blank sprite
+      sprite: _Floof/Mobs/Species/Arachne/blank.rsi # using a blank sprite for pda layers
+      state: "blank" # using a blank sprite for pda layers
       shader: "unshaded"
       visible: false
-  - type: Icon
-    sprite: _Floof/Clothing/Neck/Collars/collar_black.rsi
-    state: icon
-  - type: Clothing
-    sprite: _Floof/Clothing/Neck/Collars/collar_black.rsi
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
         !type:String
         icon
+
+# blue collar
+- type: entity
+  parent: [ClothingNeckCollarBlue, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarBluePetId
+  name: blue pet id collar
+  description: A cute blue collar that holds a pets id.
+
+# pink collar
+- type: entity
+  parent: [ClothingNeckCollarPink, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarPinkPetId
+  name: pink pet id collar
+  description: A cute pink collar that holds a pets id.
+
+# syndi collar
+- type: entity
+  parent: [ClothingNeckCollarSyndi, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarSyndiPetId
+  name: red pet id collar
+  description: A cute red collar that holds a pets id.
+
+# civilian shcok collar
+- type: entity
+  parent: [ClothingNeckShockCollarCivilian, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarShockPetId
+  name: shock pet id collar
+  description: A cute shocky collar that holds a pets id.
