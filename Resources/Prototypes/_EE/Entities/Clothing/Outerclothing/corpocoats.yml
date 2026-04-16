@@ -52,8 +52,6 @@
     sprite: _EE/Clothing/OuterClothing/WinterCoats/CorpoJackets/corpo_jacket_bishop_cybernetics.rsi
   - type: Clothing
     sprite: _EE/Clothing/OuterClothing/WinterCoats/CorpoJackets/corpo_jacket_bishop_cybernetics.rsi
-  - type: GuideHelp
-    guides: [ ZengHuPharmaceuticals ]
 
 - type: entity
   parent: ClothingOuterWinterCoat
@@ -124,5 +122,5 @@
   - type: Armor
     modifiers:
       coefficients:
-        Slash: 0.9
-        Heat: 0.75
+        Slash: 0.95 # match other coats protection values
+        Heat: 0.9
