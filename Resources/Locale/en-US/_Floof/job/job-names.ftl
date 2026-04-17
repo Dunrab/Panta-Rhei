@@ -16,6 +16,9 @@ job-alt-title-station-architect = Station Architect
 job-alt-title-quartermaster = Quartermaster
 job-alt-title-head-of-acquisitions = Head of Acquisitions
 job-alt-title-emotionalsupport = Emotional Support
+job-alt-title-senior-phys = Senior Physician
+job-alt-title-tr = Trauma Responder
+job-alt-title-mortician = Mortician
 
 loadout-group-captain-pdas = Captain pda
 loadout-group-hos-pdas = Head of Security pda
@@ -25,3 +28,5 @@ loadout-group-head-of-personnel-pdas = Head of Personnel pda
 loadout-group-mysta-pdas = Mystagogue pda
 loadout-group-chief-engineer-pdas = Chief Engineer pda
 loadout-group-logistics-officer-pdas = Logistics Officer pda
+loadout-group-floof-paramed-pdas = Paramed pda
+loadout-group-floof-senior-pyhs-pdas = Senior Physician pda

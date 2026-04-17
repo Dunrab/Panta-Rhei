@@ -15,3 +15,9 @@
   id: ClothingUnderSocksMedic
   equipment:
     shoes: ClothingUnderSocksMedic
+
+# alternative PDA
+- type: loadout
+  id: MorticianPDA
+  equipment:
+    id: MorticianPDA

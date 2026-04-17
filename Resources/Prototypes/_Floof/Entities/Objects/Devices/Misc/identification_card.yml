@@ -138,3 +138,30 @@
   components:
   - type: IdCard
     jobTitle: job-alt-title-emotionalsupport
+
+# senior_phys
+- type: entity
+  parent: SeniorPhysicianIDCard
+  id: SeniorPhysIDCard
+  name: Senior Physician ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-senior-phys
+
+# EMT (paramed)
+- type: entity
+  parent: ParamedicIDCard
+  id: TRIDCard
+  name: Trauma Responder ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-tr
+
+# mortician (doctor)
+- type: entity
+  parent: MedicalIDCard
+  id: MorticianIDCard
+  name: Mortician ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-mortician
