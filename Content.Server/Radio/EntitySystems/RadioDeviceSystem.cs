@@ -177,11 +177,7 @@ public sealed class RadioDeviceSystem : SharedRadioDeviceSystem
 
         var channel = _protoMan.Index<RadioChannelPrototype>(component.BroadcastChannel)!;
         if (_recentlySent.Add((args.Message, args.Source, channel)))
-            _radio.SendRadioMessage(args.Source, args.Message, channel, uid);
-        // Nuclear-14 start - handheld radio
-        if (_recentlySent.Add((args.Message, args.Source, channel)))
-            _radio.SendRadioMessage(args.Source, args.Message, channel, uid, frequency: component.Frequency);
-        // Nuclear-14 end - handheld radio
+            _radio.SendRadioMessage(args.Source, args.Message, channel, uid, frequency: component.Frequency); // Nuclear 14 handheld radio - add frequency comp
     }
 
     private void OnAttemptListen(EntityUid uid, RadioMicrophoneComponent component, ListenAttemptEvent args)
@@ -250,9 +246,6 @@ public sealed class RadioDeviceSystem : SharedRadioDeviceSystem
 
         if (!_protoMan.HasIndex<RadioChannelPrototype>(args.Channel) || !ent.Comp.SupportedChannels.Contains(args.Channel))
             return;
-
-        if (!_protoMan.TryIndex<RadioChannelPrototype>(args.Channel, out var channel) || !ent.Comp.SupportedChannels.Contains(args.Channel)) // Nuclear-14: add channel
-            return; // Nuclear-14: add channel
 
         SetIntercomChannel(ent, args.Channel);
     }
