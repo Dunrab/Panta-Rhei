@@ -118,12 +118,21 @@ public sealed partial class RadioSystem : EntitySystem // Floofstation - made pa
         if (!language.SpeechOverride.AllowRadio)
             return;
         // Floofstation section end
+
+        // Nuclear-14 start
+        string channelText;
+        if (channel.ShowFrequency && frequency.HasValue)
+            channelText = $"\\[{frequency}\\]";
+        else
+            channelText = $"\\[{channel.LocalizedName}\\]";
+        // Nuclear-14 end
+
         var wrappedMessage = Loc.GetString(speech.Bold ? "chat-radio-message-wrap-bold" : "chat-radio-message-wrap",
             ("channelColor", channel.Color), // Floofstation edit: renamed to channelColor
             ("fontType", language.SpeechOverride.FontId ?? speech.FontId), // Floofstation edit
             ("fontSize", language.SpeechOverride.FontSize ?? speech.FontSize), // Floofstation edit
             ("verb", Loc.GetString(_random.Pick(speech.SpeechVerbStrings))),
-            ("channel", $"\\[{channel.LocalizedName}\\]"),
+            ("channel", channelText), // Floofstation - was this: //$"\\[{channel.LocalizedName}\\]"), was changed to the nuclear-14 channelText above
             ("name", name),
             // Floofstation. Note that we explicitly don't use channel.Color here because this is only used for the language hint.
             ("language", ChatSystem.LanguageNameForFluent(language)),

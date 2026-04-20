@@ -164,9 +164,10 @@ public sealed class RadioDeviceSystem : SharedRadioDeviceSystem
 
         using (args.PushGroup(nameof(RadioMicrophoneComponent)))
         {
-            args.PushMarkup(Loc.GetString("handheld-radio-component-on-examine", ("frequency", proto.Frequency)));
-            args.PushMarkup(Loc.GetString("handheld-radio-component-chennel-examine",
-                ("channel", proto.LocalizedName)));
+            args.PushMarkup(Loc.GetString("handheld-radio-component-on-examine", ("frequency", component.Frequency), ("color", proto.Color.ToHex()))); // Nuclear 14 Handheld radio changed frequency and added color
+            args.PushMarkup(Loc.GetString("handheld-radio-component-channel-examine",
+                ("channel", proto.LocalizedName),
+                ("color", proto.Color.ToHex()))); // Nuclear 14 Handheld radio - added color
         }
     }
 
