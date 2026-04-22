@@ -1,10 +1,4 @@
-﻿# delta-vs is time locked, going to just make another here to avoid the silly time lock
-- type: loadout
-  id: SeniorPhysicianFloofPDA
-  equipment:
-    id: SeniorPhysicianPDA
-
-# alternative PDA
+﻿# alternative PDA
 - type: loadout
   id: SeniorPhysPDA
   equipment:

@@ -21,3 +21,8 @@
   id: MorticianPDA
   equipment:
     id: MorticianPDA
+
+- type: loadout
+  id: VetPDA
+  equipment:
+    id: VetPDA

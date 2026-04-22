@@ -165,3 +165,11 @@
   components:
   - type: IdCard
     jobTitle: job-alt-title-mortician
+
+- type: entity
+  parent: MedicalIDCard
+  id: VetIDCard
+  name: Veterinarian ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-vet

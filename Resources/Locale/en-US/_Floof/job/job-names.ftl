@@ -19,6 +19,7 @@ job-alt-title-emotionalsupport = Emotional Support
 job-alt-title-senior-phys = Senior Physician
 job-alt-title-tr = Trauma Responder
 job-alt-title-mortician = Mortician
+job-alt-title-vet = Veterinarian
 
 loadout-group-captain-pdas = Captain pda
 loadout-group-hos-pdas = Head of Security pda

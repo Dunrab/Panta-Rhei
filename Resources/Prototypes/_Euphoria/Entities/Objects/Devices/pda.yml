@@ -368,7 +368,7 @@
 
 # medical atlernative role pdas
 - type: entity
-  parent: BaseAlternativePDA #DirectorOfCarePDA
+  parent: BaseAlternativePDA
   id: BaseAlternativeMedicalPDA
   name: Base Medical Alternative PDA
   description: Personal Data Assistant.
@@ -451,7 +451,7 @@
   parent: BaseAlternativeMedicalPDA
   id: MorticianPDA
   name: mortician PDA
-  description: Medicals second most ignored doctor.
+  description: Don't forget to label those body bags and triage everything.
   components:
   - type: Pda
     id: MorticianIDCard
@@ -459,6 +459,22 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
         mortician
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentVColor: "#447987"
+
+- type: entity
+  parent: BaseAlternativeMedicalPDA
+  id: VetPDA
+  name: veterinarian PDA
+  description: Make sure to take good care of those station pets.
+  components:
+  - type: Pda
+    id: VetIDCard
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType: !type:String
+        vet
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentVColor: "#447987"
