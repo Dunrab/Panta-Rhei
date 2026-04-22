@@ -138,3 +138,20 @@
   components:
   - type: IdCard
     jobTitle: job-alt-title-emotionalsupport
+
+# alternative epi
+- type: entity
+  parent: ResearchIDCard
+  id: AcolyteIDCard
+  name: acolyte ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-acolyte
+
+- type: entity
+  parent: RoboticistIDCard
+  id: GolemancerIDCard
+  name: golemancer ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-golemancer
