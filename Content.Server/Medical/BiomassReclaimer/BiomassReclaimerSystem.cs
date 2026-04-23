@@ -211,7 +211,13 @@ namespace Content.Server.Medical.BiomassReclaimer
                 _solution.ResolveSolution(toProcess, stream.BloodSolutionName, ref stream.BloodSolution, out var solution))
             {
                 component.BloodReagents = solution.Clone();
-                component.BloodReagents.ScaleSolution(50 / component.BloodReagents.Volume);
+                /* Floofstation change:
+                 * was component.BloodReagents.Volume, changed to component.BloodReagents.AvailableVolume
+                 * Was changed due to if a mob has 0% blood, ccomponent.BloodReagents.Volume would be 0
+                 * this would to us dividing by zero and the mob would not be biomassable.
+                 * I wasted two hours trying to find out why mobs could not be biomassable.
+                 */
+                component.BloodReagents.ScaleSolution(50 / component.BloodReagents.AvailableVolume); // Floofstation was component.BloodReagents.Volume
             }
             if (TryComp<ButcherableComponent>(toProcess, out var butcherableComponent))
             {
