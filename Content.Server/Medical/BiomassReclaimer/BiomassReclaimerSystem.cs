@@ -213,8 +213,8 @@ namespace Content.Server.Medical.BiomassReclaimer
                 component.BloodReagents = solution.Clone();
                 /* Floofstation change:
                  * was component.BloodReagents.Volume, changed to component.BloodReagents.AvailableVolume
-                 * Was changed due to if a mob has 0% blood, ccomponent.BloodReagents.Volume would be 0
-                 * this would to us dividing by zero and the mob would not be biomassable.
+                 * Was changed due to if a mob has 0% blood, ccomponent.BloodReagents.Volume would be 0 this would lead to us dividing by zero and the mob would not be biomassable.
+                 * Chagning to component.BloodReagents.AvailableVolume stops us from dividing by zero and lets the mob with 0% blood be biomassed again
                  * I wasted two hours trying to find out why mobs could not be biomassable.
                  */
                 component.BloodReagents.ScaleSolution(50 / component.BloodReagents.AvailableVolume); // Floofstation was component.BloodReagents.Volume
