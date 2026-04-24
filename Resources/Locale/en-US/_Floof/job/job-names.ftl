@@ -38,3 +38,5 @@ loadout-group-logistics-officer-pdas = Logistics Officer pda
 loadout-group-chaplain-pdas = Chaplain pda
 loadout-group-floof-paramed-pdas = Paramed pda
 loadout-group-floof-senior-pyhs-pdas = Senior Physician pda
+loadout-group-epistemics-research-assistant-pdas = Research Assistant pda
+loadout-group-epistemics-senior-researcher-pda = Senior Researcher pda

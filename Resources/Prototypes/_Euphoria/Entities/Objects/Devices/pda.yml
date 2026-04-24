@@ -589,7 +589,7 @@
         pda-golemancer
 
 - type: entity
-  parent: SciencePDA # we use delta-vs parent as a base
+  parent: SeniorResearcherPDA # we use delta-vs parent as a base
   id: MysticPDA
   name: mystic PDA
   description: A well worn pda that has scribbled out notes from previously worked artifacts.
