@@ -25,7 +25,7 @@ job-alt-title-vet = Veterinarian
 job-alt-title-acolyte = Acolyte
 job-alt-title-golemancer = Golemancer
 job-alt-title-mystic = Mystic
-job-alt-title-noviciate = noviciate
+job-alt-title-noviciate = Noviciate
 
 loadout-group-captain-pdas = Captain pda
 loadout-group-hos-pdas = Head of Security pda
