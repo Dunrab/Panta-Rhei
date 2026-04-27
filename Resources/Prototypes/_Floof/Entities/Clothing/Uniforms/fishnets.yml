@@ -39,7 +39,7 @@
 
 - type: entity
   parent: ClothingOuterBase
-  id: ClothingUniformFishnetSleeves
+  id: ClothingUniformFishnetSleevesGloves
   name: Fishnet Sleeves Gloves Top
   description: "Fishy"
   components:
