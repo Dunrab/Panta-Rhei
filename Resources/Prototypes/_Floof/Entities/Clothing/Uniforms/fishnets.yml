@@ -1,0 +1,73 @@
+﻿# outerwear
+- type: entity
+  parent: ClothingOuterBase
+  id: ClothingUniformFishnet
+  name: Fishnet Top
+  description: "Fishy"
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Uniforms/fishnet.rsi
+    layers:
+    - state: icon
+  - type: Clothing
+    sprite: _Floof/Clothing/Uniforms/fishnet.rsi
+    clothingVisuals:
+      outerClothing:
+      - state: equipped-OUTERCLOTHING
+
+- type: entity
+  parent: ClothingOuterBase
+  id: ClothingUniformFishnetAlt
+  name: Fishnet Top Alt
+  description: "Fishy"
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Uniforms/fishnet_alt.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Uniforms/fishnet_alt.rsi
+
+- type: entity
+  parent: ClothingOuterBase
+  id: ClothingUniformFishnetSleeves
+  name: Fishnet Sleeves Top
+  description: "Fishy"
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Uniforms/fishnet_sleeves.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Uniforms/fishnet_sleeves.rsi
+
+- type: entity
+  parent: ClothingOuterBase
+  id: ClothingUniformFishnetSleeves
+  name: Fishnet Sleeves Gloves Top
+  description: "Fishy"
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Uniforms/fishnet_sleeves_gloves.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Uniforms/fishnet_sleeves_gloves.rsi
+
+# innerwear
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformFishnetThong
+  name: Fishnet Thong
+  description: "Fishy"
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Uniforms/fishnet_thong.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Uniforms/fishnet_thong.rsi
+
+# socks
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingUnderSocksFishnets
+  name: Fishnet Leg Covers
+  description: "Fishy"
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Uniforms/fishnet_shoes.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Uniforms/fishnet_shoes.rsi
