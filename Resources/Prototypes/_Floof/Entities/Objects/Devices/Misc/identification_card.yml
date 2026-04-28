@@ -247,3 +247,35 @@
   components:
   - type: IdCard
     jobTitle: job-alt-title-medical-emotional-support-senior-physician
+
+- type: entity
+  parent: TechnicalAssistantIDCard
+  id: EmotionalSupportTA
+  name: Emotional Support Technical Assistant ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-medical-emotional-support-TA
+
+- type: entity
+  parent: EngineeringIDCard
+  id: EmotionalSupportEngi
+  name: Emotional Support Station Engineer ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-medical-emotional-support-Engi
+
+- type: entity
+  parent: AtmosIDCard
+  id: EmotionalSupportAtmos
+  name: Emotional Support Atmospheric Technician ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-medical-emotional-support-Atmos
+
+- type: entity
+  parent: SeniorEngineerIDCard
+  id: EmotionalSupportSeniorEngi
+  name: Emotional Support Senior Engineer ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-medical-emotional-support-Senior-Engi

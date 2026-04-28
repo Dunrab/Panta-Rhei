@@ -29,6 +29,10 @@ job-alt-title-medical-emotional-support-chemist = Emotional Support Chemist
 job-alt-title-medical-emotional-support-psychiatrist = Emotional Support Psychiatrist
 job-alt-title-medical-emotional-support-surgeon = Emotional Support Surgeon
 job-alt-title-medical-emotional-support-senior-physician = Emotional Support Senior Physician
+job-alt-title-medical-emotional-support-TA = Technical Assistant
+job-alt-title-medical-emotional-support-Engi = Station Engineer
+job-alt-title-medical-emotional-support-Atmos = Atmospherics Technical
+job-alt-title-medical-emotional-support-Senior-Engi = Senior Engineer
 
 loadout-group-captain-pdas = Captain pda
 loadout-group-hos-pdas = Head of Security pda

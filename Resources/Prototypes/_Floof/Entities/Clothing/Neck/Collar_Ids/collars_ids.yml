@@ -69,6 +69,7 @@
 - type: entity
   parent: [ClothingNeckCollarMed, ClothingNeckCollarBasetId]
   id: ClothingNeckCollarEmotionalSupportMedicalBase # medical base
+  categories: [ HideSpawnMenu ]
   name: medical emotional support collar base
   description: A sterile and cute medical id collar.
   components:
@@ -169,3 +170,72 @@
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentVColor: "#447987"
+
+# engineering base & id collars
+- type: entity
+  parent: [ClothingNeckCollarEngi, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarEmotionalSupportEngineerBase # engineering base
+  categories: [ HideSpawnMenu ]
+  name: engineer emotional support collar base
+  description: A dirty collar from a hard days work.
+  components:
+  - type: Pda
+    id: EngineeringIDCard
+  - type: PdaBorderColor
+    borderColor: "#949137"
+    accentHColor: "#447987"
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - NanoChatCartridge
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportEngineerBase
+  id: ClothingNeckCollarEmotionalSupportTA # technical assistant
+  name: technical assistant emotional support collar
+  description: A dirty collar from a hard days work.
+  components:
+  - type: Pda
+    id: EmotionalSupportTA
+  - type: PdaBorderColor
+    borderColor: "#717059"
+    accentVColor: "#949137"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportEngineerBase
+  id: ClothingNeckCollarEmotionalSupportStationEngineer # engineer
+  name: station engineer emotional support collar
+  description: A dirty collar from a hard days work.
+  components:
+  - type: Pda
+    id: EmotionalSupportEngi
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentVColor: "#447987"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportEngineerBase
+  id: ClothingNeckCollarEmotionalSupportAtmosTech # atmos tech
+  name: atmos technician emotional support collar
+  description: A dirty collar from a hard days work.
+  components:
+  - type: Pda
+    id: AtmosIDCard
+  - type: PdaBorderColor
+    borderColor: "#949137"
+    accentVColor: "#447987"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportEngineerBase
+  id: ClothingNeckCollarEmotionalSupportSeniorEngineer # senior engineer
+  name: senior engineer emotional support collar
+  description: A dirty collar from a hard days work.
+  components:
+  - type: Pda
+    id: SeniorEngineerIDCard
+  - type: PdaBorderColor
+    borderColor: "#949137"
+    accentVColor: "#CD6900"
