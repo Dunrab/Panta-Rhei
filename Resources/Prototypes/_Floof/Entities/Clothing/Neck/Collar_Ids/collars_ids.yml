@@ -64,3 +64,108 @@
   id: ClothingNeckCollarShockPetId
   name: shock emotional support id collar
   description: A cute shocky collar that holds a pets id.
+
+# medical base & id collars
+- type: entity
+  parent: [ClothingNeckCollarMed, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarEmotionalSupportMedicalBase # medical base
+  name: medical emotional support collar base
+  description: A sterile and cute medical id collar.
+  components:
+  - type: Pda
+    id: MedicalIDCard
+    penSlot:
+      startingItem: PenLightBase
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentVColor: "#447987"
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - NanoChatCartridge
+    - MedTekCartridge
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportMedicalBase
+  id: ClothingNeckCollarEmotionalSupportMedicalIntern # medical intern
+  name: medical intern emotional support collar
+  description: A sterile and cute medical id collar.
+  components:
+  - type: Pda
+    id: EmotionalSupportMedicalIntern
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportMedicalBase
+  id: ClothingNeckCollarEmotionalSupportMedicalDoctor # medical doctor
+  name: medical doctor emotional support collar
+  description: A sterile and cute medical id collar.
+  components:
+  - type: Pda
+    id: EmotionalSupportMedicalDoctor
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportMedicalBase
+  id: ClothingNeckCollarEmotionalSupportParamed # paramed
+  name: paramed emotional support collar
+  description: A sterile and cute paramedic id collar.
+  components:
+  - type: Pda
+    id: EmotionalSupportParamed
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentVColor: "#2a4b5b"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportMedicalBase
+  id: ClothingNeckCollarEmotionalSupportChemist # chemist
+  name: chemist emotional support collar
+  description: A sterile and cute chemist id collar.
+  components:
+  - type: Pda
+    id: EmotionalSupportChemist
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentVColor: "#B34200"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportMedicalBase
+  id: ClothingNeckCollarEmotionalSupportPsychologist # psych
+  name: psychologist emotional support collar
+  description: A sterile and cute psychologist id collar.
+  components:
+  - type: Pda
+    id: EmotionalSupportPsychiatrist
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentVColor: "#447987"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportMedicalBase
+  id: ClothingNeckCollarEmotionalSupportSurgeon # surgeon
+  name: surgeon emotional support collar
+  description: A sterile and cute surgeon id collar.
+  components:
+  - type: Pda
+    id: EmotionalSupportSurgeon
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentVColor: "#447987"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportMedicalBase
+  id: ClothingNeckCollarEmotionalSupportSeniorPhys # senior psych
+  name: senior physician emotional support collar
+  description: A sterile and cute senior physician id collar.
+  components:
+  - type: Pda
+    id: EmotionalSupportSeniorPhys
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentVColor: "#447987"

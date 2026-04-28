@@ -190,3 +190,60 @@
   components:
   - type: IdCard
     jobTitle: job-alt-title-vet
+
+# medical emotional support
+- type: entity
+  parent: MedicalInternIDCard
+  id: EmotionalSupportMedicalIntern
+  name: Emotional Support Medical Intern ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-medical-emotional-support-intern
+
+- type: entity
+  parent: MedicalIDCard
+  id: EmotionalSupportMedicalDoctor
+  name: Emotional Support Medical Doctor ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-medical-emotional-support-doctor
+
+- type: entity
+  parent: ParamedicIDCard
+  id: EmotionalSupportParamed
+  name: Emotional Support Paramed ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-medical-emotional-support-paramed
+
+- type: entity
+  parent: ChemistIDCard
+  id: EmotionalSupportChemist
+  name: Emotional Support Chemist ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-medical-emotional-support-chemist
+
+- type: entity
+  parent: PsychiatristIDCard
+  id: EmotionalSupportPsychiatrist
+  name: Emotional Support Psychiatrist ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-medical-emotional-support-psychiatrist
+
+- type: entity
+  parent: SurgeonIDCard
+  id: EmotionalSupportSurgeon
+  name: Emotional Support Surgeon ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-medical-emotional-support-surgeon
+
+- type: entity
+  parent: SeniorPhysIDCard
+  id: EmotionalSupportSeniorPhys
+  name: Emotional Support Senior Physician ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-medical-emotional-support-senior-physician

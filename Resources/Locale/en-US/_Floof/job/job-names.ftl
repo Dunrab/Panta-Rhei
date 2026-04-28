@@ -22,6 +22,13 @@ job-alt-title-senior-phys = Senior Physician
 job-alt-title-tr = Trauma Responder
 job-alt-title-mortician = Mortician
 job-alt-title-vet = Veterinarian
+job-alt-title-medical-emotional-support-intern = Emotional Support Medical Intern
+job-alt-title-medical-emotional-support-doctor = Emotional Support Medical Doctor
+job-alt-title-medical-emotional-support-paramed = Emotional Support Paramedic
+job-alt-title-medical-emotional-support-chemist = Emotional Support Chemist
+job-alt-title-medical-emotional-support-psychiatrist = Emotional Support Psychiatrist
+job-alt-title-medical-emotional-support-surgeon = Emotional Support Surgeon
+job-alt-title-medical-emotional-support-senior-physician = Emotional Support Senior Physician
 
 loadout-group-captain-pdas = Captain pda
 loadout-group-hos-pdas = Head of Security pda
