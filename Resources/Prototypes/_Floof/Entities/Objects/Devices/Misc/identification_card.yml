@@ -248,6 +248,7 @@
   - type: IdCard
     jobTitle: job-alt-title-medical-emotional-support-senior-physician
 
+# engineering emotional support
 - type: entity
   parent: TechnicalAssistantIDCard
   id: EmotionalSupportTA
@@ -279,3 +280,26 @@
   components:
   - type: IdCard
     jobTitle: job-alt-title-medical-emotional-support-Senior-Engi
+
+# epistemics emotional support
+- type: entity
+  parent: ResearchAssistantIDCard
+  id: EmotionalSupportRA
+  name: Emotional Support Research Assistant ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-medical-emotional-support-RA
+
+- type: entity
+  parent: ResearchAssistantIDCard
+  id: EmotionalSupportScientist
+  name: Emotional Support Research Assistant ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-medical-emotional-support-scientist
+
+# security emotional support
+
+# service, this will be fucky since we don't have a service collar
+
+# justice does not have a dept collar

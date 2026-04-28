@@ -91,7 +91,7 @@
     - NanoTaskCartridge
     - NewsReaderCartridge
     - NanoChatCartridge
-    - MedTekCartridge
+    - MedTekCartridge # needed for medical roles
 
 - type: entity
   parent: ClothingNeckCollarEmotionalSupportMedicalBase
@@ -239,3 +239,55 @@
   - type: PdaBorderColor
     borderColor: "#949137"
     accentVColor: "#CD6900"
+
+# epistemics base & id collars
+- type: entity
+  parent: [ClothingNeckCollarEpi, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarEmotionalSupportEpistemicsBase # epistemics base
+  categories: [ HideSpawnMenu ]
+  name: epistemics emotional support collar base
+  description: This collar has seen better days and far many less explosions.
+  components:
+  - type: Pda
+    id: ResearchAssistantIDCard
+  - type: PdaBorderColor
+    borderColor: "#717059"
+    accentVColor: "#8900c9"
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - NanoChatCartridge
+    - GlimmerMonitorCartridge # needed for epi roles
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportEngineerBase
+  id: ClothingNeckCollarEmotionalResearchAssistant # Research assistant
+  name: research assistant emotional support collar
+  description: This collar has seen better days and far many less explosions.
+  components:
+  - type: Pda
+    id: EmotionalSupportRA
+  - type: PdaBorderColor
+    borderColor: "#717059"
+    accentVColor: "#8900c9"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportEngineerBase
+  id: ClothingNeckCollarEmotionalScientist # Research assistant
+  name: scientist emotional support collar
+  description: This collar has seen better days and far many less explosions.
+  components:
+  - type: Pda
+    id: EmotionalSupportScientist
+  - type: PdaBorderColor
+    borderColor: "#717059"
+    accentVColor: "#8900c9"
+
+# security base & id collars
+
+# service, this will be fucky since we don't have a service collar
+
+# justice does not have a dept collar
