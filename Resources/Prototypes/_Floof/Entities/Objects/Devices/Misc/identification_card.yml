@@ -288,18 +288,60 @@
   name: Emotional Support Research Assistant ID card
   components:
   - type: IdCard
-    jobTitle: job-alt-title-medical-emotional-support-RA
+    jobTitle: job-alt-title-medical-emotional-support-ra
 
 - type: entity
-  parent: ResearchAssistantIDCard
+  parent: ResearchIDCard
   id: EmotionalSupportScientist
-  name: Emotional Support Research Assistant ID card
+  name: Emotional Support Scientist ID card
   components:
   - type: IdCard
     jobTitle: job-alt-title-medical-emotional-support-scientist
+
+- type: entity
+  parent: RoboticistIDCard
+  id: EmotionalSupportRoboticist
+  name: Emotional Support Roboticist ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-medical-emotional-support-roboticist
+
+- type: entity
+  parent: LibrarianIDCard
+  id: EmotionalSupportCataloger
+  name: Emotional Support Cataloger ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-medical-emotional-support-cataloger
+
+- type: entity
+  parent: ChaplainIDCard
+  id: EmotionalSupportChaplain
+  name: Emotional Support Chaplain ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-medical-emotional-support-chaplain
+
+- type: entity
+  parent: ForensicMantisIDCard
+  id: EmotionalSupportMantis
+  name: Emotional Support Mantis ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-medical-emotional-support-mantis
+
+- type: entity
+  parent: SeniorResearcherIDCard
+  id: EmotionalSupportSeniorResearcher
+  name: Emotional Senior Researcher ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-medical-emotional-support-senior-researcher
 
 # security emotional support
 
 # service, this will be fucky since we don't have a service collar
 
 # justice does not have a dept collar
+
+# command (most will have to be done later but i can pre-make the ids so they are ready when we get sprites)

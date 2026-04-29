@@ -33,6 +33,13 @@ job-alt-title-medical-emotional-support-TA = Technical Assistant
 job-alt-title-medical-emotional-support-Engi = Station Engineer
 job-alt-title-medical-emotional-support-Atmos = Atmospherics Technical
 job-alt-title-medical-emotional-support-Senior-Engi = Senior Engineer
+job-alt-title-medical-emotional-support-ra = Research Assistant
+job-alt-title-medical-emotional-support-scientist = Scientist
+job-alt-title-medical-emotional-support-roboticist = Roboticist
+job-alt-title-medical-emotional-support-cataloger = Cataloger
+job-alt-title-medical-emotional-support-chaplain = Chaplain
+job-alt-title-medical-emotional-support-mantis = Mantis
+job-alt-title-medical-emotional-support-senior-researcher = Senior Researcher
 
 loadout-group-captain-pdas = Captain pda
 loadout-group-hos-pdas = Head of Security pda

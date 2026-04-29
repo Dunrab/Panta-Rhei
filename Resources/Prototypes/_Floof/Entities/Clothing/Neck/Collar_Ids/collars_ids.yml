@@ -263,8 +263,8 @@
     - GlimmerMonitorCartridge # needed for epi roles
 
 - type: entity
-  parent: ClothingNeckCollarEmotionalSupportEngineerBase
-  id: ClothingNeckCollarEmotionalResearchAssistant # Research assistant
+  parent: ClothingNeckCollarEmotionalSupportEpistemicsBase
+  id: ClothingNeckCollarEmotionalResearchSupportAssistant # Research assistant
   name: research assistant emotional support collar
   description: This collar has seen better days and far many less explosions.
   components:
@@ -275,8 +275,8 @@
     accentVColor: "#8900c9"
 
 - type: entity
-  parent: ClothingNeckCollarEmotionalSupportEngineerBase
-  id: ClothingNeckCollarEmotionalScientist # Research assistant
+  parent: ClothingNeckCollarEmotionalSupportEpistemicsBase
+  id: ClothingNeckCollarEmotionalSupportScientist # scientist
   name: scientist emotional support collar
   description: This collar has seen better days and far many less explosions.
   components:
@@ -286,8 +286,92 @@
     borderColor: "#717059"
     accentVColor: "#8900c9"
 
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportEpistemicsBase
+  id: ClothingNeckCollarEmotionalSupportRoboticist # roboticist
+  name: roboticist emotional support collar
+  description: This collar has seen better days, there are a few noticeable oil stains.
+  components:
+  - type: Pda
+    id: EmotionalSupportRoboticist
+  - type: PdaBorderColor
+    borderColor: "#717059"
+    accentVColor: "#8900c9"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportEpistemicsBase
+  id: ClothingNeckCollarEmotionalSupportCataloger # librarian/cataloger
+  name: cataloger emotional support collar
+  description: This collar has seen better days, there are a few noticeable ink marks.
+  components:
+  - type: Pda
+    id: EmotionalSupportCataloger
+  - type: PdaBorderColor
+    borderColor: "#858585"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportEpistemicsBase
+  id: ClothingNeckCollarEmotionalSupportChaplain # chaplain
+  name: chaplain emotional support collar
+  description: This collar has seen better days, there are a few religious symbols on it.
+  components:
+  - type: Pda
+    id: EmotionalSupportChaplain
+  - type: PdaBorderColor
+    borderColor: "#333333"
+    accentVColor: "#8900c9"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportEpistemicsBase
+  id: ClothingNeckCollarEmotionalSupportMantis # mantis
+  name: mantis emotional support collar
+  description: This collar has seen better days, there are a few religious symbols on it.
+  components:
+  - type: Pda
+    id: EmotionalSupportMantis
+  - type: PdaBorderColor
+    borderColor: "#a53aaa"
+    accentVColor: "#652368"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportEpistemicsBase
+  id: ClothingNeckCollarEmotionalSupportSeniorResearcher # senior researcher
+  name: senior researcher emotional support collar
+  description: This collar has seen better days, there are a few noospheric symbols on it.
+  components:
+  - type: Pda
+    id: EmotionalSupportSeniorResearcher
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentHColor: "#8900c9"
+    accentVColor: "#8900c9"
+
 # security base & id collars
+- type: entity
+  parent: [ClothingNeckCollarSec, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarEmotionalSupportSecurityBase # security base
+  categories: [ HideSpawnMenu ]
+  name: security emotional support collar base
+  description: This collar has seen better days and far many less firefights.
+  components:
+  - type: Pda
+    id: SecurityCadetIDCard
+  - type: PdaBorderColor
+    borderColor: "#717059"
+    accentVColor: "#A32D26"
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - CrimeAssistCartridge
+    - SecWatchCartridge # DeltaV: SecWatch replaces WantedList
+    - LogProbeCartridge
+    - NanoChatCartridge
 
 # service, this will be fucky since we don't have a service collar
 
 # justice does not have a dept collar
+
+# command (most will have to be done later)
