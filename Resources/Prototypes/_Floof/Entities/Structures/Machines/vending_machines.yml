@@ -65,3 +65,5 @@
     layoutId: ShopVendor
   - type: Rotatable
     rotateWhileAnchored: false
+  #- type: DatasetVocalizer # Oh yeah ads
+  #  dataset: ChangAds
