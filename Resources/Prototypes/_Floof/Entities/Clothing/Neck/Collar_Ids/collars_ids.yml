@@ -281,7 +281,7 @@
   description: This collar has seen better days and far many less explosions.
   components:
   - type: Pda
-    id: EmotionalSupportScientist
+    id: EmotionalSupportScientistIDCard
   - type: PdaBorderColor
     borderColor: "#717059"
     accentVColor: "#8900c9"
@@ -293,7 +293,7 @@
   description: This collar has seen better days, there are a few noticeable oil stains.
   components:
   - type: Pda
-    id: EmotionalSupportRoboticist
+    id: EmotionalSupportRoboticistIDCard
   - type: PdaBorderColor
     borderColor: "#717059"
     accentVColor: "#8900c9"
@@ -305,7 +305,7 @@
   description: This collar has seen better days, there are a few noticeable ink marks.
   components:
   - type: Pda
-    id: EmotionalSupportCataloger
+    id: EmotionalSupportCatalogerIDCard
   - type: PdaBorderColor
     borderColor: "#858585"
 
@@ -316,7 +316,7 @@
   description: This collar has seen better days, there are a few religious symbols on it.
   components:
   - type: Pda
-    id: EmotionalSupportChaplain
+    id: EmotionalSupportChaplainIDCard
   - type: PdaBorderColor
     borderColor: "#333333"
     accentVColor: "#8900c9"
@@ -328,7 +328,7 @@
   description: This collar has seen better days, there are a few religious symbols on it.
   components:
   - type: Pda
-    id: EmotionalSupportMantis
+    id: EmotionalSupportMantisIDCard
   - type: PdaBorderColor
     borderColor: "#a53aaa"
     accentVColor: "#652368"
@@ -340,7 +340,7 @@
   description: This collar has seen better days, there are a few noospheric symbols on it.
   components:
   - type: Pda
-    id: EmotionalSupportSeniorResearcher
+    id: EmotionalSupportSeniorResearcherIDCard
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentHColor: "#8900c9"
@@ -369,6 +369,24 @@
     - SecWatchCartridge # DeltaV: SecWatch replaces WantedList
     - LogProbeCartridge
     - NanoChatCartridge
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportSecurityBase
+  id: ClothingNeckCollarEmotionalSupportSecCadet # sec cadet
+  name: security cadet emotional support collar
+  description: This collar has seen better days and far many less firefights.
+  components:
+  - type: Pda
+    id: EmotionalSupportSecurityCadetIDCard
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportSecurityBase
+  id: ClothingNeckCollarEmotionalSupportSecCadet # security officer
+  name: security officer emotional support collar
+  description: This collar has seen better days and far many less firefights.
+  components:
+  - type: Pda
+    id: EmotionalSupportSecurityOfficerIDCard
 
 # service, this will be fucky since we don't have a service collar
 

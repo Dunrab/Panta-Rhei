@@ -292,7 +292,7 @@
 
 - type: entity
   parent: ResearchIDCard
-  id: EmotionalSupportScientist
+  id: EmotionalSupportScientistIDCard
   name: Emotional Support Scientist ID card
   components:
   - type: IdCard
@@ -300,7 +300,7 @@
 
 - type: entity
   parent: RoboticistIDCard
-  id: EmotionalSupportRoboticist
+  id: EmotionalSupportRoboticistIDCard
   name: Emotional Support Roboticist ID card
   components:
   - type: IdCard
@@ -308,7 +308,7 @@
 
 - type: entity
   parent: LibrarianIDCard
-  id: EmotionalSupportCataloger
+  id: EmotionalSupportCatalogerIDCard
   name: Emotional Support Cataloger ID card
   components:
   - type: IdCard
@@ -316,7 +316,7 @@
 
 - type: entity
   parent: ChaplainIDCard
-  id: EmotionalSupportChaplain
+  id: EmotionalSupportChaplainIDCard
   name: Emotional Support Chaplain ID card
   components:
   - type: IdCard
@@ -324,7 +324,7 @@
 
 - type: entity
   parent: ForensicMantisIDCard
-  id: EmotionalSupportMantis
+  id: EmotionalSupportMantisIDCard
   name: Emotional Support Mantis ID card
   components:
   - type: IdCard
@@ -332,13 +332,28 @@
 
 - type: entity
   parent: SeniorResearcherIDCard
-  id: EmotionalSupportSeniorResearcher
-  name: Emotional Senior Researcher ID card
+  id: EmotionalSupportSeniorResearcherIDCard
+  name: Emotional Support Senior Researcher ID card
   components:
   - type: IdCard
     jobTitle: job-alt-title-medical-emotional-support-senior-researcher
 
 # security emotional support
+- type: entity
+  parent: SecurityCadetIDCard
+  id: EmotionalSupportSecurityCadetIDCard
+  name: Emotional Support Security Cadet ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-medical-emotional-support-security-cadet
+
+- type: entity
+  parent: SecurityIDCard
+  id: EmotionalSupportSecurityOfficerIDCard
+  name: Emotional Support Security Officer ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-medical-emotional-support-security-officer
 
 # service, this will be fucky since we don't have a service collar
 
