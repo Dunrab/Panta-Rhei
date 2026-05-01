@@ -52,6 +52,17 @@ job-alt-title-security-emotional-support-corpsman = Emotional Support Corpsman
 job-alt-title-security-emotional-support-prisonguard = Emotional Support Prison Guard
 job-alt-title-security-emotional-support-seniorofficer = Emotional Support Senior Officer
 job-alt-title-security-emotional-support-warden = Emotional Support Warden
+job-alt-title-service-emotional-support-bartender = Emotional Support Bartender
+job-alt-title-service-emotional-support-chef = Emotional Support Chef
+job-alt-title-service-emotional-support-serviceworker = Emotional Support Service Worker
+job-alt-title-service-emotional-support-botanist = Emotional Support Botanist
+job-alt-title-service-emotional-support-janitor = Emotional Support Janitor
+job-alt-title-service-emotional-support-musician = Emotional Support Musician
+job-alt-title-service-emotional-support-Boxer = Emotional Support Boxer
+job-alt-title-service-emotional-support-clown = Emotional Support Clown
+job-alt-title-service-emotional-support-mime = Emotional Support Mime
+job-alt-title-service-emotional-support-reporter = Emotional Support Reporter
+job-alt-title-service-emotional-support-prisoner = Emotional Support Prisoner
 
 loadout-group-captain-pdas = Captain pda
 loadout-group-hos-pdas = Head of Security pda

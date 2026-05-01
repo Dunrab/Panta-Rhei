@@ -471,7 +471,200 @@
     borderColor: "#A32D26"
     accentVColor: "#949137"
 
-# service, this will be fucky since we don't have a service collar
+# service, this will be fucky since we don't have a service collar so for now ill use the black collar
+- type: entity
+  parent: [ClothingNeckCollarBlack, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarEmotionalSupportServiceBase # service base
+  categories: [ HideSpawnMenu ]
+  name: service emotional support collar base
+  description: A dirty collar from a hard serving the crew.
+  components:
+  - type: Pda
+    id: BartenderIDCard # gonna use bartender id for the service base
+  - type: PdaBorderColor # same with pda color
+    borderColor: "#333333"
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - NanoChatCartridge
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportServiceBase
+  id: ClothingNeckCollarEmotionalSupportBartender # bartender
+  name: bartender emotional support collar
+  description: A dirty collar from a hard serving the crew.
+  components:
+  - type: Pda
+    id: EmotionalSupportServiceBartenderIDCard
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportServiceBase
+  id: ClothingNeckCollarEmotionalSupportBartender # chef
+  name: chef emotional support collar
+  description: A dirty collar from a hard serving the crew.
+  components:
+  - type: Pda
+    id: EmotionalSupportServiceChefIDCard
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportServiceBase
+  id: ClothingNeckCollarEmotionalSupportServiceWorker # service worker
+  name: service worker emotional support collar
+  description: A dirty collar from a hard serving the crew.
+  components:
+  - type: Pda
+    id: EmotionalSupportServiceServiceWorkerIDCard
+  - type: PdaBorderColor
+    borderColor: "#717059"
+    accentVColor: "#00cc35"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportServiceBase
+  id: ClothingNeckCollarEmotionalSupportBotanist # botanist
+  name: botanist emotional support collar
+  description: A dirty collar from a hard serving the crew.
+  components:
+  - type: Pda
+    id: EmotionalSupportServiceBotanistIDCard
+  - type: PdaBorderColor
+    borderColor: "#44843c"
+    accentVColor: "#00cc35"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportServiceBase
+  id: ClothingNeckCollarEmotionalSupportJanitor # janitor
+  name: janitor emotional support collar
+  description: A dirty collar from a hard serving the crew.
+  components:
+  - type: Pda
+    id: EmotionalSupportServiceJanitorIDCard
+  - type: PdaBorderColor
+    borderColor: "#5D2D56"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportServiceBase
+  id: ClothingNeckCollarEmotionalSupportMusician # musician
+  name: musician emotional support collar
+  description: A dirty collar from a hard serving the crew.
+  components:
+  - type: Pda
+    id: EmotionalSupportServiceMusicianIDCard
+  - type: PdaBorderColor
+    borderColor: "#333333"
+  - type: Instrument # musician pdas are instruments so we give the comp
+    allowPercussion: false
+    handheld: true
+    bank: 1
+    program: 2
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportServiceBase
+  id: ClothingNeckCollarEmotionalSupportBoxer # boxer
+  name: boxer emotional support collar
+  description: A dirty collar from a hard serving the crew.
+  components:
+  - type: Pda
+    id: EmotionalSupportServiceBoxerIDCard
+  - type: PdaBorderColor
+    borderColor: "#333333"
+    accentVColor: "#390504"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportServiceBase
+  id: ClothingNeckCollarEmotionalSupportClown # clown
+  name: clown emotional support collar
+  description: HEHONK HEHONK A COLLAR FOR THE CLOWN, why not tell them a joke clown?.
+  components:
+  - type: Pda
+    id: EmotionalSupportServiceClownIDCard
+    penSlot:
+      startingItem: CrayonOrange # give clown a silly crayon instead of a pen
+      ejectSound: /Audio/Items/bikehorn.ogg
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: PdaBorderColor
+    borderColor: "#C18199"
+  - type: Slippery # Clown pdas slip so the collar should to of course
+  - type: StepTrigger
+  - type: CollisionWake
+    enabled: false
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+      slips:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.3,0.4,0.3"
+        hard: false
+        layer:
+        - SlipLayer
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.3,0.4,0.3"
+        density: 5
+        mask:
+        - ItemMask
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportServiceBase
+  id: ClothingNeckCollarEmotionalSupportMime # mime
+  name: mime emotional support collar
+  description: Silence speaks louder than words, and the user of this collar is very silent.
+  components:
+  - type: Pda
+    id: EmotionalSupportServiceMimeIDCard
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentHColor: "#333333"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportServiceBase
+  id: ClothingNeckCollarEmotionalSupportReporter # reporter
+  name: reporter emotional support collar
+  description: There are some newspaper clippings stuffed into the sides of this collar.
+  components:
+  - type: Pda
+    id: EmotionalSupportServiceReporterIDCard
+    penSlot:
+      startingItem: LuxuryPen # they get a luxury pen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: PdaBorderColor
+    borderColor: "#3f3f74"
+  - type: CartridgeLoader # detla-v gave the reporter stock trading app to report on i guess?
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - StockTradingCartridge
+    - NanoChatCartridge
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportServiceBase
+  id: ClothingNeckCollarEmotionalSupportPrisoner # prisoner (it counts as service for some reason? i guess becuase you are serving your time :) )
+  name: prisoner emotional support collar
+  description: Serving your time one shift at a time, don't commit any crimes... please...
+  components:
+  - type: Pda
+    id: EmotionalSupportServicePrisonerIDCard
+  - type: PdaBorderColor # prisoners don't have a pda so we will use a clear one
+    borderColor: "#288e4d"
+
+# gladitor is only on one specific map currently so im leaving it out, someone else can add it if they so desire
+# same with zookeper, is on two or three maps at most and never played
+# same with martial artist, few maps have it and the role is never taken
 
 # justice does not have a dept collar
 

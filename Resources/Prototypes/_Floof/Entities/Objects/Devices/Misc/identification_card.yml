@@ -440,6 +440,97 @@
     jobTitle: job-alt-title-security-emotional-support-warden
 
 # service, this will be fucky since we don't have a service collar
+- type: entity
+  parent: BartenderIDCard # bartender
+  id: EmotionalSupportServiceBartenderIDCard
+  name: Emotional Support Bartender ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-service-emotional-support-bartender
+
+- type: entity
+  parent: ChefIDCard # chef
+  id: EmotionalSupportServiceChefIDCard
+  name: Emotional Support Chef ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-service-emotional-support-chef
+
+- type: entity
+  parent: ServiceWorkerIDCard # service worker
+  id: EmotionalSupportServiceServiceWorkerIDCard
+  name: Emotional Support Service Worker ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-service-emotional-support-serviceworker
+
+- type: entity
+  parent: BotanistIDCard # botanist
+  id: EmotionalSupportServiceBotanistIDCard
+  name: Emotional Support Botanist ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-service-emotional-support-botanist
+
+- type: entity
+  parent: JanitorIDCard # janitor
+  id: EmotionalSupportServiceJanitorIDCard
+  name: Emotional Support Janitor ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-service-emotional-support-janitor
+
+- type: entity
+  parent: MusicianIDCard # musician
+  id: EmotionalSupportServiceMusicianIDCard
+  name: Emotional Support Musician ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-service-emotional-support-musician
+
+- type: entity
+  parent: BoxerIDCard # boxer
+  id: EmotionalSupportServiceBoxerIDCard
+  name: Emotional Support Boxer ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-service-emotional-support-Boxer
+
+- type: entity
+  parent: ClownIDCard # boxer
+  id: EmotionalSupportServiceClownIDCard
+  name: Emotional Support Clown ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-service-emotional-support-clown
+
+- type: entity
+  parent: MimeIDCard # mime
+  id: EmotionalSupportServiceMimeIDCard
+  name: Emotional Support Mime ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-service-emotional-support-mime
+
+- type: entity
+  parent: ReporterIDCard # reporter
+  id: EmotionalSupportServiceReporterIDCard
+  name: Emotional Support Reporter ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-service-emotional-support-reporter
+
+- type: entity
+  parent: PrisonerIDCard # prisoner
+  id: EmotionalSupportServicePrisonerIDCard
+  name: Emotional Support Prisoner ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-service-emotional-support-prisoner
+
+# gladitor is only on one specific map currently so im leaving it out, someone else can add it if they so desire
+# same with zookeper, is on two or three maps at most and never played
+# same with martial artist, few maps have it and the role is never taken
 
 # justice does not have a dept collar
 
