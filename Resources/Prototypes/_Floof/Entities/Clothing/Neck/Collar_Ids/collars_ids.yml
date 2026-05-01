@@ -502,7 +502,7 @@
 
 - type: entity
   parent: ClothingNeckCollarEmotionalSupportServiceBase
-  id: ClothingNeckCollarEmotionalSupportBartender # chef
+  id: ClothingNeckCollarEmotionalSupportChef # chef
   name: chef emotional support collar
   description: A dirty collar from a hard serving the crew.
   components:
@@ -667,5 +667,78 @@
 # same with martial artist, few maps have it and the role is never taken
 
 # justice does not have a dept collar
+- type: entity
+  parent: [ClothingNeckCollarBlack, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarEmotionalSupportJusticeBase # justice base
+  categories: [ HideSpawnMenu ]
+  name: justice emotional support collar base
+  description: A law abiding and cute justice id collar.
+  components:
+  - type: Pda
+    id: MedicalIDCard
+    penSlot:
+      startingItem: LuxuryPen # they get a luxury pen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: PdaBorderColor
+    borderColor: "#6f6192"
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - NanoChatCartridge
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportJusticeBase
+  id: ClothingNeckCollarEmotionalJusticeLawyer # lawyer
+  name: lawyer emotional support collar
+  description: A law abiding and cute lawyer id collar.
+  components:
+  - type: Pda
+    id: EmotionalSupportJusticeLawyerIDCard
+  - type: PdaBorderColor
+    borderColor: "#6f6192"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportJusticeBase
+  id: ClothingNeckCollarEmotionalJusticeProsecutor # lawyer
+  name: prosecutor emotional support collar
+  description: A law abiding and cute prosecutor id collar.
+  components:
+  - type: Pda
+    id: EmotionalSupportJusticeLawyerIDCard
+  - type: PdaBorderColor
+    borderColor: "#6f6192"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportJusticeBase
+  id: ClothingNeckCollarEmotionalJusticeClerk # clerk
+  name: prosecutor emotional support collar
+  description: A law abiding and cute clerk id collar, gotta look cute while taking notes right?.
+  components:
+  - type: Pda
+    id: EmotionalSupportJusticeClerkIDCard
+  - type: PdaBorderColor
+    borderColor: "#611528"
 
 # command (most will have to be done later)
+- type: entity
+  parent: [ClothingNeckCollarCmd, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarEmotionalSupportSeniorPhys # captain
+  name: captain emotional support collar
+  description: A stylish collar worn by the top dawg on station.
+  components:
+  - type: Pda
+    id: EmotionalSupportCommandCaptainIDCard
+    penSlot:
+      startingItem: PenCap # cap gets captain pen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: PdaBorderColor
+    borderColor: "#7C5D00"

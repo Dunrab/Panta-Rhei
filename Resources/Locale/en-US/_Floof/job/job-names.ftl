@@ -63,6 +63,10 @@ job-alt-title-service-emotional-support-clown = Emotional Support Clown
 job-alt-title-service-emotional-support-mime = Emotional Support Mime
 job-alt-title-service-emotional-support-reporter = Emotional Support Reporter
 job-alt-title-service-emotional-support-prisoner = Emotional Support Prisoner
+job-alt-title-justice-emotional-support-lawyer = Emotional Support Lawyer
+job-alt-title-justice-emotional-support-prosecutor = Emotional Support Prosecutor
+job-alt-title-justice-emotional-support-clerk = Emotional Support Clerk
+job-alt-title-command-emotional-support-captain = Emotional Support Captain
 
 loadout-group-captain-pdas = Captain pda
 loadout-group-hos-pdas = Head of Security pda

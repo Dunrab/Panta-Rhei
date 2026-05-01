@@ -533,5 +533,35 @@
 # same with martial artist, few maps have it and the role is never taken
 
 # justice does not have a dept collar
+- type: entity
+  parent: LawyerIDCard # lawyer
+  id: EmotionalSupportJusticeLawyerIDCard
+  name: Emotional Support Lawyer ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-justice-emotional-support-lawyer
+
+- type: entity
+  parent: ProsecutorIDCard # prosecutor
+  id: EmotionalSupportJusticeLawyerIDCard
+  name: Emotional Support Lawyer ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-justice-emotional-support-prosecutor
+
+- type: entity
+  parent: ClerkIDCard # clerk
+  id: EmotionalSupportJusticeClerkIDCard
+  name: Emotional Support Clerk ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-justice-emotional-support-clerk
 
 # command (most will have to be done later but i can pre-make the ids so they are ready when we get sprites)
+- type: entity
+  parent: CaptainIDCard # captain
+  id: EmotionalSupportCommandCaptainIDCard
+  name: Emotional Support Captain ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-command-emotional-support-captain
