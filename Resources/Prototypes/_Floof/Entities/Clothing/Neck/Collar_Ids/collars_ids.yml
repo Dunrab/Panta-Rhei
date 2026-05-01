@@ -381,12 +381,95 @@
 
 - type: entity
   parent: ClothingNeckCollarEmotionalSupportSecurityBase
-  id: ClothingNeckCollarEmotionalSupportSecCadet # security officer
+  id: ClothingNeckCollarEmotionalSupportSecOfficer # security officer
   name: security officer emotional support collar
   description: This collar has seen better days and far many less firefights.
   components:
   - type: Pda
     id: EmotionalSupportSecurityOfficerIDCard
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportSecurityBase
+  id: ClothingNeckCollarEmotionalSupportSecTech # security technician
+  name: security technician emotional support collar
+  description: This collar has seen better days and far many less firefights.
+  components:
+  - type: Pda
+    id: EmotionalSupportSecuritySecTechIDCard
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportSecurityBase
+  id: ClothingNeckCollarEmotionalSupportDetective # detective
+  name: detective emotional support collar
+  description: This collar has seen better days and far many less firefights.
+  components:
+  - type: Pda
+    id: EmotionalSupportSecurityDetectiveIDCard
+  - type: PdaBorderColor
+    borderColor: "#774705"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportSecurityBase
+  id: ClothingNeckCollarEmotionalSupportCorpsman # corpsman
+  name: corpsman emotional support collar
+  description: This collar has seen better days and far many less firefights.
+  components:
+  - type: Pda
+    id: EmotionalSupportSecurityCorpsmanIDCard
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+    accentVColor: "#447987"
+  - type: CartridgeLoader
+    preinstalled: # have to include the others apps
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - CrimeAssistCartridge
+    - SecWatchCartridge # DeltaV: SecWatch replaces WantedList
+    - LogProbeCartridge
+    - NanoChatCartridge
+    - MedTekCartridge # needs the medtek
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportSecurityBase
+  id: ClothingNeckCollarEmotionalSupportPrisonGuard # prison guard
+  name: prison guard emotional support collar
+  description: This collar has seen better days and far many less firefights.
+  components:
+  - type: Pda
+    id: EmotionalSupportSecurityPrisonGuardIDCard
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+    accentVColor: "#DFDFDF"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportSecurityBase
+  id: ClothingNeckCollarEmotionalSupportSeniorOfficer # senior officer
+  name: senior officer emotional support collar
+  description: This collar has seen better days and far many less firefights.
+  components:
+  - type: Pda
+    id: EmotionalSupportSecuritySeniorOfficerIDCard
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+    accentVColor: "#DFDFDF"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportSecurityBase
+  id: ClothingNeckCollarEmotionalSupportWarden # warden
+  name: warden emotional support collar
+  description: This collar has seen better days and far many less firefights.
+  components:
+  - type: Pda
+    id: EmotionalSupportSecurityWardenIDCard
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+    accentVColor: "#949137"
 
 # service, this will be fucky since we don't have a service collar
 
