@@ -102,3 +102,4 @@ loadout-group-botanist-pda = Botanist pda
 loadout-group-musician-pda = Musician pda
 loadout-group-mime-pda = Mime pda
 loadout-group-reporters-pda = Reporters pda
+loadout-group-prisoner-pda = Prisoner pda
