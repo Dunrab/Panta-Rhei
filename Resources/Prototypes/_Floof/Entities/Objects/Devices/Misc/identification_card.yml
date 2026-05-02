@@ -598,3 +598,12 @@
   components:
   - type: IdCard
     jobTitle: job-alt-title-command-emotional-support-captain
+
+# security technican
+- type: entity
+  parent: SecurityIDCard
+  id: SecurityTechnicianIDCard
+  name: Security Technician ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-security-technician

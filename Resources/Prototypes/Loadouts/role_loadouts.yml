@@ -476,6 +476,7 @@
   - SecurityBackpack
   - SecurityBelt
   - WardenOuterClothingDeltaV # DeltaV - Switched to DeltaV version, was WardenOuterClothing
+  - FloofSecurityWardenPdas # Floofstation pda
   - SecurityGloves # DeltaV - Security can start with gloves
   - SecurityShoes
   - SecurityEyewear # DeltaV - Security eyewear with prescription options
@@ -514,6 +515,7 @@
   - DetectiveJumpsuitDeltaV # DeltaV - Replaced with DeltaV version, was DetectiveJumpsuit
   - SecurityBackpack
   - DetectiveOuterClothingDeltaV # DeltaV - Replaced with DeltaV version, was DetectiveOuterClothing
+  - FloofSecurityDetectivePdas # Detective pdas
   - FloofDetectiveGloves # Floofstation - detective gloves
   - FloofDetectiveShoes # Floofstation - detective shoes
   - SecurityEyewear # DeltaV - Security eyewear with prescription options
@@ -532,6 +534,7 @@
   - SecurityGloves # DeltaV - Security can start with gloves
   - SecurityCadetJumpsuit
   - SecurityOuterClothingDeltaV # Floofstation - Let cadets customize their outer clothing
+  - FloofSecurityCadetPdas # Floofstation
   - SecurityShoes  # Floofstation - Let cadets customize their shoes
   - SecurityBackpack
   - SecurityEyewear # Floofstation - let cadets customize their eye wear
