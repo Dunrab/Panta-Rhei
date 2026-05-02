@@ -199,6 +199,7 @@
 
 - type: loadoutGroup
   id: CourierPDA
+  parent: FloofCourierPda # Floofstation pda
   name: loadout-group-courier-id
   loadouts:
   - CourierPDA
@@ -1030,6 +1031,7 @@
 
 - type: loadoutGroup
   id: CargoPDADelta
+  parent: FloofCargotechPda # Floofstation pda
   name: loadout-group-cargo-id-delta
   loadouts:
   - CargoPDA
@@ -1038,6 +1040,7 @@
 
 - type: loadoutGroup
   id: SalvagePDADelta
+  parent: FloofSalvagePda # Floofstation pdas
   name: loadout-group-salvage-id-delta
   loadouts:
   - SalvagePDA
