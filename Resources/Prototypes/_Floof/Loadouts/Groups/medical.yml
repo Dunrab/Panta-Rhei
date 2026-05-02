@@ -145,6 +145,7 @@
   loadouts:
   - MorticianPDA
   - VetPDA
+  - ClothingNeckCollarEmotionalSupportMedicalDoctor
 
 - type: loadoutGroup
   id: FloofParamedicPDAs
@@ -154,6 +155,7 @@
   loadouts:
   - ParamedicPDA
   - TRPDA
+  - ClothingNeckCollarEmotionalSupportParamed
 
 - type: loadoutGroup
   id: FloofSeniorPhysicianPDAs
@@ -163,3 +165,29 @@
   loadouts:
   - SeniorPhysicianPDA # Delta-vs version
   - SeniorPhysPDA # Floofstations version
+  - ClothingNeckCollarEmotionalSupportSeniorPhys
+
+# medical intern pdas
+- type: loadoutGroup
+  id: FloofMedicalInternPDAs
+  abstract: true
+  loadouts:
+  - ClothingNeckCollarEmotionalSupportMedicalIntern
+
+- type: loadoutGroup
+  id: FloofMedicalChemistPDAs
+  abstract: true
+  loadouts:
+  - ClothingNeckCollarEmotionalSupportChemist
+
+- type: loadoutGroup
+  id: FloofMedicalPsychPDAs
+  abstract: true
+  loadouts:
+  - ClothingNeckCollarEmotionalSupportPsychologist
+
+- type: loadoutGroup
+  id: FloofMedicalSurgeonPDAs
+  abstract: true
+  loadouts:
+  - ClothingNeckCollarEmotionalSupportSurgeon
