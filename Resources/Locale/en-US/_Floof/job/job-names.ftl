@@ -103,3 +103,6 @@ loadout-group-musician-pda = Musician pda
 loadout-group-mime-pda = Mime pda
 loadout-group-reporters-pda = Reporters pda
 loadout-group-prisoner-pda = Prisoner pda
+loadout-group-lawyer-pda = Lawyer pda
+loadout-group-prosecutor-pda = Prosecutor pda
+loadout-group-clerk-pda = Clerk pda

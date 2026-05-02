@@ -96,6 +96,7 @@
   - ClerkJumpsuit
   - ClerkNeck
   - ClerkOuterClothing
+  - FloofServiceClerkPDAs # Floofstation pda
   - JusticePaperworkBelt # Floofstation
   - PassengerGloves # Floofstation
   - CommonBackpack
@@ -113,6 +114,7 @@
   - ProsecutorNeck
   - ProsecutorOuterClothing
   - PassengerShoes # Floofstation
+  - FloofServiceProsecutorPDAs # Floofstation pdas
   - JusticePaperworkBelt # Floofstation
   - PassengerGloves # Floofstation
   - CommonBackpack

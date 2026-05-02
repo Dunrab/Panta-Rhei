@@ -145,6 +145,7 @@
   - LawyerJumpsuit
   - PassengerShoes # Floofstation -  this job dosent get to pick shoes for some reason
   - PassengerGloves # Floofstation, give them access to basic gloves from passengers
+  - FloofServiceLawyerPDAs # Floofstation pda
   - PassengerOuterClothing # Floofstation
   - JusticePaperworkBelt # Floofstation
   - CommonBackpack
