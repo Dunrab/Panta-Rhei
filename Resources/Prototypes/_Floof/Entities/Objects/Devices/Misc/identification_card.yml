@@ -543,7 +543,7 @@
 
 - type: entity
   parent: ProsecutorIDCard # prosecutor
-  id: EmotionalSupportJusticeLawyerIDCard
+  id: EmotionalSupportJusticeProsecutorIDCard
   name: Emotional Support Lawyer ID card
   components:
   - type: IdCard

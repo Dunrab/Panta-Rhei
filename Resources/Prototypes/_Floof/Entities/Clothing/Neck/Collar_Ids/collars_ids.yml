@@ -705,12 +705,12 @@
 
 - type: entity
   parent: ClothingNeckCollarEmotionalSupportJusticeBase
-  id: ClothingNeckCollarEmotionalJusticeProsecutor # lawyer
+  id: ClothingNeckCollarEmotionalJusticeProsecutor # prosecutor
   name: prosecutor emotional support collar
   description: A law abiding and cute prosecutor id collar.
   components:
   - type: Pda
-    id: EmotionalSupportJusticeLawyerIDCard
+    id: EmotionalSupportJusticeProsecutorIDCard
   - type: PdaBorderColor
     borderColor: "#6f6192"
 
