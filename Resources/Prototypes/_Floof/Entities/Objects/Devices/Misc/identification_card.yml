@@ -557,6 +557,39 @@
   - type: IdCard
     jobTitle: job-alt-title-justice-emotional-support-clerk
 
+# logistics
+- type: entity
+  parent: CargoIDCard # cargo tech
+  id: EmotionalSupportLogisticsCargotechIDCard
+  name: Emotional Support Cargo Tech ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-logistics-emotional-support-cargotech
+
+- type: entity
+  parent: CourierIDCard # courier
+  id: EmotionalSupportLogisticsCourierIDCard
+  name: Emotional Support Courier ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-logistics-emotional-support-courier
+
+- type: entity
+  parent: SalvageIDCard # salvage
+  id: EmotionalSupportLogisticsSalvageIDCard
+  name: Emotional Support Salvage ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-logistics-emotional-support-salvage
+
+- type: entity
+  parent: InventorySpecialistIDCard # inventory specialist
+  id: EmotionalSupportLogisticsInventorySpecialistIDCard
+  name: Emotional Support Inventory Specialist ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-logistics-emotional-support-inventoryspecalist
+
 # command (most will have to be done later but i can pre-make the ids so they are ready when we get sprites)
 - type: entity
   parent: CaptainIDCard # captain

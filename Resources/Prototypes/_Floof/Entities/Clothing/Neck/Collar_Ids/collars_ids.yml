@@ -725,10 +725,93 @@
   - type: PdaBorderColor
     borderColor: "#611528"
 
+# logistics
+- type: entity
+  parent: [ClothingNeckCollarLogi, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarEmotionalSupportLogisticsBase # logistics base
+  categories: [ HideSpawnMenu ]
+  name: logistics emotional support collar base
+  description: A money making cute logistics id collar.
+  components:
+  - type: Pda
+    id: CargoIDCard
+  - type: PdaBorderColor
+    borderColor: "#e39751"
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - StockTradingCartridge
+    - NanoChatCartridge
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportLogisticsBase
+  id: ClothingNeckCollarEmotionalLogisticsCargotech # cargotech
+  name: cargo tech emotional support collar
+  description: A money making cute logistics id collar.
+  components:
+  - type: Pda
+    id: EmotionalSupportLogisticsCargotechIDCard
+  - type: PdaBorderColor
+    borderColor: "#611528"
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportLogisticsBase
+  id: ClothingNeckCollarEmotionalLogisticsCourier # courier
+  name: courier emotional support collar
+  description: A money making cute logistics id collar.
+  components:
+  - type: Pda
+    id: EmotionalSupportLogisticsCourierIDCard
+  - type: PdaBorderColor
+    borderColor: "#e39751"
+    accentVColor: "#050c4d"
+  - type: CartridgeLoader # they need mail metrics
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - MailMetricsCartridge
+    - NanoChatCartridge
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportLogisticsBase
+  id: ClothingNeckCollarEmotionalLogisticsSalvage # salvage
+  name: salvage emotional support collar
+  description: Smells like ash.
+  components:
+  - type: Pda
+    id: EmotionalSupportLogisticsSalvageIDCard
+  - type: PdaBorderColor
+    borderColor: "#af9366"
+    accentVColor: "#8900c9"
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - NanoChatCartridge
+    - MedTekCartridge # needed for medical roles
+
+- type: entity
+  parent: ClothingNeckCollarEmotionalSupportLogisticsBase
+  id: ClothingNeckCollarEmotionalLogisticsInventorySpecialist # inventory specialist
+  name: inventory specialist emotional support collar
+  description: A money making cute logistics id collar.
+  components:
+  - type: Pda
+    id: EmotionalSupportLogisticsInventorySpecialistIDCard
+  - type: PdaBorderColor
+    borderColor: "#611528"
+
 # command (most will have to be done later)
 - type: entity
   parent: [ClothingNeckCollarCmd, ClothingNeckCollarBasetId]
-  id: ClothingNeckCollarEmotionalSupportSeniorPhys # captain
+  id: ClothingNeckCollarEmotionalSupportCaptain # captain
   name: captain emotional support collar
   description: A stylish collar worn by the top dawg on station.
   components:

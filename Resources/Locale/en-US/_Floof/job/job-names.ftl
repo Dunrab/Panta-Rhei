@@ -66,6 +66,10 @@ job-alt-title-service-emotional-support-prisoner = Emotional Support Prisoner
 job-alt-title-justice-emotional-support-lawyer = Emotional Support Lawyer
 job-alt-title-justice-emotional-support-prosecutor = Emotional Support Prosecutor
 job-alt-title-justice-emotional-support-clerk = Emotional Support Clerk
+job-alt-title-logistics-emotional-support-cargotech = Emotional Support Cargo Tech
+job-alt-title-logistics-emotional-support-courier = Emotional Support Courier
+job-alt-title-logistics-emotional-support-salvage = Emotional Support Salvage
+job-alt-title-logistics-emotional-support-inventoryspecalist = Emotional Support Inventory Specialist
 job-alt-title-command-emotional-support-captain = Emotional Support Captain
 
 loadout-group-captain-pdas = Captain pda
