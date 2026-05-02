@@ -86,3 +86,6 @@ loadout-group-floof-senior-pyhs-pdas = Senior Physician pda
 loadout-group-epistemics-research-assistant-pdas = Research Assistant pda
 loadout-group-epistemics-senior-researcher-pda = Senior Researcher pda
 loadout-group-technical-assistant-pdas = Technical Assistant pda
+loadout-group-senior-engineer-pdas = Senior Engineer pda
+loadout-group-cataloger-pdas = Cataloger pda
+loadout-group-mantis-pdas = Mantis pda

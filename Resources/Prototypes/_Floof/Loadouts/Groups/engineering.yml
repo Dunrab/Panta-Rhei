@@ -97,3 +97,13 @@
   abstract: true
   loadouts:
   - ClothingNeckCollarEmotionalSupportAtmosTech
+
+# technical assistant pdas
+- type: loadoutGroup
+  id: FloofSeniorEngineerPDAs
+  name: loadout-group-senior-engineer-pdas
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - SeniorEngineerPDA
+  - ClothingNeckCollarEmotionalSupportSeniorEngineer
