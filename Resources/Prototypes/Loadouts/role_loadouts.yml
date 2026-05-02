@@ -90,6 +90,8 @@
   - ServiceWorkerHead # DeltaV
   - Scarfs # DeltaV
   - ServiceWorkerJumpsuit # DeltaV, was BartenderJumpsuit
+  - PassengerOuterClothing # Floofstation - give them outer clothing too
+  - FloofServiceWorkerPDAs # Floofstation pda
   - PassengerShoes # Floofstation -  this job dosent get to pick shoes for some reason
   - GroupTankHarness
   - CommonBackpack
@@ -199,6 +201,7 @@
   - BotanistJumpsuit
   - BotanistBackpack
   - BotanistOuterClothing
+  - FloofServiceBotanistPDAs # Floofstation pda
   - FloofBotanistGloves # Floofstation - give botanists gloves
   - FloofBotanistShoes # Floofstation - give botanists shoes
   - Glasses
@@ -233,6 +236,7 @@
   - MimeHead
   - MimeMask
   - MimeNeck # DeltaV
+  - FloofServiceMimePDAs # Floofstatoin pda
   - EuphoriaMimeShoes # Euphoria - Add mime shoe loadouts
   - MimeJumpsuit
   - MimeBackpack
@@ -251,6 +255,7 @@
   - MusicianJumpsuit
   - MusicianNeck
   - CommonBackpack
+  - FloofServiceMusicianPDAs # Floofsatation - give pda
   - FloofMusicianGloves # Floofstation -  give musician access to gloves
   - FloofMusicianShoes # Floofstation - give musician access to shoes
   - MusicianOuterClothing
@@ -667,6 +672,7 @@
   - PassengerGloves # Floofstation let reporters have drip
   - ReporterJumpsuit
   - PassengerOuterClothing # Floofstation let reporters have drip
+  - FloofServiceReporterPDAs # Floofstation pda
   - PassengerShoes # Floofstation let reporters have drip
   - CommonBackpack
   - Glasses

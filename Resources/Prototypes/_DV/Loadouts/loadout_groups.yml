@@ -986,6 +986,7 @@
 
 - type: loadoutGroup
   id: BartenderPDADelta
+  parent: FloofBartenderPda # Floofstation pda
   name: loadout-group-bartender-id-delta
   loadouts:
   - BartenderPDA
@@ -993,6 +994,7 @@
 
 - type: loadoutGroup
   id: ChefPDADelta
+  parent: FloofChefPdas # Floofstation pda
   name: loadout-group-chef-id-delta
   loadouts:
   - ChefPDA
@@ -1044,6 +1046,7 @@
 
 - type: loadoutGroup
   id: ClownPDADelta
+  parent: FloofClownPda # Floofpda
   name: loadout-group-clown-id-delta
   loadouts:
   - ClownPDA
@@ -1059,6 +1062,7 @@
 
 - type: loadoutGroup
   id: JanitorPDADelta
+  parent: FloofJanitorPda # Floofstation alt pdas
   name: loadout-group-janitor-id-delta
   loadouts:
   - JanitorPDA
