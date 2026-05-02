@@ -85,3 +85,4 @@ loadout-group-floof-paramed-pdas = Paramed pda
 loadout-group-floof-senior-pyhs-pdas = Senior Physician pda
 loadout-group-epistemics-research-assistant-pdas = Research Assistant pda
 loadout-group-epistemics-senior-researcher-pda = Senior Researcher pda
+loadout-group-technical-assistant-pdas = Technical Assistant pda

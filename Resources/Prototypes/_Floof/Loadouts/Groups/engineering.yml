@@ -73,3 +73,27 @@
   - ClothingHeadHatWeldingMaskPainted
   - ClothingHeadHatWeldingMaskFlame
   - ClothingHeadHatWeldingMaskFlameBlue
+
+# technical assistant pdas
+- type: loadoutGroup
+  id: FloofTechnicalAssistantPDAs
+  name: loadout-group-technical-assistant-pdas
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - TechnicalAssistantPDA
+  - ClothingNeckCollarEmotionalSupportTA
+
+# engineer pdas
+- type: loadoutGroup
+  id: FloofEngineerPDAs
+  abstract: true
+  loadouts:
+  - ClothingNeckCollarEmotionalSupportStationEngineer
+
+# atmos pdas
+- type: loadoutGroup
+  id: FloofAtmosTechPDAs
+  abstract: true
+  loadouts:
+  - ClothingNeckCollarEmotionalSupportAtmosTech

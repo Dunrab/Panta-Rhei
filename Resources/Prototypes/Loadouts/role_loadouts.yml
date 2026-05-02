@@ -341,6 +341,7 @@
   - StationEngineerNeck # DeltaV
   - FloofEngineeringGlasses # Floofstation glasses
   - TechnicalAssistantJumpsuit
+  - FloofTechnicalAssistantPDAs # Floofstation - let them pick pda
   - StationEngineerGloves # floostation - give them access to gloves
   - StationEngineerBelts # floofstation - give them access to belts
   - StationEngineerBackpack

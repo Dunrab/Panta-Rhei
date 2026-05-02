@@ -1019,6 +1019,7 @@
 
 - type: loadoutGroup
   id: AtmosPDADelta
+  parent: FloofAtmosTechPDAs # Floofstation
   name: loadout-group-atmos-id-delta
   loadouts:
   - AtmosPDA
