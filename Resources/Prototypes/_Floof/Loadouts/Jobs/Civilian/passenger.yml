@@ -536,6 +536,12 @@
   groupBy: "thongs"
 
 - type: loadout
+  id: ClothingUniformFishnetThong
+  equipment:
+    jumpsuit: ClothingUniformFishnetThong
+  groupBy: "thongs"
+
+- type: loadout
   id: ClothingUniformMNKDressBlack
   equipment:
     jumpsuit: ClothingUniformMNKDressBlack
@@ -660,6 +666,12 @@
   id: ClothingSocksCoderValid
   equipment:
     shoes: ClothingUnderSocksCoderValid
+  groupBy: "thigh highs"
+
+- type: loadout
+  id: ClothingUnderSocksFishnets
+  equipment:
+    shoes: ClothingUnderSocksFishnets
   groupBy: "thigh highs"
 
 # shoes
@@ -1058,6 +1070,60 @@
   id: ShrimpFishermanSuit
   equipment:
     outerClothing: ClothingShrimpFishermanSuit
+
+- type: loadout
+  id: ClothingUniformOversizeSweatshirt
+  equipment:
+    outerClothing: ClothingUniformOversizeSweatshirt
+  groupBy: "Sweatshirt"
+
+- type: loadout
+  id: ClothingUniformOversizeSweatGoth
+  equipment:
+    outerClothing: ClothingUniformOversizeSweatGoth
+  groupBy: "Sweatshirt"
+
+- type: loadout
+  id: ClothingUniformOversizeSweatUni
+  equipment:
+    outerClothing: ClothingUniformOversizeSweatUni
+  groupBy: "Sweatshirt"
+
+- type: loadout
+  id: ClothingUniformOversizeSweatTacky
+  equipment:
+    outerClothing: ClothingUniformOversizeSweatTacky
+  groupBy: "Sweatshirt"
+
+- type: loadout
+  id: ClothingUniformFishnet
+  equipment:
+    outerClothing: ClothingUniformFishnet
+  groupBy: "lewd outer"
+
+- type: loadout
+  id: ClothingUniformFishnetAlt
+  equipment:
+    outerClothing: ClothingUniformFishnetAlt
+  groupBy: "lewd outer"
+
+- type: loadout
+  id: ClothingUniformFishnetSleeves
+  equipment:
+    outerClothing: ClothingUniformFishnetSleeves
+  groupBy: "lewd outer"
+
+- type: loadout
+  id: ClothingUniformFishnetSimpleTop
+  equipment:
+    outerClothing: ClothingUniformFishnetSleevesGloves
+  groupBy: "lewd outer"
+
+- type: loadout
+  id: ClothingUniformFishnetSleevesGloves
+  equipment:
+    outerClothing: ClothingUniformFishnetSleevesGloves
+  groupBy: "lewd outer"
 
 # hats
 - type: loadout
