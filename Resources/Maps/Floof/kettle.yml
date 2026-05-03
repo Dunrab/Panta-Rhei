@@ -4,8 +4,8 @@ meta:
   engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/03/2026 19:32:48
-  entityCount: 27687
+  time: 05/03/2026 19:56:31
+  entityCount: 27702
 maps:
 - 84
 grids:
@@ -12423,7 +12423,7 @@ entities:
       pos: 10.5,32.5
       parent: 82
     - type: Door
-      secondsUntilStateChange: -46461.145
+      secondsUntilStateChange: -46669.152
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -13436,7 +13436,7 @@ entities:
       pos: 30.5,50.5
       parent: 82
     - type: Door
-      secondsUntilStateChange: -46878.035
+      secondsUntilStateChange: -47086.043
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -14278,7 +14278,7 @@ entities:
       pos: -55.5,-23.5
       parent: 82
     - type: Door
-      secondsUntilStateChange: -44943.938
+      secondsUntilStateChange: -45151.945
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -15572,6 +15572,13 @@ entities:
     components:
     - type: Transform
       pos: -2.5,-29.5
+      parent: 82
+    - type: Fixtures
+      fixtures: {}
+  - uid: 27690
+    components:
+    - type: Transform
+      pos: -2.5,-33.5
       parent: 82
     - type: Fixtures
       fixtures: {}
@@ -22462,7 +22469,7 @@ entities:
   - uid: 12149
     components:
     - type: Transform
-      pos: 12.5,-39.5
+      pos: 14.5,-38.5
       parent: 82
   - uid: 12150
     components:
@@ -22532,7 +22539,7 @@ entities:
   - uid: 12163
     components:
     - type: Transform
-      pos: 11.5,-36.5
+      pos: 13.5,-38.5
       parent: 82
   - uid: 12164
     components:
@@ -40669,6 +40676,36 @@ entities:
     - type: Transform
       pos: 16.5,-31.5
       parent: 82
+  - uid: 27694
+    components:
+    - type: Transform
+      pos: -2.5,-35.5
+      parent: 82
+  - uid: 27695
+    components:
+    - type: Transform
+      pos: -2.5,-34.5
+      parent: 82
+  - uid: 27696
+    components:
+    - type: Transform
+      pos: -2.5,-33.5
+      parent: 82
+  - uid: 27697
+    components:
+    - type: Transform
+      pos: 8.5,-35.5
+      parent: 82
+  - uid: 27698
+    components:
+    - type: Transform
+      pos: 7.5,-35.5
+      parent: 82
+  - uid: 27699
+    components:
+    - type: Transform
+      pos: 15.5,-38.5
+      parent: 82
 - proto: CableApcStack
   entities:
   - uid: 4173
@@ -54752,6 +54789,31 @@ entities:
     components:
     - type: Transform
       pos: -2.5,-29.5
+      parent: 82
+  - uid: 27688
+    components:
+    - type: Transform
+      pos: -1.5,-34.5
+      parent: 82
+  - uid: 27689
+    components:
+    - type: Transform
+      pos: -2.5,-34.5
+      parent: 82
+  - uid: 27691
+    components:
+    - type: Transform
+      pos: 0.5,-34.5
+      parent: 82
+  - uid: 27692
+    components:
+    - type: Transform
+      pos: -0.5,-34.5
+      parent: 82
+  - uid: 27693
+    components:
+    - type: Transform
+      pos: -2.5,-33.5
       parent: 82
 - proto: CableMVStack
   entities:
@@ -122683,7 +122745,7 @@ entities:
       pos: 29.5,63.5
       parent: 82
     - type: Door
-      secondsUntilStateChange: -59747.7
+      secondsUntilStateChange: -59955.707
       state: Opening
 - proto: HospitalCurtainsOpen
   entities:
@@ -126912,6 +126974,13 @@ entities:
     components:
     - type: Transform
       pos: 29.523176,-33.318348
+      parent: 82
+- proto: PetStoreVendingMachine
+  entities:
+  - uid: 22059
+    components:
+    - type: Transform
+      pos: -19.5,-32.5
       parent: 82
 - proto: PhoneInstrument
   entities:
@@ -132198,14 +132267,6 @@ entities:
       parent: 82
     - type: ApcPowerReceiver
       powerLoad: 0
-  - uid: 22059
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 12.5,-38.5
-      parent: 82
-    - type: ApcPowerReceiver
-      powerLoad: 0
   - uid: 22076
     components:
     - type: Transform
@@ -132617,6 +132678,18 @@ entities:
     components:
     - type: Transform
       pos: -52.5,-46.5
+      parent: 82
+  - uid: 27700
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 5.5,-31.5
+      parent: 82
+  - uid: 27701
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 12.5,-39.5
       parent: 82
 - proto: PrizeCounter
   entities:
@@ -147856,6 +147929,14 @@ entities:
     components:
     - type: Transform
       pos: -4.5,39.5
+      parent: 82
+- proto: SpawnMobCMOPetSilvia
+  entities:
+  - uid: 27702
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -45.5,-25.5
       parent: 82
 - proto: SpawnMobCorgi
   entities:
