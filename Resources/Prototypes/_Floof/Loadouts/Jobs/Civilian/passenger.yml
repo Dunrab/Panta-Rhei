@@ -1815,3 +1815,9 @@
   equipment:
     neck: ClothingNeckCollarShockPetId
   groupBy: "petids"
+
+- type: loadout
+  id: ClothingNeckCollarBellPetId
+  equipment:
+    neck: ClothingNeckCollarBellPetId
+  groupBy: "petids"

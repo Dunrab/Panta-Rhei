@@ -65,6 +65,13 @@
   name: shock emotional support id collar
   description: A cute shocky collar that holds a pets id.
 
+# bell collar
+- type: entity
+  parent: [ClothingNeckCollarBell, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarBellPetId
+  name: bell emotional support id collar
+  description: A cute red collar that holds a pets id.
+
 # medical base & id collars
 - type: entity
   parent: [ClothingNeckCollarMed, ClothingNeckCollarBasetId]
