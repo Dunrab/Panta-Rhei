@@ -342,7 +342,7 @@
   id: RecipeMoonFishDemiglace
   name: moonfish demiglace recipe
   result: FoodMoonFishDemiglace
-  time: 10
+  time: 15
   group: Savory
   solids:
     FoodMeatMoonFishFillet: 1
@@ -382,7 +382,7 @@
   id: RecipeFishFrySalmon
   name: salmon fish fry recipe
   result: FoodFishFrySalmon
-  time: 5
+  time: 10
   group: Savory
   solids:
     FoodMeatSalmon: 1
@@ -410,7 +410,7 @@
   id: RecipeCalamariPlater
   name: calamari plater recipe
   result: FoodCalamariPlater
-  time: 5
+  time: 15
   group: Savory
   solids:
     FoodMeatSquid: 1
