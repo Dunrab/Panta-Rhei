@@ -116,3 +116,57 @@
   - type: Tag
     tags:
     - Meat
+
+# Moonfish requires a bit more than other foods
+- type: foodSequenceElement
+  id: GrilledMoonFish
+  sprites:
+  - type: Sprite
+    sprite: _Floof/Objects/Consumable/Food/fish_filet.rsi
+    state: grilled_moonfish
+  tags:
+  - Cooked
+  - Meat
+
+- type: constructionGraph
+  id: GrilledMoonFish
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: grilled moonfish
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+
+  - node: grilled moonfish
+    entity: FoodMeatMoonFishGrilled
+
+- type: entity
+  parent: FoodMeatBase
+  id: FoodMeatMoonFishGrilled
+  name: grilled moonsfish
+  description: A cooked moonfish fillet. Smells primal.
+  components:
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+    - Steak
+  - type: Sprite
+    sprite: _Floof/Objects/Consumable/Food/fish_filet.rsi
+    state: grilled_moonfish
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 5
+  - type: FoodSequenceElement
+    entries:
+      Burger: FoodMeatMoonFishGrilled
+      Taco: FoodMeatMoonFishGrilled

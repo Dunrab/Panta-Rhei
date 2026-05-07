@@ -328,3 +328,12 @@
     FoodEggplant: 1
   reagents:
     OliveOil: 10
+
+- type: microwaveMealRecipe
+  id: RecipeGrilledMoonFish
+  name: grilled moon fish recipe
+  result: FoodMeatMoonFishGrilled
+  time: 5
+  group: Savory
+  solids:
+    FoodMeatMoonFishFillet: 1
