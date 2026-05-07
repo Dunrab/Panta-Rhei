@@ -390,6 +390,7 @@
     FoodPotato: 1
   reagents:
     OilOlive: 5
+    TableSalt: 5
 
 - type: microwaveMealRecipe
   id: RecipeDonkFishStew
@@ -404,3 +405,18 @@
     FoodPotato: 1
     FoodMushroom: 1
     FoodMeatDonkFish: 1
+
+- type: microwaveMealRecipe
+  id: RecipeCalamariPlater
+  name: calamari plater recipe
+  result: FoodCalamariPlater
+  time: 5
+  group: Savory
+  solids:
+    FoodMeatSquid: 1
+    FoodLemon: 1
+    FoodGarlic: 1
+    FoodChiliPepper: 1
+  reagents:
+    OilOlive: 5
+    TableSalt: 5

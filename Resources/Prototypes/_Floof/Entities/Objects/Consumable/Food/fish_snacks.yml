@@ -295,3 +295,29 @@
           Quantity: 5
         - ReagentId: Water
           Quantity: 5
+
+- type: entity
+  parent: FoodMealBase
+  id: FoodCalamariPlater
+  name: calamari plater
+  description: Salmon fish fry? More like fish cry...
+  components:
+  - type: Sprite
+    sprite: _Floof/Objects/Consumable/Food/squid.rsi
+    state: calimariplater
+  - type: FlavorProfile
+    flavors:
+    - fishy
+    - salty
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Protein
+          Quantity: 3
+  - type: Tag
+    tags:
+    - Meat

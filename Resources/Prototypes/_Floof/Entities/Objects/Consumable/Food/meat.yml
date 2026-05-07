@@ -73,5 +73,5 @@
     flavors:
     - fishy
   - type: Sprite
-    sprite: _Floof/Objects/Consumable/Food/fish_filet.rsi
+    sprite: _Floof/Objects/Consumable/Food/squid.rsi
     state: squid_meat
