@@ -327,7 +327,7 @@
     FoodCheeseSlice: 1
     FoodEggplant: 1
   reagents:
-    OliveOil: 10
+    OilOlive: 5
 
 - type: microwaveMealRecipe
   id: RecipeGrilledMoonFish
@@ -337,3 +337,18 @@
   group: Savory
   solids:
     FoodMeatMoonFishFillet: 1
+
+- type: microwaveMealRecipe
+  id: RecipeMoonFishDemiglace
+  name: moonfish demiglace recipe
+  result: FoodMoonFishDemiglace
+  time: 10
+  group: Savory
+  solids:
+    FoodMeatMoonFishFillet: 1
+    FoodCheeseSlice: 1
+    FoodGarlic: 1
+    FoodAmbrosiaVulgaris: 1
+    FoodCarrot: 1
+  reagents:
+    OilOlive: 5

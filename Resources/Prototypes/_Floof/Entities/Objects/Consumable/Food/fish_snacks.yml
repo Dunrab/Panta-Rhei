@@ -86,33 +86,27 @@
     - Meat
 
 - type: entity
-  parent: FoodBurgerBase
-  id: FoodBurgerLowQualityFish
-  name: fish burger
+  parent: FoodMealBase
+  id: ArmorFishFlatBread
+  name: armor fish flatbread
   description: A flat bread with some of the finest cuts of fish.
   components:
   - type: Sprite
     sprite: _Floof/Objects/Consumable/Food/fish_filet.rsi
     state: armorfish_flatbread
-  - type: Item
-    storedOffset: 0,1
-    inhandVisuals:
-      left:
-      - state: bun-inhand-left
-      - state: alpha-filling-inhand-left
-        color: "#feffba"
-      - state: alpha-patty-inhand-left
-        color: "#f4bb53"
-      right:
-      - state: bun-inhand-right
-      - state: alpha-filling-inhand-right
-        color: "#feffba"
-      - state: alpha-patty-inhand-right
-        color: "#f4bb53"
   - type: FlavorProfile
     flavors:
     - bun
     - fishy
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Protein
+          Quantity: 3
   - type: Tag
     tags:
     - Meat
@@ -170,3 +164,29 @@
     entries:
       Burger: FoodMeatMoonFishGrilled
       Taco: FoodMeatMoonFishGrilled
+
+- type: entity
+  parent: FoodBurgerBase
+  id: FoodMoonFishDemiglace
+  name: fish burger
+  description: A nice fish dinner paired with some Demiglace.
+  components:
+  - type: Sprite
+    sprite: _Floof/Objects/Consumable/Food/fish_filet.rsi
+    state: moonfish_demiglace
+  - type: FlavorProfile
+    flavors:
+    - fishy
+    - salty
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Protein
+          Quantity: 3
+  - type: Tag
+    tags:
+    - Meat
