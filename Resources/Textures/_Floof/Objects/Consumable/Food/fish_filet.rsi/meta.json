@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Need to find the prs these files are from.",
+    "copyright": "Taken from tgstation Commits: https://github.com/tgstation/tgstation/commit/c90e4ef1cc1f5735b514a1d9010533c771333b1c, https://github.com/tgstation/tgstation/commit/78fdcac1192af639cc4df4eb4b80aad43889ce21, https://github.com/tgstation/tgstation/commit/659e6f0ca248758eb26d6dd4f3be452683b2c167 & ",
     "size": {
         "x": 32,
         "y": 32
