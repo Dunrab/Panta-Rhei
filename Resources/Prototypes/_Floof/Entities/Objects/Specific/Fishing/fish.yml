@@ -11,6 +11,9 @@
     state: angelfish
   - type: Item
     sprite: _Floof/Objects/Specific/Fishing/fish.rsi
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatDonkFish
 
 - type: entity
   id: FishArticChar
@@ -23,6 +26,9 @@
     state: arctic_char
   - type: Item
     sprite: _Floof/Objects/Specific/Fishing/fish.rsi
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatFishLowQualityFillet
 
 - type: entity
   id: FishCardinal
@@ -35,6 +41,9 @@
     state: cardinalfish
   - type: Item
     sprite: _Floof/Objects/Specific/Fishing/fish.rsi
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatDonkFish
 
 - type: entity
   id: FishCrab
@@ -47,6 +56,9 @@
     state: crab
   - type: Item
     sprite: _Floof/Objects/Specific/Fishing/fish.rsi
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatCrab # is a crab so lets give crab meat
 
 - type: entity
   id: FishDwarfMoon
@@ -59,6 +71,9 @@
     state: dwarf_moonfish
   - type: Item
     sprite: _Floof/Objects/Specific/Fishing/fish.rsi
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatMoonFishFillet
 
 - type: entity
   id: FishFire
@@ -71,6 +86,9 @@
     state: firefish
   - type: Item
     sprite: _Floof/Objects/Specific/Fishing/fish.rsi
+  - type: Butcherable
+    spawned:
+    - id: Coal1 # is a fire fish so lets it give one coal
 
 - type: entity
   id: FishGoldFish
@@ -83,6 +101,9 @@
     state: goldfish
   - type: Item
     sprite: _Floof/Objects/Specific/Fishing/fish.rsi
+  - type: Butcherable
+    spawned:
+    - id: IngotGold1 # is a gold fish so lets it give one gold bar
 
 - type: entity
   id: FishGuppy
@@ -95,6 +116,9 @@
     state: guppy
   - type: Item
     sprite: _Floof/Objects/Specific/Fishing/fish.rsi
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSalmon
 
 - type: entity
   id: FishSandSurfer
@@ -107,6 +131,9 @@
     state: sand_surfer
   - type: Item
     sprite: _Floof/Objects/Specific/Fishing/fish.rsi
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatFishLowQualityFillet
 
 - type: entity
   id: FishThreeEyes
@@ -119,6 +146,9 @@
     state: three_eyes
   - type: Item
     sprite: _Floof/Objects/Specific/Fishing/fish.rsi
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatFishLowQualityFillet
 
 # Rare Fish
 - type: entity
@@ -132,6 +162,9 @@
     state: armorfish
   - type: Item
     sprite: _Floof/Objects/Specific/Fishing/fish.rsi
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatArmorFish
 
 - type: entity
   id: FishBoneMass
@@ -144,6 +177,9 @@
     state: bonemass
   - type: Item
     sprite: _Floof/Objects/Specific/Fishing/fish.rsi
+  - type: Butcherable
+    spawned:
+    - id: MaterialBones1 # is a skeleton fish so let it drop a bone
 
 - type: entity
   id: FishMonk
@@ -156,6 +192,9 @@
     state: monkfish
   - type: Item
     sprite: _Floof/Objects/Specific/Fishing/fish.rsi
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSalmon
 
 - type: entity
   id: FishRat
@@ -168,6 +207,9 @@
     state: ratfish
   - type: Item
     sprite: _Floof/Objects/Specific/Fishing/fish.rsi
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatRat # is a rat fish, so let it drop a slice of rat meat
 
 - type: entity
   id: FishSludge
@@ -180,6 +222,9 @@
     state: sludgefish_purple
   - type: Item
     sprite: _Floof/Objects/Specific/Fishing/fish.rsi
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatFishLowQualityFillet # not sure what to give the sludge fish yet
 
 - type: entity
   id: FishStingray
@@ -192,7 +237,10 @@
     state: stingray
   - type: Item
     sprite: _Floof/Objects/Specific/Fishing/fish.rsi
-##
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSalmon # going to give it salmon for now since we don't have any sting ray tails
+
 - type: entity
   id: FishLava
   parent: BaseFishRare
@@ -204,6 +252,9 @@
     state: lava_loop
   - type: Item
     sprite: _Floof/Objects/Specific/Fishing/fish.rsi
+  - type: Butcherable
+    spawned:
+    - id: Coal1 # is a lava fish so lets it give one coal
 
 - type: entity
   id: FishJumperCable
@@ -216,6 +267,9 @@
     state: jumpercable
   - type: Item
     sprite: _Floof/Objects/Specific/Fishing/fish.rsi
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatDonkFish
 
 - type: entity
   id: FishPlasma
@@ -228,6 +282,9 @@
     state: plasma_loop
   - type: Item
     sprite: _Floof/Objects/Specific/Fishing/fish.rsi
+  - type: Butcherable
+    spawned:
+    - id: SheetPlasma1 # is a plasma fish so lets it give one coal
 
 - type: entity
   id: FishSquid
@@ -240,3 +297,6 @@
     state: squid
   - type: Item
     sprite: _Floof/Objects/Specific/Fishing/fish.rsi
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSquid

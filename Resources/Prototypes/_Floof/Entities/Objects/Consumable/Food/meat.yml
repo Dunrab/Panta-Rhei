@@ -62,3 +62,16 @@
   - type: Sprite
     sprite: _Floof/Objects/Consumable/Food/fish_filet.rsi
     state: moonfish_fillet
+
+- type: entity
+  parent: FoodMeatFish
+  id: FoodMeatSquid
+  name: raw squid
+  description: Your last words being "Wow, exotic!" are not worth it. The taste itself though? Maybe.
+  components:
+  - type: FlavorProfile
+    flavors:
+    - fishy
+  - type: Sprite
+    sprite: _Floof/Objects/Consumable/Food/fish_filet.rsi
+    state: squid_meat
