@@ -166,9 +166,9 @@
       Taco: GrilledMoonFish
 
 - type: entity
-  parent: FoodBurgerBase
+  parent: FoodMealBase
   id: FoodMoonFishDemiglace
-  name: fish burger
+  name: moon fish demiglace
   description: A nice fish dinner paired with some Demiglace.
   components:
   - type: Sprite
@@ -190,3 +190,108 @@
   - type: Tag
     tags:
     - Meat
+
+- type: entity
+  parent: FoodMealBase
+  id: FoodFishFingers
+  name: fish fingers
+  description: Who needs fish and chips when you can pop these bad boys?
+  components:
+  - type: Sprite
+    sprite: _Floof/Objects/Consumable/Food/fish_filet.rsi
+    state: fishfingers
+  - type: FlavorProfile
+    flavors:
+    - fishy
+    - salty
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Protein
+          Quantity: 3
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  parent: FoodMealBase
+  id: FoodFishFryLowQualityFish
+  name: low quality fish fry
+  description: Not the best cut of fish but it will do for now...
+  components:
+  - type: Sprite
+    sprite: _Floof/Objects/Consumable/Food/fish_filet.rsi
+    state: salmon_fishfry
+  - type: FlavorProfile
+    flavors:
+    - fishy
+    - salty
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Protein
+          Quantity: 3
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  parent: FoodMealBase
+  id: FoodFishFrySalmon
+  name: salmon fish fry
+  description: Salmon fish fry? More like fish cry...
+  components:
+  - type: Sprite
+    sprite: _Floof/Objects/Consumable/Food/fish_filet.rsi
+    state: salmon_fishfry
+  - type: FlavorProfile
+    flavors:
+    - fishy
+    - salty
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Protein
+          Quantity: 3
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  parent: FoodBowlBase
+  id: FoodStewDonkFish
+  name: donk fish stew
+  description: A classic entrée from the great fish migration.
+  components:
+  - type: FlavorProfile
+    flavors:
+    - creamy
+    - fishy
+  - type: Sprite
+    sprite: _Floof/Objects/Consumable/Food/fish_filet.rsi
+    state: donkfish_stew
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 40
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 15
+        - ReagentId: Protein
+          Quantity: 5
+        - ReagentId: Water
+          Quantity: 5

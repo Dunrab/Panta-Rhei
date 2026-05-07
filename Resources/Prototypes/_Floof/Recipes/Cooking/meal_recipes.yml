@@ -352,3 +352,55 @@
     FoodCarrot: 1
   reagents:
     OilOlive: 5
+
+- type: microwaveMealRecipe
+  id: RecipeFishFingers
+  name: fish fingers recipe
+  result: FoodFishFingers
+  time: 5
+  group: Savory
+  solids:
+    FoodMeatFishLowQualityFillet: 1
+    FoodDoughSlice: 1
+  reagents:
+    Mayo: 5
+
+- type: microwaveMealRecipe
+  id: RecipeFishFryLowQualityFish
+  name: low quality fish fry recipe
+  result: FoodFishFryLowQualityFish
+  time: 5
+  group: Savory
+  solids:
+    FoodMeatFishLowQualityFillet: 1
+    FoodLemon: 1
+    FoodPotato: 1
+  reagents:
+    OilOlive: 5
+
+- type: microwaveMealRecipe
+  id: RecipeFishFrySalmon
+  name: salmon fish fry recipe
+  result: FoodFishFrySalmon
+  time: 5
+  group: Savory
+  solids:
+    FoodMeatSalmon: 1
+    FoodLemon: 1
+    FoodPotato: 1
+  reagents:
+    OilOlive: 5
+
+- type: microwaveMealRecipe
+  id: RecipeDonkFishStew
+  name: donk fish stew recipe
+  result: FoodStewDonkFish
+  time: 10
+  group: Soup
+  reagents:
+    Water: 10
+  solids:
+    FoodBowlBig: 1
+    FoodPotato: 1
+    FoodMushroom: 1
+    FoodMeatDonkFish: 1
