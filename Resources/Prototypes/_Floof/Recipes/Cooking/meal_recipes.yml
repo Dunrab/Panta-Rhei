@@ -289,6 +289,7 @@
     FoodDoughSlice: 1
     FoodMeatCutlet: 1
 
+# fish recipe additions
 - type: microwaveMealRecipe
   id: RecipeSalmonSushi
   name: salmon sushi recipe
@@ -301,3 +302,29 @@
   reagents:
     Rice: 15
     Water: 10
+
+- type: microwaveMealRecipe
+  id: RecipeFishBurger
+  name: fish burger recipe
+  result: FoodBurgerLowQualityFish
+  time: 10
+  group: Savory
+  solids:
+    FoodBreadBun: 1
+    FoodMeatFishLowQualityFillet: 1
+    FoodCheeseSlice: 1
+    FoodCabbage: 1
+
+- type: microwaveMealRecipe
+  id: RecipeArmorFishFlatBread
+  name: armor fish flatbread recipe
+  result: FoodFlatBreadArmorFish
+  time: 10
+  group: Savory
+  solids:
+    FoodDough: 1
+    FoodMeatFishLowQualityFillet: 1
+    FoodCheeseSlice: 1
+    FoodEggplant: 1
+  reagents:
+    OliveOil: 10

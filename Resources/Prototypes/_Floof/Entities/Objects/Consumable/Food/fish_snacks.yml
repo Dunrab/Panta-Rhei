@@ -52,3 +52,67 @@
           Quantity: 2
         - ReagentId: CucumberWater
           Quantity: .4
+
+- type: entity
+  parent: FoodBurgerBase
+  id: FoodBurgerLowQualityFish
+  name: fish burger
+  description: Almost like a fish is yelling somewhere...
+  components:
+  - type: Sprite
+    sprite: _Floof/Objects/Consumable/Food/fish_filet.rsi
+    state: kortaburger
+  - type: Item
+    storedOffset: 0,1
+    inhandVisuals:
+      left:
+      - state: bun-inhand-left
+      - state: alpha-filling-inhand-left
+        color: "#feffba"
+      - state: alpha-patty-inhand-left
+        color: "#f4bb53"
+      right:
+      - state: bun-inhand-right
+      - state: alpha-filling-inhand-right
+        color: "#feffba"
+      - state: alpha-patty-inhand-right
+        color: "#f4bb53"
+  - type: FlavorProfile
+    flavors:
+    - bun
+    - fishy
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  parent: FoodBurgerBase
+  id: FoodBurgerLowQualityFish
+  name: fish burger
+  description: A flat bread with some of the finest cuts of fish.
+  components:
+  - type: Sprite
+    sprite: _Floof/Objects/Consumable/Food/fish_filet.rsi
+    state: armorfish_flatbread
+  - type: Item
+    storedOffset: 0,1
+    inhandVisuals:
+      left:
+      - state: bun-inhand-left
+      - state: alpha-filling-inhand-left
+        color: "#feffba"
+      - state: alpha-patty-inhand-left
+        color: "#f4bb53"
+      right:
+      - state: bun-inhand-right
+      - state: alpha-filling-inhand-right
+        color: "#feffba"
+      - state: alpha-patty-inhand-right
+        color: "#f4bb53"
+  - type: FlavorProfile
+    flavors:
+    - bun
+    - fishy
+  - type: Tag
+    tags:
+    - Meat
