@@ -87,7 +87,7 @@
 
 - type: entity
   parent: FoodMealBase
-  id: ArmorFishFlatBread
+  id: FoodFlatBreadArmorFish
   name: armor fish flatbread
   description: A flat bread with some of the finest cuts of fish.
   components:
@@ -162,8 +162,8 @@
           Quantity: 5
   - type: FoodSequenceElement
     entries:
-      Burger: FoodMeatMoonFishGrilled
-      Taco: FoodMeatMoonFishGrilled
+      Burger: GrilledMoonFish
+      Taco: GrilledMoonFish
 
 - type: entity
   parent: FoodBurgerBase
