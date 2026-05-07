@@ -288,3 +288,16 @@
   solids:
     FoodDoughSlice: 1
     FoodMeatCutlet: 1
+
+- type: microwaveMealRecipe
+  id: RecipeSalmonSushi
+  name: salmon sushi recipe
+  result: FoodMealSalmonSushi
+  time: 5
+  solids:
+    FoodAvocadoSlice: 2
+    FoodCucumberSlice: 2
+    FoodMeatSalmon: 1
+  reagents:
+    Rice: 15
+    Water: 10

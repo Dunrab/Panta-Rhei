@@ -1,0 +1,54 @@
+﻿- type: entity
+  name: salmon sushi roll
+  parent: FoodMealBase
+  id: FoodMealSalmonSushi
+  description: Where did the seaweed come from?
+  components:
+  - type: FlavorProfile
+    flavors:
+    - fishy
+    - cucumber
+    - avocado
+  - type: Sprite
+    sprite: _Floof/Objects/Consumable/Food/fish_filet.rsi
+    state: salmon_sushi_roll
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 40
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 20
+        - ReagentId: Flavorol
+          Quantity: 10
+        - ReagentId: CucumberWater
+          Quantity: 2
+  - type: SliceableFood
+    count: 5
+    slice: FoodMealSalmonSushiSlice
+
+- type: entity
+  name: salmon sushi roll slice
+  parent: FoodInjectableBase
+  id: FoodMealSalmonSushiSlice
+  description: Where did the seaweed come from?
+  components:
+  - type: FlavorProfile
+    flavors:
+    - fishy
+    - cucumber
+    - avocado
+  - type: Sprite
+    sprite: _Floof/Objects/Consumable/Food/fish_filet.rsi
+    state: salmon_suhsi_slice
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 8
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Flavorol
+          Quantity: 2
+        - ReagentId: CucumberWater
+          Quantity: .4
