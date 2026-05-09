@@ -1,7 +1,5 @@
-using Content.Server.Explosion.Components;
 using Content.Server.GameTicking;
 using Content.Server.Popups;
-using Content.Server.Store.Components;
 using Content.Server.Store.Systems;
 using Content.Shared.Flash.Components;
 using Content.Shared.Trigger.Components;
@@ -9,9 +7,9 @@ using Content.Shared.CombatMode;
 using Content.Shared.CombatMode.Pacification;
 using Content.Shared._DV.CCVars;
 using Content.Shared.Explosion.Components;
-using Content.Shared.FixedPoint;
-using Content.Shared.Flash.Components;
+using Content.Shared.Projectiles;
 using Content.Shared.Store.Components;
+using Content.Shared.Weapons.Melee;
 using Robust.Server.Player;
 using Robust.Shared.Configuration;
 
@@ -51,6 +49,7 @@ public sealed class PacifiedRoundEnd : EntitySystem
             RemComp<ExplosiveComponent>(uid);
         }
 
+        //Floofstation EORG prevent additions begin
         // we need to account for all the types of grenades, to my knowledge all have a TimerTriggerComp
         var grenadeQuery = _entityManager.EntityQueryEnumerator<TimerTriggerComponent>();
         while (grenadeQuery.MoveNext(out var uid, out _))
@@ -63,6 +62,21 @@ public sealed class PacifiedRoundEnd : EntitySystem
         {
             RemComp<FlashComponent>(uid);
         }
+
+        // we need to account for throwing weapons as well
+        var throwQuery = EntityQueryEnumerator<EmbeddableProjectileComponent>();
+        while (throwQuery.MoveNext(out var uid, out var _))
+        {
+            RemComp<EmbeddableProjectileComponent>(uid);
+        }
+
+        // we also need to account for melee weapons as well
+        var meleeQuery = EntityQueryEnumerator<MeleeWeaponComponent>();
+        while (meleeQuery.MoveNext(out var uid, out var _))
+        {
+            RemComp<MeleeWeaponComponent>(uid);
+        }
+        //Floofstation EORG prevent additions end
 
         var uplinkQuery = EntityQueryEnumerator<StoreComponent>();
         while (uplinkQuery.MoveNext(out var uid, out var store))
