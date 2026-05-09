@@ -4,8 +4,8 @@ meta:
   engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/09/2026 20:34:48
-  entityCount: 37007
+  time: 05/09/2026 22:45:53
+  entityCount: 37006
 maps:
 - 1
 grids:
@@ -18164,7 +18164,7 @@ entities:
       pos: 90.5,-29.5
       parent: 13329
     - type: Door
-      secondsUntilStateChange: -23030.127
+      secondsUntilStateChange: -23133.814
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -19760,7 +19760,7 @@ entities:
       pos: -15.5,-4.5
       parent: 13329
     - type: Door
-      secondsUntilStateChange: -28187.4
+      secondsUntilStateChange: -28291.088
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -31074,11 +31074,6 @@ entities:
     - type: Transform
       pos: -20.5,50.5
       parent: 13329
-  - uid: 4959
-    components:
-    - type: Transform
-      pos: -20.5,52.5
-      parent: 13329
   - uid: 4960
     components:
     - type: Transform
@@ -31129,16 +31124,6 @@ entities:
     - type: Transform
       pos: -18.5,50.5
       parent: 13329
-  - uid: 4970
-    components:
-    - type: Transform
-      pos: -18.5,51.5
-      parent: 13329
-  - uid: 4971
-    components:
-    - type: Transform
-      pos: -18.5,52.5
-      parent: 13329
   - uid: 4972
     components:
     - type: Transform
@@ -31153,11 +31138,6 @@ entities:
     components:
     - type: Transform
       pos: 41.5,18.5
-      parent: 13329
-  - uid: 13390
-    components:
-    - type: Transform
-      pos: -20.5,51.5
       parent: 13329
   - uid: 36657
     components:
@@ -101241,6 +101221,13 @@ entities:
     - type: Transform
       pos: 34.5,42.5
       parent: 13329
+- proto: DisplayCaseArtifact
+  entities:
+  - uid: 4970
+    components:
+    - type: Transform
+      pos: -20.5,52.5
+      parent: 13329
 - proto: DisposalBend
   entities:
   - uid: 59
@@ -168999,6 +168986,11 @@ entities:
       parent: 13329
 - proto: MachineFrameDestroyed
   entities:
+  - uid: 4959
+    components:
+    - type: Transform
+      pos: -18.5,51.5
+      parent: 13329
   - uid: 11488
     components:
     - type: Transform
@@ -194299,6 +194291,13 @@ entities:
     components:
     - type: Transform
       pos: 114.5,49.5
+      parent: 13329
+- proto: SpawnMobCMOPetSilvia
+  entities:
+  - uid: 4971
+    components:
+    - type: Transform
+      pos: 23.5,49.5
       parent: 13329
 - proto: SpawnMobCorgi
   entities:
