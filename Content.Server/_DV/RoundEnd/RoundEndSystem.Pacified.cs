@@ -6,6 +6,7 @@ using Content.Shared.Trigger.Components;
 using Content.Shared.CombatMode;
 using Content.Shared.CombatMode.Pacification;
 using Content.Shared._DV.CCVars;
+using Content.Shared.Damage.Components;
 using Content.Shared.Explosion.Components;
 using Content.Shared.Projectiles;
 using Content.Shared.Store.Components;
@@ -61,13 +62,6 @@ public sealed class PacifiedRoundEnd : EntitySystem
         while (flashQuery.MoveNext(out var uid, out var _))
         {
             RemCompDeferred<FlashComponent>(uid);
-        }
-
-        // we need to account for throwing weapons as well
-        var throwQuery = EntityQueryEnumerator<EmbeddableProjectileComponent>();
-        while (throwQuery.MoveNext(out var uid, out var _))
-        {
-            RemCompDeferred<EmbeddableProjectileComponent>(uid);
         }
 
         // we also need to account for melee weapons as well
