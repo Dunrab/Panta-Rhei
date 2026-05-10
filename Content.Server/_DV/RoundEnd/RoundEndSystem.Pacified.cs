@@ -46,7 +46,7 @@ public sealed class PacifiedRoundEnd : EntitySystem
         var explosiveQuery = EntityQueryEnumerator<ExplosiveComponent>();
         while (explosiveQuery.MoveNext(out var uid, out var _))
         {
-            RemComp<ExplosiveComponent>(uid);
+            RemCompDeferred<ExplosiveComponent>(uid); // Floofstation changed to RemCompDeferred
         }
 
         //Floofstation EORG prevent additions begin
@@ -54,27 +54,31 @@ public sealed class PacifiedRoundEnd : EntitySystem
         var grenadeQuery = _entityManager.EntityQueryEnumerator<TimerTriggerComponent>();
         while (grenadeQuery.MoveNext(out var uid, out _))
         {
-            _entityManager.RemoveComponent<TimerTriggerComponent>(uid);
+            RemCompDeferred<TimerTriggerComponent>(uid);
         }
 
         var flashQuery = EntityQueryEnumerator<FlashComponent>();
         while (flashQuery.MoveNext(out var uid, out var _))
         {
-            RemComp<FlashComponent>(uid);
+            RemCompDeferred<FlashComponent>(uid);
         }
 
         // we need to account for throwing weapons as well
         var throwQuery = EntityQueryEnumerator<EmbeddableProjectileComponent>();
         while (throwQuery.MoveNext(out var uid, out var _))
         {
-            RemComp<EmbeddableProjectileComponent>(uid);
+            RemCompDeferred<EmbeddableProjectileComponent>(uid);
         }
 
         // we also need to account for melee weapons as well
         var meleeQuery = EntityQueryEnumerator<MeleeWeaponComponent>();
-        while (meleeQuery.MoveNext(out var uid, out var _))
+        while (meleeQuery.MoveNext(out var uid, out var meleeWeapon))
         {
-            RemComp<MeleeWeaponComponent>(uid);
+            if (meleeWeapon.Damage.AnyPositive())
+                continue;
+            var totaldmg = meleeWeapon.Damage.GetTotal();
+            if (totaldmg > 0)
+                RemCompDeferred<MeleeWeaponComponent>(uid);
         }
         //Floofstation EORG prevent additions end
 
