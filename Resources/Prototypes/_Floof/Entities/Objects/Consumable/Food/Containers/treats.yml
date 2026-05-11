@@ -2,7 +2,7 @@
   parent: FoodSnackBase
   id: FoodSnackTreatMeat
   name: meat treat
-  description: A small bone shaped meat flavored treat for your pet.
+  description: A small bone shaped meat flavored treat.
   components:
   - type: FlavorProfile
     flavors:
@@ -27,7 +27,7 @@
   parent: FoodSnackTreatMeat
   id: FoodSnackTreatBerry
   name: berry treat
-  description: A small bone shaped berry flavored treat for your pet.
+  description: A small bone shaped berry flavored treat.
   components:
   - type: FlavorProfile
     flavors:
@@ -43,7 +43,7 @@
   parent: BaseStorageItem
   id: PetShopTreatBox
   name: Treats Box
-  description: A small meat flavored treat for your pet.
+  description: A small box of snacks & treats, yummers!
   components:
   - type: Sprite
     sprite: _Floof/Objects/Consumable/Food/petshop_treats.rsi
