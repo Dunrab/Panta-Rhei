@@ -86,7 +86,7 @@
   id: UplinkGrenadeFoamCheeseSlice
   name: uplink-cheese-grenade-name
   description: uplink-cheese-grenade-desc
-  icon: { sprite: /Textures/_Floof/Objects/Consumable/Food/squid.rsi/Objects/Fun/Foam/foam_grenade.rsi, state: icon }
+  icon: { sprite: /Textures/Objects/Fun/Foam/foam_grenade.rsi, state: icon }
   productEntity: GrenadeFoamCheeseSlice
   categories:
   - UplinkPointless
