@@ -10,12 +10,12 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 11
+        maxVol: 5
         reagents:
         - ReagentId: Nutriment
-          Quantity: 5
+          Quantity: 2
         - ReagentId: Vitamin
-          Quantity: 4
+          Quantity: 2
   - type: Sprite
     sprite: _Floof/Objects/Consumable/Food/petshop_treats.rsi
     state: treat_meat
