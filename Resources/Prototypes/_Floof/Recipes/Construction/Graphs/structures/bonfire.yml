@@ -22,7 +22,7 @@
         doAfter: 5
 
   - node: BonfireLit
-    entity: BonfireConstructionLit
+    entity: Bonfire
 
 - type: construction
   name: bonfire

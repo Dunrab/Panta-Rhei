@@ -1,44 +1,7 @@
 ﻿- type: entity
-  id: BonfireConstructionLit
-  parent: BaseStructure
-  name: lit campfire
-  description: What can be better then late evening under the sky with guitar and friends.
-  components:
-  - type: Construction
-    graph: Bonfire
-    node: BonfireLit
-  - type: Sprite
-    noRot: true
-    sprite: Structures/Decoration/bonfire.rsi
-    layers:
-    - state: bonfire
-    - state: burning
-  - type: PointLight
-    radius: 5
-    energy: 3
-    color: "#FFC90C"
-  - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: Wood
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 50
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: AmbientSound
-    volume: -5
-    range: 5
-    sound:
-      path: /Audio/Ambience/Objects/fireplace.ogg
-  - type: AlwaysHot
-
-- type: entity
   id: BonfireConstructionUnlit
   parent: BaseStructure
-  name: unlit campfire
+  name: unlit bonfire
   description: What can be better then late evening under the sky with guitar and friends.
   components:
   - type: Construction
