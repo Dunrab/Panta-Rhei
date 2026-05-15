@@ -117,8 +117,8 @@
   components:
   - type: PointLight
     color: "#FFE4CE"
-    energy: 0.8
-    radius: 10
+    energy: 0.2
+    radius: 2
     softness: 1
   - type: Tag
     tags:
