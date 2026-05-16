@@ -73,10 +73,6 @@
     - id: Poison
   - type: Butcherable
     spawned:
-    - id: FoodMeatDragon
-      amount: 2
-  - type: Butcherable
-    spawned:
     - id: FoodCakePlain
       amount: 2
   - type: InteractionPopup
@@ -129,3 +125,32 @@
   - type: FootstepModifier
     footstepSoundCollection:
       collection: JermaClap
+  # disable taking damage from fire, since its a fire breathing dragon
+  - type: Flammable
+    damage:
+      types: { }
+  - type: StatusEffects # Overwriting basesimplemob to remove flash, getting flashed as dragon just feelsbad
+    allowed:
+    - Electrocution
+    - TemporaryBlindness
+    - Pacified
+    - RadiationProtection
+    - Adrenaline
+  - type: Temperature
+    heatDamageThreshold: 2400
+  - type: MovedByPressure # DeltaV - Spacewind Immune
+    enabled: false
+  - type: Prying
+    pryPowered: true
+    force: true
+    speedModifier: 2.5 # fast because dragon strong
+    useSound:
+      path: /Audio/Items/crowbar.ogg
+  - type: LanguageKnowledge # Floofstation
+    speaks:
+    - Xeno
+    - TauCetiBasic
+    understands:
+    - Xeno
+    - TauCetiBasic
+    naturalLanguage: Xeno
