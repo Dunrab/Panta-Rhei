@@ -13,6 +13,10 @@
     makeSentient: true
     name: ghost-role-information-jerma-name
     description: ghost-role-information-jerma-description
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: default
   - type: GhostTakeoverAvailable
   - type: HTN
     rootTask:
@@ -154,3 +158,14 @@
     - Xeno
     - TauCetiBasic
     naturalLanguage: Xeno
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.40
+        density: 100
+        mask:
+        - FlyingMobMask
+        layer:
+        - FlyingMobLayer
