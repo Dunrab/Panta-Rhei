@@ -118,3 +118,114 @@
     sprite: _Floof/Clothing/Neck/Collars/collar_syndi.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Neck/Collars/collar_syndi.rsi
+
+# New Floof specific colors
+- type: entity
+  parent: ClothingNeckCollarBase
+  id: ClothingNeckCollarCentcomm
+  name: CentComm collar
+  description: All bark with a whole lotta bite.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Neck/Collars/Command/centcomm.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Neck/Collars/Command/centcomm.rsi
+
+- type: entity
+  parent: ClothingNeckCollarBase
+  id: ClothingNeckCollarCaptain
+  name: Captain's collar
+  description: The top dog (or cat) around.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Neck/Collars/Command/captain.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Neck/Collars/Command/captain.rsi
+
+- type: entity
+  parent: ClothingNeckCollarBase
+  id: ClothingNeckCollarCE
+  name: Chief Engineer's collar
+  description: The top dog (or cat) around.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Neck/Collars/Command/ce.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Neck/Collars/Command/ce.rsi
+
+- type: entity
+  parent: ClothingNeckCollarBase
+  id: ClothingNeckCollarCJ
+  name: Chief Justice's collar
+  description: The top dog (or cat) around.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Neck/Collars/Command/cj.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Neck/Collars/Command/cj.rsi
+
+- type: entity
+  parent: ClothingNeckCollarBase
+  id: ClothingNeckCollarCMO
+  name: Chief Medical Officer's collar
+  description: The top dog (or cat) around.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Neck/Collars/Command/cmo.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Neck/Collars/Command/cmo.rsi
+
+- type: entity
+  parent: ClothingNeckCollarBase
+  id: ClothingNeckCollarBasicCommand
+  name: Command collar
+  description: The top dog (or cat) around.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Neck/Collars/Command/command.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Neck/Collars/Command/command.rsi
+
+- type: entity
+  parent: ClothingNeckCollarBase
+  id: ClothingNeckCollarHOP
+  name: Head of Personnel collar
+  description: The top dog (or cat) around.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Neck/Collars/Command/hop.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Neck/Collars/Command/hop.rsi
+
+- type: entity
+  parent: ClothingNeckCollarBase
+  id: ClothingNeckCollarHOS
+  name: Head of Security's collar
+  description: The top dog (or cat) around.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Neck/Collars/Command/hos.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Neck/Collars/Command/hos.rsi
+
+- type: entity
+  parent: ClothingNeckCollarBase
+  id: ClothingNeckCollarLO
+  name: Logistics Officer's collar
+  description: The top dog (or cat) around.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Neck/Collars/Command/lo.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Neck/Collars/Command/lo.rsi
+
+- type: entity
+  parent: ClothingNeckCollarBase
+  id: ClothingNeckCollarRD
+  name: Research Director's collar
+  description: The top dog (or cat) around.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Neck/Collars/Command/rd.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Neck/Collars/Command/rd.rsi
