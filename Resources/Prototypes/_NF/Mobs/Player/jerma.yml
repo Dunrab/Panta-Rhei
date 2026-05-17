@@ -1,7 +1,7 @@
 ﻿- type: entity
   parent: SimpleSpaceMobBase
   id: MobJerma
-  suffix: ""
+  suffix: Admeme
   name: Jerma
   description: Its Jerma.
   components:
