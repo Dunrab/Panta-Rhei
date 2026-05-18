@@ -229,3 +229,14 @@
     sprite: _Floof/Clothing/Neck/Collars/Command/rd.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Neck/Collars/Command/rd.rsi
+
+- type: entity
+  parent: ClothingNeckCollarBase
+  id: ClothingNeckCollarJustice
+  name: justice collar
+  description: The long arm of the laws attack dog (or cat).
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Neck/Collars/Department/justice.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Neck/Collars/Department/justice.rsi

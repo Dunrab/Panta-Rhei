@@ -673,9 +673,9 @@
 # same with zookeper, is on two or three maps at most and never played
 # same with martial artist, few maps have it and the role is never taken
 
-# justice does not have a dept collar
+# justice - with its new sprite
 - type: entity
-  parent: [ClothingNeckCollarBlack, ClothingNeckCollarBasetId]
+  parent: [ClothingNeckCollarJustice, ClothingNeckCollarBasetId]
   id: ClothingNeckCollarEmotionalSupportJusticeBase # justice base
   categories: [ HideSpawnMenu ]
   name: justice emotional support collar base
@@ -724,7 +724,7 @@
 - type: entity
   parent: ClothingNeckCollarEmotionalSupportJusticeBase
   id: ClothingNeckCollarEmotionalJusticeClerk # clerk
-  name: prosecutor emotional support collar
+  name: clerk emotional support collar
   description: A law abiding and cute clerk id collar, gotta look cute while taking notes right?.
   components:
   - type: Pda
