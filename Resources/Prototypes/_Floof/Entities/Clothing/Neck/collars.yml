@@ -240,3 +240,70 @@
     sprite: _Floof/Clothing/Neck/Collars/Department/justice.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Neck/Collars/Department/justice.rsi
+
+# Alternative departmental collars
+- type: entity
+  parent: ClothingNeckCollarBase
+  id: ClothingNeckCollarEngiAlternative
+  name: engineering collar
+  description: A collar showing your deft skill utilizing your hands!
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Neck/Collars/Department/engineering.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Neck/Collars/Department/engineering.rsi
+
+- type: entity
+  parent: ClothingNeckCollarBase
+  id: ClothingNeckCollarLogiAlternative
+  name: logistics collar
+  description: Who's a good courier?
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Neck/Collars/Department/cargo.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Neck/Collars/Department/cargo.rsi
+
+- type: entity
+  parent: ClothingNeckCollarBase
+  id: ClothingNeckCollarMedAlternative
+  name: medical collar
+  description: Put your patients at ease by letting them know you're here to help.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Neck/Collars/Department/medical.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Neck/Collars/Department/medical.rsi
+
+- type: entity
+  parent: ClothingNeckCollarBase
+  id: ClothingNeckCollarSecAlternative
+  name: security collar
+  description: Be the best guard dog on the station!
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Neck/Collars/Department/security.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Neck/Collars/Department/security.rsi
+
+- type: entity
+  parent: ClothingNeckCollarBase
+  id: ClothingNeckCollarEpiAlternative
+  name: epistemics collar
+  description: A collar showing how loyal you are to science!
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Neck/Collars/Department/science.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Neck/Collars/Department/science.rsi
+
+- type: entity
+  parent: ClothingNeckCollarBase
+  id: ClothingNeckCollarService
+  name: service collar
+  description: A collar showing how loyal you are to science!
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Neck/Collars/Department/service.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Neck/Collars/Department/service.rsi
