@@ -599,6 +599,62 @@
   - type: IdCard
     jobTitle: job-alt-title-command-emotional-support-captain
 
+- type: entity
+  parent: CMOIDCard
+  id: EmotionalSupportCommandCMOIDCard
+  name: Chief Medical Officer Emotional Support ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-command-emotional-support-cmo
+
+- type: entity
+  parent: RDIDCard
+  id: EmotionalSupportCommandRDIDCard
+  name: Research Director Emotional Support ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-command-emotional-support-rd
+
+- type: entity
+  parent: CEIDCard
+  id: EmotionalSupportCommandCEIDCard
+  name: Chief Engineer Emotional Support ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-command-emotional-support-ce
+
+- type: entity
+  parent: HoSIDCard
+  id: EmotionalSupportCommandHOSIDCard
+  name: Head of Security Emotional Support ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-command-emotional-support-hos
+
+- type: entity
+  parent: QuartermasterIDCard
+  id: EmotionalSupportCommandLOIDCard
+  name: Logistics Officer Emotional Support ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-command-emotional-support-lo
+
+- type: entity
+  parent: HoPIDCard
+  id: EmotionalSupportCommandHOPIDCard
+  name: Head of Personnel Emotional Support ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-command-emotional-support-hop
+
+- type: entity
+  parent: ChiefJusticeIDCard
+  id: EmotionalSupportCommandCJIDCard
+  name: Chief Justice Emotional Support ID card
+  components:
+  - type: IdCard
+    jobTitle: job-alt-title-command-emotional-support-cj
+
 # security technican
 - type: entity
   parent: SecurityIDCard

@@ -35,6 +35,7 @@
   - QuartermasterPDA
   - QMPDA
   - HeadOfAcquisitionsPDA
+  - ClothingNeckCollarEmotionalSupportLO # emotional support
 
 # courier additions
 - type: loadoutGroup

@@ -32,6 +32,7 @@
   loadouts:
   - RnDPDA
   - ResearchDirectorPDA
+  - ClothingNeckCollarEmotionalSupportRD # emotional support
 
 # scientist additions
 - type: loadoutGroup

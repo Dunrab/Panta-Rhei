@@ -52,6 +52,7 @@
   loadouts:
   - CMOPDA
   - DirectorOfCarePDA
+  - ClothingNeckCollarEmotionalSupportCMO # Emotional Support
 
 # paramed additions
 - type: loadoutGroup

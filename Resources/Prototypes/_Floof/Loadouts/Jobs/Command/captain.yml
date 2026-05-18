@@ -36,3 +36,8 @@
   id: ClothingNeckCollarEmotionalSupportCaptain
   equipment:
     neck: ClothingNeckCollarEmotionalSupportCaptain
+
+- type: loadout
+  id: ClothingNeckCollarEmotionalSupportCaptainAlternative
+  equipment:
+    neck: ClothingNeckCollarEmotionalSupportCaptainAlternative

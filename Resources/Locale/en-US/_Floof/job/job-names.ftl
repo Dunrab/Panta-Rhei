@@ -72,6 +72,13 @@ job-alt-title-logistics-emotional-support-salvage = Emotional Support Salvage
 job-alt-title-logistics-emotional-support-inventoryspecalist = Emotional Support Inventory Specialist
 job-alt-title-command-emotional-support-captain = Emotional Support Captain
 job-alt-title-security-technician = Security Technician
+job-alt-title-command-emotional-support-cmo = Emotional Support CMO
+job-alt-title-command-emotional-support-rd = Emotional Support RD
+job-alt-title-command-emotional-support-ce = Emotional Support CE
+job-alt-title-command-emotional-support-hos = Emotional Support HOS
+job-alt-title-command-emotional-support-lo = Emotional Support LO
+job-alt-title-command-emotional-support-hop = Emotional Support HOP
+job-alt-title-command-emotional-support-cj = Emotional Support CJ
 
 loadout-group-captain-pdas = Captain pda
 loadout-group-hos-pdas = Head of Security pda

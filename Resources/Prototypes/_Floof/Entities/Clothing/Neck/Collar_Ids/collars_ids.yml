@@ -682,7 +682,7 @@
   description: A law abiding and cute justice id collar.
   components:
   - type: Pda
-    id: MedicalIDCard
+    id: LawyerIDCard
     penSlot:
       startingItem: LuxuryPen # they get a luxury pen
       priority: -1
@@ -832,3 +832,178 @@
         - Write
   - type: PdaBorderColor
     borderColor: "#7C5D00"
+
+- type: entity
+  parent: [ClothingNeckCollarCaptain, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarEmotionalSupportCaptainAlternative # captain
+  name: captain emotional support collar
+  description: A stylish collar worn by the top dawg on station.
+  components:
+  - type: Pda
+    id: EmotionalSupportCommandCaptainIDCard
+    penSlot:
+      startingItem: PenCap # cap gets captain pen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: PdaBorderColor
+    borderColor: "#7C5D00"
+
+- type: entity
+  parent: [ClothingNeckCollarCMO, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarEmotionalSupportCMO # cmo
+  name: cmo emotional support collar
+  description: A sterile and cute medical id collar.
+  components:
+  - type: Pda
+    id: EmotionalSupportCommandCMOIDCard
+    penSlot:
+      startingItem: CMOPenLight # cmo gets their penlight
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentHColor: "#447987"
+    accentVColor: "#447987"
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - NanoChatCartridge
+    - MedTekCartridge # needed for medical roles
+
+- type: entity
+  parent: [ClothingNeckCollarRD, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarEmotionalSupportRD # mysta/rd
+  name: research director support collar base
+  description: This collar has seen better days and far many less explosions.
+  components:
+  - type: Pda
+    id: EmotionalSupportCommandRDIDCard
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentHColor: "#447987"
+    accentVColor: "#8900c9"
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - NanoChatCartridge
+    - GlimmerMonitorCartridge # needed for epi roles
+
+- type: entity
+  parent: [ClothingNeckCollarCE, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarEmotionalSupportCE # CE
+  name: chief engineer emotional support collar
+  description: A dirty collar from a hard days work.
+  components:
+  - type: Pda
+    id: EmotionalSupportCommandCEIDCard
+  - type: PdaBorderColor
+    borderColor: "#949137"
+    accentHColor: "#447987"
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - NanoChatCartridge
+
+- type: entity
+  parent: [ClothingNeckCollarHOS, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarEmotionalSupportHOS # hos
+  name: head of security emotional support collar base
+  description: This collar has seen better days and far many less firefights.
+  components:
+  - type: Pda
+    id: EmotionalSupportCommandHOSIDCard
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+    accentHColor: "#447987"
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - CrimeAssistCartridge
+    - SecWatchCartridge # DeltaV: SecWatch replaces WantedList
+    - LogProbeCartridge
+    - NanoChatCartridge
+
+- type: entity
+  parent: [ClothingNeckCollarLO, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarEmotionalSupportLO # lo
+  name: logistics officer emotional support collar
+  description: A money making cute logistics id collar.
+  components:
+  - type: Pda
+    id: EmotionalSupportCommandLOIDCard
+  - type: PdaBorderColor
+    borderColor: "#e39751"
+    accentVColor: "#a23e3e"
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - StockTradingCartridge
+    - NanoChatCartridge
+
+- type: entity
+  parent: [ClothingNeckCollarHOP, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarEmotionalSupportHOP # hop
+  name: head of personnel emotional support collar
+  description: This collar is an old collar that Ian used to use re-fashioned to fit the hop.
+  components:
+  - type: Pda
+    id: EmotionalSupportCommandHOPIDCard
+    penSlot:
+      startingItem: PenHop # hop gets their pen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: PdaBorderColor
+    borderColor: "#789876"
+    accentHColor: "#447987"
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - NanoChatCartridge
+
+- type: entity
+  parent: [ClothingNeckCollarCJ, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarEmotionalSupportCJ # cj
+  name: chief justice officer emotoinal support collar
+  description: A law abiding and cute justice id collar.
+  components:
+  - type: Pda
+    id: EmotionalSupportCommandCJIDCard
+    penSlot:
+      startingItem: LuxuryPen # they get a luxury pen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: PdaBorderColor
+    borderColor: "#470823"
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - NanoChatCartridge

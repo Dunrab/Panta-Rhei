@@ -30,6 +30,7 @@
   - CEPDA
   - StationForemanPDA
   - StationArchitectPDA
+  - ClothingNeckCollarEmotionalSupportCE # Emotional Support
 
 - type: loadoutGroup
   id: FloofCeHats

@@ -43,6 +43,7 @@
   - ChiefOfSecurityPDA
   - SecurityDirectorPDA
   - SheriffPDA
+  - ClothingNeckCollarEmotionalSupportHOS # emotional support
 
 # security officer additions
 - type: loadoutGroup
