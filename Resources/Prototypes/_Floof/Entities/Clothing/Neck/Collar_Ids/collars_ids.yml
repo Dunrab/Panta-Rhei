@@ -74,7 +74,7 @@
 
 # medical base & id collars
 - type: entity
-  parent: [ClothingNeckCollarMed, ClothingNeckCollarBasetId]
+  parent: [ClothingNeckCollarMedAlternative, ClothingNeckCollarBasetId]
   id: ClothingNeckCollarEmotionalSupportMedicalBase # medical base
   categories: [ HideSpawnMenu ]
   name: medical emotional support collar base
@@ -180,7 +180,7 @@
 
 # engineering base & id collars
 - type: entity
-  parent: [ClothingNeckCollarEngi, ClothingNeckCollarBasetId]
+  parent: [ClothingNeckCollarEngiAlternative, ClothingNeckCollarBasetId]
   id: ClothingNeckCollarEmotionalSupportEngineerBase # engineering base
   categories: [ HideSpawnMenu ]
   name: engineer emotional support collar base
@@ -249,7 +249,7 @@
 
 # epistemics base & id collars
 - type: entity
-  parent: [ClothingNeckCollarEpi, ClothingNeckCollarBasetId]
+  parent: [ClothingNeckCollarEpiAlternative, ClothingNeckCollarBasetId]
   id: ClothingNeckCollarEmotionalSupportEpistemicsBase # epistemics base
   categories: [ HideSpawnMenu ]
   name: epistemics emotional support collar base
@@ -355,7 +355,7 @@
 
 # security base & id collars
 - type: entity
-  parent: [ClothingNeckCollarSec, ClothingNeckCollarBasetId]
+  parent: [ClothingNeckCollarSecAlternative, ClothingNeckCollarBasetId]
   id: ClothingNeckCollarEmotionalSupportSecurityBase # security base
   categories: [ HideSpawnMenu ]
   name: security emotional support collar base
@@ -478,9 +478,9 @@
     borderColor: "#A32D26"
     accentVColor: "#949137"
 
-# service, this will be fucky since we don't have a service collar so for now ill use the black collar
+# service
 - type: entity
-  parent: [ClothingNeckCollarBlack, ClothingNeckCollarBasetId]
+  parent: [ClothingNeckCollarService, ClothingNeckCollarBasetId]
   id: ClothingNeckCollarEmotionalSupportServiceBase # service base
   categories: [ HideSpawnMenu ]
   name: service emotional support collar base
@@ -734,7 +734,7 @@
 
 # logistics
 - type: entity
-  parent: [ClothingNeckCollarLogi, ClothingNeckCollarBasetId]
+  parent: [ClothingNeckCollarLogiAlternative, ClothingNeckCollarBasetId]
   id: ClothingNeckCollarEmotionalSupportLogisticsBase # logistics base
   categories: [ HideSpawnMenu ]
   name: logistics emotional support collar base
