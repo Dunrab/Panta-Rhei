@@ -3,6 +3,7 @@
   recipes:
   - LeashBasic
   - ClothingNeckShockCollarCivilian
+  - ClothingNeckShockCollarCivilianAlternative
 
 - type: latheRecipePack
   id: CollarsFloofstation

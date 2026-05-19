@@ -145,6 +145,17 @@
   materials:
     Cloth: 200
 
+- type: latheRecipe
+  id: ClothingNeckShockCollarCivilianAlternative
+  result: ClothingNeckShockCollarCivilianAlternative
+  categories: [] # No category because this belongs in the autolathe
+  completetime: 2
+  materials:
+    Steel: 300
+    Glass: 100
+    Plastic: 100
+
+
 # alternative departmental
 - type: latheRecipe
   id: ClothingNeckCollarEngiAlternative
