@@ -50,3 +50,10 @@
   id: ChaplainLustroSandals
   equipment:
     shoes: ClothingShoesLustroEcclesiaSandals
+
+# holybook
+- type: loadout
+  id: BibleGorlexGF
+  storage:
+    back:
+    - BibleGorlexGF

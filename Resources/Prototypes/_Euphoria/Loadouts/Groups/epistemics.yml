@@ -6,6 +6,7 @@
   maxLimit: 1
   loadouts:
   - BibleLustro
+  - BibleGorlexGF
 
 - type: loadoutGroup
   id: EuphoriaChaplainNeck
