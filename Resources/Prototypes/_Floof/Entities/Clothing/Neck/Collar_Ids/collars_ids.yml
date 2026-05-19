@@ -9,7 +9,7 @@
   - type: Pda
     id: EmotionalSupportIdCard
   - type: Sprite
-    sprite: _Floof/Clothing/Neck/Collars/collar_black.rsi
+    sprite: _Floof/Clothing/Neck/Collars/collar_black.rsi # if we remove the original sprites, this rsi path must change to the new sprites
     scale: 1.0, 1.0 # Resize to standard size
     layers:
     - map: [ "enum.PdaVisualLayers.Base" ]
@@ -37,10 +37,22 @@
   name: black emotional support id collar
   description: A cute black collar that holds a pets id.
 
+- type: entity
+  parent: [ClothingNeckCollarBlackAlternative, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarBlackPetIdAlternative
+  name: black emotional support id collar
+  description: A cute black collar that holds a pets id.
+
 # blue collar
 - type: entity
   parent: [ClothingNeckCollarBlue, ClothingNeckCollarBasetId]
   id: ClothingNeckCollarBluePetId
+  name: blue emotional support id collar
+  description: A cute blue collar that holds a pets id.
+
+- type: entity
+  parent: [ClothingNeckCollarBlueAlternative, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarBluePetIdAlternative
   name: blue emotional support id collar
   description: A cute blue collar that holds a pets id.
 
@@ -51,10 +63,22 @@
   name: pink emotional support id collar
   description: A cute pink collar that holds a pets id.
 
+- type: entity
+  parent: [ClothingNeckCollarPinkAlternative, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarPinkPetIdAlternative
+  name: pink emotional support id collar
+  description: A cute pink collar that holds a pets id.
+
 # syndi collar
 - type: entity
   parent: [ClothingNeckCollarSyndi, ClothingNeckCollarBasetId]
   id: ClothingNeckCollarSyndiPetId
+  name: red emotional support id collar
+  description: A cute red collar that holds a pets id.
+
+- type: entity
+  parent: [ClothingNeckCollarSyndiAlternative, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarSyndiPetIdAlternative
   name: red emotional support id collar
   description: A cute red collar that holds a pets id.
 
@@ -65,10 +89,22 @@
   name: shock emotional support id collar
   description: A cute shocky collar that holds a pets id.
 
+- type: entity
+  parent: [ClothingNeckShockCollarCivilianAlternative, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarShockPetIdAlternative
+  name: shock emotional support id collar
+  description: A cute shocky collar that holds a pets id.
+
 # bell collar
 - type: entity
   parent: [ClothingNeckCollarBell, ClothingNeckCollarBasetId]
   id: ClothingNeckCollarBellPetId
+  name: bell emotional support id collar
+  description: A cute red collar that holds a pets id.
+
+- type: entity
+  parent: [ClothingNeckCollarBellAlternative, ClothingNeckCollarBasetId]
+  id: ClothingNeckCollarBellPetIdAlternative
   name: bell emotional support id collar
   description: A cute red collar that holds a pets id.
 
