@@ -20,6 +20,17 @@
   - ClothingNeckCollarCC
   - ClothingNeckCollarSyndi
   - ClothingUncategorizedHarnessGray
+  - ClothingNeckCollarBlueAlternative
+  - ClothingNeckCollarBlackAlternative
+  - ClothingNeckCollarPinkAlternative
+  - ClothingNeckCollarBellAlternative
+  - ClothingNeckCollarEngiAlternative
+  - ClothingNeckCollarLogiAlternative
+  - ClothingNeckCollarMedAlternative
+  - ClothingNeckCollarSecAlternative
+  - ClothingNeckCollarEpiAlternative
+  - ClothingNeckCollarService
+  - ClothingNeckCollarJustice
 
 - type: latheRecipePack
   id: CarpetSimple
