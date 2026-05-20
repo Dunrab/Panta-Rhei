@@ -76,7 +76,6 @@
     state: plain
   - type: Item
     sprite: Objects/Consumable/Food/Baked/bread.rsi
-    state: baguette
     inhandVisuals:
       left:
       - state: baguette-inhand-left
