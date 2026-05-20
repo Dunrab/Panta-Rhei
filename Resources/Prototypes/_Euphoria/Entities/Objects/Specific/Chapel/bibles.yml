@@ -64,3 +64,21 @@
       - state: inhand-right
       - state: inhand-right_lighting
         shader: unshaded
+
+- type: entity
+  parent: Bible
+  id: BibleBreadGod
+  name: mother loaf bread bible
+  description: The motherloaf has blessed this loaf of bread to create miracles.
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Baked/bread.rsi
+    state: plain
+  - type: Item
+    sprite: Objects/Consumable/Food/Baked/bread.rsi
+    state: baguette
+    inhandVisuals:
+      left:
+      - state: baguette-inhand-left
+      right:
+      - state: baguette-inhand-right

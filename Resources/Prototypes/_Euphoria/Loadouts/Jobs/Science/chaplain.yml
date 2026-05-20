@@ -69,3 +69,9 @@
   storage:
     back:
     - BibleCommunistManifesto
+
+- type: loadout
+  id: BibleBreadGod
+  storage:
+    back:
+    - BibleBreadGod
