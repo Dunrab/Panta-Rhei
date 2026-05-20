@@ -1,1188 +1,257 @@
 {
-  "version": 1,
-  "copyright": "Cards, Decks and Hands Sprites were originally from Paradise Station (https://github.com/ParadiseSS13/Paradise) and modified by VictorJob. Boxes are from VictorJob. Tarot variants for Impstation by HatBun. TT dragon, ratking, revenant, carp, honkbot, renault, cancer mouse, apid, griffy, mouse, ian, bingus by gerblers. TT replicator, shiva, gollylad, tcktck, boar by skeepo. TT willow, punpun, tckut, tropico, smile by mhachimagus. TT clownspider, tick, slime, mcgriff by Simul-Ad-Astra. TT varients base and other card art by Starlighthowls ",
-  "license": "CC-BY-SA-3.0",
-  "size": {
-    "x": 32,
-    "y": 32
-  },
-  "states": [
-    {
-      "name": "black_hand1"
+    "version": 1,
+    "copyright": "Cards, Decks and Hands Sprites were originally from Paradise Station (https://github.com/ParadiseSS13/Paradise) and modified by VictorJob. Boxes are from VictorJob. Tarot variants for Impstation by HatBun. TT dragon, ratking, revenant, carp, honkbot, renault, cancer mouse, apid, griffy, mouse, ian, bingus by gerblers. TT replicator, shiva, gollylad, tcktck, boar by skeepo. TT willow, punpun, tckut, tropico, smile by mhachimagus. TT clownspider, tick, slime, mcgriff by Simul-Ad-Astra. TT varients base and other card art by Starlighthowls ",
+    "license": "CC-BY-SA-3.0",
+    "size": {
+        "x": 32,
+        "y": 32
     },
-    {
-      "name": "black_hand2"
-    },
-    {
-      "name": "black_hand3"
-    },
-    {
-      "name": "black_hand4"
-    },
-    {
-      "name": "black_hand5"
-    },
-    {
-      "name": "deck_black_empty"
-    },
-    {
-      "name": "deck_black_full"
-    },
-    {
-      "name": "deck_black_half"
-    },
-    {
-      "name": "deck_black_low"
-    },
-    {
-      "name": "deck_nanotrasen_empty"
-    },
-    {
-      "name": "deck_nanotrasen_full"
-    },
-    {
-      "name": "deck_nanotrasen_half"
-    },
-    {
-      "name": "deck_nanotrasen_low"
-    },
-    {
-      "name": "deck_syndicate_empty"
-    },
-    {
-      "name": "deck_syndicate_full"
-    },
-    {
-      "name": "deck_syndicate_half"
-    },
-    {
-      "name": "deck_syndicate_low"
-    },
-    {
-      "name": "nanotrasen_hand1"
-    },
-    {
-      "name": "nanotrasen_hand2"
-    },
-    {
-      "name": "nanotrasen_hand3"
-    },
-    {
-      "name": "nanotrasen_hand4"
-    },
-    {
-      "name": "nanotrasen_hand5"
-    },
-    {
-      "name": "sc_10_of_Clubs_black"
-    },
-    {
-      "name": "sc_10_of_Clubs_nanotrasen"
-    },
-    {
-      "name": "sc_10_of_Clubs_syndicate"
-    },
-    {
-      "name": "sc_10_of_Diamonds_black"
-    },
-    {
-      "name": "sc_10_of_Diamonds_nanotrasen"
-    },
-    {
-      "name": "sc_10_of_Diamonds_syndicate"
-    },
-    {
-      "name": "sc_10_of_Hearts_black"
-    },
-    {
-      "name": "sc_10_of_Hearts_nanotrasen"
-    },
-    {
-      "name": "sc_10_of_Hearts_syndicate"
-    },
-    {
-      "name": "sc_10_of_Spades_black"
-    },
-    {
-      "name": "sc_10_of_Spades_nanotrasen"
-    },
-    {
-      "name": "sc_10_of_Spades_syndicate"
-    },
-    {
-      "name": "sc_2_of_Clubs_black"
-    },
-    {
-      "name": "sc_2_of_Clubs_nanotrasen"
-    },
-    {
-      "name": "sc_2_of_Clubs_syndicate"
-    },
-    {
-      "name": "sc_2_of_Diamonds_black"
-    },
-    {
-      "name": "sc_2_of_Diamonds_nanotrasen"
-    },
-    {
-      "name": "sc_2_of_Diamonds_syndicate"
-    },
-    {
-      "name": "sc_2_of_Hearts_black"
-    },
-    {
-      "name": "sc_2_of_Hearts_nanotrasen"
-    },
-    {
-      "name": "sc_2_of_Hearts_syndicate"
-    },
-    {
-      "name": "sc_2_of_Spades_black"
-    },
-    {
-      "name": "sc_2_of_Spades_nanotrasen"
-    },
-    {
-      "name": "sc_2_of_Spades_syndicate"
-    },
-    {
-      "name": "sc_3_of_Clubs_black"
-    },
-    {
-      "name": "sc_3_of_Clubs_nanotrasen"
-    },
-    {
-      "name": "sc_3_of_Clubs_syndicate"
-    },
-    {
-      "name": "sc_3_of_Diamonds_black"
-    },
-    {
-      "name": "sc_3_of_Diamonds_nanotrasen"
-    },
-    {
-      "name": "sc_3_of_Diamonds_syndicate"
-    },
-    {
-      "name": "sc_3_of_Hearts_black"
-    },
-    {
-      "name": "sc_3_of_Hearts_nanotrasen"
-    },
-    {
-      "name": "sc_3_of_Hearts_syndicate"
-    },
-    {
-      "name": "sc_3_of_Spades_black"
-    },
-    {
-      "name": "sc_3_of_Spades_nanotrasen"
-    },
-    {
-      "name": "sc_3_of_Spades_syndicate"
-    },
-    {
-      "name": "sc_4_of_Clubs_black"
-    },
-    {
-      "name": "sc_4_of_Clubs_nanotrasen"
-    },
-    {
-      "name": "sc_4_of_Clubs_syndicate"
-    },
-    {
-      "name": "sc_4_of_Diamonds_black"
-    },
-    {
-      "name": "sc_4_of_Diamonds_nanotrasen"
-    },
-    {
-      "name": "sc_4_of_Diamonds_syndicate"
-    },
-    {
-      "name": "sc_4_of_Hearts_black"
-    },
-    {
-      "name": "sc_4_of_Hearts_nanotrasen"
-    },
-    {
-      "name": "sc_4_of_Hearts_syndicate"
-    },
-    {
-      "name": "sc_4_of_Spades_black"
-    },
-    {
-      "name": "sc_4_of_Spades_nanotrasen"
-    },
-    {
-      "name": "sc_4_of_Spades_syndicate"
-    },
-    {
-      "name": "sc_5_of_Clubs_black"
-    },
-    {
-      "name": "sc_5_of_Clubs_nanotrasen"
-    },
-    {
-      "name": "sc_5_of_Clubs_syndicate"
-    },
-    {
-      "name": "sc_5_of_Diamonds_black"
-    },
-    {
-      "name": "sc_5_of_Diamonds_nanotrasen"
-    },
-    {
-      "name": "sc_5_of_Diamonds_syndicate"
-    },
-    {
-      "name": "sc_5_of_Hearts_black"
-    },
-    {
-      "name": "sc_5_of_Hearts_nanotrasen"
-    },
-    {
-      "name": "sc_5_of_Hearts_syndicate"
-    },
-    {
-      "name": "sc_5_of_Spades_black"
-    },
-    {
-      "name": "sc_5_of_Spades_nanotrasen"
-    },
-    {
-      "name": "sc_5_of_Spades_syndicate"
-    },
-    {
-      "name": "sc_6_of_Clubs_black"
-    },
-    {
-      "name": "sc_6_of_Clubs_nanotrasen"
-    },
-    {
-      "name": "sc_6_of_Clubs_syndicate"
-    },
-    {
-      "name": "sc_6_of_Diamonds_black"
-    },
-    {
-      "name": "sc_6_of_Diamonds_nanotrasen"
-    },
-    {
-      "name": "sc_6_of_Diamonds_syndicate"
-    },
-    {
-      "name": "sc_6_of_Hearts_black"
-    },
-    {
-      "name": "sc_6_of_Hearts_nanotrasen"
-    },
-    {
-      "name": "sc_6_of_Hearts_syndicate"
-    },
-    {
-      "name": "sc_6_of_Spades_black"
-    },
-    {
-      "name": "sc_6_of_Spades_nanotrasen"
-    },
-    {
-      "name": "sc_6_of_Spades_syndicate"
-    },
-    {
-      "name": "sc_7_of_Clubs_black"
-    },
-    {
-      "name": "sc_7_of_Clubs_nanotrasen"
-    },
-    {
-      "name": "sc_7_of_Clubs_syndicate"
-    },
-    {
-      "name": "sc_7_of_Diamonds_black"
-    },
-    {
-      "name": "sc_7_of_Diamonds_nanotrasen"
-    },
-    {
-      "name": "sc_7_of_Diamonds_syndicate"
-    },
-    {
-      "name": "sc_7_of_Hearts_black"
-    },
-    {
-      "name": "sc_7_of_Hearts_nanotrasen"
-    },
-    {
-      "name": "sc_7_of_Hearts_syndicate"
-    },
-    {
-      "name": "sc_7_of_Spades_black"
-    },
-    {
-      "name": "sc_7_of_Spades_nanotrasen"
-    },
-    {
-      "name": "sc_7_of_Spades_syndicate"
-    },
-    {
-      "name": "sc_8_of_Clubs_black"
-    },
-    {
-      "name": "sc_8_of_Clubs_nanotrasen"
-    },
-    {
-      "name": "sc_8_of_Clubs_syndicate"
-    },
-    {
-      "name": "sc_8_of_Diamonds_black"
-    },
-    {
-      "name": "sc_8_of_Diamonds_nanotrasen"
-    },
-    {
-      "name": "sc_8_of_Diamonds_syndicate"
-    },
-    {
-      "name": "sc_8_of_Hearts_black"
-    },
-    {
-      "name": "sc_8_of_Hearts_nanotrasen"
-    },
-    {
-      "name": "sc_8_of_Hearts_syndicate"
-    },
-    {
-      "name": "sc_8_of_Spades_black"
-    },
-    {
-      "name": "sc_8_of_Spades_nanotrasen"
-    },
-    {
-      "name": "sc_8_of_Spades_syndicate"
-    },
-    {
-      "name": "sc_9_of_Clubs_black"
-    },
-    {
-      "name": "sc_9_of_Clubs_nanotrasen"
-    },
-    {
-      "name": "sc_9_of_Clubs_syndicate"
-    },
-    {
-      "name": "sc_9_of_Diamonds_black"
-    },
-    {
-      "name": "sc_9_of_Diamonds_nanotrasen"
-    },
-    {
-      "name": "sc_9_of_Diamonds_syndicate"
-    },
-    {
-      "name": "sc_9_of_Hearts_black"
-    },
-    {
-      "name": "sc_9_of_Hearts_nanotrasen"
-    },
-    {
-      "name": "sc_9_of_Hearts_syndicate"
-    },
-    {
-      "name": "sc_9_of_Spades_black"
-    },
-    {
-      "name": "sc_9_of_Spades_nanotrasen"
-    },
-    {
-      "name": "sc_9_of_Spades_syndicate"
-    },
-    {
-      "name": "sc_Ace_of_Clubs_black"
-    },
-    {
-      "name": "sc_Ace_of_Clubs_nanotrasen"
-    },
-    {
-      "name": "sc_Ace_of_Clubs_syndicate"
-    },
-    {
-      "name": "sc_Ace_of_Diamonds_black"
-    },
-    {
-      "name": "sc_Ace_of_Diamonds_nanotrasen"
-    },
-    {
-      "name": "sc_Ace_of_Diamonds_syndicate"
-    },
-    {
-      "name": "sc_Ace_of_Hearts_black"
-    },
-    {
-      "name": "sc_Ace_of_Hearts_nanotrasen"
-    },
-    {
-      "name": "sc_Ace_of_Hearts_syndicate"
-    },
-    {
-      "name": "sc_Ace_of_Spades_black"
-    },
-    {
-      "name": "sc_Ace_of_Spades_nanotrasen"
-    },
-    {
-      "name": "sc_Ace_of_Spades_syndicate"
-    },
-    {
-      "name": "sc_Jack_of_Clubs_black"
-    },
-    {
-      "name": "sc_Jack_of_Clubs_nanotrasen"
-    },
-    {
-      "name": "sc_Jack_of_Clubs_syndicate"
-    },
-    {
-      "name": "sc_Jack_of_Diamonds_black"
-    },
-    {
-      "name": "sc_Jack_of_Diamonds_nanotrasen"
-    },
-    {
-      "name": "sc_Jack_of_Diamonds_syndicate"
-    },
-    {
-      "name": "sc_Jack_of_Hearts_black"
-    },
-    {
-      "name": "sc_Jack_of_Hearts_nanotrasen"
-    },
-    {
-      "name": "sc_Jack_of_Hearts_syndicate"
-    },
-    {
-      "name": "sc_Jack_of_Spades_black"
-    },
-    {
-      "name": "sc_Jack_of_Spades_nanotrasen"
-    },
-    {
-      "name": "sc_Jack_of_Spades_syndicate"
-    },
-    {
-      "name": "sc_King_of_Clubs_black"
-    },
-    {
-      "name": "sc_King_of_Clubs_nanotrasen"
-    },
-    {
-      "name": "sc_King_of_Clubs_syndicate"
-    },
-    {
-      "name": "sc_King_of_Diamonds_black"
-    },
-    {
-      "name": "sc_King_of_Diamonds_nanotrasen"
-    },
-    {
-      "name": "sc_King_of_Diamonds_syndicate"
-    },
-    {
-      "name": "sc_King_of_Hearts_black"
-    },
-    {
-      "name": "sc_King_of_Hearts_nanotrasen"
-    },
-    {
-      "name": "sc_King_of_Hearts_syndicate"
-    },
-    {
-      "name": "sc_King_of_Spades_black"
-    },
-    {
-      "name": "sc_King_of_Spades_nanotrasen"
-    },
-    {
-      "name": "sc_King_of_Spades_syndicate"
-    },
-    {
-      "name": "sc_Queen_of_Clubs_black"
-    },
-    {
-      "name": "sc_Queen_of_Clubs_nanotrasen"
-    },
-    {
-      "name": "sc_Queen_of_Clubs_syndicate"
-    },
-    {
-      "name": "sc_Queen_of_Diamonds_black"
-    },
-    {
-      "name": "sc_Queen_of_Diamonds_nanotrasen"
-    },
-    {
-      "name": "sc_Queen_of_Diamonds_syndicate"
-    },
-    {
-      "name": "sc_Queen_of_Hearts_black"
-    },
-    {
-      "name": "sc_Queen_of_Hearts_nanotrasen"
-    },
-    {
-      "name": "sc_Queen_of_Hearts_syndicate"
-    },
-    {
-      "name": "sc_Queen_of_Spades_black"
-    },
-    {
-      "name": "sc_Queen_of_Spades_nanotrasen"
-    },
-    {
-      "name": "sc_Queen_of_Spades_syndicate"
-    },
-    {
-      "name": "singlecard_down_black"
-    },
-    {
-      "name": "singlecard_down_nanotrasen"
-    },
-    {
-      "name": "singlecard_down_syndicate"
-    },
-    {
-      "name": "syndicate_hand1"
-    },
-    {
-      "name": "syndicate_hand2"
-    },
-    {
-      "name": "syndicate_hand3"
-    },
-    {
-      "name": "syndicate_hand4"
-    },
-    {
-      "name": "syndicate_hand5"
-    },
-    {
-      "name": "syndicate_joker",
-      "delays": [
-        [
-          0.5,
-          0.5
-        ]
-      ]
-    },
-    {
-      "name": "nanotrasen_joker",
-      "delays": [
-        [
-          0.5,
-          0.5
-        ]
-      ]
-    },
-    {
-          "name": "black_joker",
-          "delays": [
-              [
-                  0.5,
-                  0.5
-              ]
-          ]
-    },
-    {
-      "name": "syndicate_box"
-    },
-    {
-        "name": "syndicate_box_open"
-    },
-    {
-        "name": "black_box"
-    },
-    {
-        "name": "black_box_open"
-    },
-    {
-        "name": "nanotrasen_box"
-    },
-    {
-        "name": "nanotrasen_box_open"
-    },
-    {
-      "name": "sc_Ace_of_Cups_tarot"
-    },
-    {
-      "name": "sc_2_of_Cups_tarot"
-    },
-    {
-      "name": "sc_3_of_Cups_tarot"
-    },
-    {
-      "name": "sc_4_of_Cups_tarot"
-    },
-    {
-      "name": "sc_5_of_Cups_tarot"
-    },
-    {
-      "name": "sc_6_of_Cups_tarot"
-    },
-    {
-      "name": "sc_7_of_Cups_tarot"
-    },
-    {
-      "name": "sc_8_of_Cups_tarot"
-    },
-    {
-      "name": "sc_9_of_Cups_tarot"
-    },
-    {
-      "name": "sc_10_of_Cups_tarot"
-    },
-    {
-      "name": "sc_Page_of_Cups_tarot"
-    },
-    {
-      "name": "sc_Knight_of_Cups_tarot"
-    },
-    {
-      "name": "sc_Queen_of_Cups_tarot"
-    },
-    {
-      "name": "sc_King_of_Cups_tarot"
-    },
-    {
-      "name": "sc_Ace_of_Pentacles_tarot"
-    },
-    {
-      "name": "sc_2_of_Pentacles_tarot"
-    },
-    {
-      "name": "sc_3_of_Pentacles_tarot"
-    },
-    {
-      "name": "sc_4_of_Pentacles_tarot"
-    },
-    {
-      "name": "sc_5_of_Pentacles_tarot"
-    },
-    {
-      "name": "sc_6_of_Pentacles_tarot"
-    },
-    {
-      "name": "sc_7_of_Pentacles_tarot"
-    },
-    {
-      "name": "sc_8_of_Pentacles_tarot"
-    },
-    {
-      "name": "sc_9_of_Pentacles_tarot"
-    },
-    {
-      "name": "sc_10_of_Pentacles_tarot"
-    },
-    {
-      "name": "sc_Page_of_Pentacles_tarot"
-    },
-    {
-      "name": "sc_Knight_of_Pentacles_tarot"
-    },
-    {
-      "name": "sc_Queen_of_Pentacles_tarot"
-    },
-    {
-      "name": "sc_King_of_Pentacles_tarot"
-    },
-    {
-      "name": "sc_Ace_of_Swords_tarot"
-    },
-    {
-      "name": "sc_2_of_Swords_tarot"
-    },
-    {
-      "name": "sc_3_of_Swords_tarot"
-    },
-    {
-      "name": "sc_4_of_Swords_tarot"
-    },
-    {
-      "name": "sc_5_of_Swords_tarot"
-    },
-    {
-      "name": "sc_6_of_Swords_tarot"
-    },
-    {
-      "name": "sc_7_of_Swords_tarot"
-    },
-    {
-      "name": "sc_8_of_Swords_tarot"
-    },
-    {
-      "name": "sc_9_of_Swords_tarot"
-    },
-    {
-      "name": "sc_10_of_Swords_tarot"
-    },
-    {
-      "name": "sc_Page_of_Swords_tarot"
-    },
-    {
-      "name": "sc_Knight_of_Swords_tarot"
-    },
-    {
-      "name": "sc_Queen_of_Swords_tarot"
-    },
-    {
-      "name": "sc_King_of_Swords_tarot"
-    },
-    {
-      "name": "sc_Ace_of_Wands_tarot"
-    },
-    {
-      "name": "sc_2_of_Wands_tarot"
-    },
-    {
-      "name": "sc_3_of_Wands_tarot"
-    },
-    {
-      "name": "sc_4_of_Wands_tarot"
-    },
-    {
-      "name": "sc_5_of_Wands_tarot"
-    },
-    {
-      "name": "sc_6_of_Wands_tarot"
-    },
-    {
-      "name": "sc_7_of_Wands_tarot"
-    },
-    {
-      "name": "sc_8_of_Wands_tarot"
-    },
-    {
-      "name": "sc_9_of_Wands_tarot"
-    },
-    {
-      "name": "sc_10_of_Wands_tarot"
-    },
-    {
-      "name": "sc_Page_of_Wands_tarot"
-    },
-    {
-      "name": "sc_Knight_of_Wands_tarot"
-    },
-    {
-      "name": "sc_Queen_of_Wands_tarot"
-    },
-    {
-      "name": "sc_King_of_Wands_tarot"
-    },
-    {
-      "name": "sc_The_Fool_tarot"
-    },
-    {
-      "name": "sc_The_Magician_tarot"
-    },
-    {
-      "name": "sc_The_High_Priestess_tarot"
-    },
-    {
-      "name": "sc_The_Empress_tarot"
-    },
-    {
-      "name": "sc_The_Emperor_tarot"
-    },
-    {
-      "name": "sc_The_Hierophant_tarot"
-    },
-    {
-      "name": "sc_The_Lovers_tarot"
-    },
-    {
-      "name": "sc_The_Chariot_tarot"
-    },
-    {
-      "name": "sc_Strength_tarot"
-    },
-    {
-      "name": "sc_The_Hermit_tarot"
-    },
-    {
-      "name": "sc_The_Wheel_tarot"
-    },
-    {
-      "name": "sc_Justice_tarot"
-    },
-    {
-      "name": "sc_The_Hanged_Man_tarot"
-    },
-    {
-      "name": "sc_Death_tarot"
-    },
-    {
-      "name": "sc_Temperance_tarot"
-    },
-    {
-      "name": "sc_The_Devil_tarot"
-    },
-    {
-      "name": "sc_The_Tower_tarot"
-    },
-    {
-      "name": "sc_The_Star_tarot"
-    },
-    {
-      "name": "sc_The_Moon_tarot"
-    },
-    {
-      "name": "sc_The_Sun_tarot"
-    },
-    {
-      "name": "sc_Judgement_tarot"
-    },
-    {
-      "name": "sc_The_World_tarot"
-    },
-    {
-      "name": "singlecard_down_tarot"
-    },
-    {
-      "name": "purple_box"
-    },
-    {
-      "name": "purple_box_open"
-    },
-    {
-      "name": "deck_tarot_full"
-    },
-        {
-            "name": "tt_boxopen"
-        },
-        {
-            "name": "tt_boxclosed"
-        },
-        {
-            "name": "pack_open"
-        },
-        {
-            "name": "tt_back"
-        },
-        {
-            "name": "tt_vrex"
-        },
-        {
-            "name": "tt_gondal"
-        },
-        {
-            "name": "tt_dragon"
-        },
-        {
-            "name": "tt_apid"
-        },
-        {
-            "name": "tt_babykode"
-        },
-        {
-            "name": "tt_banom"
-        },
-        {
-            "name": "tt_basilisk"
-        },
-        {
-            "name": "tt_behonker"
-        },
-        {
-            "name": "tt_boar"
-        },
-        {
-            "name": "tt_bomb"
-        },
-        {
-            "name": "tt_box"
-        },
-        {
-            "name": "tt_tick"
-        },
-        {
-            "name": "tt_bros"
-        },
-        {
-            "name": "tt_bsnail"
-        },
-        {
-            "name": "tt_canom"
-        },
+    "states": [
         {
-            "name": "tt_carp"
+            "name": "sc_Ace_of_Cups_tarot"
         },
         {
-            "name": "tt_cccrab"
+            "name": "sc_2_of_Cups_tarot"
         },
         {
-            "name": "tt_ccflin"
+            "name": "sc_3_of_Cups_tarot"
         },
         {
-            "name": "tt_ccpt"
+            "name": "sc_4_of_Cups_tarot"
         },
         {
-            "name": "tt_cmouse"
+            "name": "sc_5_of_Cups_tarot"
         },
         {
-            "name": "tt_crab"
+            "name": "sc_6_of_Cups_tarot"
         },
         {
-            "name": "tt_cspider"
+            "name": "sc_7_of_Cups_tarot"
         },
         {
-            "name": "tt_deer"
+            "name": "sc_8_of_Cups_tarot"
         },
         {
-            "name": "tt_dolby"
+            "name": "sc_9_of_Cups_tarot"
         },
         {
-            "name": "tt_doppa"
+            "name": "sc_10_of_Cups_tarot"
         },
         {
-            "name": "tt_eanom"
+            "name": "sc_Page_of_Cups_tarot"
         },
         {
-            "name": "tt_eeep"
+            "name": "sc_Knight_of_Cups_tarot"
         },
         {
-            "name": "tt_fanom"
+            "name": "sc_Queen_of_Cups_tarot"
         },
         {
-            "name": "tt_finfin"
+            "name": "sc_King_of_Cups_tarot"
         },
         {
-            "name": "tt_foes"
+            "name": "sc_Ace_of_Pentacles_tarot"
         },
         {
-            "name": "tt_ganom"
+            "name": "sc_2_of_Pentacles_tarot"
         },
         {
-            "name": "tt_golaith"
+            "name": "sc_3_of_Pentacles_tarot"
         },
         {
-            "name": "tt_golly"
+            "name": "sc_4_of_Pentacles_tarot"
         },
         {
-            "name": "tt_gorilla"
+            "name": "sc_5_of_Pentacles_tarot"
         },
         {
-            "name": "tt_griffy"
+            "name": "sc_6_of_Pentacles_tarot"
         },
         {
-            "name": "tt_gslime"
+            "name": "sc_7_of_Pentacles_tarot"
         },
         {
-            "name": "tt_tslime"
+            "name": "sc_8_of_Pentacles_tarot"
         },
         {
-            "name": "tt_yslime"
+            "name": "sc_9_of_Pentacles_tarot"
         },
         {
-            "name": "tt_hamlet"
+            "name": "sc_10_of_Pentacles_tarot"
         },
         {
-            "name": "tt_hivelord"
+            "name": "sc_Page_of_Pentacles_tarot"
         },
         {
-            "name": "tt_honkbot"
+            "name": "sc_Knight_of_Pentacles_tarot"
         },
         {
-            "name": "tt_ian"
+            "name": "sc_Queen_of_Pentacles_tarot"
         },
         {
-            "name": "tt_ianom"
+            "name": "sc_King_of_Pentacles_tarot"
         },
         {
-            "name": "tt_killer"
+            "name": "sc_Ace_of_Swords_tarot"
         },
         {
-            "name": "tt_kisser"
+            "name": "sc_2_of_Swords_tarot"
         },
         {
-            "name": "tt_lepidodent"
+            "name": "sc_3_of_Swords_tarot"
         },
         {
-            "name": "tt_llr"
+            "name": "sc_4_of_Swords_tarot"
         },
         {
-            "name": "tt_loppa"
+            "name": "sc_5_of_Swords_tarot"
         },
         {
-            "name": "tt_lr"
+            "name": "sc_6_of_Swords_tarot"
         },
         {
-            "name": "tt_major"
+            "name": "sc_7_of_Swords_tarot"
         },
         {
-            "name": "tt_manom"
+            "name": "sc_8_of_Swords_tarot"
         },
         {
-            "name": "tt_mcgriff"
+            "name": "sc_9_of_Swords_tarot"
         },
         {
-            "name": "tt_mop"
+            "name": "sc_10_of_Swords_tarot"
         },
         {
-            "name": "tt_moth"
+            "name": "sc_Page_of_Swords_tarot"
         },
         {
-            "name": "tt_mouse"
+            "name": "sc_Knight_of_Swords_tarot"
         },
         {
-            "name": "tt_ncat"
+            "name": "sc_Queen_of_Swords_tarot"
         },
         {
-            "name": "tt_orbbees"
+            "name": "sc_King_of_Swords_tarot"
         },
         {
-            "name": "tt_panom"
+            "name": "sc_Ace_of_Wands_tarot"
         },
         {
-            "name": "tt_penguin"
+            "name": "sc_2_of_Wands_tarot"
         },
         {
-            "name": "tt_pipi"
+            "name": "sc_3_of_Wands_tarot"
         },
         {
-            "name": "tt_pleeb"
+            "name": "sc_4_of_Wands_tarot"
         },
         {
-            "name": "tt_pun"
+            "name": "sc_5_of_Wands_tarot"
         },
         {
-            "name": "tt_ranom"
+            "name": "sc_6_of_Wands_tarot"
         },
         {
-            "name": "tt_ren"
+            "name": "sc_7_of_Wands_tarot"
         },
         {
-            "name": "tt_repli"
+            "name": "sc_8_of_Wands_tarot"
         },
         {
-            "name": "tt_rev"
+            "name": "sc_9_of_Wands_tarot"
         },
         {
-            "name": "tt_rking"
+            "name": "sc_10_of_Wands_tarot"
         },
         {
-            "name": "tt_rock"
+            "name": "sc_Page_of_Wands_tarot"
         },
         {
-            "name": "tt_roo"
+            "name": "sc_Knight_of_Wands_tarot"
         },
         {
-            "name": "tt_rouny"
+            "name": "sc_Queen_of_Wands_tarot"
         },
         {
-            "name": "tt_sanom"
+            "name": "sc_King_of_Wands_tarot"
         },
         {
-            "name": "tt_sbear"
+            "name": "sc_The_Fool_tarot"
         },
         {
-            "name": "tt_seof"
+            "name": "sc_The_Magician_tarot"
         },
         {
-            "name": "tt_serval"
+            "name": "sc_The_High_Priestess_tarot"
         },
         {
-            "name": "tt_shiva"
+            "name": "sc_The_Empress_tarot"
         },
         {
-            "name": "tt_shrimp"
+            "name": "sc_The_Emperor_tarot"
         },
         {
-            "name": "tt_slurva"
+            "name": "sc_The_Hierophant_tarot"
         },
         {
-            "name": "tt_smile"
+            "name": "sc_The_Lovers_tarot"
         },
         {
-            "name": "tt_smspider"
+            "name": "sc_The_Chariot_tarot"
         },
         {
-            "name": "tt_snail"
+            "name": "sc_Strength_tarot"
         },
         {
-            "name": "tt_snake"
+            "name": "sc_The_Hermit_tarot"
         },
         {
-            "name": "tt_sorb"
+            "name": "sc_The_Wheel_tarot"
         },
         {
-            "name": "tt_sroo"
+            "name": "sc_Justice_tarot"
         },
         {
-            "name": "tt_ssnake"
+            "name": "sc_The_Hanged_Man_tarot"
         },
         {
-            "name": "tt_tanom"
+            "name": "sc_Death_tarot"
         },
         {
-            "name": "tt_tck"
+            "name": "sc_Temperance_tarot"
         },
         {
-            "name": "tt_tckut"
+            "name": "sc_The_Devil_tarot"
         },
         {
-            "name": "tt_top"
+            "name": "sc_The_Tower_tarot"
         },
         {
-            "name": "tt_watcher"
+            "name": "sc_The_Star_tarot"
         },
         {
-            "name": "tt_wb"
+            "name": "sc_The_Moon_tarot"
         },
         {
-            "name": "tt_wizspore"
+            "name": "sc_The_Sun_tarot"
         },
         {
-            "name": "tt_forklift"
+            "name": "sc_Judgement_tarot"
         },
         {
-            "name": "tt_glock"
+            "name": "sc_The_World_tarot"
         },
         {
-            "name": "tt_rs"
+            "name": "singlecard_down_tarot"
         },
         {
-            "name": "tt_rancho"
+            "name": "purple_box"
         },
         {
-            "name": "pack",
-            "delays": [
-                [
-                    0.3,
-                    0.3,
-                    0.3,
-                    0.3,
-                    0.3,
-                    3
-                ]
-            ]
+            "name": "purple_box_open"
         },
         {
-            "name": "yumyum",
-            "delays": [
-                [
-                    0.3,
-                    0.3,
-                    0.3,
-                    0.3,
-                    0.3,
-                    0.3,
-                    0.3,
-                    0.3,
-                    0.3,
-                    0.3,
-                    2
-                ]
-            ]
+            "name": "deck_tarot_full"
         }
-  ]
+    ]
 }
