@@ -1067,7 +1067,7 @@
   parent: CardBaseTarot
   categories: [ HideSpawnMenu ]
   id: CardScTheWorld
-  description: The final step to enlightenment. The Nanotrasen logo, along with each of the elements, meet the Fool at the end of their journey. Fulfillment, Harmony, Completion
+  description: The final step to enlightenment. The HGI logo, along with each of the elements, meet the Fool at the end of their journey. Fulfillment, Harmony, Completion
   components:
   - type: Card
     name: card-sc-the-world
