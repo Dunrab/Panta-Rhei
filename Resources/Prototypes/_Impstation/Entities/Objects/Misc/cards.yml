@@ -1067,7 +1067,7 @@
   parent: CardBaseTarot
   categories: [ HideSpawnMenu ]
   id: CardScTheWorld
-  description: The final step of the Fool's Journey is the World, where the completion of the cycle of the Major Arcana is found, and balance is, at last, achieved.
+  description: The final step of the Fool's Journey is the World, where the completion of the cycle of the Major Arcana is found, and balance is, at last, achieved. Fulfillment, Harmony, Completion
   components:
   - type: Card
     name: card-sc-the-world
