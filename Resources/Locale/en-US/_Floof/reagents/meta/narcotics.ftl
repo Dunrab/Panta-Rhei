@@ -6,3 +6,6 @@ reagent-desc-philterex = A mild aphrodisiac. It is known for its high use in par
 
 reagent-name-libidozenithizine = libidozenithizine
 reagent-desc-libidozenithizine = An incredibly potent aphrodisiac. It will cause even the most reserved to lose their inhibition. Overdose is known to cause Nymphomania.
+
+reagent-name-spaceacillin = spaceacillin
+reagent-desc-spaceacillin = A theta-lactam antibiotic, effective against space diseases. Side-effects may include cancer. Phalanximine is recommended after ingestion.

@@ -12,3 +12,13 @@
       amount: 1
   products:
       Philterex: 5
+
+- type: reaction
+  id: Spaceacillin
+  reactants:
+    Cryptobiolin:
+      amount: 1
+    Inaprovaline:
+      amount: 1
+  products:
+    Spaceacillin: 2
