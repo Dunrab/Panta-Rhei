@@ -58,3 +58,13 @@
   id: DrinkCanBepisCherry
   name: Bepis Cherry can
   description: The great taste of Bepis! Now with cherry juice!
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Bepis
+          Quantity: 20
+        - ReagentId: JuiceCherry
+          Quantity: 10
