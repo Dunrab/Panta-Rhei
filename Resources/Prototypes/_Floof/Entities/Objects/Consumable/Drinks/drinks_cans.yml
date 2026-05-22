@@ -52,3 +52,8 @@
     sprite: _Floof/Objects/Consumable/Drinks/bepis_can.rsi
   - type: Item
     sprite: _Floof/Objects/Consumable/Drinks/bepis_can.rsi
+
+- type: entity
+  parent: DrinkCanBepis
+  id: DrinkCanBepisCherry
+  name: Bepis Cherry can

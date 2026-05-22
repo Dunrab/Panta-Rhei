@@ -92,7 +92,7 @@
     offState: Bepis_Machine-off
     brokenState: Bepis_Machine-broken
     normalState: Bepis_Machine
-    denyState: Bepis_Machine-off
+    denyState: Bepis_Machine-deny
   - type: Wires
     layoutId: ShopVendor
   - type: Rotatable
