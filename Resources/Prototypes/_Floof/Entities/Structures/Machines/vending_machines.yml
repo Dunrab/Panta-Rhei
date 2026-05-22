@@ -72,10 +72,10 @@
   parent: VendingMachine
   id: VendingMachineBepis
   name: Bepis Vendor
-  description: Get your bepis here.
+  description: Get your nice cold can of Bepis here.
   components:
   - type: Sprite
-    sprite: _Floof/Structures/Machines/VendingMachines/bepis.rsi # change the sprite
+    sprite: _Floof/Structures/Machines/VendingMachines/bepis.rsi
     layers:
     - state: "Bepis_Machine-off"
       map: ["enum.VendingMachineVisualLayers.Base"]
