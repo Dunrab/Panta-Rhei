@@ -1,7 +1,7 @@
 {
     "version": 1,
-    "license": null,
-    "copyright": null,
+    "license": "CC-BY-3.0",
+    "copyright": "Taken from VoreStation Commit: https://github.com/VOREStation/VOREStation/commit/3ee4c0557c060df7d5fa04ce963c99590b3ed051",
     "size": {
         "x": 32,
         "y": 32
