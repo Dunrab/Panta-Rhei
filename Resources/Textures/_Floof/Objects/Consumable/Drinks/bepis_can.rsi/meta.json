@@ -1,0 +1,23 @@
+{
+    "version": 1,
+    "license": null,
+    "copyright": "Need original pr that added this, icon-open, inhand-left & inhand-right edits made by Dunrab",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "icon"
+        },
+        {
+            "name": "icon_open"
+        },
+        {
+            "name": "inhand-left"
+        },
+        {
+            "name": "inhand-right"
+        }
+    ]
+}
