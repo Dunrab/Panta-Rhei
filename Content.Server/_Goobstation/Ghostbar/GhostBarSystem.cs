@@ -6,6 +6,7 @@ using Content.Server.GameTicking.Events;
 using Content.Server.Goobstation.Ghostbar.Components;
 using Content.Server.Mind;
 using Content.Server.Station.Systems;
+using Content.Shared._DV.Polymorph;
 using Content.Shared._Floof.Language.Components;
 using Content.Shared._Goobstation.Ghostbar.Events;
 using Content.Shared.Abilities.Psionics;
@@ -13,6 +14,7 @@ using Content.Shared.GameTicking;
 using Content.Shared.Ghost;
 using Content.Shared.Mind.Components;
 using Content.Shared.Mindshield.Components;
+using Content.Shared.Polymorph;
 using Content.Shared.Temperature.Components;
 using Robust.Shared.EntitySerialization;
 using Robust.Shared.EntitySerialization.Systems;
@@ -45,6 +47,9 @@ public sealed class GhostBarSystem : EntitySystem
         SubscribeLocalEvent<RoundStartingEvent>(OnRoundStart);
         SubscribeNetworkEvent<GhostBarSpawnEvent>(SpawnPlayer);
         SubscribeLocalEvent<GhostBarPlayerComponent, MindRemovedMessage>(PlayerGhostedFromGhostbar);
+        SubscribeLocalEvent<GhostBarPlayerComponent, BeforePolymorphedEvent>(OnBeforePolymorphed);
+        SubscribeLocalEvent<GhostBarPlayerComponent, PolymorphedEvent>(OnAfterPolymorphed);
+        //SubscribeLocalEvent<PolymorphedEntityComponent, PolymorphedEvent>(OnAfterPolymorphed);
     }
 
     private readonly ResPath _mapPath = new("Maps/Floof/Nonstation/Ghostbar/ghostbar.yml");
@@ -96,6 +101,16 @@ public sealed class GhostBarSystem : EntitySystem
         {
             _mindSystem.TransferTo(targetMind.Value, mobUid, true);
         }
+    }
+    private void OnBeforePolymorphed(Entity<GhostBarPlayerComponent> ent, ref BeforePolymorphedEvent args)
+    {
+        // remove the ghostbaruser comp on body so the polymorph can transform back
+        RemComp<GhostBarPlayerComponent>(ent);
+    }
+
+    private void OnAfterPolymorphed(Entity<GhostBarPlayerComponent> ent, ref PolymorphedEvent args)
+    {
+        EnsureComp<GhostBarPlayerComponent>(args.NewEntity);
     }
     // Delete the players character if they choose to ghost while at the ghostbar using the GhostBarPlayerComponent
     private void PlayerGhostedFromGhostbar(Entity<GhostBarPlayerComponent> ent, ref MindRemovedMessage args)
