@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Need to update",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "spacecasinocash1"
+        },
+        {
+            "name": "spacecasinocash10"
+        },
+        {
+            "name": "spacecasinocash20"
+        },
+        {
+            "name": "spacecasinocash50"
+        },
+        {
+            "name": "spacecasinocash100"
+        },
+        {
+            "name": "spacecasinocash200"
+        },
+        {
+            "name": "spacecasinocash500"
+        },
+        {
+            "name": "spacecasinocash1000"
+        }
+    ]
+}
