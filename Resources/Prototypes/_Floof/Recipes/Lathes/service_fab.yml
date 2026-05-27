@@ -5,7 +5,7 @@
   completetime: 2.0
   materials:
     Steel: 075
-    Plastic: 025
+    Plastic: 200
 
 - type: latheRecipe
   id: LunchboxCommand
@@ -14,7 +14,7 @@
   completetime: 2.0
   materials:
     Steel: 075
-    Plastic: 025
+    Plastic: 200
 
 - type: latheRecipe
   id: LunchboxEngineering
@@ -23,7 +23,7 @@
   completetime: 2.0
   materials:
     Steel: 075
-    Plastic: 025
+    Plastic: 200
 
 - type: latheRecipe
   id: LunchboxEpistemics
@@ -32,7 +32,7 @@
   completetime: 2.0
   materials:
     Steel: 075
-    Plastic: 025
+    Plastic: 200
 
 - type: latheRecipe
   id: LunchboxJustice
@@ -41,7 +41,7 @@
   completetime: 2.0
   materials:
     Steel: 075
-    Plastic: 025
+    Plastic: 200
 
 - type: latheRecipe
   id: LunchboxMedical
@@ -50,7 +50,7 @@
   completetime: 2.0
   materials:
     Steel: 075
-    Plastic: 025
+    Plastic: 200
 
 - type: latheRecipe
   id: LunchboxSecurity
@@ -59,7 +59,7 @@
   completetime: 2.0
   materials:
     Steel: 075
-    Plastic: 025
+    Plastic: 200
 
 - type: latheRecipe
   id: LunchboxLogistics
@@ -68,7 +68,7 @@
   completetime: 2.0
   materials:
     Steel: 075
-    Plastic: 025
+    Plastic: 200
 
 - type: latheRecipe
   id: LunchboxService
@@ -77,7 +77,7 @@
   completetime: 2.0
   materials:
     Steel: 075
-    Plastic: 025
+    Plastic: 200
 
 - type: latheRecipe
   id: FoodBoxPizza
@@ -101,7 +101,7 @@
   categories: [Tools]
   completetime: 2.0
   materials:
-    Steel: 200
+    Steel: 400
 
 - type: latheRecipe
   id: HappyHonkEmpty
