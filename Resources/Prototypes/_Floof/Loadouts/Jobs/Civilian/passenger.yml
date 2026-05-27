@@ -1374,6 +1374,11 @@
   equipment:
     neck: ClothingNeckNeckerchief
 
+- type: loadout
+  id: ClothingNeckCWPArctic
+  equipment:
+    neck: ClothingNeckCWPArctic
+
 # trinkets
 - type: loadout
   id: HandheldStationMap
