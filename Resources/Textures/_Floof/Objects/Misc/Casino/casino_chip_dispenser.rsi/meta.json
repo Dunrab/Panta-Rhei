@@ -1,0 +1,42 @@
+{
+    "version": 1,
+    "license": "null",
+    "copyright": "null",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "chipmachine-on",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.2,
+                    0.2,
+                    0.2,
+                    0.2,
+                    0.2,
+                    2.5
+                ]
+            ]
+        },
+        {
+            "name": "chipmachine-off"
+        },
+        {
+            "name": "chipmachine-broken"
+        },
+        {
+            "name": "chipmachine-deny"
+        },
+        {
+            "name": "chipmachine-panel"
+        }
+    ]
+}
