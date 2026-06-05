@@ -666,7 +666,7 @@
 
 - type: loadoutGroup
   id: SurgeonScrubs
-  parent: [FloofJumpsuits] # Floofstation
+  parent: [FloofJumpsuits, EuphoriaSurgeonScrubs] # Floofstation
   name: loadout-group-surgeon-scrubs
   loadouts:
   - MedicalBlueScrubs
@@ -677,7 +677,6 @@
   - MedicalPinkScrubs
   - MedicalWhiteScrubs
   - MedicalRainbowScrubs
-
 - type: loadoutGroup
   id: SurgeonMask
   name: loadout-group-surgeon-mask
@@ -887,6 +886,7 @@
   - RoboticistLabCoat
   - RoboticistWintercoat
   - RegularLabCoat
+  - LongLabCoat
   - ScienceLabCoat
   - CardborgCostume
 
@@ -1121,3 +1121,36 @@
   groups:
   - GroupEVATankERT
   - SurvivalExtended
+
+# Wildcards
+- type: loadoutGroup
+  id: BoxerJumpsuit
+  parent: [FloofJumpsuits] # Floofstation
+  name: loadout-group-boxer-jumpsuit
+  loadouts:
+  - BoxerShorts
+  - BoxerShortsWithTop
+
+- type: loadoutGroup
+  id: BoxerGloves
+  parent: [FloofGloves] # Floofstation
+  name: loadout-group-boxer-gloves
+  loadouts:
+  - RedBoxingGloves
+  - BlueBoxingGloves
+  - GreenBoxingGloves
+  - YellowBoxingGloves
+
+- type: loadoutGroup
+  id: BoxerJobTrinkets
+  name: loadout-group-jobtrinkets
+  minLimit: 0
+  loadouts:
+  - LizardPlushieBoxer
+
+- type: loadoutGroup
+  id: ZookeeperJobTrinkets
+  name: loadout-group-jobtrinkets
+  minLimit: 0
+  loadouts:
+  - LizardPlushieZookeeper
