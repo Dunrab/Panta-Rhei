@@ -491,6 +491,34 @@
     tags:
     - Syringe
     - Trash
+  # Floofstation silly syringe changes start
+  - type: TriggerOnStepTrigger
+  - type: PreventableStepTrigger
+  - type: StepTrigger
+    intersectRatio: 0.2
+  - type: EmbeddableProjectile
+    offset: "0,-0.1"
+    minimumSpeed: 3
+    removalTime: 0.25
+    embedOnThrow: false
+  - type: SolutionInjectWhileEmbedded
+    transferAmount: 1
+    solution: injector
+    updateInterval: 2
+  - type: SolutionInjectOnEmbed
+    transferAmount: 2 # DeltaV - was 1
+    solution: injector
+  - type: DamageOnTrigger
+    targetUser: true
+    damage:
+      types:
+        Piercing: 5
+  - type: Slippery
+    slipSound:
+      path: /Audio/Effects/glass_step.ogg
+    slipData:
+      launchForwardsMultiplier: 0
+  # Floofstation changes end
 
 - type: entity
   name: mini syringe
