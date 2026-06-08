@@ -7,7 +7,7 @@
     - to: envelope
       steps:
       - tag: Paper
-        name: paper
+        name: crafting-material-paper
         icon:
           sprite: Objects/Misc/bureaucracy.rsi
           state: paper
