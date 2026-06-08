@@ -12,9 +12,8 @@
   - type: Clothing
     slots: [head]
     sprite: Structures/Specific/Anomalies/inner_anom_layer.rsi
-    layers:
-    - state: flora
-      shader: unshaded
+    state: flora
+    shader: unshaded
     clothingVisuals:
       head:
       - state: flora
@@ -41,9 +40,8 @@
   - type: Clothing
     slots: [head]
     sprite: Structures/Specific/Anomalies/inner_anom_layer.rsi
-    layers:
-    - state: bluespace
-      shader: unshaded
+    state: bluespace
+    shader: unshaded
     clothingVisuals:
       head:
       - state: bluespace
@@ -70,9 +68,8 @@
   - type: Clothing
     slots: [head]
     sprite: Structures/Specific/Anomalies/inner_anom_layer.rsi
-    layers:
-    - state: fire
-      shader: unshaded
+    state: fire
+    shader: unshaded
     clothingVisuals:
       head:
       - state: fire
@@ -99,9 +96,8 @@
   - type: Clothing
     slots: [head]
     sprite: Structures/Specific/Anomalies/inner_anom_layer.rsi
-    layers:
-    - state: flesh
-      shader: unshaded
+    state: flesh
+    shader: unshaded
     clothingVisuals:
       head:
       - state: flesh
@@ -128,9 +124,8 @@
   - type: Clothing
     slots: [head]
     sprite: Structures/Specific/Anomalies/inner_anom_layer.rsi
-    layers:
-    - state: frost
-      shader: unshaded
+    state: frost
+    shader: unshaded
     clothingVisuals:
       head:
       - state: frost
@@ -157,9 +152,8 @@
   - type: Clothing
     slots: [head]
     sprite: Structures/Specific/Anomalies/inner_anom_layer.rsi
-    layers:
-    - state: grav
-      shader: unshaded
+    state: grav
+    shader: unshaded
     clothingVisuals:
       head:
       - state: grav
@@ -186,9 +180,8 @@
   - type: Clothing
     slots: [head]
     sprite: Structures/Specific/Anomalies/inner_anom_layer.rsi
-    layers:
-    - state: rock
-      shader: unshaded
+    state: rock
+    shader: unshaded
     clothingVisuals:
       head:
       - state: rock
@@ -215,9 +208,8 @@
   - type: Clothing
     slots: [head]
     sprite: Structures/Specific/Anomalies/inner_anom_layer.rsi
-    layers:
-    - state: shadow
-      shader: unshaded
+    state: shadow
+    shader: unshaded
     clothingVisuals:
       head:
       - state: shadow
@@ -244,9 +236,8 @@
   - type: Clothing
     slots: [head]
     sprite: Structures/Specific/Anomalies/inner_anom_layer.rsi
-    layers:
-    - state: shock
-      shader: unshaded
+    state: shock
+    shader: unshaded
     clothingVisuals:
       head:
       - state: shock
@@ -273,9 +264,8 @@
   - type: Clothing
     slots: [head]
     sprite: Structures/Specific/Anomalies/inner_anom_layer.rsi
-    layers:
-    - state: tech
-      shader: unshaded
+    state: tech
+    shader: unshaded
     clothingVisuals:
       head:
       - state: tech
