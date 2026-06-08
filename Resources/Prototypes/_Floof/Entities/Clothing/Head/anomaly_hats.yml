@@ -12,8 +12,6 @@
   - type: Clothing
     slots: [head]
     sprite: Structures/Specific/Anomalies/inner_anom_layer.rsi
-    state: flora
-    shader: unshaded
     clothingVisuals:
       head:
       - state: flora
@@ -40,8 +38,6 @@
   - type: Clothing
     slots: [head]
     sprite: Structures/Specific/Anomalies/inner_anom_layer.rsi
-    state: bluespace
-    shader: unshaded
     clothingVisuals:
       head:
       - state: bluespace
@@ -68,8 +64,6 @@
   - type: Clothing
     slots: [head]
     sprite: Structures/Specific/Anomalies/inner_anom_layer.rsi
-    state: fire
-    shader: unshaded
     clothingVisuals:
       head:
       - state: fire
@@ -96,8 +90,6 @@
   - type: Clothing
     slots: [head]
     sprite: Structures/Specific/Anomalies/inner_anom_layer.rsi
-    state: flesh
-    shader: unshaded
     clothingVisuals:
       head:
       - state: flesh
@@ -124,8 +116,6 @@
   - type: Clothing
     slots: [head]
     sprite: Structures/Specific/Anomalies/inner_anom_layer.rsi
-    state: frost
-    shader: unshaded
     clothingVisuals:
       head:
       - state: frost
@@ -152,8 +142,6 @@
   - type: Clothing
     slots: [head]
     sprite: Structures/Specific/Anomalies/inner_anom_layer.rsi
-    state: grav
-    shader: unshaded
     clothingVisuals:
       head:
       - state: grav
@@ -180,8 +168,6 @@
   - type: Clothing
     slots: [head]
     sprite: Structures/Specific/Anomalies/inner_anom_layer.rsi
-    state: rock
-    shader: unshaded
     clothingVisuals:
       head:
       - state: rock
@@ -208,8 +194,6 @@
   - type: Clothing
     slots: [head]
     sprite: Structures/Specific/Anomalies/inner_anom_layer.rsi
-    state: shadow
-    shader: unshaded
     clothingVisuals:
       head:
       - state: shadow
@@ -236,8 +220,6 @@
   - type: Clothing
     slots: [head]
     sprite: Structures/Specific/Anomalies/inner_anom_layer.rsi
-    state: shock
-    shader: unshaded
     clothingVisuals:
       head:
       - state: shock
@@ -264,8 +246,6 @@
   - type: Clothing
     slots: [head]
     sprite: Structures/Specific/Anomalies/inner_anom_layer.rsi
-    state: tech
-    shader: unshaded
     clothingVisuals:
       head:
       - state: tech
