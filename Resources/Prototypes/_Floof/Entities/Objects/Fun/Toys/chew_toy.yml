@@ -30,6 +30,9 @@
     wideAnimationRotation: 90
     angle: 0
     animation: WeaponArcBite # Rrrr!
+    damage:
+      types:
+        Blunt: 0
   - type: FoodSequenceElement
     entries:
       CottonBurger: CarpPlushie
