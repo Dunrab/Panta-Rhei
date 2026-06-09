@@ -75,3 +75,24 @@
   - type: StorageFill
     contents:
     - id: DrumkitInstrument
+
+- type: entity
+  id: CrateCasinoChips
+  parent: CrateGenericSteel
+  name: bulk casino chips crate
+  description: A crate containing numerous quantities of casino chips. The Trade Federation is not responsible for Gambling Addiction.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: CasinoChip20
+          amount: 10
+        - id: CasinoChip50
+          amount: 5
+        - id: CasinoChip100
+          amount: 5
+        - id: CasinoChip200
+          amount: 5
+        - id: CasinoChip500
+          amount: 5
