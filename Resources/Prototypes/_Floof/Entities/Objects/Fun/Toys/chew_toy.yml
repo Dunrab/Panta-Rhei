@@ -1,5 +1,5 @@
 ﻿- type: entity
-  parent: [ BaseItem, BaseSportsBall, PlushieCarp]
+  parent: [ BaseItem, BaseSportsBall ]
   id: CarpChewToy
   name: Carp Chew Toy
   description: A very bitable toy fish.
