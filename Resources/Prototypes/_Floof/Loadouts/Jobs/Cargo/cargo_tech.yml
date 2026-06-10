@@ -23,6 +23,10 @@
     neck: ClothingNeckCollarEmotionalLogisticsCargotech
 
 # Pilot gear
+- type: loadout
+  id: PilotPDA # this is the one found in the Floof pdas.yml
+  equipment:
+    id: PilotPDA
 
 #scarf
 - type: loadout

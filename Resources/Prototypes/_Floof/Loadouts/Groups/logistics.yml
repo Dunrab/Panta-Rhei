@@ -160,6 +160,7 @@
   id: FloofCargotechPda
   abstract: true
   loadouts:
+  - PilotPDA
   - ClothingNeckCollarEmotionalLogisticsCargotech
 
 - type: loadoutGroup
