@@ -7,6 +7,7 @@
   - type: Sprite
     sprite: _Floof/Objects/Consumable/Smokeables/bong.rsi
     state: unlit-icon
+    scale: 0.65, 0.65
   - type: Clothing
     sprite: _Floof/Objects/Consumable/Smokeables/bong.rsi
     slots: [ mask ]
@@ -17,6 +18,9 @@
   - type: Appearance
   - type: BurnStateVisuals
     unlitIcon: unlit-icon
+  - type: Construction
+    graph: WoodenBong
+    node: woodenBong
 
 - type: entity
   id: MakeShiftBong
@@ -27,6 +31,7 @@
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Pipes/crack.rsi
     state: unlit-icon
+    scale: 0.65, 0.65
   - type: Clothing
     sprite: Objects/Consumable/Smokeables/Pipes/crack.rsi
     slots: [ mask ]
@@ -37,3 +42,6 @@
   - type: Appearance
   - type: BurnStateVisuals
     unlitIcon: unlit-icon
+  - type: Construction
+    graph: WoodenBong
+    node: makeshiftBong
