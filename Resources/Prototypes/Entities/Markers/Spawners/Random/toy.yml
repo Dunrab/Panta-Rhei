@@ -289,7 +289,7 @@
         - id: SyndieTrickyBomb
     - !type:GroupSelector # Guns type group
       children:
-      - id: WeaponStickyHand
+      #- id: WeaponStickyHand # Floofstation - removed due to bug abuse
       - !type:GroupSelector # Water subgroup
         children:
         - id: WeaponWaterBlaster
