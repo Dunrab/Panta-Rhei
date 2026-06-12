@@ -93,6 +93,7 @@
     sprite: _Floof/Clothing/Departmental/Engineering/engiwarmer.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Departmental/Engineering/engiwarmer.rsi
+  - type: Insulated
   - type: Fiber
     fiberMaterial: fibers-insulative
     fiberColor: fibers-yellow
@@ -471,7 +472,7 @@
     sprite: _Floof/Clothing/Departmental/Logistics/devysuit.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Departmental/Logistics/devysuit.rsi
-    
+
 - type: entity
   parent: ClothingShoesBase
   id: ClothingShoesCourierDevy
@@ -482,7 +483,7 @@
     sprite: _Floof/Clothing/Departmental/Logistics/devyboots.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Departmental/Logistics/devyboots.rsi
-    
+
 - type: entity
   parent: ClothingOuterWinterCoat
   id: ClothingOuterDevy
@@ -493,7 +494,7 @@
     sprite: _Floof/Clothing/Departmental/Logistics/devycoat.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Departmental/Logistics/devycoat.rsi
-    
+
 #Medical Outfits
 #
 #General Medical
