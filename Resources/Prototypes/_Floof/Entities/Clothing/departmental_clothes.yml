@@ -84,7 +84,7 @@
 #
 #General Engineering
 - type: entity
-  parent: ClothingHandsBase
+  parent: [ClothingHandsBase, BaseEngineeringContraband]
   id: ClothingHandsEngiWarmers
   name: engineering arm-warmers
   description: A pair of rather nice arm-warmers, styled for Engineering roles.
@@ -97,7 +97,6 @@
   - type: Fiber
     fiberMaterial: fibers-insulative
     fiberColor: fibers-yellow
-  - type: FingerprintMask
 
 - type: entity
   parent: ClothingShoesBase
