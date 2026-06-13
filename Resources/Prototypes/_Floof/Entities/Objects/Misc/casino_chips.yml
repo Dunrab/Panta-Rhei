@@ -150,3 +150,52 @@
   - type: Stack
     stackType: CasinoChip
     count: 1000
+
+# Chip case
+- type: entity
+  name: casino chip case
+  description: A classy casino chip carrying case. HGI is not responsible for gambling addiction
+  parent: BaseStorageItem
+  id: CasinoChipCaseEmpty
+  components:
+  - type: Sprite
+    sprite: _Floof/Objects/Misc/Casino/chip_case.rsi
+    state: pokercase
+    scale: 0.50, 0.50 # make this smaller
+  - type: Storage # add whitelist
+    whitelist:
+      tags:
+      - CasinoChips # only chips can go in
+    maxItemSize: Small
+    grid:
+    - 0,0,5,3
+  - type: Item
+    size: Large
+    sprite: _Floof/Objects/Misc/Casino/chip_case.rsi
+    heldPrefix: pokercase
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 300
+
+- type: entity
+  name: casino chip case
+  parent: CasinoChipCaseEmpty
+  id: CasinoChipCaseFull
+  suffix: Filled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: CasinoChip20
+          amount: 2
+        - id: CasinoChip50
+          amount: 1
+        - id: CasinoChip100
+          amount: 2
+        - id: CasinoChip200
+          amount: 3
+        - id: CasinoChip500
+          amount: 2
+        - id: CasinoChip1000
+          amount: 2

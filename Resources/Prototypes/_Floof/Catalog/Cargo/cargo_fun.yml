@@ -44,8 +44,8 @@
 - type: cargoProduct
   id: FunCasinoChipCrate
   icon:
-    sprite: _Floof/Objects/Misc/Casino/casino_chips.rsi
-    state: spacecasinocash1000
+    sprite: _Floof/Objects/Misc/Casino/chip_case.rsi
+    state: pokercase
   product: CrateCasinoChips
   cost: 4500
   category: cargoproduct-category-name-fun
