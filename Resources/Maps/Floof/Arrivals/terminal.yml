@@ -4,8 +4,8 @@ meta:
   engineVersion: 270.1.0
   forkId: ""
   forkVersion: ""
-  time: 06/14/2026 22:29:04
-  entityCount: 8848
+  time: 06/14/2026 22:37:15
+  entityCount: 8844
 maps: []
 grids:
 - 2
@@ -3558,7 +3558,7 @@ entities:
       pos: -10.5,-51.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -2100.775
+      secondsUntilStateChange: -2258.9897
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -3687,7 +3687,7 @@ entities:
       pos: -6.5,22.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -2686.4683
+      secondsUntilStateChange: -2844.683
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -18590,18 +18590,6 @@ entities:
       parent: 2
 - proto: ChairFolding
   entities:
-  - uid: 412
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 1.5,-24.5
-      parent: 2
-  - uid: 985
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 3.5,-23.5
-      parent: 2
   - uid: 1454
     components:
     - type: Transform
@@ -19665,20 +19653,6 @@ entities:
     - type: Transform
       pos: -17.707483,-3.275685
       parent: 2
-- proto: ClothingShoesBootsJack
-  entities:
-  - uid: 3249
-    components:
-    - type: Transform
-      pos: 3.6437826,-22.665216
-      parent: 2
-- proto: ClothingShoesBootsLaceup
-  entities:
-  - uid: 7882
-    components:
-    - type: Transform
-      pos: -3.5494766,-21.377157
-      parent: 2
 - proto: ClothingShoesBootsSalvage
   entities:
   - uid: 1077
@@ -19700,23 +19674,10 @@ entities:
       parent: 2
 - proto: ClothingShoesLeather
   entities:
-  - uid: 7881
-    components:
-    - type: Transform
-      pos: -3.3137593,-21.557034
-      parent: 2
   - uid: 8725
     components:
     - type: Transform
       pos: -54.462753,1.4370198
-      parent: 2
-- proto: ClothingUnderSocksBee
-  entities:
-  - uid: 8197
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 1.9822707,-24.801527
       parent: 2
 - proto: ClothingUniformJumpsuitAtmosCasual
   entities:
@@ -20208,10 +20169,10 @@ entities:
       parent: 2
 - proto: CrateFunSprayPaints
   entities:
-  - uid: 1159
+  - uid: 2621
     components:
     - type: Transform
-      pos: 2.5,-24.5
+      pos: -3.5,-21.5
       parent: 2
 - proto: Crowbar
   entities:
@@ -38096,11 +38057,6 @@ entities:
     - type: Transform
       pos: -48.5,0.5
       parent: 2
-  - uid: 7976
-    components:
-    - type: Transform
-      pos: -3.5,-21.5
-      parent: 2
   - uid: 8100
     components:
     - type: Transform
@@ -38302,6 +38258,13 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -7.322114,-18.417048
+      parent: 2
+- proto: PetStoreVendingMachine
+  entities:
+  - uid: 1159
+    components:
+    - type: Transform
+      pos: -8.5,-45.5
       parent: 2
 - proto: PlasmaTank
   entities:
@@ -40197,11 +40160,6 @@ entities:
       parent: 2
 - proto: Rack
   entities:
-  - uid: 408
-    components:
-    - type: Transform
-      pos: -3.5,-21.5
-      parent: 2
   - uid: 1025
     components:
     - type: Transform
@@ -44276,6 +44234,13 @@ entities:
     - type: Transform
       pos: 49.5,-16.5
       parent: 2
+- proto: VendingMachineBepis
+  entities:
+  - uid: 412
+    components:
+    - type: Transform
+      pos: 7.5,-45.5
+      parent: 2
 - proto: VendingMachineBooze
   entities:
   - uid: 2528
@@ -44340,6 +44305,13 @@ entities:
     - type: Transform
       pos: -48.5,-13.5
       parent: 2
+- proto: VendingMachineCrescentMoon
+  entities:
+  - uid: 985
+    components:
+    - type: Transform
+      pos: 2.5,-24.5
+      parent: 2
 - proto: VendingMachineDetDrobe
   entities:
   - uid: 2150
@@ -44374,6 +44346,13 @@ entities:
     components:
     - type: Transform
       pos: -13.5,-3.5
+      parent: 2
+- proto: VendingMachineMNKDrobe
+  entities:
+  - uid: 408
+    components:
+    - type: Transform
+      pos: 1.5,-24.5
       parent: 2
 - proto: VendingMachinePride
   entities:
