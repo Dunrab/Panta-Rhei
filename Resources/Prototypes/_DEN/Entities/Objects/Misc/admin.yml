@@ -71,4 +71,4 @@
   - type: LimitedCharges
     maxCharges: 100
   - type: AutoRecharge
-    rechargeDuration: 0
+    rechargeDuration: 1 # Floofstatoin - change this from zero to one so it can actually recharge
