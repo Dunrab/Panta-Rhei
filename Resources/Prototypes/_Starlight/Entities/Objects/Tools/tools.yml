@@ -750,7 +750,7 @@
     - AirAlarm
     - AirSensor
   - type: LimitedCharges
-    maxCharges: 90
+    maxCharges: 30 # match RCD charges since this also uses RCD ammo
   - type: Sprite
     sprite: _Starlight/Objects/Tools/rpd.rsi
 
@@ -777,9 +777,22 @@
 - type: entity
   id: RPDExperimental
   parent: RPD
-  suffix: Admeme
   name: experimental RPD
   description: A bluespace-enhanced rapid piping device that passively generates its own compressed matter.
   components:
+  - type: LimitedCharges # match the charge and recharge time of the Experimental RCD
+    maxCharges: 20
   - type: AutoRecharge
-    rechargeDuration: 1
+    rechargeDuration: 10
+
+- type: entity
+  id: AdminRPD
+  parent: RPD
+  suffix: Admeme
+  name: admin RPD
+  description: A bluespace-enhanced rapid piping device that passively generates its own compressed matter.
+  components:
+  - type: LimitedCharges
+    maxCharges: 100
+  - type: AutoRecharge
+    rechargeDuration: 0

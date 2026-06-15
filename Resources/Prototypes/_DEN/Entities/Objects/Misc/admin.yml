@@ -28,9 +28,10 @@
         - id: GeigerCounter
         - id: AccessConfiguratorUniversal
         - id: AdminRCD
+        - id: AdminRPD # Floofstation - give admins the admin RPD in their belts
   - type: Storage
     grid:
-    - 0,0,6,3
+    - 0,0,7,3 # Floofstation - increase admin belt size to fit the RPD
     whitelist: null
     maxItemSize: Normal
 
