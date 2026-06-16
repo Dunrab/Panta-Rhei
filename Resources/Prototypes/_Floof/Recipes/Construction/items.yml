@@ -1,10 +1,20 @@
-﻿- type: construction
+﻿# Paper
+- type: construction
   id: Envelope
   graph: Envelope
   startNode: start
   targetNode: envelope
   category: construction-category-tools
   objectType: Item
+
+- type: construction
+  id: Coupon
+  graph: PaperCoupon
+  startNode: start
+  targetNode: coupon
+  category: construction-category-tools
+  objectType: Item
+
 
 - type: construction
   id: WoodenBong
