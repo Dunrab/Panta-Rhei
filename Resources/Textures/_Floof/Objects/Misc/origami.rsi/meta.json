@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from TGstation 13: https://github.com/tgstation/tgstation/commits/master/icons/obj/service/bureaucracy.dmi, commit history for this file is butchered beyond repair",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "origami_swan"
+        }
+    ]
+}

@@ -15,6 +15,21 @@
   category: construction-category-tools
   objectType: Item
 
+- type: construction
+  id: PaperPlane
+  graph: PaperPlane
+  startNode: start
+  targetNode: paperplane
+  category: construction-category-tools
+  objectType: Item
+
+- type: construction
+  id: PaperOrigamiSwan
+  graph: PaperPlane
+  startNode: start
+  targetNode: origamiswan
+  category: construction-category-tools
+  objectType: Item
 
 - type: construction
   id: WoodenBong
