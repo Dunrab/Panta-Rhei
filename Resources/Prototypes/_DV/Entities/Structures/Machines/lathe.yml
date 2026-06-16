@@ -86,6 +86,7 @@
     - EVASuit
     - EngineeringStaticDeltaV
     - EngineeringStaticFloof # Floofstation
+    - EngineeringStaticStarlight # Floofstation - RPD empty recpie
     dynamicPacks:
     - AdvancedTools
     - PowerCells
