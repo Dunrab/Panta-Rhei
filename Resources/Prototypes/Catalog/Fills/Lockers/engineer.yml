@@ -158,13 +158,14 @@
     - id: MedkitOxygenFilled
     - id: HolofanProjector
     - id: DoorRemoteFirefight # DeltaV - Re-added fire-fighting remote.
-    - id: RCD
+    #- id: RCD # Floofstation - atmos doesn't need the rcd now
     - id: RCDAmmo
     - id: LunchboxEngineeringFilledRandom # DeltaV - Lunchboxes!
       prob: 0.3
     - id: AirGrenade
     - id: ClothingBeltUtilityAtmos # Euphoria
     - id: AccessConfigurator # EE
+    - id: RPD # Floofstation - atmos gets the rpd not rcd
 
 - type: entityTable
   id: FillAtmosphericsHardsuit
