@@ -125,3 +125,35 @@
   - type: Tag
     tags:
     - Vegetable
+
+- type: entity
+  name: coconut
+  parent: FoodProduceBase
+  id: FoodCoconut
+  description: A delicious, sweet fruit, believed to have special properties.
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet # need to change flavors, maybe make a new one
+    - fruity
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 7
+        reagents:
+        - ReagentId: CoconutWater
+          Quantity: 2
+        - ReagentId: Nutriment
+          Quantity: 5
+  - type: Sprite
+    sprite: _Floof/Objects/Specific/Hydroponics/coconut.rsi
+  - type: Produce
+    seedId: coconut
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: CoconutWater
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
