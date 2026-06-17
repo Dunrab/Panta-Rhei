@@ -647,6 +647,12 @@ public sealed class RCDSystem : EntitySystem
                         isIdentical = false;
                 }
 
+                // Floofstation - RPD Fix, if the RPD is used and the prototype its placing has a layer, allow it to be placed
+                if (component.IsRpd && prototype.HasLayers)
+                {
+                    isIdentical = false;
+                }
+
                 if (isIdentical)
                 {
                     if (popMsgs)
