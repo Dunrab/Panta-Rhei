@@ -26,12 +26,9 @@ using System.Linq;
 using Content.Shared.Atmos.EntitySystems;
 using Content.Shared.Atmos.Components;
 using Content.Shared._Starlight.Atmos.EntitySystems;
-using Content.Shared.Hands.Components;
-using System.Numerics;
 using Content.Shared.Verbs;
 using Robust.Shared.Utility;
 using Content.Shared.NodeContainer;
-using Content.Shared.Atmos;
 using Content.Shared._Starlight.Atmos;
 // Starlight End
 
@@ -754,8 +751,6 @@ public sealed class RCDSystem : EntitySystem
 
             // The object is not in the whitelist
             if (!deconstructible.Deconstructable) // Starlight Edit: RPD - Removed ``TryComp<RCDDeconstructableComponent>(target, out var deconstructible) || !``
-            // The object is not in the whitelist
-                if (!deconstructible.Deconstructable) // Starlight Edit: RPD - Removed ``TryComp<RCDDeconstructableComponent>(target, out var deconstructible) || !``
             {
                 if (popMsgs)
                     _popup.PopupClient(Loc.GetString("rcd-component-deconstruct-target-not-on-whitelist-message"), uid, user);
@@ -776,7 +771,7 @@ public sealed class RCDSystem : EntitySystem
         if (!_net.IsServer)
             return;
 
-        var prototype = _protoManager.Index(component.ProtoId);
+        var prototype = component.CachedPrototype; // Starlight Edit: _protoManager.Index(component.ProtoId) -> component.CachedPrototype
 
         if (prototype.Prototype == null)
             return;
