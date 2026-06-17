@@ -91,6 +91,15 @@ public sealed partial class RCDComponent : Component
     [DataField]
     public AtmosPipeLayer? LastSelectedLayer { get; set; } = null;
 
+    // Starlight Start
+    /// <summary>
+    /// Stores player rotation
+    /// This is a workaround to the fact eye rotation is not currently networked and required for pipe layering
+    /// Sent only when needed
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public float? LastKnownEyeRotation { get; set; } = null;
+
     /// <summary>
     /// Current pipe layer / build mode for RPD
     /// </summary>
