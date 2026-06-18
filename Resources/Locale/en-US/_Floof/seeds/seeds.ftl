@@ -4,3 +4,5 @@ seeds-breedshroom-name = breedshroom
 seeds-breedshroom-display-name = breedshroom
 seeds-coconut-name = coconut
 seeds-coconut-display-name = coconut
+seeds-coconut-gun-name = coconut gun
+seeds-coconut-gun-display-name = coconut gun
