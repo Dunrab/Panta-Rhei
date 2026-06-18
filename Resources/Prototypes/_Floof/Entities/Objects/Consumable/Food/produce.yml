@@ -134,8 +134,9 @@
   components:
   - type: FlavorProfile
     flavors:
-    - sweet # need to change flavors, maybe make a new one
-    - fruity
+    - sweet
+    - creamy
+    - nutty
   - type: SolutionContainerManager
     solutions:
       food:
