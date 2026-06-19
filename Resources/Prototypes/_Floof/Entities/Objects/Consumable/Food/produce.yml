@@ -159,6 +159,10 @@
     tags:
     - Fruit
     - CoconutFruit
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 1 # give it a tiny bit of throw damage for the silly
 
 - type: entity
   name: coconut gun husk
