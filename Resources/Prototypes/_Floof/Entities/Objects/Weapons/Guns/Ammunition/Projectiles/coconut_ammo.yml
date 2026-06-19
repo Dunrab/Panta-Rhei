@@ -18,3 +18,10 @@
   - type: Construction
     graph: CoconutPellet
     node: start
+  - type: Projectile
+    impactEffect: BulletImpactEffect
+    deleteOnCollide: false
+    onlyCollideWhenShot: true
+    damage:
+      types:
+        Blunt: 4
