@@ -15,11 +15,11 @@ reagent-name-bananacreampie = Banana Cream
 reagent-desc-bananacreampie = A rich and thick pale golden cream, with a strong Gros Michel banana flavor.
 flavor-complex-bananacreampie = like dreams of a banana republic, with a hint of harmbatoning clowns.
 
-reagent-name-peanutoil = Peanut Oil
+reagent-name-peanutoil = peanut oil
 reagent-desc-peanutoil = A stick oily substance used to make peanut butter.
 
-reagent-name-peanut-butter = Peanut Butter
+reagent-name-peanut-butter = peanut butter
 reagent-desc-peanut-butter = A creamy and slightly sticky butter made from peanuts.
 
-reagent-name-peanut-butter-whiskey = Peanut Butter Whiskey
+reagent-name-peanut-butter-whiskey = peanut butter whiskey
 reagent-desc-peanut-butter-whiskey = A smooth and creamy peanut butter whiskey blend.
