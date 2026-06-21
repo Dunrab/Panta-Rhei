@@ -15,3 +15,8 @@
   physicalDesc: reagent-physical-desc-sticky
   flavor: sweet
   color: "#DCA465"
+  metabolisms:
+    Food:
+      effects:
+      - !type:SatiateHunger
+        factor: 0.5
