@@ -58,6 +58,6 @@
   id: PeanutSeeds
   components:
   - type: Seed
-    seedId: peanuts # need to change
+    seedId: peanuts
   - type: Sprite
     sprite: _Floof/Objects/Specific/Hydroponics/peanut.rsi

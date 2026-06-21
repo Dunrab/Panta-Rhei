@@ -250,7 +250,7 @@
       food:
         maxVol: 7
         reagents:
-        - ReagentId: PeanutOil # need to change
+        - ReagentId: PeanutOil
           Quantity: 2
         - ReagentId: Nutriment
           Quantity: 5

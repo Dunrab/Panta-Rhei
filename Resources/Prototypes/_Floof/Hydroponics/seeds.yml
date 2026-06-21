@@ -158,7 +158,7 @@
   name: seeds-peanut-name
   noun: seeds-noun-seeds
   displayName: seeds-peanut-display-name
-  plantRsi: _Floof/Objects/Specific/Hydroponics/peanut.rsi # cant use an offset need to redo sprites
+  plantRsi: _Floof/Objects/Specific/Hydroponics/peanut.rsi
   packetPrototype: PeanutSeeds
   productPrototypes:
   - FoodPeanutInShell
