@@ -461,3 +461,27 @@
     FoodDoughPie: 1
     FoodPlateTin: 1
     FoodFrosting: 1
+
+- type: microwaveMealRecipe
+  id: RecipePeanutButterJelly
+  name: peanut butter and jelly sandwich recipe
+  result: FoodBakedPeanutButterJellySandwich
+  time: 10
+  group: Savory
+  reagents:
+    PeanutButter: 10
+  solids:
+    FoodBreadPlainSlice: 2
+    FoodBerries: 2 # till somoene adds jelly for the pb&j
+
+- type: microwaveMealRecipe
+  id: RecipePeanutButterBanana
+  name: peanut butter and banana sandwich recipe
+  result: FoodBakedPeanutButterBananaSandwich
+  time: 10
+  group: Savory
+  reagents:
+    PeanutButter: 10
+  solids:
+    FoodBreadPlainSlice: 2
+    FoodBanana: 2
