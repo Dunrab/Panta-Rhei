@@ -17,6 +17,6 @@
 
 - type: entity
   parent: ClothingNeckGoodGirl
-  id: ClothingNeckGoodBeing
-  name: good being gold medal
+  id: ClothingNeckGoodPerson
+  name: good person gold medal
   description: Given to a crewmate or borg who is a good person.
