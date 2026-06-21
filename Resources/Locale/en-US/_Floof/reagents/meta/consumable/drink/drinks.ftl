@@ -14,3 +14,9 @@ flavor-complex-vbbeer = like you've finally sat down after a long hot days work 
 reagent-name-bananacreampie = Banana Cream
 reagent-desc-bananacreampie = A rich and thick pale golden cream, with a strong Gros Michel banana flavor.
 flavor-complex-bananacreampie = like dreams of a banana republic, with a hint of harmbatoning clowns.
+
+reagent-name-peanutoil = Peanut Oil
+reagent-desc-peanutoil = A stick oily substance used to make peanut butter.
+
+reagent-name-peanut-butter = Peanut Butter
+reagent-desc-peanut-butter = A creamy and slightly sticky butter made from peanuts.

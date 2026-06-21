@@ -215,21 +215,16 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 7
+        maxVol: 15
         reagents:
-        - ReagentId: CoconutWater # need to change
-          Quantity: 2
+        - ReagentId: PeanutOil
+          Quantity: 10
         - ReagentId: Nutriment
           Quantity: 5
   - type: Sprite
     sprite: _Floof/Objects/Specific/Hydroponics/peanut.rsi
   - type: Produce
     seedId: peanuts
-  - type: Extractable
-    juiceSolution:
-      reagents:
-      - ReagentId: CoconutWater
-        Quantity: 10
   - type: Tag
     tags:
     - Nuts
@@ -255,17 +250,12 @@
       food:
         maxVol: 7
         reagents:
-        - ReagentId: CoconutWater # need to change
+        - ReagentId: PeanutOil # need to change
           Quantity: 2
         - ReagentId: Nutriment
           Quantity: 5
   - type: Sprite
     sprite: _Floof/Objects/Specific/Hydroponics/peanut_raw.rsi
-  - type: Extractable
-    juiceSolution:
-      reagents:
-      - ReagentId: CoconutWater
-        Quantity: 10
   - type: Tag
     tags:
     - Nuts
