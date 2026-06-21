@@ -440,7 +440,7 @@
   id: RecipePeanutButterCup
   name: peanut butter cup recipe
   result: FoodBakedPeanutButterCup
-  time: 25
+  time: 10
   group: BarsAndCookies
   reagents:
     Flour: 5
