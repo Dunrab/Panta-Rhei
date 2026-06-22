@@ -172,3 +172,27 @@
           Quantity: 5
         - ReagentId: Vitamin
           Quantity: 3
+
+- type: entity
+  name: peanut butter toast
+  parent: FoodBreadSliceBase
+  id: FoodBreadPeanutButterToast
+  description: Crunchy with a hint of peanut butter.
+  components:
+  - type: FlavorProfile
+    flavors:
+    - creamy
+    - nutty
+    - bread
+  - type: Sprite
+    sprite: _Floof/Objects/Consumable/Food/peanut_butter_food.rsi
+    state: peanutbutter_toast
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: PeanutButter
+          Quantity: 3

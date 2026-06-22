@@ -472,7 +472,7 @@
     PeanutButter: 10
   solids:
     FoodBreadPlainSlice: 2
-    FoodBerries: 2 # till somoene adds jelly for the pb&j
+    FoodBerries: 2 # till someone adds jelly for the pb&j
 
 - type: microwaveMealRecipe
   id: RecipePeanutButterBanana
@@ -485,3 +485,14 @@
   solids:
     FoodBreadPlainSlice: 2
     FoodBanana: 2
+
+- type: microwaveMealRecipe
+  id: RecipeToastedPeanutButterBread
+  name: peanut butter toast recipe
+  result: FoodBreadPeanutButterToast
+  time: 5
+  group: Savory
+  reagents:
+    PeanutButter: 5
+  solids:
+    FoodBreadPlainSlice: 1

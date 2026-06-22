@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from TgStation13 Commit: https://github.com/tgstation/tgstation/commit/37db4a3e8509af951c22624dd36c4c75a926713e",
+    "copyright": "Taken from TgStation13 Commit: https://github.com/tgstation/tgstation/commit/37db4a3e8509af951c22624dd36c4c75a926713e, peanutbutter_toast edited by Dunrab (Github)",
     "size": {
         "x": 32,
         "y": 32
@@ -24,6 +24,9 @@
         },
         {
             "name": "peanut_butter_banana_sandwich"
+        },
+        {
+            "name": "peanutbutter_toast"
         }
     ]
 }
