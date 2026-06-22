@@ -9,11 +9,18 @@
     baseWalkSpeed: 4.25
     baseSprintSpeed: 5.5
   - type: Sprite
-    sprite: _DV/Mobs/Customization/kitsune/foxform.rsi
+    sprite: _Floof/Mobs/Customization/kitsune/foxform.rsi
     layers:
-    - state: kitsune_fox_body
-      map: ["enum.KitsuneColorVisuals.Layer"]
-    - state: kitsune_fox_innerear
+    - map: ["enum.KitsuneColorVisuals.Layer", "movement"]
+      state: fox-moving
+    #- state: kitsune_fox_innerear
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: fox-moving
+    noMovementLayers:
+      movement:
+        state: kitsune_fox_innerear
   - type: MobThresholds
     thresholds:
       0: Alive

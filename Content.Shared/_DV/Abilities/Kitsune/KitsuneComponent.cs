@@ -42,5 +42,7 @@ public sealed partial class KitsuneComponent : Component
 public enum KitsuneColorVisuals : byte
 {
     Color,
-    Layer
+    Layer,
+    BaseUnshadedAccessory, // DeltaV - Pet clothing
+    Tail, // DeltaV - Pet tails wagging
 }
