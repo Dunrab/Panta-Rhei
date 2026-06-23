@@ -16,8 +16,8 @@ public sealed partial class KitsuneColorComponent : Component
 }
 
 [Serializable, NetSerializable]
-public enum KitsuneMovementColorVisuals : byte
+public enum KitsuneFoxFormColorVisuals : byte
 {
     Color,
-    Layer,
+    Layer
 }

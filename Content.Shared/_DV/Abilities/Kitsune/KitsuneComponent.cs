@@ -42,5 +42,5 @@ public sealed partial class KitsuneComponent : Component
 public enum KitsuneColorVisuals : byte
 {
     Color,
-    Layer,
+    Layer
 }
