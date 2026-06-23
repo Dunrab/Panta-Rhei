@@ -8,21 +8,22 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 4.25
     baseSprintSpeed: 5.5
+  # Floofstation - fox form movement changes start
   - type: Sprite
     sprite: _Floof/Mobs/Customization/kitsune/foxform.rsi
     layers:
-    - map: ["enum.KitsuneColorVisuals.Layer", "movement"]
+    - map: ["enum.KitsuneColorVisuals.Layer", "movement"] # Floofstation - detla-vs ennum handles the movment
       state: fox-moving
-#    - map: [ "enum.KitsuneColorVisuals.Layer"]
-#      state: kitsune_fox_innerear
-    #- state: kitsune_fox_innerear
-#  - type: SpriteMovement
-#    movementLayers:
-#      movement:
-#        state: fox-moving
-#    noMovementLayers:
-#      movement:
-#        state: kitsune_fox_innerear
+    - map: ["enum.KitsuneMovementColorVisuals.Layer"] # Floofstation - our enum handles the kitsune color
+      state: kitsune_fox_innerear
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: fox-moving
+    noMovementLayers:
+      movement:
+        state: fox
+  # Floofstation - fox form movement changes end
   - type: MobThresholds
     thresholds:
       0: Alive
