@@ -13,14 +13,16 @@
     layers:
     - map: ["enum.KitsuneColorVisuals.Layer", "movement"]
       state: fox-moving
+#    - map: [ "enum.KitsuneColorVisuals.Layer"]
+#      state: kitsune_fox_innerear
     #- state: kitsune_fox_innerear
-  - type: SpriteMovement
-    movementLayers:
-      movement:
-        state: fox-moving
-    noMovementLayers:
-      movement:
-        state: kitsune_fox_innerear
+#  - type: SpriteMovement
+#    movementLayers:
+#      movement:
+#        state: fox-moving
+#    noMovementLayers:
+#      movement:
+#        state: kitsune_fox_innerear
   - type: MobThresholds
     thresholds:
       0: Alive
