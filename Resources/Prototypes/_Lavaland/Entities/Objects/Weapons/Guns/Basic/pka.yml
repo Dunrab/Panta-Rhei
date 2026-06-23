@@ -7,3 +7,117 @@
     #- id: WeaponProtoKineticShotgun - Euphoria
     #- id: WeaponProtoKineticRepeater - Euphoria
     #- id: WeaponProtoKineticPistol - Euphoria
+
+- type: entity
+  name: proto-kinetic shotgun
+  id: WeaponProtoKineticShotgun
+  parent: [ BaseGunWieldable, WeaponProtoKineticAcceleratorBase, BaseCargoContraband ]
+  description: Fires a spread of low-damage kinetic bolts that are half as effective for mining.
+  components:
+  - type: Sprite
+    sprite: _Lavaland/Objects/Weapons/Guns/Basic/kinetic_shotgun.rsi
+    layers:
+    - state: icon
+    - state: animation-icon
+      visible: false
+      map: [ "empty-icon" ]
+  - type: Clothing
+    sprite: _Lavaland/Objects/Weapons/Guns/Basic/kinetic_shotgun.rsi
+  - type: BasicEntityAmmoProvider
+    proto: PelletKineticSpread #BulletKinetic # was PelletKineticSpread
+  - type: GunRequiresWield
+  - type: Item
+    sprite: _Lavaland/Objects/Weapons/Guns/Basic/kinetic_shotgun.rsi
+    shape:
+    - 0,0,4,0
+  - type: ContainerContainer
+    containers:
+      bayonet: !type:ContainerSlot
+      flashlight: !type:ContainerSlot
+      upgrade_slot_1: !type:ContainerSlot
+      upgrade_slot_2: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      bayonet:
+        name: weapon-upgrade-slot-name-bayonet
+        priority: 5
+        whitelist:
+          components:
+          - GunUpgradeBayonet
+      flashlight:
+        name: weapon-upgrade-slot-name-flashlight
+        priority: 4
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+      upgrade_slot_1:
+        name: weapon-upgrade-slot-name-first
+        swap: false # can't use the swap...
+        priority: 3
+        whitelist:
+          tags:
+          - PKAUpgrade
+      upgrade_slot_2:
+        name: weapon-upgrade-slot-name-second
+        swap: false
+        priority: 2
+        whitelist:
+          tags:
+          - PKAUpgrade
+
+- type: entity
+  name: proto-kinetic repeater
+  id: WeaponProtoKineticRepeater
+  parent: [ WeaponProtoKineticAcceleratorBase, BaseCargoContraband ]
+  description: Fires a barrage of medium-damage kinetic bolts at a short range.
+  components:
+  - type: Sprite
+    sprite: _Lavaland/Objects/Weapons/Guns/Basic/kinetic_repeater.rsi
+    layers:
+    - state: icon
+  - type: Clothing
+    sprite: _Lavaland/Objects/Weapons/Guns/Basic/kinetic_repeater.rsi
+  - type: Gun
+    selectedMode: Burst
+    burstFireRate: 3
+    burstCooldown: 1.5
+    availableModes:
+    - Burst
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
+  - type: BasicEntityAmmoProvider
+    proto: RapidBulletKinetic
+    capacity: 3
+    count: 3
+  - type: Item
+    sprite: _Lavaland/Objects/Weapons/Guns/Basic/kinetic_repeater.rsi
+    shape:
+    - 0,0,2,1
+
+- type: entity
+  name: proto-kinetic pistol
+  id: WeaponProtoKineticPistol
+  parent: [ WeaponProtoKineticAcceleratorBase, BaseCargoContraband ]
+  description: Fires low-damage kinetic bolts, has a higher mod capacity.
+  components:
+  - type: Sprite
+    sprite: _Lavaland/Objects/Weapons/Guns/Basic/kinetic_pistol.rsi
+    layers:
+    - state: icon
+  - type: Clothing
+    sprite: _Lavaland/Objects/Weapons/Guns/Basic/kinetic_pistol.rsi
+  - type: BasicEntityAmmoProvider
+    proto: RapidBulletKinetic
+  - type: Gun
+    availableModes:
+    - FullAuto
+    - SemiAuto
+    - type: Multishot # Only a pistol should support that for balancing reasons
+    missChance: 0
+    spreadAddition: 5
+  - type: Item
+    sprite: _Lavaland/Objects/Weapons/Guns/Basic/kinetic_pistol.rsi
+    size: Small
+    shape:
+    - 0,0,1,0
+    - 0,1,0,1

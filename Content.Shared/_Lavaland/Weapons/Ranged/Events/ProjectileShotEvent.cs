@@ -7,7 +7,6 @@
 // SPDX-FileCopyrightText: 2025 Milon <plmilonpl@gmail.com>
 // SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
 // SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Unlumination <144041835+Unlumy@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
@@ -20,24 +19,13 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-using Content.Shared._Lavaland.Weapons.Ranged.Upgrades;
-using Content.Shared.Damage;
-using Robust.Shared.GameStates;
-
-namespace Content.Shared.Weapons.Ranged.Upgrades.Components;
+namespace Content.Shared._Lavaland.Weapons.Ranged.Events;
 
 /// <summary>
-/// A <see cref="GunUpgradeComponent"/> for increasing the damage of a gun's projectile.
+/// Raised on a gun when a projectile has been fired from it.
 /// </summary>
-[RegisterComponent, NetworkedComponent, Access(typeof(SharedGunUpgradeSystem))]
-public sealed partial class GunUpgradeDamageComponent : Component
+public sealed class ProjectileShotEvent : EntityEventArgs
 {
-    [DataField]
-    public DamageSpecifier? BonusDamage;
-
-    /// <summary>
-    /// How much should we multiply the total projectile's damage.
-    /// </summary>
-    [DataField]
-    public float Modifier = 1f;
+    public EntityUid FiredProjectile = default!;
 }
+

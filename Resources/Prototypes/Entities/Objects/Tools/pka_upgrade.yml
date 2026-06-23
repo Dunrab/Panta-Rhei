@@ -35,7 +35,7 @@
     #tags: [ GunUpgradeDamage ] # DeltaV - allow multiple
     examineText: gun-upgrade-examine-text-damage
   - type: GunUpgradeDamage
-    damage:
+    Modifier:
       types:
         Blunt: 5 # DeltaV - modkits can still exist but greatly lowering how much it does so we don't have 70 damage monster gun anymore
         #Structural: 15 # DeltaV - SS13 parity, 10 blunt per shot only
