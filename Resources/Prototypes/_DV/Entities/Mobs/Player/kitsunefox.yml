@@ -12,9 +12,9 @@
   - type: Sprite
     sprite: _Floof/Mobs/Customization/kitsune/foxform.rsi
     layers:
-    - map: ["enum.KitsuneColorVisuals.Layer", "movement"] # Floofstation - detla-vs ennum handles the movement
+    - map: ["enum.KitsuneColorVisuals.Layer", "movement"] # Floofstation - handles movment
       state: fox-moving
-    - map: ["enum.KitsuneFoxFormColorVisuals.Layer"] # Floofstation - our enum handles the kitsune color
+    - map: ["enum.KitsuneColorVisuals.InnerLayer"] # Floofstation - inner layer
       state: kitsune_fox_innerear
   - type: SpriteMovement
     movementLayers: # floofstation - layer that moves the legs and tail when moving
