@@ -433,7 +433,7 @@
     jobTitle: job-alt-title-security-emotional-support-prisonguard
 
 - type: entity
-  parent: SeniorOfficerPDA # senior officer
+  parent: SeniorOfficerIDCard # senior officer
   id: EmotionalSupportSecuritySeniorOfficerIDCard
   name: Emotional Support Senior Officer ID card
   components:
@@ -441,14 +441,14 @@
     jobTitle: job-alt-title-security-emotional-support-seniorofficer
 
 - type: entity
-  parent: SeniorOfficerPDA # warden
+  parent: WardenIDCard # warden
   id: EmotionalSupportSecurityWardenIDCard
   name: Emotional Support Warden ID card
   components:
   - type: IdCard
     jobTitle: job-alt-title-security-emotional-support-warden
 
-# service, this will be fucky since we don't have a service collar
+# service
 - type: entity
   parent: BartenderIDCard # bartender
   id: EmotionalSupportServiceBartenderIDCard
