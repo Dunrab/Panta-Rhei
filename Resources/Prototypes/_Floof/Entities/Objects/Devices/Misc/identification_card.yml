@@ -664,11 +664,21 @@
   - type: IdCard
     jobTitle: job-alt-title-command-emotional-support-cj
 
-# security technican
+# security technician
 - type: entity
-  parent: SecurityIDCard
+  parent: [SecurityIDCard]
   id: SecurityTechnicianIDCard
   name: Security Technician ID card
   components:
-  - type: IdCard
-    jobTitle: job-alt-title-security-technician
+  - type: Sprite
+    layers:
+    - state: default
+    - state: stripe_top
+      color: &color-security-top "#39393c"
+    - state: stripe_bottom
+      color: &color-security-bottom "#262626"
+    - sprite: &icon-rsi-floof /Textures/_Floof/Interface/Misc/floof_job_icons.rsi
+      offset: -0.09375, 0.0625 #3 pixels left, 2 pixels up
+      state: SecurityTechnician
+  - type: PresetIdCard
+    job: SecurityTechnician
