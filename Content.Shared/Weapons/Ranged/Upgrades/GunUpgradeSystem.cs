@@ -1,6 +1,5 @@
 using System.Linq;
-using Content.Shared._DV.Weapons.Ranged.Upgrades;
-using Content.Shared._Lavaland.Weapons.Ranged.Upgrades.Components; // DeltaV
+using Content.Shared._DV.Weapons.Ranged.Upgrades;  // DeltaV
 using Content.Shared.Weapons.Ranged.Upgrades.Components;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
@@ -37,8 +36,8 @@ public sealed partial class GunUpgradeSystem : EntitySystem // DeltaV - made par
         SubscribeLocalEvent<UpgradeableGunComponent, GunRefreshModifiersEvent>(RelayEvent);
         SubscribeLocalEvent<UpgradeableGunComponent, GunShotEvent>(RelayEvent);
 
-        SubscribeLocalEvent<Components.GunUpgradeFireRateComponent, GunRefreshModifiersEvent>(OnFireRateRefresh);
-        SubscribeLocalEvent<Components.GunUpgradeSpeedComponent, GunRefreshModifiersEvent>(OnSpeedRefresh);
+        SubscribeLocalEvent<GunUpgradeFireRateComponent, GunRefreshModifiersEvent>(OnFireRateRefresh);
+        SubscribeLocalEvent<GunUpgradeSpeedComponent, GunRefreshModifiersEvent>(OnSpeedRefresh);
         SubscribeLocalEvent<GunUpgradeDamageComponent, GunShotEvent>(OnDamageGunShot);
     }
 
@@ -121,12 +120,14 @@ public sealed partial class GunUpgradeSystem : EntitySystem // DeltaV - made par
     {
         foreach (var (ammo, _) in args.Ammo)
         {
+            // Goobstation - Lavaland PKAs Start
             if (!TryComp<ProjectileComponent>(ammo, out var projectile))
                 continue;
             var multiplier = 1f;
             if (ent.Comp.BonusDamage != null)
                 projectile.Damage += ent.Comp.BonusDamage * multiplier;
             projectile.Damage *= ent.Comp.Modifier;
+            // Goobstation - Lavaland PKAs Start
         }
     }
 
