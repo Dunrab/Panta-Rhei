@@ -5,8 +5,8 @@
     children:
     - id: WeaponCrusher
     - id: WeaponCrusherGlaive
-    - id: WeaponCrusherHammer -Euphoria
-    - id: WeaponCrusherHalberd -Euphoria
+    - id: WeaponCrusherHammer
+    - id: WeaponCrusherHalberd
 
 - type: entity
   parent: [WeaponCrusher, BaseSecurityCargoContraband]

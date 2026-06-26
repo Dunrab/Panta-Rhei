@@ -4,8 +4,8 @@
   table: !type:GroupSelector
     children:
     - id: WeaponCrusherDagger
-    #- id: LavalandWeaponKineticClaws -Euphoria
-    #- id: LavalandWeaponKineticMachete -Euphoria
+    - id: LavalandWeaponKineticClaws
+    - id: LavalandWeaponKineticMachete
 
 - type: entity
   parent: [BaseItem, ClothingHandsBase, BaseSecurityCargoContraband]
@@ -34,7 +34,6 @@
     animation: WeaponArcClaw
     range: 1.1 # Awful range
     mustBeEquippedToUse: true
-    heavyStaminaCost: 4 # No skill?
   - type: Sharp
   - type: Prying
   - type: UseDelay
