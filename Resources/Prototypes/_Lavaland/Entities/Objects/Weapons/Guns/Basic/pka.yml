@@ -4,9 +4,9 @@
   table: !type:GroupSelector
     children:
     - id: WeaponProtoKineticAccelerator
-    #- id: WeaponProtoKineticShotgun - Euphoria
-    #- id: WeaponProtoKineticRepeater - Euphoria
-    #- id: WeaponProtoKineticPistol - Euphoria
+    - id: WeaponProtoKineticShotgun - Euphoria
+    - id: WeaponProtoKineticRepeater - Euphoria
+    - id: WeaponProtoKineticPistol - Euphoria
 
 - type: entity
   name: proto-kinetic shotgun
@@ -24,7 +24,7 @@
   - type: Clothing
     sprite: _Lavaland/Objects/Weapons/Guns/Basic/kinetic_shotgun.rsi
   - type: BasicEntityAmmoProvider
-    proto: PelletKineticSpread #BulletKinetic # was PelletKineticSpread
+    proto: PelletKineticSpread
   - type: GunRequiresWield
   - type: Item
     sprite: _Lavaland/Objects/Weapons/Guns/Basic/kinetic_shotgun.rsi
