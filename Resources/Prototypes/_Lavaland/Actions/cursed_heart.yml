@@ -7,7 +7,7 @@
   components:
   - type: Action
     icon:
-      sprite: _Lavaland/Objects/Specific/Lavaland/loot.rsi
+      sprite: _Lavaland/Objects/Specific/loot.rsi
       state: cursed_heart
     checkCanInteract: false
     checkConsciousness: false
