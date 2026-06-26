@@ -30,40 +30,16 @@
     sprite: _Lavaland/Objects/Weapons/Guns/Basic/kinetic_shotgun.rsi
     shape:
     - 0,0,4,0
+  - type: UpgradeableGun
+    maxUpgradeCount: 10 # DeltaV - use cost for limiting modkits instead
+    whitelist:
+      tags:
+      - PKAUpgrade
+  - type: UpgradeableGunCost # DeltaV
+    maxCost: 100
   - type: ContainerContainer
     containers:
-      bayonet: !type:ContainerSlot
-      flashlight: !type:ContainerSlot
-      upgrade_slot_1: !type:ContainerSlot
-      upgrade_slot_2: !type:ContainerSlot
-  - type: ItemSlots
-    slots:
-      bayonet:
-        name: weapon-upgrade-slot-name-bayonet
-        priority: 5
-        whitelist:
-          components:
-          - GunUpgradeBayonet
-      flashlight:
-        name: weapon-upgrade-slot-name-flashlight
-        priority: 4
-        whitelist:
-          components:
-          - GunUpgradeFlashlight
-      upgrade_slot_1:
-        name: weapon-upgrade-slot-name-first
-        swap: false # can't use the swap...
-        priority: 3
-        whitelist:
-          tags:
-          - PKAUpgrade
-      upgrade_slot_2:
-        name: weapon-upgrade-slot-name-second
-        swap: false
-        priority: 2
-        whitelist:
-          tags:
-          - PKAUpgrade
+      upgrades: !type:Container
 
 - type: entity
   name: proto-kinetic repeater
@@ -93,6 +69,16 @@
     sprite: _Lavaland/Objects/Weapons/Guns/Basic/kinetic_repeater.rsi
     shape:
     - 0,0,2,1
+  - type: UpgradeableGun
+    maxUpgradeCount: 10 # DeltaV - use cost for limiting modkits instead
+    whitelist:
+      tags:
+      - PKAUpgrade
+  - type: UpgradeableGunCost # DeltaV
+    maxCost: 100
+  - type: ContainerContainer
+    containers:
+      upgrades: !type:Container
 
 - type: entity
   name: proto-kinetic pistol
@@ -112,7 +98,8 @@
     availableModes:
     - FullAuto
     - SemiAuto
-    - type: Multishot # Only a pistol should support that for balancing reasons
+    #selectedMode: Burst # Only a pistol should support that for balancing reasons
+  - type: Multishot # Only a pistol should support that for balancing reasons
     missChance: 0
     spreadAddition: 5
   - type: Item
@@ -121,3 +108,13 @@
     shape:
     - 0,0,1,0
     - 0,1,0,1
+  - type: UpgradeableGun
+    maxUpgradeCount: 10 # DeltaV - use cost for limiting modkits instead
+    whitelist:
+      tags:
+      - PKAUpgrade
+  - type: UpgradeableGunCost # DeltaV
+    maxCost: 100
+  - type: ContainerContainer
+    containers:
+      upgrades: !type:Container
