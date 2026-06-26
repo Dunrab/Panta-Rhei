@@ -594,7 +594,9 @@ public abstract partial class SharedGunSystem : EntitySystem
             comp.MinAngle,
             comp.ShotsPerBurst,
             comp.FireRate,
-            comp.ProjectileSpeed
+            comp.ProjectileSpeed,
+            comp.BurstFireRate,
+            comp.BurstCooldown
         );
 
         // Begin DeltaV additions

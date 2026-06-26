@@ -34,7 +34,6 @@ using Content.Shared.Weapons.Ranged.Events;
 using Content.Shared.Weapons.Ranged.Systems;
 using System.Linq;
 using Content.Goobstation.Common.Weapons;
-//using Content.Goobstation.Common.Weapons;
 using Content.Shared._Goobstation.Weapons.Ranged;
 using Content.Shared.Actions;
 using Content.Shared.Damage.Systems;
@@ -70,7 +69,7 @@ public abstract partial class SharedGunUpgradeSystem : EntitySystem
         SubscribeLocalEvent<UpgradeableWeaponComponent, GetLightAttackRangeEvent>(RelayEvent);
         SubscribeLocalEvent<UpgradeableWeaponComponent, GetMeleeAttackRateEvent>(RelayEvent);
 
-        //SubscribeLocalEvent<UpgradeableWeaponComponent, GetItemActionsEvent>(RelayGetActionEvent);
+        //SubscribeLocalEvent<UpgradeableWeaponComponent, GetItemActionsEvent>(RelayGetActionEvent); // Floofstation - not doing upgrade pull outs yet
 
         SubscribeLocalEvent<GunUpgradeLavalandComponent, ExaminedEvent>(OnUpgradeExamine);
 
@@ -85,6 +84,7 @@ public abstract partial class SharedGunUpgradeSystem : EntitySystem
         }
     }
 
+    // Floofstation - we are not doing upgrade pulling out yet (pull out game weak)
     // Because of how action container work we need that workaround for GetItemActionsEvent
     /*
     private void RelayGetActionEvent(Entity<UpgradeableWeaponComponent> ent, ref GetItemActionsEvent args)

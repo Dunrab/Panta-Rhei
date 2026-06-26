@@ -39,11 +39,9 @@ public abstract partial class SharedGunUpgradeSystem
     private void OnFireRateRefresh(Entity<GunUpgradeFireRateComponent> ent, ref GunRefreshModifiersEvent args)
     {
         args.FireRate *= ent.Comp.Coefficient;
-        /*
         args.BurstFireRate *= ent.Comp.Coefficient;
         args.BurstCooldown /= ent.Comp.Coefficient;
         args.BurstFireRate  /= ent.Comp.Coefficient;
-        */
     }
 
     private void OnFireRateRefreshRecharge(Entity<GunUpgradeFireRateComponent> ent, ref RechargeBasicEntityAmmoGetCooldownModifiersEvent args)
@@ -94,7 +92,7 @@ public abstract partial class SharedGunUpgradeSystem
         if (!HasComp<MobStateComponent>(args.Target))
             return;
         if (args.Shooter != null)
-            _damage.TryChangeDamage(args.Shooter.Value, ent.Comp.DamageOnHit); // may need to rever this shit
+            _damage.TryChangeDamage(args.Shooter.Value, ent.Comp.DamageOnHit); // may need to revert this shit
     }
 
     private void OnGetMeleeRelay(Entity<GunUpgradeBayonetComponent> ent, ref GetRelayMeleeWeaponEvent args)
