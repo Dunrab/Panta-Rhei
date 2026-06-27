@@ -2,21 +2,8 @@
   name: fuzzy cuffs
   description: Used to detain "criminals".
   id: FuzzyHandcuffs
-  parent: BaseItem
+  parent: Handcuffs
   components:
-  - type: EmitSoundOnPickup # Euphoria - Port over Goob's interaction sounds.
-    sound:
-      path: /Audio/_Goobstation/Items/other/Handcuffs/pickup.ogg # replace this in the future, needs a more plasticy sound
-      params:
-        volume: -4
-  - type: EmitSoundOnDrop
-    sound:
-      path: /Audio/_Goobstation/Items/other/Handcuffs/drop.ogg # replace this in the future, needs a more plasticy sound
-      params:
-        volume: -4
-  - type: Item
-    size: Small
-    storedRotation: 90
   - type: Handcuff
     breakoutTime: 3 # allow for easily breaking out since these aren't meant for security use
     cuffedRSI: _Floof/Objects/Misc/fuzzy_cuffs.rsi
@@ -24,15 +11,3 @@
   - type: Sprite
     sprite: _Floof/Objects/Misc/fuzzy_cuffs.rsi
     state: handcuff
-  - type: Tag
-    tags:
-    - Handcuffs
-  - type: MeleeWeapon
-    wideAnimationRotation: 90
-    resetOnHandSelected: false
-    animation: WeaponArcDisarm
-    damage:
-      types:
-        Blunt: 0
-  - type: UseDelay
-    delay: 3
