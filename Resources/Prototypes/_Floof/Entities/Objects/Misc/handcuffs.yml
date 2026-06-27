@@ -6,19 +6,19 @@
   components:
   - type: EmitSoundOnPickup # Euphoria - Port over Goob's interaction sounds.
     sound:
-      path: /Audio/_Goobstation/Items/other/Handcuffs/pickup.ogg # change this sound its ass
+      path: /Audio/_Goobstation/Items/other/Handcuffs/pickup.ogg # replace this in the future, needs a more plasticy sound
       params:
         volume: -4
   - type: EmitSoundOnDrop
     sound:
-      path: /Audio/_Goobstation/Items/other/Handcuffs/drop.ogg # change this sound its ass
+      path: /Audio/_Goobstation/Items/other/Handcuffs/drop.ogg # replace this in the future, needs a more plasticy sound
       params:
         volume: -4
   - type: Item
     size: Small
     storedRotation: 90
   - type: Handcuff
-    breakoutTime: 3 # allow for easyily breaking out since these aren't meant for security use
+    breakoutTime: 3 # allow for easily breaking out since these aren't meant for security use
     cuffedRSI: _Floof/Objects/Misc/fuzzy_cuffs.rsi
     bodyIconState: body-overlay
   - type: Sprite
