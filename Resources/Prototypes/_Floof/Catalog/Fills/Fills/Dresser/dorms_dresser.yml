@@ -27,7 +27,9 @@
           - id: ClothingUniformJumpskirtJanimaidmini
             weight: 0.1
         # Cuffs/Toys
-        - id: FuzzyHandcuffs # one pair of cuffs per dresser
+        - id: FuzzyHandcuffs # one pair with no rng
+        - id: ClothingEyesBlindfold
+        - id: ClothingMaskMuzzle
           #Flesh lights - only one
         - !type:GroupSelector
           children:
