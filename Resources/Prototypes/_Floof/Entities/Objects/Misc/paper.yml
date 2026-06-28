@@ -31,10 +31,10 @@
     maxWritableArea: 256.0, 0.0
   - type: Construction
     graph: PaperCoupon
-    node: start
+    node: coupon
 
 - type: entity
-  parent: BaseItem
+  parent: BasePaper
   id: PaperPlane
   name: Paper Plane
   description: It's a bird! No its a plane! No is just a paper plane.
@@ -66,7 +66,17 @@
     - Trash
   - type: Construction
     graph: PaperPlane
-    node: start
+    node: paperplane
+  - type: Paper
+  - type: PaperLabelType
+  - type: ActivatableUI
+    key: enum.PaperUiKey.Key
+    requiresComplex: false
+  - type: UserInterface
+    interfaces:
+      enum.PaperUiKey.Key:
+        type: PaperBoundUserInterface
+  - type: FaxableObject
 
 - type: entity
   parent: BaseItem
@@ -85,4 +95,4 @@
     - Trash
   - type: Construction
     graph: PaperPlane
-    node: start
+    node: origamiswan
