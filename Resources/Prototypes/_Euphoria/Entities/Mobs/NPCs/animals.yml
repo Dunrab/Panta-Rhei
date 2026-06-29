@@ -287,8 +287,10 @@
   suffix: Pet
   components:
   - type: Bloodstream
-    bloodMaxVolume: 60
-    bloodReagent: CopperBlood # give spider blood
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: CopperBlood # give spiders copper blood
+        Quantity: 60
   - type: MobThresholds
     thresholds:
       0: Alive
