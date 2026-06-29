@@ -11,15 +11,6 @@
             "name": "icon"
         },
         {
-            "name": "bayonet"
-        },
-        {
-            "name": "flight"
-        },
-        {
-            "name": "flight-on"
-        },
-        {
             "name": "animation-icon",
             "delays": [
                 [
