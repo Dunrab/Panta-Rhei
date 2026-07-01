@@ -50,8 +50,7 @@ public sealed class SupermatterConsoleSystem : SharedSupermatterConsoleSystem
 
     private void OnFocusChangedMessage(EntityUid uid, SupermatterConsoleComponent component, SupermatterConsoleFocusChangeMessage args)
     {
-        // TODO fix
-        //component.FocusSupermatter. = args.FocusSupermatter;
+        component.FocusSupermatter = args.FocusSupermatter;
     }
 
     private void OnGridSplit(ref GridSplitEvent args)
