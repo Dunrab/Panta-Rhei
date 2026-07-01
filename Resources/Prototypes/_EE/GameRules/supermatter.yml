@@ -33,7 +33,5 @@
     weight: 5
     duration: 60
   - type: VentCrittersRule
-    table: !type:GroupSelector # DeltaV: EntityTable instead of spawn entries
-      children:
-      - id: MobMouse
-      - id: MobSupermatterSpider
+    table: # DeltaV: EntityTable instead of spawn entries
+      id: MobSupermatterSpider
