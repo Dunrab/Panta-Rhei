@@ -34,14 +34,24 @@
     node: coupon
 
 - type: entity
-  parent: BasePaper
+  parent: Paper # using base paper
   id: PaperPlane
   name: Paper Plane
   description: It's a bird! No its a plane! No is just a paper plane.
   components:
   - type: Sprite
     sprite: _Floof/Objects/Misc/paper_plane.rsi
-    state: icon
+    layers:
+    - state: icon # actual sprite of the plane
+    - state: icon # we dont have a written on paper plane sprite so overriding this with our icon
+      map: ["enum.PaperVisualLayers.Writing"]
+      visible: false
+    - sprite: /Textures/Objects/Misc/bureaucracy.rsi # point to the stamp sprites so we can use them
+      map: ["enum.PaperVisualLayers.Stamp"]
+      visible: false
+      state: paper_stamp-generic
+      scale: 0.3, 0.3 # scale them down so we can have a tiny stamp on the wing
+      offset: -0.13, 0.07 # offset just enough so the stamp is on the wing
   - type: Fixtures
     fixtures:
       fix1:
@@ -67,16 +77,6 @@
   - type: Construction
     graph: PaperPlane
     node: paperplane
-  - type: Paper
-  - type: PaperLabelType
-  - type: ActivatableUI
-    key: enum.PaperUiKey.Key
-    requiresComplex: false
-  - type: UserInterface
-    interfaces:
-      enum.PaperUiKey.Key:
-        type: PaperBoundUserInterface
-  - type: FaxableObject
 
 - type: entity
   parent: BaseItem
