@@ -97,7 +97,7 @@ public sealed partial class SupermatterComponent : Component
     public string StatusDelamSound = "SupermatterDelaminating";
 
     [DataField]
-    public string? StatusCurrentSound;
+    public string? StatusCurrentSound = null;
 
     #endregion
 

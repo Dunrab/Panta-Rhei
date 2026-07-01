@@ -16,7 +16,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Content.Client._EE.Supermatter.Consoles;
 
-namespace Content.Client._EinsteinEngines.Supermatter.Consoles;
+namespace Content.Client._EE.Supermatter.Consoles;
 
 [GenerateTypedNameReferences]
 public sealed partial class SupermatterConsoleWindow : FancyWindow
