@@ -29,7 +29,7 @@ public sealed partial class EECVars
     ///     Base amount of radiation that the supermatter emits.
     /// </summary>
     public static readonly CVarDef<float> SupermatterRadsBase =
-        CVarDef.Create("supermatter.rads_base", 4f, CVar.SERVER);
+        CVarDef.Create("supermatter.rads_base", 0f, CVar.SERVER); // Floofstation - was 4 at round start with out being active, making it zero so it only produces rads if active
 
     /// <summary>
     ///     Directly multiplies the amount of rads put out by the supermatter. Be VERY conservative with this.
