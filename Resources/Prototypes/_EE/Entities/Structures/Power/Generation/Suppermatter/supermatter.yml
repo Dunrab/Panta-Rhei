@@ -77,3 +77,12 @@
     location: supermatter
   - type: SinguloFood
     energy: 10000
+  - type: DeviceLinkSource # Impstation - allow these ports to be linked
+    ports:
+    - SupermatterInactive
+    - SupermatterNormal
+    - SupermatterCaution
+    - SupermatterWarning
+    - SupermatterDanger
+    - SupermatterEmergency
+    - SupermatterDelaminating
