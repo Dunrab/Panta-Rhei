@@ -38,6 +38,7 @@
   name: ball lightning
   description: A giant ball of pure energy. The space around it is humming and melting.
   components:
+  - type: SupermatterImmune # Floofstation SM fix
   - type: Fixtures
     fixtures:
       EventHorizonCollider:
