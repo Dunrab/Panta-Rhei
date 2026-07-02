@@ -143,7 +143,7 @@ public sealed partial class SupermatterEntryContainer : BoxContainer
         #endregion
 
         // Load values and set base labels
-        _radiationBase = 4; // port todo this comes from the sm component now.
+        _radiationBase =  _config.GetCVar(EECVars.SupermatterRadsBase); // Floofstation - have this use the value of our Cvar instead for displaying on the pc
         _temperatureLimitBase = Atmospherics.T0C + _config.GetCVar(EECVars.SupermatterHeatPenaltyThreshold);
         _wasteBase = 1f;
 
