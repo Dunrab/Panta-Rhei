@@ -101,6 +101,13 @@
   - type: MobState
   - type: Pullable
   - type: SupermatterImmune
+  - type: LanguageKnowledge # Floofstation
+    speaks:
+    - Arachnic
+    understands:
+    - Arachnic
+    - Xeno
+    - TauCetiBasic
 
 - type: entity
   parent: MobSupermatterSpider
