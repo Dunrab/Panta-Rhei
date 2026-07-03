@@ -1,0 +1,42 @@
+﻿- type: entity
+  name: wood tub
+  id: WoodBathTubEmpty
+  suffix: empty
+  parent: [SeatBase, DrinkVisualsFill]
+  description: A wooden bath tub that can be used to wash your self. Soap and bubbles not included.
+  components:
+  - type: Strap
+    position: Stand
+    rotation: 0
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30 # small amount of wata (or other liquids)
+  - type: SolutionContainerVisuals
+    maxFillLevels: 3
+    inHandsFillBaseName: null
+  - type: Appearance
+  - type: Sprite
+    sprite: _Floof/Structures/Furniture/Bathroom/bathtub.rsi
+    layers:
+    - state: icon
+      map: [ "enum.SolutionContainerLayers.Base" ]
+    - state: fill-3
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: Pullable
+  - type: Damageable
+  - type: Anchorable
+
+- type: entity
+  name: wood tub
+  parent: WoodBathTubEmpty
+  id: WoodBathTubFull
+  suffix: filled
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: Water # prefill the filled tub
+          Quantity: 30
+
