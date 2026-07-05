@@ -48,14 +48,15 @@ public sealed class LightningSystem : SharedLightningSystem
     /// <param name="target">Where the lightning fires to</param>
     /// <param name="lightningPrototype">The prototype for the lightning to be created</param>
     /// <param name="triggerLightningEvents">if the lightnings being fired should trigger lightning events.</param>
-    public void ShootLightning(EntityUid user, EntityUid target, string lightningPrototype = "Lightning", bool triggerLightningEvents = true)
+    /// <param name="canExplode">Whether this lightning can trigger explosions.</param>
+    public void ShootLightning(EntityUid user, EntityUid target, string lightningPrototype = "Lightning", bool triggerLightningEvents = true , bool canExplode = true)
     {
         var spriteState = LightningRandomizer();
         _beam.TryCreateBeam(user, target, lightningPrototype, spriteState);
 
         if (triggerLightningEvents) // we don't want certain prototypes to trigger lightning level events
         {
-            var ev = new HitByLightningEvent(user, target);
+            var ev = new HitByLightningEvent(user, target, canExplode); // impstation - can explode
             RaiseLocalEvent(target, ref ev);
         }
     }
@@ -86,14 +87,14 @@ public sealed class LightningSystem : SharedLightningSystem
     /// <param name="target">Where the lightning fires to</param>
     /// <param name="lightningPrototype">The prototype for the lightning to be created</param>
     /// <param name="triggerLightningEvents">if the lightnings being fired should trigger lightning events.</param>
-    public void ShootLightning(MapCoordinates coordinates, EntityUid target, string lightningPrototype = "Lightning", bool triggerLightningEvents = true)
+    public void ShootLightning(MapCoordinates coordinates, EntityUid target, string lightningPrototype = "Lightning", bool triggerLightningEvents = true, bool canExplode = true)
     {
         var spriteState = LightningRandomizer();
         _beam.TryCreateBeam(coordinates, target, lightningPrototype, spriteState);
 
         if (triggerLightningEvents) // we don't want certain prototypes to trigger lightning level events
         {
-            var ev = new HitByLightningEvent(null, target);
+            var ev = new HitByLightningEvent(null, target, canExplode); // impstation - we don't want certain prototypes to trigger lightning level events
             RaiseLocalEvent(target, ref ev);
         }
     }
@@ -205,11 +206,11 @@ public sealed class LightningSystem : SharedLightningSystem
     }
 }
 
-
 /// <summary>
 /// Raised directed on the target when an entity becomes the target of a lightning strike (not when touched)
 /// </summary>
-/// <param name="Source">The entity that created the lightning. May be null if the lightning came from coordinates rather than an entity.</param>
+/// <param name="Source">The entity that created the lightning</param>
 /// <param name="Target">The entity that was struck by lightning.</param>
+/// <param name="CanExplode">Whether this event can trigger explosions.</param>
 [ByRefEvent]
-public readonly record struct HitByLightningEvent(EntityUid? Source, EntityUid Target); // imp - Lightning might come from coordinates instead of an entity, so Source can be null
+public readonly record struct HitByLightningEvent(EntityUid? Source, EntityUid Target, bool CanExplode); // imp - added CanExplode
