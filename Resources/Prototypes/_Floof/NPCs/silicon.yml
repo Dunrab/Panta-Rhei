@@ -1,5 +1,5 @@
 ﻿- type: entity
-  parent: MobSiliconBase
+  parent: [MobSiliconBase, StripableInventoryBase]
   id: MobTrashBot
   name: trashbot
   description: The creep of automation now threatening space janitors.
@@ -35,19 +35,13 @@
     interactFailureString: petting-failure-cleanbot
     interactSuccessSound:
       path: /Audio/Ambience/Objects/periodic_beep.ogg
-  - type: Storage
-    maxItemSize: Normal
-    grid:
-    - 0,0,7,5
-    quickInsert: true
-    areaInsert: true
-    storageOpenSound:
-      collection: trashBagRustle
-    storageInsertSound:
-      collection: trashBagRustle
-    whitelist:
-      tags:
-      - Trash
+  - type: Hands
+    hands:
+      hand_right:
+        location: Right
+  - type: HandsFill
+    hands:
+      trashbag: TrashBag
   - type: UseDelay
     delay: 0.5
   - type: Appearance
