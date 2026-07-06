@@ -1,0 +1,41 @@
+﻿- type: htnCompound
+  id: TrashbotCompound
+  branches:
+  - tasks:
+    - !type:HTNCompoundTask
+      task: BufferNearbyTrashCompound
+  - tasks:
+    - !type:HTNCompoundTask
+      task: IdleCompound
+
+# Picks a random puddle in range to move to and idle
+- type: htnCompound
+  id: BufferNearbyTrashCompound
+  branches:
+  - tasks:
+    - !type:HTNPrimitiveTask
+      operator: !type:UtilityOperator
+        proto: NearbyTrash
+
+    # move too
+    - !type:HTNPrimitiveTask
+      operator: !type:MoveToOperator
+        pathfindInPlanning: true
+        removeKeyOnFinish: false
+        targetKey: TargetCoordinates
+        pathfindKey: TargetPathfind
+        rangeKey: MeleeRange
+
+    # pickup
+    - !type:HTNPrimitiveTask
+      preconditions:
+      - !type:TargetInRangePrecondition
+        targetKey: Target
+        rangeKey: InteractRange
+      operator: !type:InteractWithOperator
+        targetKey: Target
+      services:
+      - !type:UtilityService
+        id: TrashService
+        proto: NearbyTrash
+        key: Target
