@@ -5,4 +5,4 @@
   description: A refrigerated storage unit for keeping plants, food and beverages cold and fresh.
   components:
   - type: AccessReader
-    access: [["Service"], ["Bar"], ["Kitchen"], ["Hydroponics"]] # giving access this way not sure if this is the best wya
+    access: [["Service"], ["Bar"], ["Kitchen"], ["Hydroponics"]]
