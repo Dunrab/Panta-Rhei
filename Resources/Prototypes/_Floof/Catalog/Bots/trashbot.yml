@@ -1,0 +1,17 @@
+﻿- type: localizedDataset
+  id: TrashBotStart
+  values:
+    prefix: trashbot-start-pickup-
+    count: 1
+
+- type: localizedDataset
+  id: TrashBotFinishes
+  values:
+    prefix: trashbot-finish-pickup-
+    count: 3
+
+- type: localizedDataset
+  id: TrashbotAds
+  values:
+    prefix: advertisement-trashbot-
+    count: 2

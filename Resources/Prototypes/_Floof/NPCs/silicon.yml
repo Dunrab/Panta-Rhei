@@ -36,9 +36,6 @@
     interactSuccessSound:
       path: /Audio/Ambience/Objects/periodic_beep.ogg
   - type: Hands
-    hands:
-      hand_right:
-        location: Right
   - type: HandsFill
     hands:
       trashbag: TrashBag
@@ -46,3 +43,9 @@
     delay: 0.5
   - type: Appearance
   - type: Dumpable
+  - type: Inventory
+    templateId: trashbotinventory # only display the hand from handsfill and a hat slot like medibots
+  - type: Anchorable # anchorable becuase its funny
+  - type: Vocalizer
+  - type: DatasetVocalizer
+    dataset: TrashbotAds # have it shit talk messes it has to clean up

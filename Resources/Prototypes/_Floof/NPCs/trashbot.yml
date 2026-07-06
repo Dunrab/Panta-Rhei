@@ -17,7 +17,14 @@
       operator: !type:UtilityOperator
         proto: NearbyTrash
 
-    # move too
+    # speak when it pathfinds to trash
+    - !type:HTNPrimitiveTask
+      operator: !type:SpeakOperator
+        speech: !type:SingleSpeakOperatorSpeech
+          line: trashbot-start-pickup
+        hidden: true
+
+    # pathfinding
     - !type:HTNPrimitiveTask
       operator: !type:MoveToOperator
         pathfindInPlanning: true
@@ -25,6 +32,19 @@
         targetKey: TargetCoordinates
         pathfindKey: TargetPathfind
         rangeKey: MeleeRange
+
+    #idle again once at the thing to pickup
+    - !type:HTNPrimitiveTask
+      operator: !type:SetFloatOperator
+        targetKey: IdleTime
+        amount: 3
+
+    - !type:HTNPrimitiveTask
+      operator: !type:WaitOperator
+        key: IdleTime
+      preconditions:
+        - !type:KeyExistsPrecondition
+          key: IdleTime
 
     # pickup
     - !type:HTNPrimitiveTask
