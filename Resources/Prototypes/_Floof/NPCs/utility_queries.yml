@@ -3,7 +3,8 @@
   query:
   - !type:ComponentQuery
     components:
-    - type: SpaceGarbage # looks for the trash comp on items
+    - type: Tag
+      id: Trash
   considerations:
   - !type:TargetDistanceCon
     curve: !type:PresetCurve
