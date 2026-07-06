@@ -50,8 +50,5 @@
       - Trash
   - type: UseDelay
     delay: 0.5
-  - type: Tag
-    tags:
-    - TrashBag
   - type: Appearance
   - type: Dumpable
