@@ -6,3 +6,5 @@
   components:
   - type: AccessReader
     access: [["Service"], ["Bar"], ["Kitchen"], ["Hydroponics"]]
+  - type: Machine
+    board: SmartFridgeServiceCircuitboard
