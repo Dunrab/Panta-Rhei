@@ -26,6 +26,14 @@
       {
           "name": "hyper_boxers",
           "directions": 4
+      },
+      {
+          "name": "hyper_briefs",
+          "directions": 4
+      },
+      {
+          "name": "boxers_lovehear",
+          "directions": 4
       }
   ]
 }

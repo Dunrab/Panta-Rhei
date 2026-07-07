@@ -1,0 +1,228 @@
+﻿# boxers (underwear slot)
+- type: entity
+  parent: ClothingUndergarmentBottomBase
+  id: ClothingUnderUnderwearBoxers
+  name: Boxers
+  description: "A comfy pair of boxers to keep those things in check."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Underwear/boxers.rsi
+    state: boxer
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Underwear/boxers.rsi
+    clothingVisuals:
+      undergarmentBottom:
+      - state: boxers
+
+- type: entity
+  parent: ClothingUndergarmentBottomBase
+  id: ClothingUnderUnderwearBoxersBlueGreen
+  name: Blue & Green Boxers
+  description: "A comfy pair of boxers to keep those things in check."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Underwear/boxers.rsi
+    state: boxers_green_and_blue
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Underwear/boxers.rsi
+    clothingVisuals:
+      undergarmentBottom:
+      - state: boxers_green_and_blue
+
+- type: entity
+  parent: ClothingUndergarmentBottomBase
+  id: ClothingUnderUnderwearBoxersHeart
+  name: Heart Boxers
+  description: "A comfy pair of boxers to keep those things in check."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Underwear/boxers.rsi
+    state: boxers_loveheart
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Underwear/boxers.rsi
+    clothingVisuals:
+      undergarmentBottom:
+      - state: boxers_loveheart
+
+- type: entity
+  parent: ClothingUndergarmentBottomBase
+  id: ClothingUnderUnderwearBoxerHyper
+  name: Hyper Boxers
+  description: "A comfy pair of boxers to keep those things in check."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Underwear/boxers.rsi
+    state: hyper_boxers
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Underwear/boxers.rsi
+    clothingVisuals:
+      undergarmentBottom:
+      - state: hyper_boxers
+
+# boxer breifs (underwear slot)
+- type: entity
+  parent: ClothingUndergarmentBottomBase
+  id: ClothingUnderUnderwearBoxerBrief
+  name: Briefs
+  description: "A comfy pair of briefs to keep those things in check."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Underwear/boxers.rsi
+    state: briefs
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Underwear/boxers.rsi
+    clothingVisuals:
+      undergarmentBottom:
+      - state: briefs
+
+- type: entity
+  parent: ClothingUndergarmentBottomBase
+  id: ClothingUnderUnderwearBoxerBriefHyper
+  name: Hyper Briefs
+  description: "A comfy pair of briefs to keep those things in check."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Underwear/boxers.rsi
+    state: hyper_briefs
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Underwear/boxers.rsi
+    clothingVisuals:
+      undergarmentBottom:
+      - state: hyper_briefs
+
+- type: entity
+  parent: ClothingUndergarmentBottomBase
+  id: ClothingUnderUnderwearBoxerBriefCompression
+  name: Compression Shorts
+  description: "A comfy pair of compression shorts to keep those things in check."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Underwear/boxers.rsi
+    state: compression_shorts
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Underwear/boxers.rsi
+    clothingVisuals:
+      undergarmentBottom:
+      - state: compression_shorts
+
+# panties (underwear slot)
+- type: entity
+  parent: ClothingUndergarmentBottomBase
+  id: ClothingUnderUnderwearPanties
+  name: Panties
+  description: "A comfy pair of panties to keep that thing covered."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Underwear/panties.rsi
+    state: panties
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Underwear/panties.rsi
+    clothingVisuals:
+      undergarmentBottom:
+      - state: panties
+
+- type: entity
+  parent: ClothingUndergarmentBottomBase
+  id: ClothingUnderUnderwearPantiesAlt
+  name: Panties
+  description: "A comfy pair of panties to keep that thing covered."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Underwear/panties.rsi
+    state: panties_alt
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Underwear/panties.rsi
+    clothingVisuals:
+      undergarmentBottom:
+      - state: panties_alt
+
+- type: entity
+  parent: ClothingUndergarmentBottomBase
+  id: ClothingUnderUnderwearPantiesNeko
+  name: Panties
+  description: "A comfy pair of panties to keep that thing covered."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Underwear/panties.rsi
+    state: panties_neko
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Underwear/panties.rsi
+    clothingVisuals:
+      undergarmentBottom:
+      - state: panties_neko
+
+- type: entity
+  parent: ClothingUndergarmentBottomBase
+  id: ClothingUnderUnderwearPantiesStriped
+  name: Striped Panties
+  description: "A comfy pair of panties to keep that thing covered."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Underwear/panties.rsi
+    state: striped_panties
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Underwear/panties.rsi
+    clothingVisuals:
+      undergarmentBottom:
+      - state: striped_panties
+
+- type: entity
+  parent: ClothingUndergarmentBottomBase
+  id: ClothingUnderUnderwearPantiesThin
+  name: Thin Panties
+  description: "A comfy pair of panties to keep that thing covered."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Underwear/panties.rsi
+    state: thinpanties
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Underwear/panties.rsi
+    clothingVisuals:
+      undergarmentBottom:
+      - state: thinpanties
+
+# thongs (underwear slot)
+- type: entity
+  parent: ClothingUndergarmentBottomBase
+  id: ClothingUnderUnderwearThongLacy
+  name: Lacy Thong
+  description: "A comfy pair of panties to keep that thing covered."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Underwear/thong.rsi
+    state: lacy_thong
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Underwear/thong.rsi
+    clothingVisuals:
+      undergarmentBottom:
+      - state: lacy_thong
+
+- type: entity
+  parent: ClothingUndergarmentBottomBase
+  id: ClothingUnderUnderwearThongLacyAlt
+  name: Lacy Thong
+  description: "A comfy pair of panties to keep that thing covered."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Underwear/thong.rsi
+    state: lacy_thong_alt
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Underwear/thong.rsi
+    clothingVisuals:
+      undergarmentBottom:
+      - state: lacy_thong_alt
+
+- type: entity
+  parent: ClothingUndergarmentBottomBase
+  id: ClothingUnderUnderwearThongPlain
+  name: Plain Thong
+  description: "A comfy pair of panties to keep that thing covered."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Underwear/thong.rsi
+    state: thong
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Underwear/thong.rsi
+    clothingVisuals:
+      undergarmentBottom:
+      - state: thong
