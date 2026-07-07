@@ -1,10 +1,15 @@
 ﻿- type: utilityQuery
   id: NearbyTrash
   query:
+#  - !type:ComponentQuery
+#    components:
+#    - type: Tag
+#      id: Trash
   - !type:ComponentQuery
     components:
     - type: Tag
-      id: Trash
+      tags:
+      - Trash
   considerations:
   - !type:TargetDistanceCon
     curve: !type:PresetCurve
