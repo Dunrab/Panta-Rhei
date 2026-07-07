@@ -1,0 +1,120 @@
+﻿# stockings (sock slot)
+- type: entity
+  parent: ClothingUndergarmentSocksBase
+  id: ClothingUnderStockingsBlue
+  name: Blue Stockings
+  description: "A nice pair of stockings to compliment your outfit."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    state: stockings_blue
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    clothingVisuals:
+      undergarmentSocks:
+      - state: stockings_blue
+
+- type: entity
+  parent: ClothingUndergarmentSocksBase
+  id: ClothingUnderStockingsCyan
+  name: Cyan Stockings
+  description: "A nice pair of stockings to compliment your outfit."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    state: stockings_cyan
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    clothingVisuals:
+      undergarmentSocks:
+      - state: stockings_cyan
+
+- type: entity
+  parent: ClothingUndergarmentSocksBase
+  id: ClothingUnderStockingsDarkPink
+  name: Dark Pink Stockings
+  description: "A nice pair of stockings to compliment your outfit."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    state: stockings_dpink
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    clothingVisuals:
+      undergarmentSocks:
+      - state: stockings_dpink
+
+- type: entity
+  parent: ClothingUndergarmentSocksBase
+  id: ClothingUnderStockingsGreen
+  name: Green Stockings
+  description: "A nice pair of stockings to compliment your outfit."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    state: stockings_green
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    clothingVisuals:
+      undergarmentSocks:
+      - state: stockings_green
+
+- type: entity
+  parent: ClothingUndergarmentSocksBase
+  id: ClothingUnderStockingsLightPink
+  name: Light Pink Stockings
+  description: "A nice pair of stockings to compliment your outfit."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    state: stockings_lpink
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    clothingVisuals:
+      undergarmentSocks:
+      - state: stockings_lpink
+
+- type: entity
+  parent: ClothingUndergarmentSocksBase
+  id: ClothingUnderStockingsOrange
+  name: Orange Stockings
+  description: "A nice pair of stockings to compliment your outfit."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    state: stockings_orange
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    clothingVisuals:
+      undergarmentSocks:
+      - state: stockings_orange
+
+- type: entity
+  parent: ClothingUndergarmentSocksBase
+  id: ClothingUnderStockingsPurple
+  name: Purple Stockings
+  description: "A nice pair of stockings to compliment your outfit."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    state: stockings_purple
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    clothingVisuals:
+      undergarmentSocks:
+      - state: stockings_purple
+
+- type: entity
+  parent: ClothingUndergarmentSocksBase
+  id: ClothingUnderStockingsYellow
+  name: Yellow Stockings
+  description: "A nice pair of stockings to compliment your outfit."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    state: stockings_yellow
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    clothingVisuals:
+      undergarmentSocks:
+      - state: stockings_yellow

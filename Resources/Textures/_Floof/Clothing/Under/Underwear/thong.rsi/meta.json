@@ -12,7 +12,11 @@
           "directions": 4
       },
       {
-          "name": "lace_thong_alt",
+          "name": "lacy_thong_alt",
+          "directions": 4
+      },
+      {
+          "name": "thong",
           "directions": 4
       }
   ]
