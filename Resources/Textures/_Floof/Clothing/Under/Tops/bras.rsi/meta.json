@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Get commit from VoreStation13",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+      {
+          "name": "bra",
+          "directions": 4
+      },
+      {
+          "name": "bra_neko",
+          "directions": 4
+      },
+      {
+          "name": "lacy_bra",
+          "directions": 4
+      },
+      {
+          "name": "lacy_bra_alt",
+          "directions": 4
+      },
+      {
+          "name": "lacy_bra_alt_stripe",
+          "directions": 4
+      },
+      {
+          "name": "sports_bra",
+          "directions": 4
+      },
+      {
+          "name": "sports_bra_alt",
+          "directions": 4
+      },
+      {
+          "name": "stripped_bra",
+          "directions": 4
+      }
+  ]
+}

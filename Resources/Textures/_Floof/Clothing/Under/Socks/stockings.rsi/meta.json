@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Get commit from VoreStation13",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+      {
+          "name": "stockings_blue",
+          "directions": 4
+      },
+      {
+          "name": "stockings_cyan",
+          "directions": 4
+      },
+      {
+          "name": "stockings_dpink",
+          "directions": 4
+      },
+      {
+          "name": "stockings_green",
+          "directions": 4
+      },
+      {
+          "name": "stockings_lpink",
+          "directions": 4
+      },
+      {
+          "name": "stockings_orange",
+          "directions": 4
+      },
+      {
+          "name": "stockings_purple",
+          "directions": 4
+      },
+      {
+          "name": "stockings_yellow",
+          "directions": 4
+      }
+  ]
+}
