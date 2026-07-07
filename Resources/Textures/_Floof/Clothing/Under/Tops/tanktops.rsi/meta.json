@@ -36,6 +36,10 @@
           "directions": 4
       },
       {
+          "name": "tanktop_alt",
+          "directions": 4
+      },
+      {
           "name": "tanktop_alt_fem",
           "directions": 4
       },

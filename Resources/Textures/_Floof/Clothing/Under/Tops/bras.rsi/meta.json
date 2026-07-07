@@ -38,6 +38,10 @@
       {
           "name": "striped_bra",
           "directions": 4
+      },
+      {
+          "name": "halterneck_bra",
+          "directions": 4
       }
   ]
 }

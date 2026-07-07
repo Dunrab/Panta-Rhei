@@ -1,0 +1,165 @@
+﻿# tanktops (top slot)
+- type: entity
+  parent: ClothingUndergarmentTopSwitchableBase
+  id: ClothingUnderTopTanktopFire
+  name: Fire Tanktop
+  description: "A very comfy tank top to be worn on a nice hot day."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Tops/tanktops.rsi
+    state: tank_fire_fem_s
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Tops/tanktops.rsi
+    clothingVisuals:
+      undergarmentTop:
+      - state: tank_fire_fem_s
+
+- type: entity
+  parent: ClothingUndergarmentTopSwitchableBase
+  id: ClothingUnderTopTanktopMidRiff
+  name: Midriff Tanktop
+  description: "A very comfy tank top to be worn on a nice hot day."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Tops/tanktops.rsi
+    state: tank_midriff
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Tops/tanktops.rsi
+    clothingVisuals:
+      undergarmentTop:
+      - state: tank_midriff
+
+- type: entity
+  parent: ClothingUndergarmentTopSwitchableBase
+  id: ClothingUnderTopTanktopMidRiffShort
+  name: Midriff Tanktop
+  description: "A very comfy tank top to be worn on a nice hot day."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Tops/tanktops.rsi
+    state: tank_midriff_short
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Tops/tanktops.rsi
+    clothingVisuals:
+      undergarmentTop:
+      - state: tank_midriff_short
+
+- type: entity
+  parent: ClothingUndergarmentTopSwitchableBase
+  id: ClothingUnderTopTanktopRainbow
+  name: Rainbow Tanktop
+  description: "A very comfy tank top to be worn on a nice hot day."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Tops/tanktops.rsi
+    state: tank_rainbow_s
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Tops/tanktops.rsi
+    clothingVisuals:
+      undergarmentTop:
+      - state: tank_rainbow_s
+
+- type: entity
+  parent: ClothingUndergarmentTopSwitchableBase
+  id: ClothingUnderTopTanktopStripes
+  name: Stripes Tanktop
+  description: "A very comfy tank top to be worn on a nice hot day."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Tops/tanktops.rsi
+    state: tank_stripes_s
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Tops/tanktops.rsi
+    clothingVisuals:
+      undergarmentTop:
+      - state: tank_stripes_s
+
+- type: entity
+  parent: ClothingUndergarmentTopSwitchableBase
+  id: ClothingUnderTopTanktopSun
+  name: Sun Tanktop
+  description: "A very comfy tank top to be worn on a nice hot day."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Tops/tanktops.rsi
+    state: tank_sun_s
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Tops/tanktops.rsi
+    clothingVisuals:
+      undergarmentTop:
+      - state: tank_sun_s
+
+- type: entity
+  parent: ClothingUndergarmentTopSwitchableBase
+  id: ClothingUnderTopTanktop
+  name: Tanktop
+  description: "A very comfy tank top to be worn on a nice hot day."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Tops/tanktops.rsi
+    state: tanktop
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Tops/tanktops.rsi
+    clothingVisuals:
+      undergarmentTop:
+      - state: tanktop
+
+- type: entity
+  parent: ClothingUndergarmentTopSwitchableBase
+  id: ClothingUnderTopTanktopAlt
+  name: Tanktop
+  description: "A very comfy tank top to be worn on a nice hot day."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Tops/tanktops.rsi
+    state: tanktop_alt
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Tops/tanktops.rsi
+    clothingVisuals:
+      undergarmentTop:
+      - state: tanktop_alt
+
+- type: entity
+  parent: ClothingUndergarmentTopSwitchableBase
+  id: ClothingUnderTopTanktopAlt2
+  name: Tanktop
+  description: "A very comfy tank top to be worn on a nice hot day."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Tops/tanktops.rsi
+    state: tanktop_alt_fem
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Tops/tanktops.rsi
+    clothingVisuals:
+      undergarmentTop:
+      - state: tanktop_alt_fem
+
+- type: entity
+  parent: ClothingUndergarmentTopSwitchableBase
+  id: ClothingUnderTopTanktopVneck
+  name: Vneck Tanktop
+  description: "A very comfy tank top to be worn on a nice hot day."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Tops/tanktops.rsi
+    state: tanktop_alt_fem_vneck
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Tops/tanktops.rsi
+    clothingVisuals:
+      undergarmentTop:
+      - state: tanktop_alt_fem_vneck
+
+- type: entity
+  parent: ClothingUndergarmentTopSwitchableBase
+  id: ClothingUnderTopTanktopVneckCroptop
+  name: Croptop Vneck Tanktop
+  description: "A very comfy tank top to be worn on a nice hot day."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Tops/tanktops.rsi
+    state: tanktop_cropped_vneck
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Tops/tanktops.rsi
+    clothingVisuals:
+      undergarmentTop:
+      - state: tanktop_cropped_vneck

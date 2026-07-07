@@ -1,0 +1,79 @@
+﻿# panyhose (sock slot)
+- type: entity
+  parent: ClothingUndergarmentSocksBase
+  id: ClothingUnderSockPanthoseLeggings
+  name: Leggings
+  description: "A nice pair of leggings to keep your assists warm."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Socks/pantyhose.rsi
+    state: leggings
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Socks/pantyhose.rsi
+    clothingVisuals:
+      undergarmentSocks:
+      - state: leggings
+
+- type: entity
+  parent: ClothingUndergarmentSocksBase
+  id: ClothingUnderSockPanthoseLjonb
+  name: Ljonb
+  description: "A nice pair of ljonb to keep your assists warm."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Socks/pantyhose.rsi
+    state: ljonb
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Socks/pantyhose.rsi
+    clothingVisuals:
+      undergarmentSocks:
+      - state: ljonb
+
+- type: entity
+  parent: ClothingUndergarmentSocksBase
+  id: ClothingUnderSockPanthose
+  name: Pantyhose
+  description: "A nice pair of pantyhose to keep your assists warm."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Socks/pantyhose.rsi
+    state: pantyhose
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Socks/pantyhose.rsi
+    clothingVisuals:
+      undergarmentSocks:
+      - state: pantyhose
+  - type: Butcherable # fuck it lets make them butcherable into the ripped version
+    butcheringType: Knife
+    spawned:
+    - id: ClothingUnderSockPanthoseRipped
+
+- type: entity
+  parent: ClothingUndergarmentSocksBase
+  id: ClothingUnderSockPanthoseStir
+  name: Pantyhose
+  description: "A nice pair of pantyhose to keep your assists warm."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Socks/pantyhose.rsi
+    state: pantyhose-stir
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Socks/pantyhose.rsi
+    clothingVisuals:
+      undergarmentSocks:
+      - state: pantyhose-stir
+
+- type: entity
+  parent: ClothingUndergarmentSocksBase
+  id: ClothingUnderSockPanthoseRipped
+  name: Ripped Pantyhose
+  description: "A nice pair of pantyhose to keep your assists warm."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Socks/pantyhose.rsi
+    state: rippedpantyhose
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Socks/pantyhose.rsi
+    clothingVisuals:
+      undergarmentSocks:
+      - state: rippedpantyhose
