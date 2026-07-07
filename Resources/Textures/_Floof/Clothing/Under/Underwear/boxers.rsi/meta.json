@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Get commit from VoreStation13",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+      {
+          "name": "boxers",
+          "directions": 4
+      },
+      {
+          "name": "boxers_green_and_blue",
+          "directions": 4
+      },
+      {
+          "name": "briefs",
+          "directions": 4
+      },
+      {
+          "name": "compression_shorts",
+          "directions": 4
+      },
+      {
+          "name": "hyper_boxers",
+          "directions": 4
+      }
+  ]
+}

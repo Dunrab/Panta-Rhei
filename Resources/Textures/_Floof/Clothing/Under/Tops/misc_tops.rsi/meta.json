@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Get commit from VoreStation13",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+      {
+          "name": "binder_s",
+          "directions": 4
+      },
+      {
+          "name": "hyper_binder",
+          "directions": 4
+      },
+      {
+          "name": "leotard",
+          "directions": 4
+      },
+      {
+          "name": "leotard_turtleneck",
+          "directions": 4
+      },
+      {
+          "name": "leotard_turtleneck_sleeveless",
+          "directions": 4
+      },
+      {
+          "name": "lover_s",
+          "directions": 4
+      },
+      {
+          "name": "onepiece",
+          "directions": 4
+      },
+      {
+          "name": "oneesleeve",
+          "directions": 4
+      },
+      {
+          "name": "pasties_alt",
+          "directions": 4
+      },
+      {
+          "name": "shibari",
+          "directions": 4
+      },
+      {
+          "name": "straplessbinder_s",
+          "directions": 4
+      },
+      {
+          "name": "swim_oncepiece",
+          "directions": 4
+      },
+      {
+          "name": "swim_strapless-onepiece",
+          "directions": 4
+      },
+      {
+          "name": "swimtop",
+          "directions": 4
+      },
+      {
+          "name": "t-shirt_midriff_shoulders",
+          "directions": 4
+      },
+      {
+          "name": "t-shirt_midriff_shoulders_text",
+          "directions": 4
+      },
+      {
+          "name": "tubetop",
+          "directions": 4
+      },
+      {
+          "name": "turtleneck",
+          "directions": 4
+      },
+      {
+          "name": "turtleneck_sleeveless",
+          "directions": 4
+      },
+      {
+          "name": "turtleneck_smooth",
+          "directions": 4
+      },
+      {
+          "name": "undershirt",
+          "directions": 4
+      },
+      {
+          "name": "undershirt_dress",
+          "directions": 4
+      },
+      {
+          "name": "undershirt_dress_fem",
+          "directions": 4
+      }
+  ]
+}

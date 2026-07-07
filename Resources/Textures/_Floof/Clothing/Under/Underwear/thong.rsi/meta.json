@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Get commit from VoreStation13",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+      {
+          "name": "lacy_thong",
+          "directions": 4
+      },
+      {
+          "name": "lace_thong_alt",
+          "directions": 4
+      }
+  ]
+}
