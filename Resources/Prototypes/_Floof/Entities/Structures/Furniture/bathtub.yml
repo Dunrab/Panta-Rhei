@@ -51,7 +51,7 @@
   name: wood tub
   parent: WoodBathTubEmpty
   id: WoodBathTubFull
-  suffix: filled
+  suffix: filled, water
   components:
   - type: SolutionContainerManager
     solutions:
