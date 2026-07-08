@@ -58,5 +58,5 @@
       drink:
         reagents:
         - ReagentId: Water # prefill the filled tub
-          Quantity: 30
+          Quantity: 100
 
