@@ -11,7 +11,7 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 30 # small amount of wata (or other liquids)
+        maxVol: 100 # 1L of wata (or other liquids)
   - type: SolutionContainerVisuals
     maxFillLevels: 3
     inHandsFillBaseName: null
