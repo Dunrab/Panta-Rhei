@@ -44,8 +44,29 @@
   - type: SolutionItemStatus
     solution: *sol
   - type: Construction
-    graph: BathTub # change
+    graph: BathTub
     node: bathtub
+  - type: Destructible # let it spill its chems when it gets broken
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50 # may need to ajdust the damage here, but tested at 75 and felt like a lot so dropped it a bit
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+          params:
+            volume: -2
+      - !type:SpillBehavior
+        solution: beaker
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank:
+            min: 1
+            max: 5
+        transferForensics: true
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
 
 - type: entity
   name: wood tub
