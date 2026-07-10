@@ -3,7 +3,7 @@
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSockPanthoseLeggings
   name: Leggings
-  description: "A nice pair of leggings to keep your assists warm."
+  description: "A nice pair of leggings to keep your assets warm."
   components:
   - type: Sprite
     sprite: _Floof/Clothing/Under/Socks/pantyhose.rsi
@@ -18,7 +18,7 @@
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSockPanthoseLjonb
   name: Ljonb
-  description: "A nice pair of ljonb to keep your assists warm."
+  description: "A nice pair of ljonb to keep your assets warm."
   components:
   - type: Sprite
     sprite: _Floof/Clothing/Under/Socks/pantyhose.rsi
@@ -33,7 +33,7 @@
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSockPanthose
   name: Pantyhose
-  description: "A nice pair of pantyhose to keep your assists warm."
+  description: "A nice pair of pantyhose to keep your assets warm."
   components:
   - type: Sprite
     sprite: _Floof/Clothing/Under/Socks/pantyhose.rsi
@@ -52,7 +52,7 @@
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSockPanthoseStir
   name: Pantyhose
-  description: "A nice pair of pantyhose to keep your assists warm."
+  description: "A nice pair of pantyhose to keep your assets warm."
   components:
   - type: Sprite
     sprite: _Floof/Clothing/Under/Socks/pantyhose.rsi
@@ -67,7 +67,7 @@
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSockPanthoseRipped
   name: Ripped Pantyhose
-  description: "A nice pair of pantyhose to keep your assists warm."
+  description: "A nice pair of pantyhose to keep your assets warm."
   components:
   - type: Sprite
     sprite: _Floof/Clothing/Under/Socks/pantyhose.rsi
