@@ -1,13 +1,13 @@
 - type: loadout
   id: ClothingCowprintBikini
   equipment:
-    undergarmentTop: ClothingCowprintBikini
+    undergarmentTop: ClothingUniformCowprintBikini
   groupBy: "bras"
 
 - type: loadout
   id: ClothingSocksCowprint
   equipment:
-    undergarmentSocks: ClothingSocksCowprint
+    undergarmentSocks: ClothingUnderCowprintsocks
   groupBy: "thigh highs"
 
 # outer clothing
