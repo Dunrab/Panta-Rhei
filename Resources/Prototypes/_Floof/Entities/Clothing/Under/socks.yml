@@ -2,7 +2,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksKneehighAce
-  name: Ace Kneehigh Socks
+  name: ace knee high socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -17,7 +17,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksKneehighAssBlastUSA
-  name: Ass Blast USA Kneehigh Socks
+  name: ass blast usa knee high socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -32,7 +32,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksKneehighBee
-  name: Bee Kneehigh Socks
+  name: bee knee high socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -47,7 +47,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksKneehighBlack
-  name: Black Kneehigh Socks
+  name: black knee high socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -62,7 +62,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksKneehighRainbow
-  name: Rainbow Kneehigh Socks
+  name: rainbow knee high socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -77,7 +77,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksKneehighPlain
-  name: Kneehigh Socks
+  name: knee high socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -92,7 +92,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksKneehighPlainStir
-  name: Kneehigh Socks
+  name: kneehigh socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -107,7 +107,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksKneehighStriped
-  name: Striped Kneehigh Socks
+  name: striped knee high socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -122,7 +122,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksKneehighThin
-  name: Thin Kneehigh Socks
+  name: thin knee high socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -137,7 +137,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksKneehighTrans
-  name: Trans Kneehigh Socks
+  name: trans knee high socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -152,7 +152,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksKneehighUK
-  name: UK Kneehigh Socks
+  name: uk knee high socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -167,7 +167,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksKneehighWhite
-  name: White Kneehigh Socks
+  name: white knee high socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -183,7 +183,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksNormalBlack
-  name: Black Socks
+  name: black socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -198,7 +198,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksNormalPlain
-  name: Socks
+  name: socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -213,7 +213,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksNormalPlainStir
-  name: Socks
+  name: socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -228,7 +228,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksNormalWhite
-  name: White Socks
+  name: white socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -244,7 +244,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksShortBlack
-  name: Black Socks
+  name: black socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -259,7 +259,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksShortPlain
-  name: Short Socks
+  name: short socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -274,7 +274,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksShortWhite
-  name: White Socks
+  name: white socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -290,7 +290,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksThighhighPlain
-  name: Thigh High Plain Socks
+  name: thigh high plain socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -302,11 +302,42 @@
       undergarmentSocks:
       - state: socks_thigh-stir
 
+- type: entity
+  parent: ClothingUndergarmentSocksBase
+  id: ClothingUnderThighHighsAssBlastUSA
+  name: ass blast usa thigh highs
+  description: "A nice pair of thigh highs to compliment your outfit."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Socks/thighhighs.rsi
+    state: assblastusa_thigh
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Socks/thighhighs.rsi
+    clothingVisuals:
+      undergarmentSocks:
+      - state: assblastusa_thigh
+
+- type: entity
+  parent: ClothingUndergarmentSocksBase
+  id: ClothingUnderThighHighsUK
+  name: uk thigh highs
+  description: "A nice pair of thigh highs to compliment your outfit."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Socks/thighhighs.rsi
+    state: uk_thigh
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Socks/thighhighs.rsi
+    clothingVisuals:
+      undergarmentSocks:
+      - state: uk_thigh
+
+
 # wtf even is this it gets its own spot
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksThocks
-  name: Thick Socks (Thocks)
+  name: thick socks (thocks)
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -317,3 +348,124 @@
     clothingVisuals:
       undergarmentSocks:
       - state: thocks
+
+# stockings (sock slot)
+- type: entity
+  parent: ClothingUndergarmentSocksBase
+  id: ClothingUnderStockingsBlue
+  name: blue stockings
+  description: "A nice pair of stockings to compliment your outfit."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    state: stockings_blue
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    clothingVisuals:
+      undergarmentSocks:
+      - state: stockings_blue
+
+- type: entity
+  parent: ClothingUndergarmentSocksBase
+  id: ClothingUnderStockingsCyan
+  name: cyan stockings
+  description: "A nice pair of stockings to compliment your outfit."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    state: stockings_cyan
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    clothingVisuals:
+      undergarmentSocks:
+      - state: stockings_cyan
+
+- type: entity
+  parent: ClothingUndergarmentSocksBase
+  id: ClothingUnderStockingsDarkPink
+  name: dark pink stockings
+  description: "A nice pair of stockings to compliment your outfit."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    state: stockings_dpink
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    clothingVisuals:
+      undergarmentSocks:
+      - state: stockings_dpink
+
+- type: entity
+  parent: ClothingUndergarmentSocksBase
+  id: ClothingUnderStockingsGreen
+  name: green stockings
+  description: "A nice pair of stockings to compliment your outfit."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    state: stockings_green
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    clothingVisuals:
+      undergarmentSocks:
+      - state: stockings_green
+
+- type: entity
+  parent: ClothingUndergarmentSocksBase
+  id: ClothingUnderStockingsLightPink
+  name: light pink stockings
+  description: "A nice pair of stockings to compliment your outfit."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    state: stockings_lpink
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    clothingVisuals:
+      undergarmentSocks:
+      - state: stockings_lpink
+
+- type: entity
+  parent: ClothingUndergarmentSocksBase
+  id: ClothingUnderStockingsOrange
+  name: orange stockings
+  description: "A nice pair of stockings to compliment your outfit."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    state: stockings_orange
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    clothingVisuals:
+      undergarmentSocks:
+      - state: stockings_orange
+
+- type: entity
+  parent: ClothingUndergarmentSocksBase
+  id: ClothingUnderStockingsPurple
+  name: purple stockings
+  description: "A nice pair of stockings to compliment your outfit."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    state: stockings_purple
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    clothingVisuals:
+      undergarmentSocks:
+      - state: stockings_purple
+
+- type: entity
+  parent: ClothingUndergarmentSocksBase
+  id: ClothingUnderStockingsYellow
+  name: yellow stockings
+  description: "A nice pair of stockings to compliment your outfit."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    state: stockings_yellow
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Socks/stockings.rsi
+    clothingVisuals:
+      undergarmentSocks:
+      - state: stockings_yellow
