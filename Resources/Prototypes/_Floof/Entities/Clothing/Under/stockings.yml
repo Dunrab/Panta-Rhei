@@ -92,7 +92,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderStockingsPurple
-  name: Purple Stockings
+  name: purple stockings
   description: "A nice pair of stockings to compliment your outfit."
   components:
   - type: Sprite
