@@ -10,7 +10,7 @@
   - type: Sprite
     sprite: _Floof/Objects/Fun/Coins/nt_coin.rsi
     state: coin_1
-    noRot: true # No rotaty
+    noRot: false # yes rotatey
 
 - type: entity
   parent: FlippableCoinNT
