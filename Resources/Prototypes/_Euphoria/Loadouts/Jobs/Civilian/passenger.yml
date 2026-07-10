@@ -7,7 +7,7 @@
 - type: loadout
   id: ClothingSocksCowprint
   equipment:
-    shoes: ClothingUnderCowprintsocks
+    undergarmentSocks: ClothingSocksCowprint
   groupBy: "thigh highs"
 
 # outer clothing
