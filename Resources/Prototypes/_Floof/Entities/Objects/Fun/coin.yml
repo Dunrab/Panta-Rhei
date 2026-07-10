@@ -1,0 +1,40 @@
+﻿- type: entity
+  parent: BaseDice
+  id: FlippableCoinNT
+  name: nt coin
+  description: A coin with the NannoTraseon logo stamped onto the back of it.
+  components:
+  - type: Dice # we only need to change these two pieces of hte dice comp
+    sides: 2 # two sides
+    currentValue: 2
+  - type: Sprite
+    sprite: _Floof/Objects/Fun/Coins/nt_coin.rsi
+    state: coin_1
+    noRot: true # No rotaty
+
+- type: entity
+  parent: FlippableCoinNT
+  id: FlippableCoinClown
+  name: clown coin
+  description: A coin that is made out of bananium and a clowns laughter.
+  components:
+  - type: Sprite
+    sprite: _Floof/Objects/Fun/Coins/bananium_coin.rsi
+
+- type: entity
+  parent: FlippableCoinNT
+  id: FlippableCoinDiamond
+  name: diamond coin
+  description: A coin that is made out of diamonds.
+  components:
+  - type: Sprite
+    sprite: _Floof/Objects/Fun/Coins/diamond_coin.rsi
+
+- type: entity
+  parent: FlippableCoinNT
+  id: FlippableCoinPlasma
+  name: plasma coin
+  description: A coin that is made out of plasma, it is still oddly warm to touch.
+  components:
+  - type: Sprite
+    sprite: _Floof/Objects/Fun/Coins/plasma_coin.rsi
