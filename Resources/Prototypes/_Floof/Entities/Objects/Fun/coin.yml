@@ -38,3 +38,21 @@
   components:
   - type: Sprite
     sprite: _Floof/Objects/Fun/Coins/plasma_coin.rsi
+
+- type: entity
+  parent: MagicDiceBag
+  id: CoinBag
+  name: bag of coins
+  description: Contains a few variants of coins for games and gambling.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FlippableCoinNT
+        - id: FlippableCoinClown
+        - id: FlippableCoinDiamond
+        - id: FlippableCoinPlasma
+  - type: Storage
+    grid:
+    - 0,0,3,0
