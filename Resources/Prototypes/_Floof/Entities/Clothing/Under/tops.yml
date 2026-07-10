@@ -78,7 +78,7 @@
 - type: entity
   parent: ClothingUndergarmentTopSwitchableBase
   id: ClothingUnderTopMiscLeotardTurtleneck
-  name: leotard turtleneck
+  name: turtleneck leotard
   description: "A nice top to keep your top half covered (or not)."
   components:
   - type: Sprite
@@ -93,7 +93,7 @@
 - type: entity
   parent: ClothingUndergarmentTopSwitchableBase
   id: ClothingUnderTopMiscLeotardSleevless
-  name: sleeveless leotard turtleneck
+  name: sleeveless turtleneck leotard
   description: "A nice top to keep your top half covered (or not)."
   components:
   - type: Sprite
@@ -109,7 +109,7 @@
 - type: entity
   parent: ClothingUndergarmentTopSwitchableBase
   id: ClothingUnderTopMiscUndershirtTurtleneck
-  name: undershirt turtleneck
+  name: turtleneck undershirt
   description: "A nice top to keep your top half covered (or not)."
   components:
   - type: Sprite
@@ -124,7 +124,7 @@
 - type: entity
   parent: ClothingUndergarmentTopSwitchableBase
   id: ClothingUnderTopMiscUndershirtTurtleneckSleevless
-  name: undershirt turtleneck sleeveless
+  name: sleeveless undershirt turtleneck
   description: "A nice top to keep your top half covered (or not)."
   components:
   - type: Sprite
@@ -139,7 +139,7 @@
 - type: entity
   parent: ClothingUndergarmentTopSwitchableBase
   id: ClothingUnderTopMiscUndershirtTurtleneckSmooth
-  name: undershirt turtleneck smooth
+  name: smooth undershirt turtleneck
   description: "A nice top to keep your top half covered (or not)."
   components:
   - type: Sprite
@@ -186,7 +186,7 @@
 - type: entity
   parent: ClothingUndergarmentTopSwitchableBase
   id: ClothingUnderTopMiscSwimTop # we arent going to bikini bottom know what im saying?
-  name: swim top
+  name: swimming top
   description: "A nice top to keep your top half covered (or not)."
   components:
   - type: Sprite
@@ -202,7 +202,7 @@
 - type: entity
   parent: ClothingUndergarmentTopSwitchableBase
   id: ClothingUnderTopMiscUndershirt
-  name: under shirt
+  name: undershirt
   description: "A nice top to keep your top half covered (or not)."
   components:
   - type: Sprite
@@ -217,7 +217,7 @@
 - type: entity
   parent: ClothingUndergarmentTopSwitchableBase
   id: ClothingUnderTopMiscUndershirtDress
-  name: dress under shirt
+  name: dress undershirt
   description: "A nice top to keep your top half covered (or not)."
   components:
   - type: Sprite
@@ -232,7 +232,7 @@
 - type: entity
   parent: ClothingUndergarmentTopSwitchableBase
   id: ClothingUnderTopMiscUndershirtDressAlt
-  name: dress under shirt
+  name: dress undershirt
   description: "A nice top to keep your top half covered (or not)."
   components:
   - type: Sprite
@@ -247,7 +247,7 @@
 - type: entity
   parent: ClothingUndergarmentTopSwitchableBase
   id: ClothingUnderTopMiscUndershirtMidRiffShoulders
-  name: under shirt midriff shoulders
+  name: midriff undershirt
   description: "A nice top to keep your top half covered (or not)."
   components:
   - type: Sprite

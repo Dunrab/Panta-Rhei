@@ -1,8 +1,8 @@
 - type: loadout
   id: ClothingCowprintBikini
   equipment:
-    jumpsuit: ClothingUniformCowprintBikini
-  groupBy: "lewdsuit"
+    undergarmentTop: ClothingCowprintBikini
+  groupBy: "bras"
 
 - type: loadout
   id: ClothingSocksCowprint

@@ -2,7 +2,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksKneehighAce
-  name: ace knee high socks
+  name: ace knee-high socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -17,7 +17,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksKneehighAssBlastUSA
-  name: ass blast usa knee high socks
+  name: ass blast usa knee-high socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -32,7 +32,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksKneehighBee
-  name: bee knee high socks
+  name: bee knee-high socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -47,7 +47,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksKneehighBlack
-  name: black knee high socks
+  name: black knee-high socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -62,7 +62,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksKneehighRainbow
-  name: rainbow knee high socks
+  name: rainbow knee-high socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -77,7 +77,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksKneehighPlain
-  name: knee high socks
+  name: knee-high socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -92,7 +92,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksKneehighPlainStir
-  name: kneehigh socks
+  name: knee-high socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -107,7 +107,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksKneehighStriped
-  name: striped knee high socks
+  name: striped knee-high socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -122,7 +122,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksKneehighThin
-  name: thin knee high socks
+  name: thin knee-high socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -137,7 +137,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksKneehighTrans
-  name: trans knee high socks
+  name: trans knee-high socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -152,7 +152,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksKneehighUK
-  name: uk knee high socks
+  name: uk knee-high socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -167,7 +167,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksKneehighWhite
-  name: white knee high socks
+  name: white knee-high socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -290,7 +290,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksThighhighPlain
-  name: thigh high plain socks
+  name: thigh-high plain socks
   description: "Soft pair of socks to cover your feet and or paws."
   components:
   - type: Sprite
@@ -305,8 +305,8 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderThighHighsAssBlastUSA
-  name: ass blast usa thigh highs
-  description: "A nice pair of thigh highs to compliment your outfit."
+  name: ass blast usa thigh-high
+  description: "A nice pair of thigh-highs to compliment your outfit."
   components:
   - type: Sprite
     sprite: _Floof/Clothing/Under/Socks/thighhighs.rsi
@@ -321,7 +321,7 @@
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderThighHighsUK
   name: uk thigh highs
-  description: "A nice pair of thigh highs to compliment your outfit."
+  description: "A nice pair of thigh-highs to compliment your outfit."
   components:
   - type: Sprite
     sprite: _Floof/Clothing/Under/Socks/thighhighs.rsi
@@ -337,8 +337,8 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksThocks
-  name: thick socks (thocks)
-  description: "Soft pair of socks to cover your feet and or paws."
+  name: thocks
+  description: "Soft pair of socks to cover your feet and or paws. This pair is particularly thick."
   components:
   - type: Sprite
     sprite: _Floof/Clothing/Under/Socks/socks.rsi
