@@ -72,9 +72,8 @@
     state: engineering
   - type: MachineBoard
     prototype: PortablePumpEmpty
-    requirements:
-      Manipulator: 2
     stackRequirements:
+      Manipulator: 2
       Cable: 2
     tagRequirements:
       GlassBeaker:
