@@ -4,7 +4,7 @@ meta:
   engineVersion: 270.1.0
   forkId: Euphoria
   forkVersion: 171860c29af07df952d009933a0f010793386c0c
-  time: 07/11/2026 17:35:10
+  time: 07/11/2026 17:41:44
   entityCount: 750
 maps: []
 grids:
@@ -591,7 +591,7 @@ entities:
   - uid: 676
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
+      rot: -1.5707963267948966 rad
       pos: 11.5,1.5
       parent: 1
     - type: Fixtures
@@ -3588,8 +3588,11 @@ entities:
   - uid: 140
     components:
     - type: Transform
+      anchored: True
       pos: 1.5,14.5
       parent: 1
+    - type: Physics
+      bodyType: Static
   - uid: 699
     components:
     - type: Transform
@@ -3600,8 +3603,11 @@ entities:
   - uid: 109
     components:
     - type: Transform
+      anchored: True
       pos: 1.5,13.5
       parent: 1
+    - type: Physics
+      bodyType: Static
 - proto: PlasmaWindoorSecureFreelancerLocked
   entities:
   - uid: 65
