@@ -16,7 +16,7 @@
     shouldGib: false
     damage:
       types:
-        Blunt: 80 # Floofstation - 190 was way to much lowered to have so it crits (depending on species may do a bit more)
+        Blunt: 80 # Floofstation - 190 was way too much, lowered to have it so it crits (depending on species may do a bit more)
   # Floofstation additions - safer rods end
   - type: GravityAffected
   - type: Physics

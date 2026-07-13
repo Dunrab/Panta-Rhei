@@ -261,7 +261,7 @@
     - id: ImmovableRodWeh
       prob: 0.0075
       orGroup: rodProto
-    - id: ImmovableRodDildo # Floofstation - didlo rod
+    - id: ImmovableRodDildo # Floofstation - dildo rod
       prob: 0.0075
       orGroup: rodProto
 
