@@ -4,7 +4,7 @@ meta:
   engineVersion: 270.1.0
   forkId: ""
   forkVersion: ""
-  time: 07/14/2026 17:39:03
+  time: 07/14/2026 17:46:08
   entityCount: 21647
 maps:
 - 1
@@ -61391,7 +61391,7 @@ entities:
       pos: 40.5,14.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -138393.66
+      secondsUntilStateChange: -138468.42
       state: Closing
     - type: DeviceNetwork
       deviceLists:
@@ -65851,18 +65851,24 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 0.5,-45.5
       parent: 2
+    - type: AtmosPipeColor
+      color: '#0335FCFF'
   - uid: 8433
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 0.5,-43.5
       parent: 2
+    - type: AtmosPipeColor
+      color: '#FF1212FF'
   - uid: 8664
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 0.5,-49.5
       parent: 2
+    - type: AtmosPipeColor
+      color: '#CB00F5FF'
 - proto: GasPipeStraight
   entities:
   - uid: 98
