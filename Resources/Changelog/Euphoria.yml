@@ -4386,3 +4386,33 @@ Entries:
       message: Roles missing head and/or neck options have them now.
   id: 543
   time: '2026-07-14T10:59:26.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Removed a duplicate leash & remote signaller loadouts (they are still
+        available in the trinkets group)
+  id: 544
+  time: '2026-07-16T09:10:00.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Remove
+      message: Removed Ratkings ability to butcher due to abuse.
+  id: 545
+  time: '2026-07-16T09:10:45.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Fixed several prediction bugs in regards to narcolepsy and crawling
+        direction toggle.
+  id: 546
+  time: '2026-07-16T09:12:33.0000000+00:00'
+- author: faefyr
+  changes:
+    - type: Add
+      message: >-
+        Smexy clown fit for femme presenting characters inspired by Geiru
+        Toneido
+  id: 547
+  time: '2026-07-16T09:14:18.0000000+00:00'
