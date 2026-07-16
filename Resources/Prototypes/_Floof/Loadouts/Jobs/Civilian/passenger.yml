@@ -582,6 +582,12 @@
     jumpsuit: ClothingUniformBlackPetticoatDress
   groupBy: "dresses"
 
+- type: loadout
+  id:   ClothingUniformJumpskirtDressGothic
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtDressGothic
+  groupBy: "dresses"
+
 # shoes
 - type: loadout
   id: ClothingShoesBootsJack
@@ -1099,6 +1105,27 @@
   equipment:
     head: ClothingHeadHatCorpsoft
 
+- type: loadout
+  id: ClothingHeadHatHijabColorable
+  equipment:
+    head: ClothingHeadHatHijabColorable
+  groupBy: "religious"
+
+
+- type: loadout
+  id: ClothingHeadHatTurbanColorable
+  equipment:
+    head: ClothingHeadHatTurbanColorable
+  groupBy: "religious"
+
+
+- type: loadout
+  id: ClothingHeadHatKippahColorable
+  equipment:
+    head: ClothingHeadHatKippahColorable
+  groupBy: "religious"
+
+
 #neck
 - type: loadout
   id: MothCloak
@@ -1256,6 +1283,55 @@
   id: ClothingNeckCWPArctic
   equipment:
     neck: ClothingNeckCWPArctic
+
+- type: loadout
+  id: ClothingNeckCrucifixColor
+  equipment:
+    neck: ClothingNeckCrucifixColor
+  groupBy: "religious"
+
+- type: loadout
+  id: ClothingNeckCrucifixColorSaintPeter
+  equipment:
+    neck: ClothingNeckCrucifixColorSaintPeter
+  groupBy: "religious"
+
+- type: loadout
+  id: ClothingNeckCrucifixGold
+  equipment:
+    neck: ClothingNeckCrucifixGold
+  groupBy: "religious"
+
+- type: loadout
+  id: ClothingNeckCrucifixGoldSaintPeter
+  equipment:
+    neck: ClothingNeckCrucifixGoldSaintPeter
+  groupBy: "religious"
+
+- type: loadout
+  id: ClothingNeckCrucifixSilver
+  equipment:
+    neck: ClothingNeckCrucifixSilver
+  groupBy: "religious"
+
+- type: loadout
+  id: ClothingNeckCrucifixSilverSaintPeter
+  equipment:
+    neck: ClothingNeckCrucifixSilverSaintPeter
+  groupBy: "religious"
+
+- type: loadout
+  id: ClothingNeckScapular
+  equipment:
+    neck: ClothingNeckScapular
+  groupBy: "religious"
+
+- type: loadout
+  id: ClothingNeckTallit
+  equipment:
+    neck: ClothingNeckTallit
+  groupBy: "religious"
+
 
 # trinkets
 - type: loadout
@@ -1482,6 +1558,34 @@
   storage:
     back:
     - Clicker
+
+- type: loadout
+  id: FlippableCoinNT
+  storage:
+    back:
+    - FlippableCoinNT
+  groupBy: "coins"
+
+- type: loadout
+  id: FlippableCoinClown
+  storage:
+    back:
+    - FlippableCoinClown
+  groupBy: "coins"
+
+- type: loadout
+  id: FlippableCoinDiamond
+  storage:
+    back:
+    - FlippableCoinDiamond
+  groupBy: "coins"
+
+- type: loadout
+  id: FlippableCoinPlasma
+  storage:
+    back:
+    - FlippableCoinPlasma
+  groupBy: "coins"
 
 #lewd trinkets
 - type: loadout
@@ -1752,6 +1856,12 @@
     neck: ClothingNeckCollarBellPetIdAlternative
   groupBy: "petids"
 
+#Den NSFW Holos
+- type: loadout
+  id: HoloprojectorNSFW
+  storage:
+    back:
+    - HoloprojectorNSFW
 
 # top undergarment
 - type: loadout

@@ -25,6 +25,7 @@
   groups:
   - GroupTankHarness
   - CargoAssistantHead
+  - CargoTechnicianNeck # Euphoria
   - CargoAssistantJumpsuit
   - CargoAssistantBackpack
   - CargoAssistantOuterClothing
@@ -105,6 +106,7 @@
   parent: JobBaseLoadout # Floofstation
   groups:
   - GroupTankHarness
+  - AssistantHead # Euphoria
   - ClerkJumpsuit
   - ClerkNeck
   - ClerkOuterClothing
@@ -125,6 +127,7 @@
   parent: JobBaseLoadout # Floofstation
   groups:
   - GroupTankHarness
+  - AssistantHead # Euphoria
   - ProsecutorJumpsuit
   - ProsecutorNeck
   - ProsecutorOuterClothing
@@ -167,6 +170,8 @@
   parent: JobBaseLoadout # Floofstation
   groups:
   - GroupTankHarness
+  - AssistantHead # Euphoria
+  - PassengerNeck # Euphoria
   - CommonBackpack
   - Glasses
   - Survival

@@ -103,6 +103,7 @@
   - ClothingUniformPurpleNightclubDress
   - ClothingUniformBlackPetticoatDress
   - ClothingUniformJumpskirtBlazer
+  - ClothingUniformJumpskirtDressGothic
 
 # gloves
 - type: loadoutGroup
@@ -235,6 +236,9 @@
   - HeadHatBlacksoft
   - HeadHatCorpsoft
   - HeadHatSolidHeadband
+  - ClothingHeadHatHijabColorable
+  - ClothingHeadHatTurbanColorable
+  - ClothingHeadHatKippahColorable
 
 # glasses/eyewear
 - type: loadoutGroup
