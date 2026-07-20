@@ -23,7 +23,7 @@ public sealed partial class BrushComponent : Component
     /// <summary>
     /// The sound to play when brushing.
     /// </summary>
-    [DataField]
+    [DataField, AutoNetworkedField]
     public SoundSpecifier? MixingSound;
 
     /// <summary>

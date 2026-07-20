@@ -48,29 +48,14 @@ public sealed partial class BrushSystem : EntitySystem
         if (args.Target == null)
             return;
 
-        if (args.Target == args.User)
-        {
-            _popup.PopupClient(
-                Loc.GetString(ent.Comp.BrushMessage,
-                    ("brushed", Identity.Entity(args.Target.Value, EntityManager)),
-                    ("brusher", Identity.Entity(ent.Owner, EntityManager))),
-                args.User,
-                args.User);
-            BeginBrushingEvent(ent, args.Target.Value);
-            args.Handled = true;
-        }
-        else if (args.Target.Value != ent.Owner)
-        {
-            _popup.PopupClient(
-                Loc.GetString(ent.Comp.BrushMessageTarget,
-                    ("brushed", Identity.Entity(args.Target.Value, EntityManager)),
-                    ("brusher", Identity.Entity(ent.Owner, EntityManager))),
-                args.User,
-                args.User);
-            BeginBrushingEvent(ent, args.Target.Value);
-            args.Handled = true;
-        }
-
+        _popup.PopupClient(
+            Loc.GetString(args.Target == args.User ? ent.Comp.BrushMessage : ent.Comp.BrushMessageTarget,
+                ("target", Identity.Entity(args.Target.Value, EntityManager)),
+                ("user", Identity.Entity(ent.Owner, EntityManager))),
+            args.User,
+            args.User);
+        BeginBrushingEvent(ent, args.Target.Value);
+        args.Handled = true;
     }
 
     public void BeginBrushingEvent(Entity<BrushComponent> ent, EntityUid target)
