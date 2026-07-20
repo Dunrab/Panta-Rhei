@@ -51,7 +51,7 @@ public sealed partial class BrushSystem : EntitySystem
         _popup.PopupClient(
             Loc.GetString(args.Target == args.User ? ent.Comp.BrushMessage : ent.Comp.BrushMessageTarget,
                 ("target", Identity.Entity(args.Target.Value, EntityManager)),
-                ("user", Identity.Entity(ent.Owner, EntityManager))),
+                ("user", Identity.Entity(args.User, EntityManager))),
             args.User,
             args.User);
         BeginBrushingEvent(ent, args.Target.Value);
