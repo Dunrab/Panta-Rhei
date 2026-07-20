@@ -2,7 +2,7 @@
   parent: BaseItem
   id: HairBrush
   name: hair brush
-  description: Your personal helper to mix drinks and changes lives. # need to change
+  description: A small fine toothed comb used to brush hair and fur.
   components:
   - type: Tag
     tags:
@@ -12,13 +12,12 @@
     state: brush
     notRot: false
   - type: Brush
-    mixMessage: "self-brushing-success"
-    timeToMix: 0.5
+    timeToBrush: 3
   - type: MeleeWeapon
     wideAnimationRotation: 180
     attackRate: 2
     damage:
       types:
-        Blunt: 2
+        Blunt: 0
   - type: Shovel
     speedModifier: 0.05 # nah
