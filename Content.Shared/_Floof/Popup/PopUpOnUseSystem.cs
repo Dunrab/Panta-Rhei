@@ -17,24 +17,18 @@ public sealed class PopUpOnUseSystem : EntitySystem
     [Dependency] private readonly EntityWhitelistSystem _whitelist = default!;
 
     // Whitelist what we can and can't use these items on (no using this stuff on a wall smh)
-    // Thank you Fox for the help getting the whitelist working
-    public void PopUpWhitelist(EntityWhitelist? whitelist, EntityWhitelist? blacklist, EntityUid target)
-    {
-        if (_whitelist.IsWhitelistFail(whitelist, target)
-            || _whitelist.IsWhitelistPass(blacklist, target))
-            return;
-    }
+    // Thank you, Fox, for the help getting the whitelist working
     public bool CanUse(Entity<PopUpOnUseComponent> ent, EntityUid target) =>
         _whitelist.IsWhitelistPass(ent.Comp.Whitelist, target) &&
         !_whitelist.IsWhitelistPass(ent.Comp.Blacklist, target);
 
-public override void Initialize()
-    {
-        base.Initialize();
+    public override void Initialize()
+        {
+            base.Initialize();
 
-        SubscribeLocalEvent<PopUpOnUseComponent, AfterInteractEvent>(OnAfterInteract);
-        SubscribeLocalEvent<PopUpOnUseComponent, PopUpOnUseDoAfterEvent>(OnDoAfter);
-    }
+            SubscribeLocalEvent<PopUpOnUseComponent, AfterInteractEvent>(OnAfterInteract);
+            SubscribeLocalEvent<PopUpOnUseComponent, PopUpOnUseDoAfterEvent>(OnDoAfter);
+        }
 
     private void OnAfterInteract(Entity<PopUpOnUseComponent> ent, ref AfterInteractEvent args)
     {

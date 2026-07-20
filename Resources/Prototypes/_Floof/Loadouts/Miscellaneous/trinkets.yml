@@ -118,3 +118,9 @@
   storage:
     back:
     - WristwatchGold
+
+- type: loadout
+  id: HairBrush
+  storage:
+    back:
+    - HairBrush
