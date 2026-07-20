@@ -4,13 +4,9 @@
   name: hair brush
   description: A small fine toothed comb used to brush hair and fur.
   components:
-  - type: Tag
-    tags:
-    - Metal
   - type: Sprite
     sprite: _Floof/Objects/Misc/brush.rsi
     state: brush
-    notRot: false
   - type: Brush
     timeToBrush: 3
   - type: MeleeWeapon
@@ -19,5 +15,3 @@
     damage:
       types:
         Blunt: 0
-  - type: Shovel
-    speedModifier: 0.05 # nah

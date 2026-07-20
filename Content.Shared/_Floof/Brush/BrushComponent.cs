@@ -35,19 +35,3 @@ public sealed partial class BrushComponent : Component
     // Used to cancel the played sound.
     public EntityUid? AudioStream;
 }
-
-[Serializable, NetSerializable]
-public enum BrushTargetType
-{
-    Self, // targeting self
-    Other // targeting somoene else
-}
-
-[ByRefEvent]
-public record struct BrushingAttemptEvent(EntityUid Brushed, bool Cancelled = false);
-
-[ByRefEvent]
-public readonly record struct AfterBrushingEvent(EntityUid Brushed, EntityUid Brusher);
-
-[Serializable, NetSerializable]
-public sealed partial class BrushDoAfterEvent : SimpleDoAfterEvent;
