@@ -1,5 +1,5 @@
 ﻿- type: entity
-#  parent: UtensilBase
+  parent: BaseItem
   id: HairBrush
   name: hair brush
   description: Your personal helper to mix drinks and changes lives. # need to change
@@ -8,11 +8,11 @@
     tags:
     - Metal
   - type: Sprite
-    state: bar_spoon
-  - type: Item
-    heldPrefix: spoon
+    sprite: _Floof/Objects/Misc/brush.rsi
+    state: brush
+    notRot: false
   - type: Brush
-    mixMessage: "spoon-mixing-success"
+    mixMessage: "self-brushing-success"
     timeToMix: 0.5
   - type: MeleeWeapon
     wideAnimationRotation: 180

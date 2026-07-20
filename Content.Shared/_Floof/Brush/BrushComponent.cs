@@ -9,10 +9,16 @@ namespace Content.Shared._Floof.Brush;
 public sealed partial class BrushComponent : Component
 {
     /// <summary>
+    /// The popup message when successfully brushing yourself
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public LocId BrushMessage = "self-brushing-success";
+
+    /// <summary>
     /// The popup message when successfully brushing someone
     /// </summary>
     [DataField, AutoNetworkedField]
-    public LocId BrushMessage = "default-mixing-success";
+    public LocId BrushMessageTarget = "target-brushing-success";
 
     /// <summary>
     /// The sound to play when brushing.
@@ -38,10 +44,10 @@ public enum BrushTargetType
 }
 
 [ByRefEvent]
-public record struct BrushuingAttemptEvent(EntityUid Brushed, bool Cancelled = false);
+public record struct BrushingAttemptEvent(EntityUid Brushed, bool Cancelled = false);
 
 [ByRefEvent]
-public readonly record struct AfterBrushuingEvent(EntityUid Brushed, EntityUid Brusher);
+public readonly record struct AfterBrushingEvent(EntityUid Brushed, EntityUid Brusher);
 
 [Serializable, NetSerializable]
 public sealed partial class BrushDoAfterEvent : SimpleDoAfterEvent;

@@ -1,11 +1,9 @@
 ﻿using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.EntitySystems;
-using Content.Shared.Chemistry.Reaction;
 using Content.Shared.DoAfter;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Events;
-using Content.Shared.Nutrition.EntitySystems;
 using Content.Shared.Popups;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Network;
@@ -26,7 +24,7 @@ public sealed partial class BrushSystem : EntitySystem
 
         SubscribeLocalEvent<BrushComponent, UseInHandEvent>(OnUseInHand);
         SubscribeLocalEvent<BrushComponent, AfterInteractEvent>(OnAfterInteract);
-        SubscribeLocalEvent<BrushComponent, BurshDoAfterEvent>(OnDoAfter);
+        SubscribeLocalEvent<BrushComponent, BrushDoAfterEvent>(OnDoAfter);
     }
 
     private void OnUseInHand(Entity<BrushComponent> ent, ref UseInHandEvent args)
@@ -45,7 +43,7 @@ public sealed partial class BrushSystem : EntitySystem
         var doAfterArgs = new DoAfterArgs(EntityManager,
             args.User,
             ent.Comp.TimeToBrush,
-            new BurshDoAfterEvent(),
+            new BrushDoAfterEvent(),
             ent,
             ent,
             ent)
@@ -71,13 +69,13 @@ public sealed partial class BrushSystem : EntitySystem
         if (_net.IsServer) // Cannot cancel predicted audio.
             ent.Comp.AudioStream = _audio.PlayPvs(ent.Comp.MixingSound, ent)?.Entity;
 
-        var doAfterArgs = new DoAfterArgs(EntityManager, args.User, ent.Comp.TimeToBrush, new BurshDoAfterEvent(), ent, args.Target.Value, ent);
+        var doAfterArgs = new DoAfterArgs(EntityManager, args.User, ent.Comp.TimeToBrush, new BrushDoAfterEvent(), ent, args.Target.Value, ent);
 
         _doAfter.TryStartDoAfter(doAfterArgs);
         args.Handled = true;
     }
 
-    private void OnDoAfter(Entity<BrushComponent> ent, ref BurshDoAfterEvent args)
+    private void OnDoAfter(Entity<BrushComponent> ent, ref BrushDoAfterEvent args)
     {
         ent.Comp.AudioStream = _audio.Stop(ent.Comp.AudioStream);
 
@@ -110,16 +108,13 @@ public sealed partial class BrushSystem : EntitySystem
         if (!Resolve(ent, ref ent.Comp, false)) // The used entity needs the component to be able to mix a solution
             return false;
 
-        if (!_solutionContainer.TryGetMixableSolution(target, out _, out var mixableSolution))
-            return false;
-
         // Can't mix nothing.
-        if (mixableSolution.Volume <= 0)
+        if (target == null)
             return false;
 
-        var mixAttemptEvent = new MixingAttemptEvent(ent);
-        RaiseLocalEvent(ent, ref mixAttemptEvent);
-        if (mixAttemptEvent.Cancelled)
+        var brushAttemptEvent = new BrushingAttemptEvent(ent);
+        RaiseLocalEvent(ent, ref brushAttemptEvent);
+        if (brushAttemptEvent.Cancelled)
             return false;
 
         return true;
@@ -136,16 +131,13 @@ public sealed partial class BrushSystem : EntitySystem
         if (!Resolve(ent, ref ent.Comp, false))
             return false;
 
-        var mixAttemptEvent = new MixingAttemptEvent(ent);
-        RaiseLocalEvent(ent, ref mixAttemptEvent);
-        if (mixAttemptEvent.Cancelled)
+        var brushAttemptEvent = new BrushingAttemptEvent(ent);
+        RaiseLocalEvent(ent, ref brushAttemptEvent);
+        if (brushAttemptEvent.Cancelled)
             return false;
 
-        if (!_solutionContainer.TryGetMixableSolution(target, out var solutionEnt, out _))
-            return false;
-
-        var afterMixingEvent = new AfterMixingEvent(ent, target);
-        RaiseLocalEvent(ent, ref afterMixingEvent);
+        var afterbrushAttemptEvent = new AfterBrushingEvent(ent, target);
+        RaiseLocalEvent(ent, ref afterbrushAttemptEvent);
 
         return true;
     }

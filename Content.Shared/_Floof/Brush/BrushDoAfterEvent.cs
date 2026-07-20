@@ -3,8 +3,6 @@ using Robust.Shared.Serialization;
 
 namespace Content.Shared._Floof.Brush;
 
-[Serializable, NetSerializable]
-public  sealed partial class BurshDoAfterEvent : SimpleDoAfterEvent
+public sealed partial class BrushDoAfterEvent : SimpleDoAfterEvent
 {
-
 }
