@@ -23,12 +23,10 @@ public sealed class PopUpOnUseSystem : EntitySystem
         !_whitelist.IsWhitelistPass(ent.Comp.Blacklist, target);
 
     public override void Initialize()
-        {
-            base.Initialize();
-
-            SubscribeLocalEvent<PopUpOnUseComponent, AfterInteractEvent>(OnAfterInteract);
-            SubscribeLocalEvent<PopUpOnUseComponent, PopUpOnUseDoAfterEvent>(OnDoAfter);
-        }
+      {
+          SubscribeLocalEvent<PopUpOnUseComponent, AfterInteractEvent>(OnAfterInteract);
+          SubscribeLocalEvent<PopUpOnUseComponent, PopUpOnUseDoAfterEvent>(OnDoAfter);
+      }
 
     private void OnAfterInteract(Entity<PopUpOnUseComponent> ent, ref AfterInteractEvent args)
     {
@@ -65,14 +63,6 @@ public sealed class PopUpOnUseSystem : EntitySystem
                 ("user", Identity.Entity(args.User, EntityManager))),
             args.User,
             args.User);
-        BeginDoAfterEvent(ent, args.Target.Value);
         args.Handled = true;
-
-    }
-
-    public void BeginDoAfterEvent(Entity<PopUpOnUseComponent> ent, EntityUid target)
-    {
-        if (!Resolve(ent, ref ent.Comp!, false))
-            return;
     }
 }
