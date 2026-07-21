@@ -55,9 +55,9 @@ public sealed class GhostBarSystem : EntitySystem
         // we do not want to load the ghostbar in debug
         #if DEBUG
         return;
+        #endif
         if (_mapLoader.TryLoadMap(_mapPath, out var map, out _, new DeserializationOptions { InitializeMaps = true }))
             _mapSystem.SetPaused(map.Value.Comp.MapId, false);
-        #endif // we don't want to load the ghostbar in debug
     }
 
     public void SpawnPlayer(GhostBarSpawnEvent msg, EntitySessionEventArgs args)
