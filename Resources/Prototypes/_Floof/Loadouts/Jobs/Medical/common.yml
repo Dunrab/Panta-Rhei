@@ -23,19 +23,11 @@
 - type: loadout
   id: SyringeComicallyLarge
   effects:
-  - !type:GroupLoadoutEffect
-    proto: FloofMedicalSilly
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Medical
+      time: 100h
   storage:
     back:
     - SyringeComicallyLarge
-  groupBy: "Brushes"
-
-# timers for special options
-- type: loadoutEffectGroup
-  id: FloofMedicalSilly
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobMedicalDoctor
-      time: 100h # for workin extra hard to save people and this is just a silly item
