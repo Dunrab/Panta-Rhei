@@ -738,6 +738,24 @@
   equipment:
     gloves: ClothingHandsGlovesLeather
 
+- type: loadout
+  id: ClothingHandsMittens
+  equipment:
+    gloves: ClothingHandsMittens
+  groupBy: "mittens"
+
+- type: loadout
+  id: ClothingHandsMittensBall
+  equipment:
+    gloves: ClothingHandsMittensBall
+  groupBy: "mittens"
+
+- type: loadout
+  id: ClothingHandsMittensKittenMitten
+  equipment:
+    gloves: ClothingHandsMittensKittenMitten
+  groupBy: "mittens"
+
 # backpacks
 - type: loadout
   id: BackpackSatchelLeather
