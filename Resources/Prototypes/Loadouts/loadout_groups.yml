@@ -1822,6 +1822,7 @@
 - type: loadoutGroup
   id: ChiefMedicalOfficerJobTrinkets
   name: loadout-group-jobtrinkets
+  parent: [FloofMedicalDoctorJobTrinkets] # FLoofstation - medical trinket additions
   minLimit: 0
   loadouts:
   - LizardPlushieChiefMedicalOfficer
@@ -1962,6 +1963,7 @@
 - type: loadoutGroup
   id: MedicalInternJobTrinkets
   name: loadout-group-jobtrinkets
+  parent: [FloofMedicalDoctorJobTrinkets] # FLoofstation - medical trinket additions
   minLimit: 0
   loadouts:
   - LizardPlushieMedicalIntern
@@ -2008,6 +2010,7 @@
 - type: loadoutGroup
   id: ChemistJobTrinkets
   name: loadout-group-jobtrinkets
+  parent: [FloofMedicalDoctorJobTrinkets] # FLoofstation - medical trinket additions
   minLimit: 0
   loadouts:
   - LizardPlushieChemist
@@ -2056,6 +2059,7 @@
 - type: loadoutGroup
   id: ParamedicJobTrinkets
   name: loadout-group-jobtrinkets
+  parent: [FloofMedicalDoctorJobTrinkets] # FLoofstation - medical trinket additions
   minLimit: 0
   loadouts:
   - LizardPlushieParamedic
