@@ -129,3 +129,19 @@
     maxItemSize: Huge
     grid:
     - 0,0,5,4
+
+# Condom hat
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadCondom
+  name: condom hat
+  description: Protects the mind and body.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Head/Lewd/condom_hat.rsi
+    offset: 0, -0.35 # offset so we can have this actually place where the mouse cursor is
+  - type: Clothing
+    sprite: _Floof/Clothing/Head/Lewd/condom_hat.rsi
+  - type: Construction
+    graph: CondomHat
+    node: condomhat
