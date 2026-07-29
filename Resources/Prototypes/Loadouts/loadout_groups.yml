@@ -944,7 +944,7 @@
   - PanFlute
   - Ocarina
   - Bagpipe
-  - SuperSynthesizerInstrument # Floofstation
+  #- SuperSynthesizerInstrument # Floofstation - remove this from passenger loadouts
 
 - type: loadoutGroup
   id: MusicianJobTrinkets
