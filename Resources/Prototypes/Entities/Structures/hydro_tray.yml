@@ -97,6 +97,12 @@
     guides:
     - Botany
     - Chemicals
+  - type: LanguageSpeaker # Floofstation - let em speak common
+  - type: LanguageKnowledge
+    speaks:
+    - TauCetiBasic
+    understands:
+    - TauCetiBasic
 
 - type: entity
   parent: hydroponicsTray
