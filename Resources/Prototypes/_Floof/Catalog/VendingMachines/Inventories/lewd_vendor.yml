@@ -30,6 +30,7 @@
     WhipTealCrotch: 2
     SpankPinkPaddle: 2
     SpankTealPaddle: 2
+    Shinai: 2
     # condom packs when merged
     # other
     FuzzyHandcuffs: 4
@@ -41,9 +42,6 @@
   id: LewdClothingVendorInventory
   startingInventory:
     # outfits and masks
-    ClothingMaskMuzzle: 2
-    ClothingEyesBlindfold: 2
-    Shinai: 2
     UniformMaid: 2
     ClothingUniformClassicalMaidDress: 2
     ClothingUniformLoinClothBlack: 2
@@ -64,6 +62,8 @@
     ClothingHeadNurseHat: 2
     ClothingUniformJumpskirtNurse: 2
     ClothingMaskSterile: 2
+    ClothingMaskMuzzle: 2
+    ClothingEyesBlindfold: 2
     # school girl uniforms
     UniformSchoolgirlRed: 2
     UniformSchoolgirlBlack: 2
@@ -83,6 +83,7 @@
     ClothingNeckCollarBlack: 2
     ClothingNeckCollarPink: 2
     ClothingNeckCollarBell: 2
+    ClothingNeckCowBellCollar: 2
     ClothingNeckCollarBlueAlternative: 2
     ClothingNeckCollarBlackAlternative: 2
     ClothingNeckCollarPinkAlternative: 2
