@@ -1,0 +1,25 @@
+﻿- type: gameMap
+  id: Cove
+  mapName: Cove
+  mapPath: /Maps/Floof/cove.yml # Floofstation
+  minPlayers: 20
+  maxPlayers: 60
+  stations:
+    Cove:
+      stationProto: StandardNanotrasenStation
+      components:
+      - type: StationEmergencyShuttle #floofstation
+        emergencyShuttlePath: /Maps/Floof/Shuttles/Evac/evac_getaway.yml #floofstation
+      - type: StationCargoShuttle
+        path: /Maps/Floof/Shuttles/Cargo/cargo_getaway.yml
+      - type: StationNameSetup
+        mapNameTemplate: '{0} Cove Station {1}'
+        nameGenerator:
+          !type:NanotrasenNameGenerator
+          prefixCreator: 'FS'
+      - type: StationJobs
+        overflowJobs:
+        - Passenger
+        availableJobs:
+          #Passenger: [ -1, -1 ] # Remember to map spawners otherwise cant paint smh
+          Captain: [ 1, 1 ]
