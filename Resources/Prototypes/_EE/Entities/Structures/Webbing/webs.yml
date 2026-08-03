@@ -1,7 +1,6 @@
 - type: entity
   id: CocoonedHumanoid
   name: cocooned humanoid
-  description: Unlucky.
   placement:
     mode: SnapgridCenter
     snap:
@@ -72,7 +71,6 @@
   id: CocoonSmall
   parent: CocoonedHumanoid
   name: cocoon
-  description: What could be inside...?
   placement:
     mode: SnapgridCenter
     snap:

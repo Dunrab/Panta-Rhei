@@ -164,9 +164,9 @@
 
 # Vampirism
 - type: trait
-  id: Vampirism
-  name: trait-name-vampirism
-  description: trait-description-vampirism
+  id: VampirismLight
+  name: trait-name-vampirismlight
+  description: trait-description-vampirismlight
   category: Skills
   cost: 2
   conditions:
@@ -181,6 +181,7 @@
     - Human
     - Thaven
     - Chitinid
+    - IPC
   - !type:HasCompCondition # no borgo dont bite people
     component: BorgChassis
     invert: true

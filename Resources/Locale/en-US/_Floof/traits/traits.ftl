@@ -106,8 +106,8 @@ trait-description-BadShooting = Due to a lack of training or simply a lack of sk
 trait-rrrolling-accent-name = Rrrolling Accent
 trait-rrrolling-accent-desc = Whether it's from culture, physicality, or just an affectation you roll your 'r's.
 
-trait-name-vampirism = Vampirism
-trait-description-vampirism = You have extra large fangs and a thirst for blood... but sometimes still just want a nice steak...
+trait-name-vampirismlight= Vampirism Light
+trait-description-vampirismlight = You have extra large fangs and a thirst for blood... but you can also eat regular food.
 
 trait-name-cocooner = Cocooner
 trait-description-cocooner = You have the ability to spin web and put things... or people... into cocoons.
