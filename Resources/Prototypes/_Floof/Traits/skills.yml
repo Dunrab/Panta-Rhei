@@ -161,3 +161,52 @@
     - type: PlayerAccuracyModifier
       spreadMultiplier: 2.5
       maxSpreadAngle: 90
+
+# Vampirism
+- type: trait
+  id: Vampirism
+  name: trait-name-vampirism
+  description: trait-description-vampirism
+  category: Skills
+  cost: 2
+  conditions:
+  - !type:OneOfSpeciesCondition
+    invert: true
+    species:
+    - Arachne #already has this
+    - Oni # Below cant drink blood due to organs so no takey
+    - Diona
+    - SlimePerson
+    - Moth
+    - Human
+    - Thaven
+    - Chitinid
+  - !type:HasCompCondition # no borgo dont bite people
+    component: BorgChassis
+    invert: true
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: BloodSucker
+      unitsToSucc: 10
+      injectWhenSucc: false
+      webRequired: false
+
+- type: trait
+  id: Cocooner
+  name: trait-name-cocooner
+  description: trait-description-cocooner
+  category: Skills
+  cost: 2
+  conditions:
+  - !type:OneOfSpeciesCondition
+    invert: true
+    species:
+    - Arachne #already has this
+  - !type:HasCompCondition # no borgo dont cocoon people
+    component: BorgChassis
+    invert: true
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: Cocooner

@@ -2950,6 +2950,11 @@
       groups:
         Brute: -0.07
         Burn: -0.07
+  - type: Cocooner # Floofstation - cocoons
+  - type: BloodSucker # Floofstation - blood sucking
+    unitsToSucc: 10
+    injectWhenSucc: false
+    webRequired: false
 
 - type: entity
   parent: MobSpiderBase
