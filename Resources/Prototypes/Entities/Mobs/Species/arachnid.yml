@@ -137,6 +137,11 @@
     speciesId: arachnid
   - type: CosmicMarkVisuals # DeltaV - cosmic cult
     subtleState: arachnid
+  - type: Cocooner # Floofstation - cocoons
+  - type: BloodSucker # Floofstation - blood sucking
+    unitsToSucc: 10
+    injectWhenSucc: false
+    webRequired: false
 
 
 - type: entity
