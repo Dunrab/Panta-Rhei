@@ -111,3 +111,6 @@ trait-description-vampirismlight = You have extra large fangs and a thirst for b
 
 trait-name-cocooner = Cocooner
 trait-description-cocooner = You have the ability to spin web and put things... or people... into cocoons.
+
+trait-name-web-spinning = Web Spinning
+trait-description-web-spinning = Through a genetic mutation or a few surgeries you have the unique ability to spin web.

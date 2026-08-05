@@ -1,6 +1,7 @@
 - type: entity
   id: CocoonedHumanoid
   name: cocooned humanoid
+  description: Who or whatever is in here got very unlucky.
   placement:
     mode: SnapgridCenter
     snap:
@@ -70,7 +71,6 @@
 - type: entity
   id: CocoonSmall
   parent: CocoonedHumanoid
-  name: cocoon
   placement:
     mode: SnapgridCenter
     snap:
