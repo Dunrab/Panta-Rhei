@@ -115,7 +115,6 @@
     - SolCommon
     naturalLanguage: SolCommon
   - type: Cocooner # Floofstation - cocoons
-    webRequired: false
   - type: Tag
     tags:
     - CanPilot
