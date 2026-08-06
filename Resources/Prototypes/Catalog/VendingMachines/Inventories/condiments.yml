@@ -4,6 +4,7 @@
     FoodCondimentPacketAstrotame: 5
     FoodCondimentPacketBbq: 5
     FoodCondimentPacketCaramexinin: 5 # Euphoria: Add caramexinin to vendors around the station.
+    FoodCondimentPacketMayo: 5 # Euphoria: Add mayo.
     FoodCondimentPacketColdsauce: 5
     FoodCondimentPacketHorseradish: 5
     FoodCondimentPacketHotsauce: 5
@@ -14,6 +15,7 @@
     FoodCondimentPacketSoy: 5
     FoodCondimentPacketSugar: 5
     FoodCondimentPacketCornoil: 5
+    FoodCondimentPacketPeanutButter: 5 # Floofstation - add peanut butter
     ForkPlastic: 10
     SpoonPlastic: 10
     KnifePlastic: 10

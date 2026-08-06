@@ -31,6 +31,9 @@ using Robust.Shared.Utility;
 using Content.Shared.NodeContainer;
 using Content.Shared._Starlight.Atmos;
 // Starlight End
+// ES START
+using Content.Shared._ES.Sparks;
+// ES END
 
 namespace Content.Shared.RCD.Systems;
 
@@ -58,6 +61,9 @@ public sealed class RCDSystem : EntitySystem
     [Dependency] private readonly IEntityManager _entityManager = default!;
     [Dependency] private readonly PipeRestrictOverlapSystem _pipeOverlap = default!;
     // Starlight End
+// ES START
+    [Dependency] private readonly ESSparksSystem _esSparks = default!;
+// ES END
 
     private readonly int _instantConstructionDelay = 0;
     private readonly EntProtoId _instantConstructionFx = "EffectRCDConstruct0";
@@ -131,6 +137,9 @@ public sealed class RCDSystem : EntitySystem
         // Set the current RCD prototype to the one supplied
         component.ProtoId = args.ProtoId;
         UpdateCachedPrototype(uid, component); // Starlight: RPD
+// ES START
+        _esSparks.DoSparks(uid, 1, user: args.Actor);
+// ES END
 
         _adminLogger.Add(LogType.RCD, LogImpact.Low, $"{args.Actor} set RCD mode to: {prototype.Mode} : {prototype.Prototype}");
 

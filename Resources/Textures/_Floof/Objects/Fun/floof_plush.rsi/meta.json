@@ -29,12 +29,6 @@
             "name": "slime"
         },
         {
-            "name": "kobolt"
-        },
-        {
-            "name": "hoppy"
-        },
-        {
             "name": "slimebartender"
         },
         {
@@ -192,6 +186,12 @@
         },
         {
             "name": "italian"
+        },
+        {
+            "name": "mom"
+        },
+        {
+            "name": "hgi"
         }
     ]
 }

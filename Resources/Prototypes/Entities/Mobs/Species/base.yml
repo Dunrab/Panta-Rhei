@@ -22,13 +22,16 @@
     - map: [ "enum.HumanoidVisualLayers.LLeg" ]
     - map: [ "enum.HumanoidVisualLayers.UndergarmentBottom" ]
     - map: [ "enum.HumanoidVisualLayers.UndergarmentTop" ]
-    - map: ["jumpsuit"]
     - map: ["enum.HumanoidVisualLayers.LFoot"]
     - map: ["enum.HumanoidVisualLayers.RFoot"]
-    - map: ["enum.HumanoidVisualLayers.LHand"]
-    - map: ["enum.HumanoidVisualLayers.RHand"]
+    - map: [ "undergarmentSocks" ] # Floof
+    - map: [ "undergarmentTop" ] # Floof - this one is for clothing-based undergarment
+    - map: [ "undergarmentBottom" ] # Floof - this one is for clothing-based undergarment
+    - map: [ "shoes" ] # Floof - moved above jumpsuit
+    - map: [ "jumpsuit" ] # Floof - moved below hands and feet
+    - map: ["enum.HumanoidVisualLayers.LHand"] # Floof - moved to keep above jumpsuit (feet and intentionally kept below it)
+    - map: ["enum.HumanoidVisualLayers.RHand"] # ^
     - map: [ "gloves" ]
-    - map: [ "shoes" ]
     - map: [ "ears" ]
     - map: [ "eyes" ]
     - map: [ "belt" ]
@@ -200,9 +203,6 @@
         type: HumanoidMarkingModifierBoundUserInterface
       enum.StrippingUiKey.Key:
         type: StrippableBoundUserInterface
-      # Shitmed
-      enum.SurgeryUIKey.Key:
-        type: SurgeryBui
   - type: Puller
   - type: Speech
     speechSounds: Alto
@@ -228,8 +228,6 @@
     - FootstepSound
     - DoorBumpOpener
     - AnomalyHost # MAKE SURE TO UPDATE FLOOFSTATION SPECIES TAGS IF THESE EVER CHANGE
-  - type: Targeting # Shitmed Change
-  - type: SurgeryTarget # Shitmed Change
   - type: CosmicCenserTarget # DeltaV - Cosmic Cult
   - type: Carriable # DeltaV
   - type: GrappleTarget # DeltaV - Allow targets to be grappled
@@ -310,9 +308,12 @@
         Asphyxiation: -1.0
   - type: FireVisuals
     alternateState: Standing
-  #- type: StunVisuals # DeltaV - No stars
+  - type: StunVisuals
   - type: CanDoCPR # DeltaV - Addition of CPR
   - type: PotentialPsionic # DeltaV - organic species can all be psionic
+  - type: FootPrints # Floof
+  - type: RevealRevenantOnCollide # DeltaV - passing through people reveal revenant
+    revealTime: 1
 
 - type: entity
   save: false
@@ -342,18 +343,21 @@
     - map: [ "enum.HumanoidVisualLayers.LLeg" ]
     - map: [ "enum.HumanoidVisualLayers.UndergarmentBottom" ]
     - map: [ "enum.HumanoidVisualLayers.UndergarmentTop" ]
-    - map: ["jumpsuit"]
     - map: ["enum.HumanoidVisualLayers.LFoot"]
     - map: ["enum.HumanoidVisualLayers.RFoot"]
-    - map: ["enum.HumanoidVisualLayers.LHand"]
-    - map: ["enum.HumanoidVisualLayers.RHand"]
+    - map: [ "undergarmentSocks" ] # Floof
+    - map: [ "undergarmentTop" ] # Floof - this one is for clothing-based undergarment
+    - map: [ "undergarmentBottom" ] # Floof - this one is for clothing-based undergarment
+    - map: [ "shoes" ] # Floof - moved above jumpsuit
+    - map: [ "jumpsuit" ] # Floof - moved below hands and feet
+    - map: ["enum.HumanoidVisualLayers.LHand"] # Floof - moved to keep above jumpsuit (feet and intentionally kept below it)
+    - map: ["enum.HumanoidVisualLayers.RHand"] # ^
     - map: ["enum.HumanoidVisualLayers.Handcuffs"]
       color: "#ffffff"
       sprite: Objects/Misc/handcuffs.rsi
       state: body-overlay-2
       visible: false
     - map: [ "gloves" ]
-    - map: [ "shoes" ]
     - map: [ "ears" ]
     - map: [ "eyes" ]
     - map: [ "belt" ]

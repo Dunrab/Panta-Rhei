@@ -126,8 +126,6 @@
     - id: PlushieSapphicHarpyPlushie
     - id: PlushieRatLogisticsOfficer
     - id: PlushieBunnyChiefMedicalOfficer
-    - id: PlushieKoboldCefJustice
-    - id: PlushieAvaliHOP
     - id: PlushieSlimeBartender
     - id: PlushieGrumpyQuartermaster
     - id: PlushieHardcoreDj
@@ -183,6 +181,8 @@
     - id: RedlizardPlushie
     - id: PlushieNonjudgmentalDemon
     - id: PlushieItalian
+    - id: PlushieStationMom
+    - id: PlushieHgiRepresentative
     - !type:GroupSelector # Hypnotemp
       children:
       - id: PlushieHypnoTempLO

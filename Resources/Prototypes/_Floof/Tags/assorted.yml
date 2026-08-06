@@ -44,5 +44,6 @@
 - type: Tag
   id: WeldbotFixableStructure # Euphoria - Used by Weldbot
 
+# casino chips
 - type: Tag
-  id: MedicalMisc # Storage whitelist: Medical Belt and Medkits
+  id: CasinoChips
