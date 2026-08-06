@@ -115,9 +115,6 @@
     - SolCommon
     naturalLanguage: SolCommon
   - type: Cocooner # Floofstation - cocoons
-  - type: BloodSucker # Floofstation - blood sucking
-    unitsToSucc: 10
-    injectWhenSucc: false
     webRequired: false
   - type: Tag
     tags:

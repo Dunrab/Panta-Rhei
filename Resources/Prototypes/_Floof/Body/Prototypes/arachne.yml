@@ -19,11 +19,11 @@
       - legs
       - head # Shitmed
       organs:
-        heart: OrganArachnidHeart # Give Arachnid organs so they can drink the bloods
-        lungs: OrganArachnidLungs
-        stomach: OrganArachnidStomach
-        liver: OrganArachnidLiver
-        kidneys: OrganArachnidKidneys
+        heart: OrganHumanHeart
+        lungs: OrganHumanLungs
+        stomach: OrganHumanStomach
+        liver: OrganHumanLiver
+        kidneys: OrganHumanKidneys
     right arm:
       part: RightArmHuman
       connections:

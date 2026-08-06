@@ -162,37 +162,6 @@
       spreadMultiplier: 2.5
       maxSpreadAngle: 90
 
-# Vampirism
-- type: trait
-  id: VampirismLight
-  name: trait-name-vampirismlight
-  description: trait-description-vampirismlight
-  category: Skills
-  cost: 2
-  conditions:
-  - !type:OneOfSpeciesCondition
-    invert: true
-    species:
-    - Arachne #already has this
-    - Oni # Below cant drink blood due to organs so no takey
-    - Diona
-    - SlimePerson
-    - Moth
-    - Human
-    - Thaven
-    - Chitinid
-    - IPC
-  - !type:HasCompCondition # no borgo dont bite people
-    component: BorgChassis
-    invert: true
-  effects:
-  - !type:AddCompsEffect
-    components:
-    - type: BloodSucker
-      unitsToSucc: 10
-      injectWhenSucc: false
-      webRequired: false
-
 - type: trait
   id: Cocooner
   name: trait-name-cocooner
