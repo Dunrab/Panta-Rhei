@@ -656,7 +656,7 @@ public sealed class RCDSystem : EntitySystem
                         isIdentical = false;
                 }
 
-                // Floofstation - RPD Fix, if the RPD is used and the prototype its placing has a layer, allow it to be placed
+                // Floofstation - RPD Fix, if the RPD is used and the prototype its placing has a layer, allow it to be placed. Mnemotechnician is fishy - Dunrab
                 if (component.IsRpd && prototype.HasLayers)
                 {
                     isIdentical = false;
