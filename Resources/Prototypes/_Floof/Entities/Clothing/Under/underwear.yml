@@ -306,3 +306,75 @@
     clothingVisuals:
       undergarmentSocks:
       - state: rippedpantyhose
+
+# edible underwear
+- type: entity
+  parent: FoodSnackBase
+  id: ClothingUnderUnderwearEdibleBase
+  name: edible briefs
+  description: "A comfy pair of briefs to keep those things in check but this pair is edible."
+  components:
+  # so we can slot this in the underwear slot and have it display properly
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Underwear/boxers.rsi
+    state: briefs
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Underwear/boxers.rsi
+    slots:
+    - UNDERGARMENT_BOTTOM
+    clothingVisuals:
+      undergarmentBottom:
+      - state: briefs
+  - type: SlotBlocker # Floofstation
+    blockedBy:
+      slots:
+      - INNERCLOTHING
+      - OUTERCLOTHING
+  # To make this yummer and delcious to eat
+  - type: Edible
+  - type: FlavorProfile
+    flavors:
+    - orange # can change this to whatever i just chose oranges
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 9
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Tag
+    tags:
+    - ClothMade
+    - Meat
+
+- type: entity
+  parent: ClothingUnderUnderwearEdibleBase
+  id: ClothingUnderUnderwearBoxerHyperEdible
+  name: edible hyper boxers
+  description: "A comfy pair of boxers to keep those things in check, these are also edible."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Underwear/boxers.rsi
+    state: hyper_boxers
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Underwear/boxers.rsi
+    clothingVisuals:
+      undergarmentBottom:
+      - state: hyper_boxers
+
+- type: entity
+  parent: ClothingUnderUnderwearEdibleBase
+  id: ClothingUnderUnderwearPantiesStripedEdible
+  name: edible striped panties
+  description: "A comfy pair of panties to keep that thing covered."
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Underwear/panties.rsi
+    state: striped_panties
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Underwear/panties.rsi
+    clothingVisuals:
+      undergarmentBottom:
+      - state: striped_panties
