@@ -4869,3 +4869,21 @@ Entries:
         stuck.
   id: 607
   time: '2026-08-07T08:21:46.0000000+00:00'
+- author: DoubleHypercube
+  changes:
+    - type: Tweak
+      message: Dewalrussed the sprite atlas.
+  id: 608
+  time: '2026-08-08T02:05:22.0000000+00:00'
+- author: DoubleHypercube
+  changes:
+    - type: Add
+      message: Fourty new types of bunnysuits now available!
+  id: 609
+  time: '2026-08-08T02:08:24.0000000+00:00'
+- author: DoubleHypercube
+  changes:
+    - type: Fix
+      message: You can now actually play the game!
+  id: 610
+  time: '2026-08-08T08:44:36.0000000+00:00'
