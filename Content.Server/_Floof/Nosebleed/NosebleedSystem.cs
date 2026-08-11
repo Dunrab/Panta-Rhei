@@ -23,7 +23,6 @@ public sealed class NosebleedSystem : EntitySystem
         SubscribeLocalEvent<NosebleedComponent, ComponentStartup>(OnStartup);
     }
 
-    // start her up
     private void OnStartup(EntityUid uid, NosebleedComponent comp, ComponentStartup args)
     {
         ScheduleNextNosebleed(comp);
@@ -33,10 +32,8 @@ public sealed class NosebleedSystem : EntitySystem
     {
         base.Update(frameTime);
 
-        // whos got our comp
         var query = EntityQueryEnumerator<NosebleedComponent>();
 
-        // schedule the nosebleed or wait
         while (query.MoveNext(out var uid, out var comp))
         {
             if (comp is not { NextNosebleed: { } nextNosebleed })
@@ -45,11 +42,10 @@ public sealed class NosebleedSystem : EntitySystem
                 continue;
             }
 
-            // keep going if its not time to schedule another nosebleed
             if (_timing.CurTime < nextNosebleed)
                 continue;
 
-            CauseNosebleed(uid, comp);
+            CauseNosebleed(new Entity<NosebleedComponent>(uid, comp));
         }
     }
 
@@ -62,31 +58,29 @@ public sealed class NosebleedSystem : EntitySystem
         comp.NextNosebleed = _timing.CurTime + delay;
     }
 
-    private void CauseNosebleed(EntityUid uid, NosebleedComponent comp)
+    private void CauseNosebleed(Entity<NosebleedComponent> ent)
     {
-        // we just had a nosebleed so we need to schedule the next one
-        ScheduleNextNosebleed(comp);
+        ScheduleNextNosebleed(ent.Comp);
 
-        // get our mobstate for below
-        if (!TryComp<MobStateComponent>(uid, out var mobState))
+        if (!TryComp<MobStateComponent>(ent.Owner, out var mobState))
             return;
 
         // are they not alive? it would be funny if we let it happen on the dead...
-        if (!_mobState.IsAlive(uid, mobState))
+        if (!_mobState.IsAlive(ent.Owner, mobState))
             return;
 
         // we want to send a different message to IPCs since they dont have noses
-        if (TryComp<HumanoidAppearanceComponent>(uid, out var species))
+        if (TryComp<HumanoidAppearanceComponent>(ent.Owner, out var species))
         {
             if (species.Species == "IPC")
             {
-                _popup.PopupEntity(Loc.GetString("nosebleed-message-ipc"), uid, uid, PopupType.MediumCaution);
+                _popup.PopupEntity(Loc.GetString("nosebleed-message-ipc"), ent.Owner, ent.Owner, PopupType.MediumCaution);
             }
             else
-                _popup.PopupEntity(Loc.GetString("nosebleed-message"), uid, uid, PopupType.MediumCaution);
+                _popup.PopupEntity(Loc.GetString("nosebleed-message"), ent.Owner, ent.Owner, PopupType.MediumCaution);
         }
 
         // bleed on the floor time (the poor janitors im sorry)
-        _bloodstream.TryModifyBleedAmount(uid, comp.BleedAmount);
+        _bloodstream.TryModifyBleedAmount(ent.Owner, ent.Comp.BleedAmount);
     }
 }
