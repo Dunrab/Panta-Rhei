@@ -121,3 +121,4 @@ trait-nosebleed-frequent-description =
     You will find that your nose will randomly start bleeding more often.
 
 nosebleed-message = You feel blood start to drip from your nose!
+nosebleed-message-ipc = You feel your oil levels lowering and sensors indicate an oil leak!

@@ -1,5 +1,6 @@
 ﻿using Content.Server.Body.Systems;
 using Content.Shared._Floof.Nosebleed;
+using Content.Shared.Humanoid;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Popups;
@@ -74,8 +75,16 @@ public sealed class NosebleedSystem : EntitySystem
         if (!_mobState.IsAlive(uid, mobState))
             return;
 
-        // send a red popup with our nosebleed message (same look as the pysonic nosebleed event)
-        _popup.PopupEntity(Loc.GetString("nosebleed-message"), uid, uid, PopupType.MediumCaution);
+        // we want to send a different message to IPCs since they dont have noses
+        if (TryComp<HumanoidAppearanceComponent>(uid, out var species))
+        {
+            if (species.Species == "IPC")
+            {
+                _popup.PopupEntity(Loc.GetString("nosebleed-message-ipc"), uid, uid, PopupType.MediumCaution);
+            }
+            else
+                _popup.PopupEntity(Loc.GetString("nosebleed-message"), uid, uid, PopupType.MediumCaution);
+        }
 
         // bleed on the floor time (the poor janitors im sorry)
         _bloodstream.TryModifyBleedAmount(uid, comp.BleedAmount);
