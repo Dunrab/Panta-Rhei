@@ -25,7 +25,7 @@ public sealed class NosebleedSystem : EntitySystem
 
     private void OnStartup(EntityUid uid, NosebleedComponent comp, ComponentStartup args)
     {
-        ScheduleNextNosebleed(comp);
+        ScheduleNextNosebleed(new Entity<NosebleedComponent>(uid, comp));
     }
 
     public override void Update(float frameTime)
@@ -36,31 +36,33 @@ public sealed class NosebleedSystem : EntitySystem
 
         while (query.MoveNext(out var uid, out var comp))
         {
-            if (comp is not { NextNosebleed: { } nextNosebleed })
+            var ent = new Entity<NosebleedComponent>(uid, comp);
+
+            if (ent.Comp is not { NextNosebleed: { } nextNosebleed })
             {
-                ScheduleNextNosebleed(comp);
+                ScheduleNextNosebleed(ent);
                 continue;
             }
 
             if (_timing.CurTime < nextNosebleed)
                 continue;
 
-            CauseNosebleed(new Entity<NosebleedComponent>(uid, comp));
+            CauseNosebleed(ent);
         }
     }
 
-    private void ScheduleNextNosebleed(NosebleedComponent comp)
+    private void ScheduleNextNosebleed(Entity<NosebleedComponent> ent)
     {
         // our min, max times from our nosebleed comp
-        var delay = _random.Next(TimeSpan.FromSeconds(comp.MinimumDelay), TimeSpan.FromSeconds(comp.MaximumDelay));
+        var delay = _random.Next(TimeSpan.FromSeconds(ent.Comp.MinimumDelay), TimeSpan.FromSeconds(ent.Comp.MaximumDelay));
 
         // the current time + our delay
-        comp.NextNosebleed = _timing.CurTime + delay;
+        ent.Comp.NextNosebleed = _timing.CurTime + delay;
     }
 
     private void CauseNosebleed(Entity<NosebleedComponent> ent)
     {
-        ScheduleNextNosebleed(ent.Comp);
+        ScheduleNextNosebleed(ent);
 
         if (!TryComp<MobStateComponent>(ent.Owner, out var mobState))
             return;
