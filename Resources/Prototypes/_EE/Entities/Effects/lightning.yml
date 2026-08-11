@@ -28,6 +28,7 @@
     allowSpriteOverwrite: false
   - type: TimedDespawn
     lifetime: 1
+  - type: SupermatterImmune # don't let these damage the supermatter, we want hem to damage stuff around it otherwise it will damage its self to much and delam its self from a few arcs
 
 - type: entity
   parent: SupermatterLightning
