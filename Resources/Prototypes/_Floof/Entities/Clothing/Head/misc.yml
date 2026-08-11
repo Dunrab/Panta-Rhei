@@ -145,3 +145,18 @@
   - type: Construction
     graph: CondomHat
     node: condomhat
+- type: entity
+  parent: ClothingHeadEVAHelmetBase
+  id: ClothingHeadHelmetHorse
+  name: horse mask
+  description: Petah, the horse is here.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: _Floof/Clothing/Head/horsemask.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Head/horsemask.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
