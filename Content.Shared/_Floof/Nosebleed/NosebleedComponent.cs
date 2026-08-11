@@ -1,4 +1,6 @@
-﻿namespace Content.Shared._Floof.Nosebleed;
+﻿using Content.Shared._Floof.Util;
+
+namespace Content.Shared._Floof.Nosebleed;
 
 [RegisterComponent]
 public sealed partial class NosebleedComponent : Component
@@ -22,8 +24,10 @@ public sealed partial class NosebleedComponent : Component
     public float MaximumDelay = 3600;
 
     /// <summary>
-    /// When our next nosebleed will happen
+    /// A ticker using the Floof Ticker.cs helper class to track when our next nosebleed is.
+    /// This will handle getting _timing.CurTime and checking if its less than our internal.
     /// </summary>
+    //[DataField(serverOnly: true), ViewVariables(VVAccess.ReadOnly)] //cunocmment before we commit
     [ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan NextNosebleed;
+    public Ticker NextNosebleedInterval;
 }

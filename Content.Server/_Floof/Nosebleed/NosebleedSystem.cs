@@ -1,9 +1,11 @@
 ﻿using Content.Server.Body.Systems;
 using Content.Shared._Floof.Nosebleed;
+using Content.Shared._Floof.Util;
 using Content.Shared.Humanoid;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Popups;
+using Lidgren.Network;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 
@@ -17,6 +19,7 @@ public sealed class NosebleedSystem : EntitySystem
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
 
+    public static Ticker GlobalUpdateInterval = new(TimeSpan.FromMilliseconds(1000)); // stop checking everything every tick
     public override void Initialize()
     {
         base.Initialize();
@@ -30,7 +33,8 @@ public sealed class NosebleedSystem : EntitySystem
 
     public override void Update(float frameTime)
     {
-        base.Update(frameTime);
+        if (!GlobalUpdateInterval.TryUpdate(_timing))
+            return;
 
         var query = EntityQueryEnumerator<NosebleedComponent>();
 
@@ -38,13 +42,7 @@ public sealed class NosebleedSystem : EntitySystem
         {
             var ent = new Entity<NosebleedComponent>(uid, comp);
 
-            if (ent.Comp is not { NextNosebleed: { } nextNosebleed })
-            {
-                ScheduleNextNosebleed(ent);
-                continue;
-            }
-
-            if (_timing.CurTime < nextNosebleed)
+            if (!ent.Comp.NextNosebleedInterval.TryUpdate(_timing))
                 continue;
 
             CauseNosebleed(ent);
@@ -53,11 +51,9 @@ public sealed class NosebleedSystem : EntitySystem
 
     private void ScheduleNextNosebleed(Entity<NosebleedComponent> ent)
     {
-        // our min, max times from our nosebleed comp
         var delay = _random.Next(TimeSpan.FromSeconds(ent.Comp.MinimumDelay), TimeSpan.FromSeconds(ent.Comp.MaximumDelay));
 
-        // the current time + our delay
-        ent.Comp.NextNosebleed = _timing.CurTime + delay;
+        ent.Comp.NextNosebleedInterval.Interval = delay;
     }
 
     private void CauseNosebleed(Entity<NosebleedComponent> ent)
