@@ -118,7 +118,7 @@
       fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.15,-0.1,0.15,0.7" # Floofstation - fix fixture
+          bounds: "-0.15,-0.1,0.15,0.4" # Floofstation - fix fixture
         density: 1000
         layer:
         - WallLayer
