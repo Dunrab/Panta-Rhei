@@ -609,6 +609,11 @@
   description: trait-nosebleed-description
   category: DisabilitiesPhysical
   cost: -1
+  conditions:
+  - !type:OneOfSpeciesCondition
+    invert: true
+    species:
+      - IPC
   effects:
   - !type:AddCompsEffect
     components:
@@ -620,6 +625,11 @@
   description: trait-nosebleed-frequent-description
   category: DisabilitiesPhysical
   cost: -2
+  conditions:
+  - !type:OneOfSpeciesCondition
+    invert: true
+    species:
+    - IPC
   effects:
   - !type:AddCompsEffect
     components:

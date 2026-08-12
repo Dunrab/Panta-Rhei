@@ -1,11 +1,9 @@
 ﻿using Content.Server.Body.Systems;
 using Content.Shared._Floof.Nosebleed;
 using Content.Shared._Floof.Util;
-using Content.Shared.Humanoid;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Popups;
-using Lidgren.Network;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 
@@ -67,16 +65,7 @@ public sealed class NosebleedSystem : EntitySystem
         if (!_mobState.IsAlive(ent.Owner, mobState))
             return;
 
-        // we want to send a different message to IPCs since they dont have noses
-        if (TryComp<HumanoidAppearanceComponent>(ent.Owner, out var species))
-        {
-            if (species.Species == "IPC")
-            {
-                _popup.PopupEntity(Loc.GetString("nosebleed-message-ipc"), ent.Owner, ent.Owner, PopupType.MediumCaution);
-            }
-            else
-                _popup.PopupEntity(Loc.GetString("nosebleed-message"), ent.Owner, ent.Owner, PopupType.MediumCaution);
-        }
+        _popup.PopupEntity(Loc.GetString("nosebleed-message"), ent.Owner, ent.Owner, PopupType.MediumCaution);
 
         // bleed on the floor time (the poor janitors im sorry)
         _bloodstream.TryModifyBleedAmount(ent.Owner, ent.Comp.BleedAmount);
