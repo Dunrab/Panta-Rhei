@@ -1,5 +1,4 @@
 ﻿using Content.Server.Body.Systems;
-using Content.Shared._Floof.Nosebleed;
 using Content.Shared._Floof.Util;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
@@ -18,15 +17,20 @@ public sealed class NosebleedSystem : EntitySystem
     [Dependency] private readonly SharedPopupSystem _popup = default!;
 
     public static Ticker GlobalUpdateInterval = new(TimeSpan.FromMilliseconds(1000)); // stop checking everything every tick
+
+    /// A ticker using the Floof Ticker.cs helper class to track when our next nosebleed is.
+    /// This will handle getting _timing.CurTime and checking if its less than our internal.
+    public Ticker NextNosebleedInterval;
+
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<NosebleedComponent, ComponentStartup>(OnStartup);
+        SubscribeLocalEvent<Component.NosebleedComponent, ComponentStartup>(OnStartup);
     }
 
-    private void OnStartup(EntityUid uid, NosebleedComponent comp, ComponentStartup args)
+    private void OnStartup(EntityUid uid, Component.NosebleedComponent comp, ComponentStartup args)
     {
-        ScheduleNextNosebleed(new Entity<NosebleedComponent>(uid, comp));
+        ScheduleNextNosebleed(new Entity<Component.NosebleedComponent>(uid, comp));
     }
 
     public override void Update(float frameTime)
@@ -34,27 +38,27 @@ public sealed class NosebleedSystem : EntitySystem
         if (!GlobalUpdateInterval.TryUpdate(_timing))
             return;
 
-        var query = EntityQueryEnumerator<NosebleedComponent>();
+        var query = EntityQueryEnumerator<Component.NosebleedComponent>();
 
         while (query.MoveNext(out var uid, out var comp))
         {
-            var ent = new Entity<NosebleedComponent>(uid, comp);
+            var ent = new Entity<Component.NosebleedComponent>(uid, comp);
 
-            if (!ent.Comp.NextNosebleedInterval.TryUpdate(_timing))
+            if (!NextNosebleedInterval.TryUpdate(_timing))
                 continue;
 
             CauseNosebleed(ent);
         }
     }
 
-    private void ScheduleNextNosebleed(Entity<NosebleedComponent> ent)
+    private void ScheduleNextNosebleed(Entity<Component.NosebleedComponent> ent)
     {
         var delay = _random.Next(TimeSpan.FromSeconds(ent.Comp.MinimumDelay), TimeSpan.FromSeconds(ent.Comp.MaximumDelay));
 
-        ent.Comp.NextNosebleedInterval.Interval = delay;
+        NextNosebleedInterval.Interval = delay;
     }
 
-    private void CauseNosebleed(Entity<NosebleedComponent> ent)
+    private void CauseNosebleed(Entity<Component.NosebleedComponent> ent)
     {
         ScheduleNextNosebleed(ent);
 
