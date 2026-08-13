@@ -18,10 +18,6 @@ public sealed class NosebleedSystem : EntitySystem
 
     public static Ticker GlobalUpdateInterval = new(TimeSpan.FromMilliseconds(1000)); // stop checking everything every tick
 
-    /// A ticker using the Floof Ticker.cs helper class to track when our next nosebleed is.
-    /// This will handle getting _timing.CurTime and checking if its less than our internal.
-    public Ticker NextNosebleedInterval;
-
     public override void Initialize()
     {
         base.Initialize();
@@ -44,7 +40,7 @@ public sealed class NosebleedSystem : EntitySystem
         {
             var ent = new Entity<Component.NosebleedComponent>(uid, comp);
 
-            if (!NextNosebleedInterval.TryUpdate(_timing))
+            if (!ent.Comp.NextNosebleedInterval.TryUpdate(_timing))
                 continue;
 
             CauseNosebleed(ent);
@@ -55,7 +51,7 @@ public sealed class NosebleedSystem : EntitySystem
     {
         var delay = _random.Next(TimeSpan.FromSeconds(ent.Comp.MinimumDelay), TimeSpan.FromSeconds(ent.Comp.MaximumDelay));
 
-        NextNosebleedInterval.Interval = delay;
+        ent.Comp.NextNosebleedInterval.Interval = delay;
     }
 
     private void CauseNosebleed(Entity<Component.NosebleedComponent> ent)
