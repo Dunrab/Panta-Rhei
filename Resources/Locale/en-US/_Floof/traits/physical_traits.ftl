@@ -110,14 +110,14 @@ trait-illfated-desc =
     Bad things tend to happen to you, and you'll likely die sooner than others.
     Your damage threshold for becoming Dead is decreased by 25%.
 
-trait-nosebleed-name = Less Frequent Nosebleeds
+trait-nosebleed-name = Nosebleed
 trait-nosebleed-description =
-    Your body unfortunately suffers from chronic nosebleeds due to some accident or other miss fortune.
-    You will find that your nose will randomly start bleeding less often.
+    Due to a prior accident, genetic misfortune, or some other reason, your body suffers from periodic nosebleeds.
+    You will experience one every 15-60 minutes.
 
-trait-nosebleed-frequent-name = Frequent Nosebleeds
+trait-nosebleed-frequent-name = Nosebleed (frequent)
 trait-nosebleed-frequent-description =
-    Your body unfortunately suffers from chronic nosebleeds due to some accident or other miss fortune.
-    You will find that your nose will randomly start bleeding more often.
+    Due to a prior accident, genetic misfortune, or some other reason, your body suffers from periodic nosebleeds.
+    You will experience one every 5-30 minutes.
 
-nosebleed-message = You feel blood start to drip from your nose!
+nosebleed-message = You feel blood dripping from your nose!
