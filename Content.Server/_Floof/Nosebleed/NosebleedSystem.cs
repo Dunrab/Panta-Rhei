@@ -1,4 +1,5 @@
-﻿using Content.Server.Body.Systems;
+﻿using Content.Server._Floof.Nosebleed.Component;
+using Content.Server.Body.Systems;
 using Content.Shared._Floof.Util;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
@@ -21,12 +22,12 @@ public sealed class NosebleedSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<Component.NosebleedComponent, ComponentStartup>(OnStartup);
+        SubscribeLocalEvent<NosebleedComponent, ComponentStartup>(OnStartup);
     }
 
-    private void OnStartup(EntityUid uid, Component.NosebleedComponent comp, ComponentStartup args)
+    private void OnStartup(EntityUid uid, NosebleedComponent comp, ComponentStartup args)
     {
-        ScheduleNextNosebleed(new Entity<Component.NosebleedComponent>(uid, comp));
+        ScheduleNextNosebleed(uid, comp);
     }
 
     public override void Update(float frameTime)
@@ -34,7 +35,7 @@ public sealed class NosebleedSystem : EntitySystem
         if (!GlobalUpdateInterval.TryUpdate(_timing))
             return;
 
-        var query = EntityQueryEnumerator<Component.NosebleedComponent>();
+        var query = EntityQueryEnumerator<NosebleedComponent>();
 
         while (query.MoveNext(out var uid, out var comp))
         {
@@ -47,16 +48,15 @@ public sealed class NosebleedSystem : EntitySystem
         }
     }
 
-    private void ScheduleNextNosebleed(Entity<Component.NosebleedComponent> ent)
+    private void ScheduleNextNosebleed(EntityUid ent, NosebleedComponent comp)
     {
-        var delay = _random.Next(TimeSpan.FromSeconds(ent.Comp.MinimumDelay), TimeSpan.FromSeconds(ent.Comp.MaximumDelay));
-
-        ent.Comp.NextNosebleedInterval.Interval = delay;
+        var delay = _random.Next(TimeSpan.FromSeconds(comp.MinimumDelay), TimeSpan.FromSeconds(comp.MaximumDelay));
+        comp.NextNosebleedInterval.Interval = delay;
     }
 
-    private void CauseNosebleed(Entity<Component.NosebleedComponent> ent)
+    private void CauseNosebleed(Entity<NosebleedComponent> ent)
     {
-        ScheduleNextNosebleed(ent);
+        ScheduleNextNosebleed(ent.Owner, ent);
 
         if (!TryComp<MobStateComponent>(ent.Owner, out var mobState))
             return;
