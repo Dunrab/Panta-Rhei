@@ -42,3 +42,9 @@
 
 - type: Tag
   id: SalvShuttleFTL # so salvage shuttle can ftl to the ats
+
+- type: Tag
+  id: CondomWrapper # for condomwrappers
+
+- type: Tag
+  id: Condom # for condoms
