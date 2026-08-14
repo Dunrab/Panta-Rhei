@@ -4454,3 +4454,593 @@ Entries:
       message: Fixed issue where pomegranate seeds didn't have a language file entry.
   id: 552
   time: '2026-07-19T06:05:59.0000000+00:00'
+- author: DoubleHypercube
+  changes:
+    - type: Add
+      message: Aphrodesiac Bite traitt~
+  id: 553
+  time: '2026-07-20T07:53:15.0000000+00:00'
+- author: kivdon
+  changes:
+    - type: Tweak
+      message: 'Removed the cost of the "Unconvertible" trait. '
+  id: 554
+  time: '2026-07-21T12:47:56.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: >-
+        The service smart fridge can now be accessed by passengers for stations
+        that have them public facing.
+  id: 555
+  time: '2026-07-21T13:05:25.0000000+00:00'
+- author: kivdon
+  changes:
+    - type: Add
+      message: >-
+        Two new traits for further reducing your Critical and Dead thresholds.
+        Be even more paper-thin! Die fast!
+  id: 556
+  time: '2026-07-21T13:09:38.0000000+00:00'
+- author: DoubleHypercube
+  changes:
+    - type: Add
+      message: Added a new Hard Skin trait. Med will hate you.
+    - type: Tweak
+      message: Chitinids are now properly uninjectable.
+  id: 557
+  time: '2026-07-21T13:11:41.0000000+00:00'
+- author: Raikyr0
+  changes:
+    - type: Tweak
+      message: >-
+        Made the Elite/Thermal Suit good again, it was too expensive for "a side
+        DOWN-grade".
+  id: 558
+  time: '2026-07-21T13:13:33.0000000+00:00'
+- author: faefyr
+  changes:
+    - type: Add
+      message: Dr. Gibb Creamsoda + Horny Drink Variation
+    - type: Add
+      message: Dr. Gibb Creamsoda Lobby Art
+  id: 559
+  time: '2026-07-22T10:12:24.0000000+00:00'
+- author: Raikyr0
+  changes:
+    - type: Tweak
+      message: >-
+        Changes freezers to no longer lock. (This means you can actually use the
+        Pathfinder freezer.)
+  id: 560
+  time: '2026-07-22T10:27:29.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: >-
+        Brat stocks are up, Delight Lollipops have been added to the Shady Cigs
+        Vendor.
+  id: 561
+  time: '2026-07-22T10:29:16.0000000+00:00'
+- author: Aikakakah
+  changes:
+    - type: Add
+      message: Added cowbell collar
+  id: 562
+  time: '2026-07-22T10:30:46.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: Rods are back on the menu hitting stations near you.
+  id: 563
+  time: '2026-07-22T10:34:55.0000000+00:00'
+- author: DoubleHypercube
+  changes:
+    - type: Add
+      message: Ported language prefixes from Starlight for QoL!
+  id: 564
+  time: '2026-07-22T13:40:57.0000000+00:00'
+- author: CastitoWae
+  changes:
+    - type: Add
+      message: Added and tweaked beacons and warp points in Asterisk
+    - type: Fix
+      message: Fixed various Asterisk comms, wires and doors accesses
+  id: 565
+  time: '2026-07-22T16:17:33.0000000+00:00'
+- author: DuskyJay
+  changes:
+    - type: Fix
+      message: >-
+        Fixed error that made it impossible to examine the collar ID of someone
+        wearing a translator in their ID slot.
+  id: 566
+  time: '2026-07-23T04:47:40.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: Hair brushes have been added to Loadouts and the Pet Shop.
+  id: 567
+  time: '2026-07-23T08:21:37.0000000+00:00'
+- author: ScarlettJFG
+  changes:
+    - type: Fix
+      message: >-
+        Freezers, coolers, and cold environments stop rotting. (Brains still Rot
+        in MMI's in the open.)
+  id: 568
+  time: '2026-07-23T09:21:54.0000000+00:00'
+- author: SyaoranFox
+  changes:
+    - type: Fix
+      message: Natives of lavaland will no longer die as a result of ash storms.
+  id: 569
+  time: '2026-07-24T08:50:33.0000000+00:00'
+- author: DoubleHypercube
+  changes:
+    - type: Add
+      message: Added a medical license and doctorate to loadouts.
+  id: 570
+  time: '2026-07-24T08:51:13.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        In the loadouts menu, nudity permits and other utility inner clothing
+        items are no longer grouped together with latex catsuits.
+  id: 571
+  time: '2026-07-24T08:51:56.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: A few mitten options have been added to the gloves section of loadouts.
+  id: 572
+  time: '2026-07-24T22:45:56.0000000+00:00'
+- author: DoubleHypercube
+  changes:
+    - type: Tweak
+      message: >-
+        Skipped preloading unneeded lobby arts to save a significant portion of
+        VRAM.
+    - type: Tweak
+      message: >-
+        Shrunk Ratvar in the wash to halve his size so he doesn't take up 36MB
+        VRAM.
+    - type: Remove
+      message: >-
+        The Cosmic Cult pocket dimension is no longer loaded on non-CosCult
+        rounds.
+  id: 573
+  time: '2026-07-24T23:04:24.0000000+00:00'
+- author: JustABugZero
+  changes:
+    - type: Remove
+      message: Removed Vox color restriction
+  id: 574
+  time: '2026-07-24T23:07:37.0000000+00:00'
+- author: sprkl
+  changes:
+    - type: Fix
+      message: Brains will no longer rot inside MMIs.
+  id: 575
+  time: '2026-07-27T08:06:51.0000000+00:00'
+- author: deltaSpawn0040
+  changes:
+    - type: Tweak
+      message: Banana Honk now requires Vodka to make.
+  id: 576
+  time: '2026-07-27T08:07:37.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: >-
+        The portable pump for large spills has been ported from Froniter and is
+        in t2 civilian research.
+  id: 577
+  time: '2026-08-01T00:41:31.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Fix
+      message: Anomalites can track their cores again.
+  id: 578
+  time: '2026-08-01T00:44:23.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: >-
+        Egg Plant seeds (the ones that grow eggs) are back in the MegaSeed
+        Servitor.
+  id: 579
+  time: '2026-08-01T00:45:15.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: Smile will be back on maps that have a spawner for them.
+  id: 580
+  time: '2026-08-01T00:46:52.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        You can now hug and pet plushies, and point your guns at people using
+        new interaction verbs.
+    - type: Fix
+      message: >-
+        Waving at people should no longer expose the evil virtual item you
+        shouldn't see.
+  id: 581
+  time: '2026-08-01T01:44:47.0000000+00:00'
+- author: Raikyr0
+  changes:
+    - type: Tweak
+      message: Enabled hostage implanter in regular uplinks.
+  id: 582
+  time: '2026-08-01T01:47:41.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: >-
+        Added Lewd Toy Vendor and Lewd Clothing Vendor for mappers to place
+        around dorms and other places.
+    - type: Add
+      message: >-
+        Added restocks for both vendors that logistics can order if the vendor
+        is out of an item.
+  id: 583
+  time: '2026-08-01T01:50:42.0000000+00:00'
+- author: kivdon
+  changes:
+    - type: Tweak
+      message: >-
+        Made it so Thieves have an innate ability to steal things stealthily,
+        even without gloves. The gloves are still needed to do it quickly,
+        though. 
+  id: 584
+  time: '2026-08-01T01:51:44.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: >-
+        Added a few more pre-fabbed and pre-ghost role ready ERT Shuttles for
+        admins to use the Centcomm shipyard to spawn in. Admins, mouse over the
+        button that says Free to see how many roles will spawn.
+    - type: Fix
+      message: Centcomms cryopod room in medical will now have proper power.
+  id: 585
+  time: '2026-08-01T01:52:50.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Fix
+      message: >-
+        Borgs can enter cryosleep again on their own or if a player puts them
+        into it.
+  id: 586
+  time: '2026-08-01T01:58:06.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: The Supersynth is a musician only instrument again.
+  id: 587
+  time: '2026-08-01T02:18:09.0000000+00:00'
+- author: DoubleHypercube
+  changes:
+    - type: Add
+      message: Accessibility option for grey-only night vision.
+  id: 588
+  time: '2026-08-01T02:28:43.0000000+00:00'
+- author: ASaltySeabass
+  changes:
+    - type: Add
+      message: Added white and black blood traits.
+    - type: Tweak
+      message: Shadekin now have black blood by default.
+  id: 589
+  time: '2026-08-01T02:30:45.0000000+00:00'
+- author: DoubleHypercube
+  changes:
+    - type: Add
+      message: New moff sounds!
+  id: 590
+  time: '2026-08-01T02:32:08.0000000+00:00'
+- author: Aureuix
+  changes:
+    - type: Add
+      message: >-
+        Adds 9 facial markings from humans to Kitsune and 4 of those markings to
+        IPCs as well.
+  id: 591
+  time: '2026-08-01T02:43:38.0000000+00:00'
+- author: sprkl
+  changes:
+    - type: Remove
+      message: Non-admin observers no longer have global hearing.
+    - type: Fix
+      message: Non-admin observers can no longer see subtle messages at any range.
+  id: 592
+  time: '2026-08-01T02:53:38.0000000+00:00'
+- author: sprkl
+  changes:
+    - type: Tweak
+      message: Ninja dash now has a short wind up.
+  id: 593
+  time: '2026-08-01T04:21:32.0000000+00:00'
+- author: Raikyr0
+  changes:
+    - type: Fix
+      message: Fixed Display Cases activating.
+  id: 594
+  time: '2026-08-03T12:27:11.0000000+00:00'
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added Mayo packet
+  id: 595
+  time: '2026-08-03T12:29:04.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Merged upstream changes up to the 2026-06-29th. See the in-game chanelog
+        for more details.
+    - type: Add
+      message: >-
+        The EE IPC species have been replaced with ones ported from FarHorizons.
+        There's a lot of differences. Some characters may or may not need to be
+        remade.
+  id: 596
+  time: '2026-08-05T08:07:52.0000000+00:00'
+- author: Aikakakah
+  changes:
+    - type: Add
+      message: The bunny tail can now wag.
+  id: 597
+  time: '2026-08-05T08:16:38.0000000+00:00'
+- author: kivdon
+  changes:
+    - type: Tweak
+      message: >-
+        Meet meat buns now made of meat. Feroxis and lizards can now eat meat
+        buns. 
+  id: 598
+  time: '2026-08-05T08:18:57.0000000+00:00'
+- author: Jakumba
+  changes:
+    - type: Remove
+      message: Removed Chief Justice Kobold and Availi HOP plushies.
+  id: 599
+  time: '2026-08-05T08:23:26.0000000+00:00'
+- author: JaDiDo
+  changes:
+    - type: Add
+      message: DigestionSystem. Only reachable with a consent toggle
+  id: 600
+  time: '2026-08-05T08:25:51.0000000+00:00'
+- author: badlanduser
+  changes:
+    - type: Tweak
+      message: Super Synth can now be worn on belt slots
+  id: 601
+  time: '2026-08-05T08:42:07.0000000+00:00'
+- author: ASaltySeabass
+  changes:
+    - type: Add
+      message: Ported synth lizard markings from CD
+  id: 602
+  time: '2026-08-05T08:46:24.0000000+00:00'
+- author: ASaltySeabass
+  changes:
+    - type: Tweak
+      message: The HoS's cavalier hat now has the same armor as other HoS hats
+  id: 603
+  time: '2026-08-05T08:51:06.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: 'Fixed a bunch of things. See the PR #909 for detials'
+    - type: Tweak
+      message: >-
+        The unarmed melee granted by the Claws and Talons traits now uses the
+        same sound as the Rodentia unarmed melee.
+    - type: Tweak
+      message: >-
+        Mittens now make you deal no physical damage when worn, mask your
+        fingerprints, and leave fibers.
+  id: 604
+  time: '2026-08-07T05:52:22.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: Bluespace cigars are now back in stock in loadouts.
+    - type: Add
+      message: Delight Packs have have also been added to loadouts.
+  id: 605
+  time: '2026-08-07T07:25:33.0000000+00:00'
+- author: DoubleHypercube
+  changes:
+    - type: Add
+      message: Telepathic trait!
+  id: 606
+  time: '2026-08-07T07:31:16.0000000+00:00'
+- author: SyaoranFox
+  changes:
+    - type: Remove
+      message: >-
+        Temporaarily removed the RevealRevenantOnCollide from mobs to fix Door
+        stuck.
+  id: 607
+  time: '2026-08-07T08:21:46.0000000+00:00'
+- author: DoubleHypercube
+  changes:
+    - type: Tweak
+      message: Dewalrussed the sprite atlas.
+  id: 608
+  time: '2026-08-08T02:05:22.0000000+00:00'
+- author: DoubleHypercube
+  changes:
+    - type: Add
+      message: Fourty new types of bunnysuits now available!
+  id: 609
+  time: '2026-08-08T02:08:24.0000000+00:00'
+- author: DoubleHypercube
+  changes:
+    - type: Fix
+      message: You can now actually play the game!
+  id: 610
+  time: '2026-08-08T08:44:36.0000000+00:00'
+- author: SyaoranFox
+  changes:
+    - type: Tweak
+      message: >-
+        Guidebook to blatantly instruct all antags that anything they do needs
+        to follow the rules.
+  id: 611
+  time: '2026-08-09T04:23:09.0000000+00:00'
+- author: DoubleHypercube
+  changes:
+    - type: Add
+      message: Over twenty new wing markings!
+    - type: Tweak
+      message: Wings now render UNDER tails.
+    - type: Tweak
+      message: You can now have five wings instead of just one.
+    - type: Tweak
+      message: Belts now render over tails.
+  id: 612
+  time: '2026-08-09T04:34:51.0000000+00:00'
+- author: sprkl and Baximus
+  changes:
+    - type: Add
+      message: Tajaran veils have arrived!
+    - type: Tweak
+      message: More roles can select eyewear in loadouts.
+  id: 613
+  time: '2026-08-09T04:43:17.0000000+00:00'
+- author: civilCornball
+  changes:
+    - type: Fix
+      message: >-
+        Shadekin are now potential psionics and can receive telepathic messages
+        from The Oracle!
+  id: 614
+  time: '2026-08-09T05:04:09.0000000+00:00'
+- author: deltaSpawn0040
+  changes:
+    - type: Add
+      message: The Food Critic now has objectives.
+  id: 615
+  time: '2026-08-09T06:46:27.0000000+00:00'
+- author: SyaoranFox
+  changes:
+    - type: Tweak
+      message: IPC minimum age is now 18
+  id: 616
+  time: '2026-08-10T07:08:08.0000000+00:00'
+- author: Eagle0600
+  changes:
+    - type: Fix
+      message: Captains can start with their thigh-highs and thongs again.
+  id: 617
+  time: '2026-08-10T09:13:12.0000000+00:00'
+- author: CastitoWae
+  changes:
+    - type: Tweak
+      message: Re-Buffed tritium burns.
+  id: 618
+  time: '2026-08-10T13:01:09.0000000+00:00'
+- author: torturedbymemes
+  changes:
+    - type: Add
+      message: >-
+        Zenghu finally lets their synthetics utilize the alternate chassis
+        again.
+    - type: Tweak
+      message: >-
+        Reverted marking points prior to the FH IPC transition so your robots
+        can once again be dolled up. Remember to re-import your robots!
+    - type: Fix
+      message: 'Markings now properly replace body parts on IPCs. '
+    - type: Fix
+      message: IPCs are no longer bald!
+  id: 619
+  time: '2026-08-11T08:38:27.0000000+00:00'
+- author: Raikyr0
+  changes:
+    - type: Tweak
+      message: Loko 14 now does what it says on the can.
+  id: 620
+  time: '2026-08-11T08:39:34.0000000+00:00'
+- author: kivdon
+  changes:
+    - type: Tweak
+      message: >-
+        Ninja is no longer forced to have a death-acidifier implant, and spawns
+        with an implanter for it instead. It's your choice on if you want to be
+        round-removed or not.
+  id: 621
+  time: '2026-08-11T10:54:51.0000000+00:00'
+- author: Aureuix
+  changes:
+    - type: Tweak
+      message: Changed the time reqs on some ghostrole antags to be easier to play.
+  id: 622
+  time: '2026-08-11T10:57:20.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        All of the 45 bunnysuits now have separate socks (which draw under
+        shoes).
+  id: 623
+  time: '2026-08-11T14:58:48.0000000+00:00'
+- author: NoirRenard
+  changes:
+    - type: Tweak
+      message: >-
+        patched issues for glacier such as missing air alarms, LV cables and
+        vends.
+  id: 624
+  time: '2026-08-12T12:54:14.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Wideswings should work again.
+  id: 625
+  time: '2026-08-13T05:03:42.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: Safe sex is back on the menu condoms are now in stock in kink crates.
+    - type: Add
+      message: Condoms can be taken through the lewd loadout section.
+    - type: Add
+      message: Condom hats I refuse to elaborate more.
+  id: 626
+  time: '2026-08-13T08:44:50.0000000+00:00'
+- author: CastitoWae
+  changes:
+    - type: Fix
+      message: Removed components from the small reactor flatpack
+  id: 627
+  time: '2026-08-13T08:46:41.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Fix
+      message: >-
+        Moth Roaches, Mop Roaches, Cock Roaches and Nukie Mice can now vent
+        crawl.
+  id: 628
+  time: '2026-08-13T08:49:32.0000000+00:00'
+- author: Raikyr0
+  changes:
+    - type: Tweak
+      message: >-
+        Doubled the vomiting threshold from alcohol, so no more getting sloshed
+        in 1 glass, now it's 2 glasses.
+  id: 629
+  time: '2026-08-13T09:12:09.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Socks should now be drawn above underwear.
+  id: 630
+  time: '2026-08-14T12:28:54.0000000+00:00'
