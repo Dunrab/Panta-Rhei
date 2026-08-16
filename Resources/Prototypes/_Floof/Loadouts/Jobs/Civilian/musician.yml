@@ -32,7 +32,7 @@
   equipment:
     undergarmentSocks: ClothingUnderSocksMusician
 
-# comically large syringe
+# dj kit for musicians
 - type: loadout
   id: DJSetInstrument
   effects:
