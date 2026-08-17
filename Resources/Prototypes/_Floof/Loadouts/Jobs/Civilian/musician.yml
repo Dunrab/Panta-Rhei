@@ -39,7 +39,7 @@
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:DepartmentTimeRequirement
-      department: Service
+      department: Civilian
       time: 250h
   storage:
     back:
