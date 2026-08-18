@@ -476,7 +476,7 @@
     PeanutButter: 10
   solids:
     FoodBreadPlainSlice: 2
-    FoodBerries: 2 # till someone adds jelly for the pb&j
+    FoodStrawberry: 2 # good enough with strawberry imo
 
 - type: microwaveMealRecipe
   id: RecipePeanutButterBanana
