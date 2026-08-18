@@ -263,7 +263,7 @@
 - type: entity
   name: strawberries
   parent: FoodProduceBase
-  id: FoodStrawberries
+  id: FoodStrawberry
   description: A delectable strawberry, its berry nice to meet you.
   components:
   - type: FlavorProfile

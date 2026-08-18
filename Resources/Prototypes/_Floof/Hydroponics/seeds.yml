@@ -192,7 +192,7 @@
   plantRsi: _Floof/Objects/Specific/Hydroponics/strawberry.rsi
   packetPrototype: StrawberrySeeds
   productPrototypes:
-  - FoodStrawberries
+  - FoodStrawberry
   harvestRepeat: Repeat
   lifespan: 55
   maturation: 10
