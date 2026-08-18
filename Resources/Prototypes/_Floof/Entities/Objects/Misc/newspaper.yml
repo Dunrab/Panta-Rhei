@@ -1,0 +1,19 @@
+﻿#Resources/Textures/_Floof/Objects/Misc/newspaper.rsi
+
+- type: entity
+  name: newspaper
+  parent: Paper
+  id: Newspaper
+  description: 'A piece of white paper.'
+  components:
+  - type: Sprite
+    sprite: _Floof/Objects/Misc/newspaper.rsi
+    layers:
+    - state: newspaper
+    - state: newspaper
+      map: ["enum.PaperVisualLayers.Writing"]
+      visible: false
+    - state: paper_stamp-generic
+      sprite: Objects/Misc/bureaucracy.rsi
+      map: ["enum.PaperVisualLayers.Stamp"]
+      visible: false

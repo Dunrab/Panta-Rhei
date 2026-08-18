@@ -311,6 +311,7 @@
     - ServiceAssemblerPack # Frontier Service Assembler
     - MedicalAssemblerPack # Frontier Medical Assembler
     - ReactorCircuitboards # FH edit
+    - FloofstationServiceNewsBoards # Floofstation - news
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityBoards

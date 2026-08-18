@@ -6,3 +6,16 @@
   components:
   - type: MachineBoard
     prototype: SmartFridgeService
+
+- type: entity
+  parent: BaseComputerCircuitboard
+  id: ComputerNewspaperPrinterCircuitboard
+  name: news paper printer console board
+  description: Write your message to the world in that old fashioned style!
+  components:
+  - type: Sprite
+    state: cpu_service
+  - type: StaticPrice
+    price: 150
+  - type: ComputerBoard
+    prototype: ComputerNewspaperPrinter

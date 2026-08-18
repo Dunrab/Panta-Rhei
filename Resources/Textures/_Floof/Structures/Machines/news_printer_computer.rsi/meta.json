@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from TGStation https://github.com/tgstation/tgstation/commit/c7408ce8417e3e0f2f41fc93756f05741cdc0bf8#diff-9d8897cdf0d44309b0c3bf5fd1f51794cd457d84478f04d817686d9ac4f86e77, Sprite modified by Dunrab (Github)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "newprinter",
+            "directions": 4
+        }
+    ]
+}

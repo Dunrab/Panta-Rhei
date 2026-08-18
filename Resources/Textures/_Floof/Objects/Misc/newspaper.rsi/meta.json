@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from YogStation at commit https://github.com/yogstation13/Yogstation/commit/f2f6e6468cbb280ad548b64d147aa1b4e80b752a",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "newspaper"
+        }
+    ]
+}

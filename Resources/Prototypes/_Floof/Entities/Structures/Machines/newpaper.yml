@@ -1,0 +1,36 @@
+﻿- type: entity
+  parent: BaseComputerAiAccess
+  id: ComputerNewspaperPrinter
+  name: newspaper printer
+  description: Write your message to the world in that old fashioned style!
+  components:
+  - type: NewspaperPrinter
+  - type: ActivatableUI
+    key: enum.NewspaperPrinterUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.NewspaperPrinterUiKey.Key:
+        type: NewspaperPrinterBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: med_key_off
+    - map: ["computerLayerKeys"]
+      state: med_key
+    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      state: generic_panel_open
+    - map: [ "computerLayerScreen" ]
+      sprite: _Floof/Structures/Machines/news_printer_computer.rsi
+      state: newprinter
+  - type: PointLight
+    radius: 1.5
+    energy: 4.0
+    color: "#006400"
+  - type: Computer
+    board: ComputerNewspaperPrinterCircuitboard
+  - type: AccessReader
+    access: [ [ "Reporter" ] ]

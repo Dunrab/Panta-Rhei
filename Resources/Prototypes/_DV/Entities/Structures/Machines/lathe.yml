@@ -186,6 +186,7 @@
     - Janitor
     - Instruments
     - Botany
+    - FloofstationServiceNewsBoards # Floofstation - news
   - type: Machine
     board: ServiceTechFabCircuitboard
   - type: StealTarget

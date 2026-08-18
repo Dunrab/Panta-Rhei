@@ -26,3 +26,16 @@
   - MagazinePistolHighCapacity
   - MagazinePistolHighCapacityRubber
   - MagazinePistolHighCapacityPractice
+
+- type: technology
+  id: NewsCasting
+  name: research-technology-news-casting
+  icon:
+    sprite: Structures/monitors.rsi
+    state: mobilevision
+  discipline: CivilianServices
+  tier: 1
+  cost: 5000
+  recipeUnlocks:
+  - ComputerNewspaperPrinterCircuitboard
+  - ComputerMassMediaCircuitboard

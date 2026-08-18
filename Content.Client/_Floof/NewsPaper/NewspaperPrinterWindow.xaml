@@ -1,0 +1,67 @@
+<controls:FancyWindow xmlns="https://spacestation14.io"
+    xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+    xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+    Title="{Loc 'newspaper-printer-ui-title'}"
+    MinSize="450 500"
+    SetSize="550 650">
+    <BoxContainer Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True">
+        <Control VerticalExpand="True" HorizontalExpand="True" Margin="10 10 10 0">
+            <PanelContainer Name="MainPanel" HorizontalExpand="True" VerticalExpand="True">
+                <PanelContainer.PanelOverride> <graphics:StyleBoxFlat BackgroundColor="#202023"/>
+                </PanelContainer.PanelOverride>
+            </PanelContainer>
+            <ScrollContainer Name="InputScroll"
+                             HorizontalExpand="True"
+                             VerticalExpand="True"
+                             Margin="8"
+                             HScrollEnabled="False"
+                             VScrollEnabled="True">
+                <TextEdit Name="Input" Access="Public" HorizontalExpand="True" VerticalExpand="True" />
+            </ScrollContainer>
+        </Control>
+        <Control VerticalExpand="True" HorizontalExpand="True" Margin="10 6 10 0">
+            <PanelContainer Name="PreviewPanel" HorizontalExpand="True" VerticalExpand="True">
+                <PanelContainer.PanelOverride> <graphics:StyleBoxFlat BackgroundColor="#202023" BorderColor="#5A5A5A" BorderThickness="1"/>
+                </PanelContainer.PanelOverride>
+            </PanelContainer>
+            <BoxContainer Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True">
+                <Label Name="PreviewLabel" Text="{Loc 'newspaper-printer-ui-preview'}" HorizontalAlignment="Center" Margin="0 6 0 4" StyleClasses="LabelSecondaryColor"/>
+                <ScrollContainer Name="PreviewScroll"
+                    VerticalExpand="True"
+                    HorizontalExpand="True"
+                    HScrollEnabled="False"
+                    VScrollEnabled="True"
+                    Margin="8">
+                    <RichTextLabel
+                        Name="Preview"
+                        HorizontalExpand="True"
+                        VerticalExpand="True"
+                        Margin="8"/>
+                </ScrollContainer>
+            </BoxContainer>
+        </Control>
+        <BoxContainer Orientation="Horizontal" HorizontalExpand="True" Margin="12 7 12 0">
+            <Label Name="FillStatus" Text="0 / 10000"/>
+            <Control HorizontalExpand="True"/>
+        </BoxContainer>
+        <Control SetHeight="45" Margin="2 7 2 0">
+            <PanelContainer Name="FooterPanel">
+                <PanelContainer.PanelOverride>
+                    <graphics:StyleBoxFlat
+                        BorderColor="#5A5A5A"
+                        BorderThickness="0 2 0 0"/>
+                </PanelContainer.PanelOverride>
+            </PanelContainer>
+            <BoxContainer Name="ContentFooter" HorizontalExpand="True" SetHeight="43">
+                <Button
+                    Name="PrintButton"
+                    Text="Print"
+                    MinWidth="83"
+                    SetHeight="26"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Right"
+                    Margin="6"/>
+            </BoxContainer>
+        </Control>
+    </BoxContainer>
+</controls:FancyWindow>
