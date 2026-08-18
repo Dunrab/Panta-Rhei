@@ -110,7 +110,7 @@
   time: 5
   reagents:
     IceCream: 20
-    JuiceStrawberry: 15 # changed to strawberry juice
+    StrawberryJuice: 15 # changed to strawberry juice
   solids:
     IceCreamBowl: 1
     FoodStrawberry: 1 # changed to strawberry
@@ -123,7 +123,7 @@
   reagents:
     IceCream: 20
     CocoaPowder: 5
-    JuiceStrawberry: 5 # changed to strawberry juice
+    StrawberryJuice: 5 # changed to strawberry juice
   solids:
     IceCreamBowl: 1
     FoodBanana: 1

@@ -170,3 +170,21 @@
   - Meat
   - Raw
   - Mothroach
+
+- type: foodSequenceElement
+  id: StrawberryBurger
+  name: food-sequence-burger-content-strawberry
+  sprites:
+  - sprite: _Floof/Objects/Specific/Hydroponics/strawberry.rsi
+    state: produce
+  tags:
+  - Fruit
+
+- type: foodSequenceElement
+  id: Strawberry
+  name: food-sequence-content-strawberry
+  sprites:
+  - sprite: _Floof/Objects/Specific/Hydroponics/strawberry.rsi
+    state: produce
+  tags:
+  - Fruit
