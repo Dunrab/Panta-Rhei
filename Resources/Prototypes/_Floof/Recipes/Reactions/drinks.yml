@@ -1027,4 +1027,5 @@
       amount: 1
     Cream:
       amount: 1
-  products: BepisStrawberry
+  products:
+    BepisStrawberry: 3
