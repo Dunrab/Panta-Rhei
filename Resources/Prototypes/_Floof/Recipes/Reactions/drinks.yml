@@ -1017,7 +1017,7 @@
     StrawberryPilk: 2
 
 - type: reaction
-  id: StrawberryBepis
+  id: BepisStrawberry
   requiredMixerCategories:
   - Shake
   reactants:
@@ -1027,5 +1027,4 @@
       amount: 1
     Cream:
       amount: 1
-  products:
-    StrawberryBepis: 3
+  products: BepisStrawberry
