@@ -636,3 +636,14 @@
     - type: Nosebleed
       minDelay: 300 # bleeds more often, 5 minutes
       maxDelay: 1800 # 30 minutes in seconds
+
+- type: trait
+  id: Snoring
+  name: trait-snoring-name
+  description: trait-snoring-desc
+  category: DisabilitiesPhysical
+  cost: 0
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: Snoring
