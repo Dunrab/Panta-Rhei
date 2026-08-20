@@ -200,6 +200,10 @@
   - type: GuideHelp
     guides:
     - MinorAntagonists
+  - type: SelfInject # Floofstation - allow for dragons to stop some bleeding
+    action: ActionSelfInject
+    reagent: TranexamicAcid
+    amount: 5
 
 - type: entity
   categories: [ HideSpawnMenu ]

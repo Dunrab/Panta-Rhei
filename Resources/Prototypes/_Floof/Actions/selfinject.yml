@@ -1,0 +1,13 @@
+﻿- type: entity
+  parent: BaseAction
+  id: ActionSelfInject
+  name: "[color=red]Stop Bleeding[/color]"
+  description: Injects your self with a chemical to stop your bleeding.
+  components:
+  - type: Action
+    icon: { sprite: Objects/Specific/Chemistry/syringe.rsi, state: syringe_base0 }
+    itemIconStyle: BigAction
+    priority: 4 # we want this at the bottom of the dragons hotbar
+    useDelay: 30 # add a use delay
+  - type: InstantAction
+    event: !type:ActionSelfInjectEvent
