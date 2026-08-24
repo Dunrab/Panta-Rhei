@@ -121,3 +121,14 @@ trait-nosebleed-frequent-description =
     You will experience one every 5-30 minutes.
 
 nosebleed-message = You feel blood dripping from your nose!
+
+trait-messy-drinker-name = Messy Drinker
+trait-messy-drinker-description =
+    You have trouble creating proper suction when drinking liquids, due to this you sometimes spill your drink all over your self and the floor.
+
+
+trait-very-messy-drinker-name = Very Messy Drinker
+trait-very-messy-drinker-description =
+    You have trouble creating proper suction when drinking liquids, due to this you frequently spill your drink all over your self and the floor.
+
+trait-messy-drinker-popup = You feel some of your drink spill onto your cloths and the floor.

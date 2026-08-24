@@ -647,3 +647,39 @@
   - !type:AddCompsEffect
     components:
     - type: Snoring
+
+- type: trait
+  id: MessyDrinker
+  name: trait-messy-drinker-name
+  description: trait-messy-drinker-description
+  category: DisabilitiesPhysical
+  cost: -1
+  conditions:
+  - !type:OneOfSpeciesCondition
+    invert: true
+    species:
+    - IPC
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: MessyDrinker
+      spillMessagePopup: trait-messy-drinker-popup
+
+- type: trait
+  id: VeryMessyDrinker
+  name: trait-very-messy-drinker-name
+  description: trait-very-messy-drinker-description
+  category: DisabilitiesPhysical
+  cost: -2
+  conditions:
+  - !type:OneOfSpeciesCondition
+    invert: true
+    species:
+    - IPC
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: MessyDrinker
+      spillChance: 0.5 # 50% chance i think is fair
+      spillAmount: 2.0 # lets double the spill amount to
+      spillMessagePopup: trait-messy-drinker-popup
