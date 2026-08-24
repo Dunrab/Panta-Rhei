@@ -714,3 +714,20 @@
       spillMessagePopup: trait-messy-traits-popup
       spillableTypes: # make it so they can drink fine
       - Food
+
+- type: trait
+  id: SmokingSpitter
+  name: trait-messy-smoker-name
+  description: trait-messy-smoke-description
+  category: DisabilitiesPhysical
+  cost: -1
+  conditions:
+  - !type:OneOfSpeciesCondition
+    invert: true
+    species:
+    - IPC
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: MessySmoker
+      spitMessagePopup: trait-messy-smoker-popup
