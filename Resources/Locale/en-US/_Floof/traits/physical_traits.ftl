@@ -131,4 +131,8 @@ trait-very-messy-drinker-name = Very Messy Drinker
 trait-very-messy-drinker-description =
     You have trouble creating proper suction when drinking liquids, due to this you frequently spill your drink all over your self and the floor.
 
-trait-messy-drinker-popup = You feel some of your drink spill onto your cloths and the floor.
+trait-messy-eater-name = Messy Eater
+trait-messy-eater-description =
+    You eat rather quickly, sometimes making a mess while doing so.
+
+trait-messy-traits-popup = You feel some of what you are consuming spill onto your cloths and floor...

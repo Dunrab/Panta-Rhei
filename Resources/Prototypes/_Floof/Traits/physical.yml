@@ -655,6 +655,10 @@
   category: DisabilitiesPhysical
   cost: -1
   conditions:
+  - !type:TraitDependencyCondition
+    conflicts:
+    - VeryMessyDrinker
+    - MessyEater
   - !type:OneOfSpeciesCondition
     invert: true
     species:
@@ -663,7 +667,7 @@
   - !type:AddCompsEffect
     components:
     - type: MessyDrinker
-      spillMessagePopup: trait-messy-drinker-popup
+      spillMessagePopup: trait-messy-traits-popup
 
 - type: trait
   id: VeryMessyDrinker
@@ -672,6 +676,10 @@
   category: DisabilitiesPhysical
   cost: -2
   conditions:
+  - !type:TraitDependencyCondition
+    conflicts:
+    - MessyDrinker
+    - MessyEater
   - !type:OneOfSpeciesCondition
     invert: true
     species:
@@ -682,4 +690,27 @@
     - type: MessyDrinker
       spillChance: 0.5 # 50% chance i think is fair
       spillAmount: 2.0 # lets double the spill amount to
-      spillMessagePopup: trait-messy-drinker-popup
+      spillMessagePopup: trait-messy-traits-popup
+
+- type: trait
+  id: MessyEater
+  name: trait-messy-eater-name
+  description: trait-messy-eater-description
+  category: DisabilitiesPhysical
+  cost: -1
+  conditions:
+  - !type:TraitDependencyCondition
+    conflicts:
+    - MessyDrinker
+    - VeryMessyDrinker
+  - !type:OneOfSpeciesCondition
+    invert: true
+    species:
+    - IPC
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: MessyDrinker
+      spillMessagePopup: trait-messy-traits-popup
+      spillableTypes: # make it so they can drink fine
+      - Food
