@@ -1,0 +1,70 @@
+﻿- type: entity
+  parent: MobSiliconBase
+  id: MobSiliconClownCar
+  name: clown car
+  description: Horrifying.
+  components:
+  - type: Sprite
+    sprite: _Euphoria/Mobs/Vehicles/clowncar.rsi
+    state: clowncar
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.25 # Annoyingly large
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Construction
+    graph: ClownCar
+    node: bot
+  - type: GhostRole
+    makeSentient: true
+    name: ghost-role-information-clowncar-name
+    description: ghost-role-information-clowncar-description
+    rules: ghost-role-information-freeagent-rules
+    mindRoles:
+    - MindRoleGhostRoleFreeAgentHarmless
+    raffle:
+      settings: default
+  - type: GhostTakeoverAvailable
+  - type: SpamEmitSound
+    minInterval: 5 # make it slightly less annoying
+    maxInterval: 20
+    sound:
+      collection: BikeHorn
+      params:
+        variation: 0.125
+  - type: HTN # fuck it we give it the honkbot htn
+    rootTask:
+      task: HonkbotCompound
+  - type: Strap # let people buckle in them (clown taxi service anyone?)
+    position: Stand
+    rotation: 0
+  - type: Butcherable # need to make this a different entitiy
+    butcheringType: Spike
+    spawned:
+    - id: SheetSteel10
+      amount: 1
+  - type: IntrinsicRadioReceiver # give these cursed things radio access
+  - type: IntrinsicRadioTransmitter
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 5
+    baseSprintSpeed: 8
+    baseAcceleration: 1 # Slow to start and stop
+    acceleration: 2
+    baseFriction: 0.25
+    friction: 2
+    frictionNoInput: 2
+  - type: TrafficHazard
+    minimumSpeed: 5
+    minimumSpeedDifference: 7
+    stunTime: 0 # Don't stun, just collide with at iny bit of damage
+    collisionDamage:
+      types:
+        Blunt: 3
+  - type: Vocal # let them scream
+    sounds:
+      Unsexed: MaleMotorkind
