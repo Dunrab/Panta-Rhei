@@ -40,7 +40,10 @@ public sealed partial class SpawnEntityEntityEffectSystem : EntityEffectSystem<T
         xform ??= Transform(target);
 
         if (!xform.ParentUid.IsValid())
-            return Spawn(protoName);
+            {
+                Log.Error($"Tried to spawn {protoName} in nullspace.")
+                return EntityUid.Invalid;
+            }
 
         var uid = PredictedSpawnAtPosition(protoName, xform.Coordinates, overrides);
 
