@@ -12,7 +12,6 @@ public sealed partial class SpawnEntityEntityEffectSystem : EntityEffectSystem<T
 {
     [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly SharedTransformSystem _xforms = default!;
-    private readonly EntityQuery<TransformComponent> _transformQuery;
 
     protected override void Effect(Entity<TransformComponent> entity, ref EntityEffectEvent<SpawnEntity> args)
     {
@@ -38,12 +37,12 @@ public sealed partial class SpawnEntityEntityEffectSystem : EntityEffectSystem<T
     // Euphoria changes start - we need to makey this spawny avoid the fishspess
     private EntityUid SpawnNextToOrDropAtPosition(string? protoName, EntityUid target, TransformComponent? xform = null, ComponentRegistry? overrides = null)
     {
-        xform ??= _transformQuery.GetComponent(target);
+        xform ??= Transform(target);
 
         if (!xform.ParentUid.IsValid())
             return Spawn(protoName);
 
-        var uid = SpawnAtPosition(protoName, xform.Coordinates, overrides);
+        var uid = PredictedSpawnAtPosition(protoName, xform.Coordinates, overrides);
 
         _xforms.DropNextTo(uid, target);
 
