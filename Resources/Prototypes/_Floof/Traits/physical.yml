@@ -653,7 +653,7 @@
   name: trait-jump-ability-name
   description: trait-jump-ability-description
   category: Skills
-  cost: 2
+  cost: 4
   effects:
   - !type:AddCompsEffect
     components:
