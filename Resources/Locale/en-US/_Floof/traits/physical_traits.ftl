@@ -134,11 +134,12 @@ trait-very-messy-drinker-description =
 trait-messy-eater-name = Messy Eater
 trait-messy-eater-description =
     You eat rather quickly, sometimes making a mess while doing so.
-
 trait-messy-traits-popup = You feel some of what you are consuming spill onto your cloths and floor...
 
 trait-messy-smoker-name = Messy Smoker
 trait-messy-smoke-description = Whether you do it because you are rude or sometimes you just do not fully enjoy the taste of your cigarettes...
     You sometimes have the need to spit on the floor...
-
 trait-messy-smoker-popup = You feel the need to spit from what you are smoking...
+
+trait-jump-ability-name = Pounce
+trait-jump-ability-description = Being nature's most fearsome predator, you developed the ability to pounce forward in the direction of your gaze.
