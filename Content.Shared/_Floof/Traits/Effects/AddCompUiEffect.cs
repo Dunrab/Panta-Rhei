@@ -7,7 +7,7 @@ namespace Content.Shared._Floof.Traits.Effects;
 /// This is used for components like HarpySinger where the UI is initialized in the most fishy way possible,
 /// So we need to create a fishy system like this to get the ui to work with AddCompEffect.
 /// </summary>
-public sealed partial class AddUiEffect : BaseTraitEffect
+public sealed partial class AddCompUiEffect : BaseTraitEffect
 {
     [DataField(required: true)]
     public Dictionary<Enum, InterfaceData> Interfaces = new();

@@ -775,7 +775,7 @@
         "Harp": { 46: 0 }
       onlySetBySelf: true
     - type: InstrumentVisuals
-  - !type:AddUiEffect
+  - !type:AddCompUiEffect
     interfaces:
       enum.InstrumentUiKey.Key:
         type: InstrumentBoundUserInterface
