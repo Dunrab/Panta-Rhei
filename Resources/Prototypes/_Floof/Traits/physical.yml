@@ -753,6 +753,11 @@
   description: trait-singing-description
   category: Skills
   cost: 3
+  conditions:
+  - !type:OneOfSpeciesCondition
+    invert: true
+    species:
+    - Harpy # harpy have this already
   effects:
   - !type:AddCompsEffect
     components:
