@@ -144,5 +144,5 @@ trait-messy-smoker-popup = You feel the need to spit from what you are smoking..
 trait-jump-ability-name = Pounce
 trait-jump-ability-description = Being nature's most fearsome predator, you developed the ability to pounce forward in the direction of your gaze.
 
-trait-jump-singing-name = Singing
-trait-jump-singing-description = testy westy breasty
+trait-singing-name = Singing
+trait-singing-description = Your own body is a musical instrument! You can sing in a variety of tones.
