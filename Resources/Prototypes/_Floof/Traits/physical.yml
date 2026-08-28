@@ -749,8 +749,8 @@
 
 - type: trait
   id: Singing
-  name: trait-jump-singing-name
-  description: trait-jump-singing-description
+  name: trait-singing-name
+  description: trait-singing-description
   category: Skills
   cost: 3
   effects:
