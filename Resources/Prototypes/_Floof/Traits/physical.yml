@@ -754,6 +754,9 @@
   category: DisabilitiesPhysical
   cost: -1
   conditions:
+  - !type:HasJobCondition # we dont want clowns taking this
+    job: Clown
+    invert: true
   - !type:TraitDependencyCondition
     conflicts:
     - VeryClumsy
@@ -772,6 +775,9 @@
   category: DisabilitiesPhysical
   cost: -4
   conditions:
+  - !type:HasJobCondition # we dont want clowns taking this
+    job: Clown
+    invert: true
   - !type:TraitDependencyCondition
     conflicts:
     - SlightlyClumsy
