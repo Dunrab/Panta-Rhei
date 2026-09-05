@@ -146,3 +146,9 @@ trait-jump-ability-description = Being nature's most fearsome predator, you deve
 
 trait-singing-name = Singing
 trait-singing-description = Your own body is a musical instrument! You can sing in a variety of tones.
+
+trait-slight-clumsy-name = Clumsy
+trait-slightly-clumsy-description = You have a nack for accidentally stubbing your toe or not jumping high enough to jump over a counter often hurting your self in an embracing way...
+
+trait-very-clumsy-name = Very Clumsy
+trait-very-clumsy-description = You have poor hand eye coordination and often mess up climbing over things, shooting weaponry and using electronics....
