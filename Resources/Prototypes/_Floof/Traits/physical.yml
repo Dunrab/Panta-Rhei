@@ -785,6 +785,7 @@
       enum.InstrumentUiKey.Key:
         type: InstrumentBoundUserInterface
 
+- type: trait
   id: SlightlyClumsy
   name: trait-slight-clumsy-name
   description: trait-slightly-clumsy-description
