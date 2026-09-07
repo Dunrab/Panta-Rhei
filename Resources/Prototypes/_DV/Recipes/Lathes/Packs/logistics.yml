@@ -38,3 +38,8 @@
   recipes:
   - ClothingOuterHardsuitSpatio
   - ClothingOuterHardsuitSalvage
+
+- type: latheRecipePack
+  id: LightingEquipment
+  recipes:
+  - NFWeaponHoloflareGun
