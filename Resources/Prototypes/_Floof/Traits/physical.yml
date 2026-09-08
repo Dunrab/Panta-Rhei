@@ -836,3 +836,15 @@
         types:
           Blunt: 1
       clumsyGunShootCheck: 0.2 # 80% chance of success
+
+- type: trait
+  id: SnoutGasMask
+  name: trait-species-gas-mask
+  description: trait-species-gas-mask-description
+  category: DisabilitiesPhysical # need to change
+  cost: 0
+  conditions:
+  effects:
+  - !type:SetInventoryEffect
+    speciesId: vulpkanin # for the snooties
+
