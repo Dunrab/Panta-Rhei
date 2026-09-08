@@ -841,9 +841,8 @@
   id: SnoutGasMask
   name: trait-species-gas-mask
   description: trait-species-gas-mask-description
-  category: DisabilitiesPhysical # need to change
+  category: Visuals # new category for things like this
   cost: 0
-  conditions:
   effects:
   - !type:SetInventoryEffect
     speciesId: vulpkanin # for the snooties
