@@ -836,3 +836,26 @@
         types:
           Blunt: 1
       clumsyGunShootCheck: 0.2 # 80% chance of success
+
+- type: trait
+  id: TestingEmoteTrait # testing vulp emotes as a trait
+  name: trait-very--test
+  description: trait-very-test-description
+  category: DisabilitiesPhysical # this should get its own category called Vocal or something like that
+  cost: 0
+  effects:
+  - !type:EmoteSoundsEffect
+    sounds:
+      Male: MaleVulpkanin
+      Female: FemaleVulpkanin
+      Unsexed: MaleVulpkanin
+    allowedEmotes:
+    - Growl
+    - Snarl
+    - Bark
+    - Howl
+    - Awoo
+    - Yip
+    - Yap
+    - Whine
+    - Whimper
