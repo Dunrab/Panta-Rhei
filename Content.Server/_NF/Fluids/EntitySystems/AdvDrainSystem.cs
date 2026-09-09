@@ -16,7 +16,6 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
 
-
 namespace Content.Server._NF.Fluids.EntitySystems;
 
 public sealed class AdvDrainSystem : SharedDrainSystem
@@ -30,7 +29,6 @@ public sealed class AdvDrainSystem : SharedDrainSystem
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly PowerCellSystem _powerCell = default!;
-    [Dependency] private readonly PuddleSystem _puddleSystem = default!;
 
     private readonly HashSet<Entity<PuddleComponent>> _puddles = new();
 
