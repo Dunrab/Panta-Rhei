@@ -1,3 +1,4 @@
+using Content.Server.Fluids.EntitySystems;
 using Content.Server.Popups;
 using Content.Shared.PowerCell;
 using Content.Shared._NF.Fluids;
@@ -7,10 +8,8 @@ using Content.Shared.Chemistry.Components.SolutionManager;
 using Content.Shared.Database;
 using Content.Shared.Examine;
 using Content.Shared.FixedPoint;
-using Content.Shared.Fluids;
 using Content.Shared.Fluids.Components;
 using Content.Shared._NF.Fluids.Components;
-using Content.Shared.PowerCell;
 using Content.Shared.Verbs;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Prototypes;
@@ -31,6 +30,7 @@ public sealed class AdvDrainSystem : SharedDrainSystem
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly PowerCellSystem _powerCell = default!;
+    [Dependency] private readonly PuddleSystem _puddleSystem = default!;
 
     private readonly HashSet<Entity<PuddleComponent>> _puddles = new();
 
@@ -90,30 +90,17 @@ public sealed class AdvDrainSystem : SharedDrainSystem
             return;
         }
 
-        // Try to transfer as much solution as possible to the drain
-
-        var amountToPutInDrain = drainSolution.AvailableVolume;
-        var amountToSpillOnGround = containerSolution.Volume - drainSolution.AvailableVolume;
+        var remainingCapacity = drain.MaxCapacity - drainSolution.Volume;
+        var amountToPutInDrain = FixedPoint2.Min(containerSolution.Volume, remainingCapacity);
 
         if (amountToPutInDrain > 0)
         {
             var solutionToPutInDrain = _solutionContainerSystem.SplitSolution(containerSoln.Value, amountToPutInDrain);
+
             _solutionContainerSystem.TryAddSolution(drain.Solution.Value, solutionToPutInDrain);
 
             _audioSystem.PlayPvs(drain.ManualDrainSound, target);
             _ambientSoundSystem.SetAmbience(target, true);
-        }
-
-
-        // Don't actually spill the remainder.
-
-        if (amountToSpillOnGround > 0)
-        {
-            // var solutionToSpill = _solutionContainerSystem.SplitSolution(containerSoln.Value, amountToSpillOnGround);
-            // _puddleSystem.TrySpillAt(Transform(target).Coordinates, solutionToSpill, out _);
-            _popupSystem.PopupEntity(
-                Loc.GetString("drain-component-empty-verb-target-is-full-message", ("object", target)),
-                container);
         }
     }
 
@@ -165,22 +152,13 @@ public sealed class AdvDrainSystem : SharedDrainSystem
             if (!_solutionContainerSystem.ResolveSolution((uid, manager), AdvDrainComponent.SolutionName, ref drain.Solution, out var drainSolution))
                 continue;
 
-            if (drainSolution.AvailableVolume <= 0)
+            // We make it actually cap and need to be drained, this may go slightly over the buffer by a tiny bit
+            if (drainSolution.Volume >= drain.MaxCapacity)
             {
                 _ambientSoundSystem.SetAmbience(uid, false);
-                continue;
-            }
-
-            // Remove a bit from the buffer
-            if (drainSolution.Volume > drain.UnitsDestroyedThreshold)
-            {
-                _appearanceSystem.SetData(uid, AdvDrainVisualState.IsVoiding, true);
-                _appearanceSystem.SetData(uid, AdvDrainVisualState.IsRunning, false); //they use the same indicator light, and cause artifacts when on at the same time
-                _solutionContainerSystem.SplitSolution(drain.Solution.Value, Math.Min(drain.UnitsDestroyedPerSecond * drain.DrainFrequency, (float)drainSolution.Volume - drain.UnitsDestroyedThreshold));
-            }
-            else
-            {
+                _appearanceSystem.SetData(uid, AdvDrainVisualState.IsDraining, false);
                 _appearanceSystem.SetData(uid, AdvDrainVisualState.IsVoiding, false);
+                continue;
             }
 
             // This will ensure that UnitsPerSecond is per second...
@@ -243,7 +221,10 @@ public sealed class AdvDrainSystem : SharedDrainSystem
             return;
         }
 
-        var text = Loc.GetString("adv-drain-component-examine-volume", ("volume", drainSolution.Volume), ("maxvolume", drain.UnitsDestroyedThreshold));
+        var text = Loc.GetString("adv-drain-component-examine-volume", ("volume", drainSolution.Volume), ("maxvolume", drain.MaxCapacity));
         args.PushMarkup(text);
+
+        if (drainSolution.Volume >= drain.MaxCapacity)
+            args.PushMarkup(Loc.GetString("adv-drain-component-examine-full"));
     }
 }
