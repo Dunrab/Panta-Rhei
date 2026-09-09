@@ -2,6 +2,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Linq;
 using System.Numerics;
+using System.Text.RegularExpressions; // DeltaV - Client-Side Radio Channel Colors
 using Content.Client._Floof.Language.Systems;
 using Content.Client.Administration.Managers;
 using Content.Client.Chat;
@@ -757,14 +758,9 @@ public sealed partial class ChatUIController : UIController
         // because ????????
 
         //Starlight begin - detect language prefix. don't modify text directly here and use modText for radio channel checks.
+        // Euph - rewritten
         var modText = text;
-        LanguagePrototype? language = null;
-        if (TryGetLanguage(ref text, out var foundLanguage))
-        {
-            language = foundLanguage;
-            if(text.Length<5) return (ChatSelectChannel.None, text, null, foundLanguage);
-            modText = text[4..];
-        }
+        var language = _lang?.GetLanguageFromPrefix(_player.LocalEntity ?? EntityUid.Invalid, ref text, modifyText: false, out var languageInvalid);
         //Starlight end
 
         ChatSelectChannel chatChannel;
@@ -875,8 +871,38 @@ public sealed partial class ChatUIController : UIController
         }
     }
 
+    /// <summary>
+    /// DeltaV - Regex expression to match on the chat message text in order to replace it with another color.
+    /// </summary>
+    private static readonly Regex RadioChatColorRegex = new(@"color=#?([a-fA-F0-9]{8})", RegexOptions.Compiled);
+
+    /// <summary>
+    /// DeltaV - Replaces the channel color hex code in a message with the client-side hex color
+    /// overridden by <see cref="Content.Client._DV.Radio.RadioChannelColorSystem"/> .
+    /// </summary>
+    /// <param name="message">The message to find and replace the color hex code in.</param>
+    /// <param name="channelProtoId">The proto ID of the channel. Basically the replacement color.</param>
+    /// <returns>The message with the color hex code replaced, if it exists.</returns>
+    private string ReplaceRadioChannelColorFromServer(string message, string channelProtoId)
+    {
+        if (_prototypeManager.Resolve<RadioChannelPrototype>(channelProtoId, out var channel))
+        {
+            return RadioChatColorRegex.Replace(message, $"color={channel.Color.ToHex()}");
+        }
+
+        return message;
+    }
+
     public void ProcessChatMessage(ChatMessage msg, bool speechBubble = true)
     {
+        // BEGIN DeltaV
+        // Needs to happen before ANY other color or pattern matching so that we don't screw up the other colors in the message.
+        if (msg.Channel == ChatChannel.Radio && msg.RadioChannelProtoId is { } channel)
+        {
+            msg.WrappedMessage = ReplaceRadioChannelColorFromServer(msg.WrappedMessage, channel);
+        }
+        // END DeltaV
+
         // color the name unless it's something like "the old man"
         if ((msg.Channel == ChatChannel.Local || msg.Channel == ChatChannel.Whisper) && _chatNameColorsEnabled)
         {
@@ -1030,14 +1056,6 @@ public sealed partial class ChatUIController : UIController
     }
 
     //Starlight begin
-    private bool TryGetLanguage(ref string text, [NotNullWhen(true)] out LanguagePrototype? language)
-    {
-        language = null;
-        if (_player.LocalEntity is not { Valid: true } uid || _lang == null) return false;
-        language = _lang.GetLanguageFromPrefix(uid, ref text, out var parsed);
-        return parsed;
-    }
-
     public void UpdateLanguageNotifier(ChatBox box)
     {
         var (_, _, _, language) = SplitInputContents(box.ChatInput.Input.Text.ToLower());

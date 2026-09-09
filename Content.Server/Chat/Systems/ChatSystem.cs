@@ -19,6 +19,7 @@ using Content.Server.GameTicking;
 using Content.Server.Speech.EntitySystems;
 using Content.Shared.Speech.Hushing; // DeltaV
 using Content.Server.Nyanotrasen.Chat;
+using Content.Server.Speech.Components; // DeltaV
 using Content.Server.Speech.Prototypes;
 using Content.Server.Station.Systems;
 using Content.Shared.ActionBlocker;
@@ -46,12 +47,13 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Replays;
 using Robust.Shared.Utility;
+using Content.Shared._DV.Chat; // DeltaV - chat enhancements
 
 namespace Content.Server.Chat.Systems;
 
 // Dear contributor. When I was introducing changes to this system only god and I knew what I was doing.
 // Now only god knows. Please don't touch this code ever again. If you do have to, increment this counter as a warning for others:
-// TOTAL_HOURS_WASTED_HERE_EE = 31
+// TOTAL_HOURS_WASTED_HERE_EE = 35
 
 // TODO refactor whatever active warzone this class and chatmanager have become
 /// <summary>
@@ -220,6 +222,16 @@ public sealed partial class ChatSystem : SharedChatSystem
         }
         // DeltaV - End hushed trait logic
 
+        // Begin Euphoria additions: language prefixes (partial port from starlight)
+        var prefixLanguage = _languages.GetLanguageFromPrefix(source, ref message, modifyText: true, out var invalid);
+        if (invalid)
+            return;
+
+        using var _ = prefixLanguage != null && _languages.CanSpeak(source, prefixLanguage)
+            ? _languages.SubstituteEntityLanguage(source, prefixLanguage.ID)
+            : null;
+        // End Euphoria additions
+
         bool shouldCapitalize = (desiredType is not (InGameICChatType.Emote or InGameICChatType.Subtle)); // Floofstation edit
         bool shouldPunctuate = _configurationManager.GetCVar(CCVars.ChatPunctuation);
         // Capitalizing the word I only happens in English, so we check language here
@@ -228,14 +240,10 @@ public sealed partial class ChatSystem : SharedChatSystem
 
         message = SanitizeInGameICMessage(source, message, out var emoteStr, shouldCapitalize, shouldPunctuate, shouldCapitalizeTheWordI);
 
-        var prefix = _languages.GetLanguageFromPrefix(source, ref message, out var parsed, true); // Starlight start: Language prefixes
-        using var _ = parsed && _languages.CanSpeak(source, prefix)
-            ? _languages.SubstituteEntityLanguage(source, prefix.ID) : null;
-
         // Was there an emote in the message? If so, send it.
         if (player != null && emoteStr != message && emoteStr != null)
         {
-            SendEntityEmote(source, emoteStr, range, nameOverride, ignoreActionBlocker);
+            SendEntityEmote(source, emoteStr, range, nameOverride, null, ignoreActionBlocker); // DeltaV - Had to change up for SendEntityEmote
         }
 
         // This can happen if the entire string is sanitized out.
@@ -272,9 +280,18 @@ public sealed partial class ChatSystem : SharedChatSystem
             case InGameICChatType.Whisper:
                 SendEntityWhisper(source, message, range, null, nameOverride, hideLog, ignoreActionBlocker);
                 break;
-            case InGameICChatType.Emote:
-                SendEntityEmote(source, message, range, nameOverride, hideLog: hideLog, ignoreActionBlocker: ignoreActionBlocker);
-                break;
+            case InGameICChatType.Emote: // DeltaV - Emote now has different types of emotes.
+                var type = ProcessEmoteMessage(source, message, out var modMessage);
+                if (type == EmoteType.Audible || type == EmoteType.AudiblePossessive)
+                {
+                    if (checkRadioPrefix && TryProcessRadioMessage(source, modMessage, out var outputMessage, out var channel, capitalize: false))
+                        SendAudibleEntityEmote(source, outputMessage, range, nameOverride, channel, type, hideLog: hideLog, ignoreActionBlocker: ignoreActionBlocker);
+                    else
+                        SendAudibleEntityEmote(source, modMessage, range, nameOverride, null, type, hideLog: hideLog, ignoreActionBlocker: ignoreActionBlocker);
+                }
+                else
+                    SendEntityEmote(source, modMessage, range, nameOverride, type, hideLog: hideLog, ignoreActionBlocker: ignoreActionBlocker);
+                break; // DeltaV - End
             // Floofstation section
             case InGameICChatType.Subtle:
                 SendEntitySubtle(source, message, range, nameOverride, hideLog: hideLog, ignoreActionBlocker: ignoreActionBlocker);
@@ -669,6 +686,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         string action,
         ChatTransmitRange range,
         string? nameOverride,
+        EmoteType? emoteType, // DeltaV
         bool hideLog = false,
         bool checkEmote = true,
         bool ignoreActionBlocker = false,
@@ -683,24 +701,88 @@ public sealed partial class ChatSystem : SharedChatSystem
         var ent = Identity.Entity(source, EntityManager);
         string name = FormattedMessage.EscapeText(nameOverride ?? Name(ent));
 
+        // Begin DeltaV
+        string wrappedMessage;
+
         // Emotes use Identity.Name, since it doesn't actually involve your voice at all.
-        var wrappedMessage = Loc.GetString("chat-manager-entity-me-wrap-message",
-            ("entityName", name),
-            ("entity", ent),
-            ("message", FormattedMessage.RemoveMarkupOrThrow(action)));
+        if (emoteType == EmoteType.Possessive) // DeltaV - Emote types now get checked.
+            wrappedMessage = Loc.GetString("chat-manager-entity-me-possessive-wrap-message",
+                ("entityName", name),
+                ("entity", ent),
+                ("message", FormattedMessage.RemoveMarkupOrThrow(action)));
+        else
+            wrappedMessage = Loc.GetString("chat-manager-entity-me-wrap-message",
+                ("entityName", name),
+                ("entity", ent),
+                ("message", FormattedMessage.RemoveMarkupOrThrow(action)));
+        // End DeltaV
 
         if (checkEmote &&
             !TryEmoteChatInput(source, action))
             return;
 
-        // Floofstation - check LOS, also this uses a default message wrap that's spoken in Universal.
-        SendInVoiceRange(ChatChannel.Emotes, new(action, wrappedMessage), MessageWrapData.Empty, source, range, author, checkLOS: checkLOS);
+        // Floof - supply empty message wrap data for the third arg as emotes are never obfuscated, also check LOS
+        SendInVoiceRange(ChatChannel.Emotes, new MessageWrapData(action, wrappedMessage, LanguageSystem.Universal), MessageWrapData.Empty, source, range, author, checkLOS: true);
         if (!hideLog)
             if (name != Name(source))
                 _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Emote from {source} as {name}: {action}");
             else
                 _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Emote from {source}: {action}");
     }
+
+    // DeltaV - Added this to differentiate between emotes that can be heard over radio and those which can't.
+    protected override void SendAudibleEntityEmote(
+       EntityUid source,
+       string action,
+       ChatTransmitRange range,
+       string? nameOverride,
+       RadioChannelPrototype? channel,
+       EmoteType? emoteType,
+       bool hideLog = false,
+       bool checkEmote = true,
+       bool ignoreActionBlocker = false,
+       NetUserId? author = null
+       )
+    {
+        if (!_actionBlocker.CanSpeak(source) && !ignoreActionBlocker)
+            return;
+
+        EmoteType type = emoteType ?? EmoteType.Audible;
+
+        // get the entity's apparent name (if no override provided).
+        var ent = Identity.Entity(source, EntityManager);
+        string name = FormattedMessage.EscapeText(nameOverride ?? Name(ent));
+
+        string wrappedMessage;
+
+        // Audible emotes use Identity.Name, since that is the status quo. Emotes like scream doesn't currently reveal identities so this won't either. [This may be changed with feedback as you can audibly emote over radios]
+        if (emoteType == EmoteType.AudiblePossessive)
+            wrappedMessage = Loc.GetString("chat-manager-entity-me-audible-possessive-wrap-message",
+                ("entityName", name),
+                ("entity", ent),
+                ("message", FormattedMessage.RemoveMarkupOrThrow(action)));
+        else
+            wrappedMessage = Loc.GetString("chat-manager-entity-me-audible-wrap-message",
+                ("entityName", name),
+                ("entity", ent),
+                ("message", FormattedMessage.RemoveMarkupOrThrow(action)));
+
+        if (checkEmote &&
+            !TryEmoteChatInput(source, action))
+            return;
+
+        // Floofstation - check LOS, also this uses a default message wrap that's spoken in Universal.
+        SendInVoiceRange(ChatChannel.Emotes, new(action, wrappedMessage), MessageWrapData.Empty, source, range, author);
+
+        var ev = new EntityAudiblyEmotedEvent(source, action, channel, type);
+        RaiseLocalEvent(source, ref ev, true);
+        if (!hideLog)
+            if (name != Name(source))
+                _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Emote from {source} as {name}: {action}");
+            else
+                _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Emote from {source}: {action}");
+    }
+    // DeltaV - End
 
     // ReSharper disable once InconsistentNaming
     private void SendLOOC(EntityUid source, ICommonSession player, string message, bool hideChat)
@@ -945,6 +1027,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         var recipients = new Dictionary<ICommonSession, ICChatRecipientData>();
         var ghostHearing = GetEntityQuery<GhostHearingComponent>();
         var xforms = GetEntityQuery<TransformComponent>();
+        var blockListening = GetEntityQuery<BlockListeningComponent>(); // DeltaV - block listening
 
         var transformSource = xforms.GetComponent(source);
         var sourceMapId = transformSource.MapID;
@@ -959,6 +1042,11 @@ public sealed partial class ChatSystem : SharedChatSystem
 
             if (transformEntity.MapID != sourceMapId)
                 continue;
+
+            // Begin DeltaV - block listening
+            if (blockListening.HasComponent(playerEntity))
+                continue;
+            // End DeltaV - block listening
 
             var observer = ghostHearing.HasComponent(playerEntity);
             var isDead = HasComp<GhostComponent>(playerEntity);
