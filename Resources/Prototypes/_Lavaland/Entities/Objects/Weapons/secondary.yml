@@ -48,8 +48,6 @@
     - Slicing
     useSound:
       path: /Audio/Items/Culinary/chop.ogg
-  - type: Scalpel # Shitmed
-    speed: 0.3 # awful
 
 - type: entity
   parent: [BaseItem, BaseSecurityCargoContraband]
@@ -87,5 +85,3 @@
     - Slicing
     useSound:
       path: /Audio/Items/Culinary/chop.ogg
-  - type: Scalpel # Shitmed
-    speed: 0.55
