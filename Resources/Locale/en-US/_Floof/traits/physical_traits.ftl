@@ -121,3 +121,34 @@ trait-nosebleed-frequent-description =
     You will experience one every 5-30 minutes.
 
 nosebleed-message = You feel blood dripping from your nose!
+
+trait-messy-drinker-name = Messy Drinker
+trait-messy-drinker-description =
+    You have trouble creating proper suction when drinking liquids, due to this you sometimes spill your drink all over your self and the floor.
+
+
+trait-very-messy-drinker-name = Very Messy Drinker
+trait-very-messy-drinker-description =
+    You have trouble creating proper suction when drinking liquids, due to this you frequently spill your drink all over your self and the floor.
+
+trait-messy-eater-name = Messy Eater
+trait-messy-eater-description =
+    You eat rather quickly, sometimes making a mess while doing so.
+trait-messy-traits-popup = You feel some of what you are consuming spill onto your cloths and floor...
+
+trait-messy-smoker-name = Messy Smoker
+trait-messy-smoke-description = Whether you do it because you are rude or sometimes you just do not fully enjoy the taste of your cigarettes...
+    You sometimes have the need to spit on the floor...
+trait-messy-smoker-popup = You feel the need to spit from what you are smoking...
+
+trait-jump-ability-name = Pounce
+trait-jump-ability-description = Being nature's most fearsome predator, you developed the ability to pounce forward in the direction of your gaze.
+
+trait-singing-name = Singing
+trait-singing-description = Your own body is a musical instrument! You can sing in a variety of tones.
+
+trait-slight-clumsy-name = Clumsy
+trait-slightly-clumsy-description = You have a nack for accidentally stubbing your toe or not jumping high enough to jump over a counter often hurting your self in an embracing way...
+
+trait-very-clumsy-name = Very Clumsy
+trait-very-clumsy-description = You have poor hand eye coordination and often mess up climbing over things, shooting weaponry and using electronics....
