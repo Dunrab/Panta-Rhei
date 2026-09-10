@@ -1,15 +1,16 @@
 using Content.Server.Fluids.EntitySystems;
 using Content.Server.Popups;
-using Content.Shared.PowerCell;
 using Content.Shared._NF.Fluids;
-using Content.Shared.Chemistry.EntitySystems;
+using Content.Shared._NF.Fluids.Components;
 using Content.Shared.Audio;
 using Content.Shared.Chemistry.Components.SolutionManager;
+using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Database;
 using Content.Shared.Examine;
 using Content.Shared.FixedPoint;
 using Content.Shared.Fluids.Components;
 using Content.Shared._NF.Fluids.Components;
+using Content.Shared.PowerCell;
 using Content.Shared.Verbs;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Prototypes;
@@ -186,7 +187,7 @@ public sealed class AdvDrainSystem : SharedDrainSystem
                 // but queuedelete should be pretty safe.
                 if (!_solutionContainerSystem.ResolveSolution(puddle.Owner, puddle.Comp.SolutionName, ref puddle.Comp.Solution, out var puddleSolution))
                 {
-                    EntityManager.QueueDeleteEntity(puddle);
+                    QueueDel(puddle);
                     continue;
                 }
 
