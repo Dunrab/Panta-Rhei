@@ -17,6 +17,7 @@ using Content.Server.Traits.Assorted;
 using Content.Shared._EE.CCVars;
 using Content.Shared._EE.Supermatter.Components;
 using Content.Shared.Atmos;
+using Content.Shared.Atmos.Components;
 using Content.Shared.Audio;
 using Content.Shared.Damage.Components;
 using Content.Shared.Database;
@@ -53,8 +54,8 @@ public sealed partial class SupermatterSystem : EntitySystem
     [Dependency] private readonly ExplosionSystem _explosion = default!;
     [Dependency] private readonly GameTicker _gameTicker = default!;
     [Dependency] private readonly GhostSystem _ghost = default!;
-    [Dependency] private readonly GravityWellSystem _gravityWell = default!;
-    [Dependency] private readonly IonStormSystem _ionStorm = default!;
+    //[Dependency] private readonly GravityWellSystem _gravityWell = default!;
+    //[Dependency] private readonly IonStormSystem _ionStorm = default!;
     [Dependency] private readonly LightningSystem _lightning = default!;
     [Dependency] private readonly ParacusiaSystem _paracusia = default!;
     [Dependency] private readonly PointLightSystem _light = default!;
