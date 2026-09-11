@@ -20,10 +20,30 @@ public sealed class NewspaperPrinterSystem : EntitySystem
         Subs.BuiEvents<NewspaperPrinterComponent>(NewspaperPrinterUiKey.Key,
             subs =>
             {
+                subs.Event<NewspaperPrinterDraftChangedMessage>(OnDraftChanged);
+                subs.Event<NewspaperPrinterRequestStateMessage>(OnRequestState);
                 subs.Event<NewspaperPrinterPrintMessage>(OnPrint);
             });
 
         SubscribeLocalEvent<NewspaperPrinterComponent, ComponentInit>(OnComponentInit);
+    }
+
+    private void OnDraftChanged(Entity<NewspaperPrinterComponent> ent, ref NewspaperPrinterDraftChangedMessage msg)
+    {
+        if (msg.Text.Length > ent.Comp.MaxContentLength)
+            return;
+
+        ent.Comp.DraftContent = msg.Text;
+
+        Dirty(ent);
+
+        UpdateUi(ent);
+    }
+
+
+    private void OnRequestState(Entity<NewspaperPrinterComponent> ent, ref NewspaperPrinterRequestStateMessage msg)
+    {
+        UpdateUi(ent);
     }
 
     private void OnComponentInit(Entity<NewspaperPrinterComponent> ent, ref ComponentInit args)
@@ -36,9 +56,6 @@ public sealed class NewspaperPrinterSystem : EntitySystem
         if (string.IsNullOrWhiteSpace(msg.Text) || msg.Text.Length > ent.Comp.MaxContentLength)
             return;
 
-        ent.Comp.NextPrint = _timing.CurTime + ent.Comp.PrintCooldown;
-        Dirty(ent);
-
         // we to use our paper prototype
         var paper = Spawn("Newspaper", Transform(ent).Coordinates);
 
@@ -50,15 +67,19 @@ public sealed class NewspaperPrinterSystem : EntitySystem
             return;
         }
 
-        // Respect the actual paper's configured capacity.
         if (msg.Text.Length > paperComp.ContentSize)
         {
             QueueDel(paper);
             return;
         }
 
-        // Put the player's text onto the physical paper.
-        _paper.SetContent((paper, paperComp), msg.Text);
+        // store the text in the comp similar to the newswritercomp
+        ent.Comp.DraftContent = msg.Text;
+
+        ent.Comp.NextPrint = _timing.CurTime + ent.Comp.PrintCooldown;
+
+        // put the text from the comp onto the printed paper
+        _paper.SetContent((paper, paperComp), ent.Comp.DraftContent);
 
         _audio.PlayPvs(ent.Comp.PrintSound, ent);
         Dirty(paper, paperComp);
@@ -73,6 +94,6 @@ public sealed class NewspaperPrinterSystem : EntitySystem
 
         var canPrint = _timing.CurTime >= ent.Comp.NextPrint;
 
-        _ui.SetUiState(ent.Owner, NewspaperPrinterUiKey.Key, new NewspaperPrinterBoundUserInterfaceState(canPrint, ent.Comp.MaxContentLength));
+        _ui.SetUiState(ent.Owner, NewspaperPrinterUiKey.Key, new NewspaperPrinterBoundUserInterfaceState(canPrint, ent.Comp.MaxContentLength, ent.Comp.DraftContent));
     }
 }
