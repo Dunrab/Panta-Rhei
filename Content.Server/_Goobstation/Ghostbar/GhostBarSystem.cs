@@ -14,6 +14,7 @@ using Content.Shared.GameTicking;
 using Content.Shared.Ghost;
 using Content.Shared.Mind.Components;
 using Content.Shared.Mindshield.Components;
+using Content.Shared.Polymorph;
 using Content.Shared.Temperature.Components;
 using Robust.Shared.EntitySerialization;
 using Robust.Shared.EntitySerialization.Systems;
@@ -46,6 +47,7 @@ public sealed class GhostBarSystem : EntitySystem
         SubscribeLocalEvent<RoundStartingEvent>(OnRoundStart);
         SubscribeNetworkEvent<GhostBarSpawnEvent>(SpawnPlayer);
         SubscribeLocalEvent<GhostBarPlayerComponent, MindRemovedMessage>(PlayerGhostedFromGhostbar);
+        SubscribeLocalEvent<GhostBarPlayerComponent, PolymorphedEvent>(OnPolymorphed);
     }
 
     private readonly ResPath _mapPath = new("Maps/Floof/Nonstation/Ghostbar/ghostbar.yml");
@@ -109,5 +111,16 @@ public sealed class GhostBarSystem : EntitySystem
     private void PlayerGhostedFromGhostbar(Entity<GhostBarPlayerComponent> ent, ref MindRemovedMessage args)
     {
         QueueDel(ent);
+    }
+
+    // This is needed so that when a geras reverts their polymorph in the ghostbar
+    // they will get the ghostbarplayer comp back on their slime person entity.
+    private void OnPolymorphed(Entity<GhostBarPlayerComponent> ent, ref PolymorphedEvent args)
+    {
+        if (!args.IsRevert)
+            return;
+
+        RemComp<GhostBarPlayerComponent>(ent);
+        EnsureComp<GhostBarPlayerComponent>(args.NewEntity);
     }
 }
