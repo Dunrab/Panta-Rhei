@@ -153,5 +153,8 @@ trait-slightly-clumsy-description = You have a nack for accidentally stubbing yo
 trait-very-clumsy-name = Very Clumsy
 trait-very-clumsy-description = You have poor hand eye coordination and often mess up climbing over things, shooting weaponry and using electronics....
 
+trait-species-gas-mask = Snout Sprite Adjustments
+trait-species-gas-mask-description = Take this trait if your character is using a snout and you would like to have the snout display like it would on a Vulpkanin with gas masks and other wearables.
+
 trait-very-preening-name = Preening
 trait-very-preening-description = Sometimes you have feathers that you need to just remove.
