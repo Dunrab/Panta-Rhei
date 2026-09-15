@@ -69,6 +69,8 @@
   packetPrototype: RaspberrySeeds
   productPrototypes:
   - FoodRaspberry
+  mutationPrototypes:
+  - blueraspberry # mutates into blue raspberry
   harvestRepeat: Repeat
   lifespan: 55
   maturation: 10
@@ -121,3 +123,4 @@
       Min: 1
       Max: 2
       PotencyDivisor: 50
+    # maybe give it a chem? i don't know what to give this thing...
