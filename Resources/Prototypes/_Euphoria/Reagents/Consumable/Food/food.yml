@@ -33,3 +33,12 @@
   physicalDesc: reagent-physical-desc-sticky
   flavor: sweet
   color: "#0cbfe9"
+
+- type: reagent
+  id: BepisMidnight
+  name: reagent-name-bepismidnight
+  parent: BaseJuice
+  desc: reagent-desc-bepismidnight
+  physicalDesc: reagent-physical-desc-sticky
+  flavor: sweet
+  color: "#280137"

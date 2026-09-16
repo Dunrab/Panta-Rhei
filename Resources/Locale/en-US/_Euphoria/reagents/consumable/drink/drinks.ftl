@@ -9,3 +9,6 @@ reagent-desc-raspberryjuice = Natures candy in a glass.
 
 reagent-name-blueraspberryjuice = blue raspberry juice
 reagent-desc-blueraspberryjuice = Natures candy plus blueberries in a glass.
+
+reagent-name-bepismidnight = bepis midnight
+reagent-desc-bepismidnight = Bepis mixed with berries for those late night shifts.
