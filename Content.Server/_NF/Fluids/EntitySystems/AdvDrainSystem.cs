@@ -87,6 +87,7 @@ public sealed class AdvDrainSystem : SharedDrainSystem
             return;
         }
 
+        // Euphroia - make drains stop at their max volume
         var remainingCapacity = drain.MaxCapacity - drainSolution.Volume;
         var amountToPutInDrain = FixedPoint2.Min(containerSolution.Volume, remainingCapacity);
 
@@ -149,6 +150,7 @@ public sealed class AdvDrainSystem : SharedDrainSystem
             if (!_solutionContainerSystem.ResolveSolution((uid, manager), AdvDrainComponent.SolutionName, ref drain.Solution, out var drainSolution))
                 continue;
 
+            // Euphoria Changes start
             // We make it actually cap and need to be drained, this may go slightly over the buffer by a tiny bit
             if (drainSolution.Volume >= drain.MaxCapacity)
             {
@@ -157,6 +159,7 @@ public sealed class AdvDrainSystem : SharedDrainSystem
                 _appearanceSystem.SetData(uid, AdvDrainVisualState.IsVoiding, false);
                 continue;
             }
+            // Euphoria changes end
 
             // This will ensure that UnitsPerSecond is per second...
             var amount = drain.UnitsPerSecond * drain.DrainFrequency;
@@ -218,9 +221,11 @@ public sealed class AdvDrainSystem : SharedDrainSystem
             return;
         }
 
+        // Euphroia - make this display better
         var text = Loc.GetString("adv-drain-component-examine-volume", ("volume", drainSolution.Volume), ("maxvolume", drain.MaxCapacity));
         args.PushMarkup(text);
 
+        // Euphoria - give it a seocndary exmaine
         if (drainSolution.Volume >= drain.MaxCapacity)
             args.PushMarkup(Loc.GetString("adv-drain-component-examine-full"));
     }
