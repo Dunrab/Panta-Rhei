@@ -57,7 +57,7 @@
       amount: 1
     StrawberryJuice:
       amount: 1
-    GrapeJuice:
+    JuiceGrape:
       amount: 1
   products:
     BerryNice: 5
