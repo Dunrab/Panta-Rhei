@@ -1578,7 +1578,8 @@
   solids:
     FoodCakePlain: 1
     FoodLemoon: 2
-    FoodBerries: 1 #dark colouring
+    #FoodBerries: 1 #dark colouring # Euphroia - swapping berries
+    FoodBlackberry: 1 # Euproia - it uses dark coloring so blackberry it is
 
 - type: microwaveMealRecipe
   id: RecipeOrangeCake

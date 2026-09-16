@@ -1,0 +1,155 @@
+﻿# blackberry
+- type: entity
+  name: blackberry pie
+  parent: FoodPieBase
+  id: FoodPieBlackberry
+  description: Tastes good enough to make a grown man cry.
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet
+  - type: Sprite
+    sprite: _Euphoria/Objects/Consumable/Food/berry_food.rsi
+    state: blackberrypie
+  - type: SliceableFood
+    slice: FoodPieBlackberrySlice
+  - type: Tag
+    tags:
+    - Fruit
+    - Pie
+
+- type: entity
+  name: slice of blackberry pie
+  parent: FoodPieSliceBase
+  id: FoodPieBlackberrySlice
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet
+  - type: Sprite
+    layers:
+    - state: plain-slice
+    - state: alpha-slice-filling
+      color: black
+  - type: Tag
+    tags:
+    - Fruit
+    - Pie
+    - Slice
+
+# blueberry
+- type: entity
+  name: blueberry pie
+  parent: FoodPieBase
+  id: FoodPieBlueberry
+  description: Tastes good enough to make a grown man cry.
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet
+  - type: Sprite
+    sprite: _Euphoria/Objects/Consumable/Food/berry_food.rsi
+    state: blueberrypie
+  - type: SliceableFood
+    slice: FoodPieBlueberrySlice
+  - type: Tag
+    tags:
+    - Fruit
+    - Pie
+
+- type: entity
+  name: slice of blueberry pie
+  parent: FoodPieSliceBase
+  id: FoodPieBlueberrySlice
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet
+  - type: Sprite
+    layers:
+    - state: plain-slice
+    - state: alpha-slice-filling
+      color: blue
+  - type: Tag
+    tags:
+    - Fruit
+    - Pie
+    - Slice
+
+# raspberry
+- type: entity
+  name: raspberry pie
+  parent: FoodPieBase
+  id: FoodPieRaspberry
+  description: Tastes good enough to make a grown man cry.
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet
+  - type: Sprite
+    sprite: _Euphoria/Objects/Consumable/Food/berry_food.rsi
+    state: raspberrypie
+  - type: SliceableFood
+    slice: FoodPieRaspberrySlice
+  - type: Tag
+    tags:
+    - Fruit
+    - Pie
+
+- type: entity
+  name: slice of raspberry pie
+  parent: FoodPieSliceBase
+  id: FoodPieRaspberrySlice
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet
+  - type: Sprite
+    layers:
+    - state: plain-slice
+    - state: alpha-slice-filling
+      color: red
+  - type: Tag
+    tags:
+    - Fruit
+    - Pie
+    - Slice
+
+# blueraspberry
+- type: entity
+  name: blue raspberry pie
+  parent: FoodPieBase
+  id: FoodPieBlueRaspberry
+  description: Tastes good enough to make a grown man cry.
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet
+  - type: Sprite
+    sprite: _Euphoria/Objects/Consumable/Food/berry_food.rsi
+    state: blueraspberrypie
+  - type: SliceableFood
+    slice: FoodPieBlueRaspberrySlice
+  - type: Tag
+    tags:
+    - Fruit
+    - Pie
+
+- type: entity
+  name: slice of blue raspberry pie
+  parent: FoodPieSliceBase
+  id: FoodPieBlueRaspberrySlice
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet
+  - type: Sprite
+    layers:
+    - state: plain-slice
+    - state: alpha-slice-filling
+      color: cyan
+  - type: Tag
+    tags:
+    - Fruit
+    - Pie
+    - Slice

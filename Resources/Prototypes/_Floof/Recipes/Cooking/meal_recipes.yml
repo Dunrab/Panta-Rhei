@@ -6,7 +6,9 @@
   reagents:
     IceCream: 20
     Blood: 10
-    JuiceBerry: 5
+    #JuiceBerry: 5 # Euphoria - swapping berries
+    RaspberryJuice: 5
+    StrawberryJuice: 5
   solids:
     IceCreamBowl: 1
 

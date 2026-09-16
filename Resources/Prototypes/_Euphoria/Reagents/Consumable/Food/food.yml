@@ -1,5 +1,5 @@
 ﻿- type: reagent
-  id: BlackBerryJuice
+  id: BlackberryJuice
   name: reagent-name-blackberryjuice
   parent: BaseJuice
   desc: reagent-desc-blackberryjuice
