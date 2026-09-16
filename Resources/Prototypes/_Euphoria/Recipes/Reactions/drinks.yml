@@ -43,3 +43,21 @@
       amount: 1
   products:
     BepisMidnight: 4
+
+- type: reaction
+  id: BerryNice
+  requiredMixerCategories:
+  - Shake
+  reactants:
+    BlackberryJuice:
+      amount: 1
+    BlueberryJuice:
+      amount: 1
+    RaspberryJuice:
+      amount: 1
+    StrawberryJuice:
+      amount: 1
+    GrapeJuice:
+      amount: 1
+  products:
+    BepisMidnight: 4

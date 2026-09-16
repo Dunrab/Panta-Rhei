@@ -12,3 +12,6 @@ reagent-desc-blueraspberryjuice = Natures candy plus blueberries in a glass.
 
 reagent-name-bepismidnight = bepis midnight
 reagent-desc-bepismidnight = Bepis mixed with berries for those late night shifts.
+
+reagent-name-berrynice = berry nice
+reagent-desc-berrynice = All the berries in one tall glass...
