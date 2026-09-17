@@ -43,7 +43,7 @@ public sealed partial class AdvDrainComponent : Component
     public float UnitsPerSecond = 20f;
 
     /// <summary>
-    /// Euprhoia:
+    /// Euphoria:
     /// Maximum amount of solution the drain can hold.
     /// </summary>
     [DataField]
