@@ -87,7 +87,7 @@ public sealed class AdvDrainSystem : SharedDrainSystem
             return;
         }
 
-        // Euphroia - make drains stop at their max volume
+        // Euphoria - make drains stop at their max volume
         var remainingCapacity = drain.MaxCapacity - drainSolution.Volume;
         var amountToPutInDrain = FixedPoint2.Min(containerSolution.Volume, remainingCapacity);
 
