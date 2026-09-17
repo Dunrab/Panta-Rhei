@@ -1,12 +1,9 @@
-﻿- type: entity
-  name: blackberry
+﻿# base berry produce
+- type: entity
+  abstract: true
   parent: FoodProduceBase
-  id: FoodBlackberry
-  description: These berries have a deep sweetness and refreshing tartness to them.
+  id: FoodProduceBaseBerry
   components:
-  - type: FlavorProfile
-    flavors:
-    - blackberry
   - type: SolutionContainerManager
     solutions:
       food:
@@ -16,10 +13,23 @@
           Quantity: 5
         - ReagentId: Vitamin
           Quantity: 4
-  - type: Sprite
-    sprite: _Euphoria/Objects/Specific/Hydroponics/blackberry.rsi
   - type: Item
     heldPrefix: produce
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
+  name: blackberry
+  parent: FoodProduceBaseBerry
+  id: FoodBlackberry
+  description: These berries have a deep sweetness and refreshing tartness to them.
+  components:
+  - type: FlavorProfile
+    flavors:
+    - blackberry
+  - type: Sprite
+    sprite: _Euphoria/Objects/Specific/Hydroponics/blackberry.rsi
   - type: Produce
     seedId: blackberry
   - type: Extractable
@@ -27,35 +37,24 @@
       reagents:
       - ReagentId: BlackberryJuice
         Quantity: 10
-  - type: Tag
-    tags:
-    - Fruit
   - type: FoodSequenceElement
     entries:
+      Burger: Blackberry
       Taco: Blackberry
+      Skewer: Blackberry
+      Hotdog: Blackberry
 
 - type: entity
   name: blueberry
-  parent: FoodProduceBase
+  parent: FoodProduceBaseBerry
   id: FoodBlueberry
   description: Berry blue, sweet and lightly tart.
   components:
   - type: FlavorProfile
     flavors:
     - blueberry
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 11
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 5
-        - ReagentId: Vitamin
-          Quantity: 4
   - type: Sprite
     sprite: _Euphoria/Objects/Specific/Hydroponics/blueberry.rsi
-  - type: Item
-    heldPrefix: produce
   - type: Produce
     seedId: blueberry
   - type: Extractable
@@ -63,35 +62,24 @@
       reagents:
       - ReagentId: BlueberryJuice
         Quantity: 10
-  - type: Tag
-    tags:
-    - Fruit
   - type: FoodSequenceElement
     entries:
+      Burger: Blueberry
       Taco: Blueberry
+      Skewer: Blueberry
+      Hotdog: Blueberry
 
 - type: entity
   name: raspberry
-  parent: FoodProduceBase
+  parent: FoodProduceBaseBerry
   id: FoodRaspberry
   description: These delicious berries are often referred to as "natures candy."
   components:
   - type: FlavorProfile
     flavors:
     - raspberry
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 11
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 5
-        - ReagentId: Vitamin
-          Quantity: 4
   - type: Sprite
     sprite: _Euphoria/Objects/Specific/Hydroponics/raspberry.rsi
-  - type: Item
-    heldPrefix: produce
   - type: Produce
     seedId: raspberry
   - type: Extractable
@@ -99,35 +87,24 @@
       reagents:
       - ReagentId: RaspberryJuice
         Quantity: 10
-  - type: Tag
-    tags:
-    - Fruit
   - type: FoodSequenceElement
     entries:
+      Burger: Raspberry
       Taco: Raspberry
+      Skewer: Raspberry
+      Hotdog: Raspberry
 
 - type: entity
   name: blueraspberry
-  parent: FoodProduceBase
+  parent: FoodProduceBaseBerry
   id: FoodBlueRaspberry
   description: Who would of thought natures candy could be improved by adding more BERRY!?
   components:
   - type: FlavorProfile
     flavors:
     - blueraspberry
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 11
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 5
-        - ReagentId: Vitamin
-          Quantity: 4
   - type: Sprite
     sprite: _Euphoria/Objects/Specific/Hydroponics/blueraspberry.rsi
-  - type: Item
-    heldPrefix: produce
   - type: Produce
     seedId: blueraspberry
   - type: Extractable
@@ -135,9 +112,9 @@
       reagents:
       - ReagentId: BlueRaspberryJuice
         Quantity: 10
-  - type: Tag
-    tags:
-    - Fruit
   - type: FoodSequenceElement
     entries:
+      Burger: BlueRaspberry
       Taco: BlueRaspberry
+      Skewer: BlueRaspberry
+      Hotdog: BlueRaspberry
