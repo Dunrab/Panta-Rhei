@@ -879,10 +879,12 @@
   category: Skills
   cost: 2
   conditions:
-  - !type:OneOfSpeciesCondition # Avali already have this
-    invert: true
+  - !type:OneOfSpeciesCondition # only the below species can take the trait
+    invert: false
     species:
-    - Avali
+    - Harpy
+    - Resomi
+    - Allulalo
   effects:
   - !type:AddCompsEffect
     components:
