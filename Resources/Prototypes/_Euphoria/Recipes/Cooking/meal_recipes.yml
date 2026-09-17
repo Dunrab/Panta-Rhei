@@ -125,3 +125,65 @@
   solids:
     FoodRaspberry: 3
     FoodPlateMuffinTin: 1
+
+# taiyaki
+- type: microwaveMealRecipe
+  id: RecipeTaiyakiPlain
+  name: plain taiyaki recipe
+  result: FoodTaiyakiPlain
+  time: 15
+  group: Cake # they are technically a cake
+  reagents:
+    IceCream: 10
+  solids:
+    FoodCakePlainSlice: 1 # to make it a bit easier to make
+
+- type: microwaveMealRecipe
+  id: RecipeTaiyakiBlueberry
+  name: blueberry taiyaki recipe
+  result: FoodTaiyakiBlueberry
+  time: 15
+  group: Cake
+  solids:
+    FoodTaiyakiPlain: 1
+    FoodBlueberry: 3
+
+- type: microwaveMealRecipe
+  id: RecipeTaiyakiStrawberry
+  name: strawberry taiyaki recipe
+  result: FoodTaiyakiStrawberry
+  time: 15
+  group: Cake
+  solids:
+    FoodTaiyakiPlain: 1
+    FoodStrawberry: 3
+
+- type: microwaveMealRecipe
+  id: RecipeTaiyakiRaspberry
+  name: raspberry taiyaki recipe
+  result: FoodTaiyakiRaspberry
+  time: 15
+  group: Cake
+  solids:
+    FoodTaiyakiPlain: 1
+    FoodRaspberry: 3
+
+- type: microwaveMealRecipe
+  id: RecipeTaiyakiChocolate
+  name: chocolate taiyaki recipe
+  result: FoodTaiyakiChocolate
+  time: 15
+  group: Cake
+  solids:
+    FoodTaiyakiPlain: 1
+    FoodSnackChocolateBar: 1 # one bar
+
+- type: microwaveMealRecipe
+  id: RecipeTaiyakiBlueRaspberry
+  name: blue raspberry taiyaki recipe
+  result: FoodTaiyakiBlueRaspberry
+  time: 15
+  group: Cake
+  solids:
+    FoodTaiyakiPlain: 1
+    FoodBlueRaspberry: 3
