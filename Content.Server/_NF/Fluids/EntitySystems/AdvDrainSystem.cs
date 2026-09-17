@@ -221,7 +221,7 @@ public sealed class AdvDrainSystem : SharedDrainSystem
             return;
         }
 
-        // Euphroia - make this display better
+        // Euphoria - make this display better
         var text = Loc.GetString("adv-drain-component-examine-volume", ("volume", drainSolution.Volume), ("maxvolume", drain.MaxCapacity));
         args.PushMarkup(text);
 
