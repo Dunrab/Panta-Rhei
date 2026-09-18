@@ -31,7 +31,7 @@
       - ConstructionMaterial
     #  components:
     #  - ConstructionMaterials # Was not ported due to tag.
-      components: # Euphroia - let boards go in here
+      components: # Euphoria - let boards go in here
         - Circuitboard
     blacklist: # Euph - uncomment
       tags:
