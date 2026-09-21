@@ -105,3 +105,15 @@
   id: ClothingMaskGasDrone
   equipment:
     mask: ClothingMaskGasDrone
+
+- type: loadout
+  id: ClothingMaskOniBlue
+  equipment:
+    mask: ClothingMaskOniBlue
+  groupBy: "onimask"
+
+- type: loadout
+  id: ClothingMaskOniRed
+  equipment:
+    mask: ClothingMaskOniRed
+  groupBy: "onimask"
