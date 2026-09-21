@@ -341,6 +341,7 @@
 
 - type: loadoutGroup
   id: PassengerFace
+  parent: PassengerFaceEuphoria # Euphoria - so every job has most mask options
   name: loadout-group-passenger-mask
   minLimit: 0
   loadouts:
@@ -513,6 +514,7 @@
 
 - type: loadoutGroup
   id: ChefMask
+  parent: PassengerFaceEuphoria # Euphoria - so every job has most mask options
   name: loadout-group-chef-mask
   minLimit: 0
   loadouts:
@@ -619,6 +621,7 @@
 
 - type: loadoutGroup
   id: ChaplainMask
+  parent: PassengerFaceEuphoria # Euphoria - so every job has most mask options
   name: loadout-group-chaplain-mask
   minLimit: 0
   loadouts:
@@ -852,6 +855,7 @@
 
 - type: loadoutGroup
   id: MimeMask
+  parent: PassengerFaceEuphoria # Euphoria - so every job has most mask options
   name: loadout-group-mime-mask
   loadouts:
   - MimeMask
@@ -1970,6 +1974,7 @@
 
 - type: loadoutGroup
   id: MedicalMask
+  parent: PassengerFaceEuphoria # Euphoria - so every job has most mask options
   name: loadout-group-medical-mask
   minLimit: 0
   loadouts:

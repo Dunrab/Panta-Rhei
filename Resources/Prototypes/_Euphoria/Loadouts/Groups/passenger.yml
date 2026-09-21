@@ -7,3 +7,19 @@
   - ClothingShoesHeelsKittenCrimson
   - ClothingShoesHeelsKittenRose
   - ClothingShoesHeelsBallet
+
+# face/gasmasks
+- type: loadoutGroup
+  id: PassengerFaceEuphoria
+  abstract: true
+  loadouts:
+  - ClothingMaskFox
+  - ClothingMaskBear
+  - ClothingMaskJackal
+  - ClothingMaskRaven
+  - ClothingMaskRat
+  - ClothingMaskNeckGaiter
+  - ClothingMaskNeckGaiterRed
+  - ClothingMaskJoy
+  - ClothingMaskPlague
+  - ClothingMaskGasDrone
