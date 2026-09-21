@@ -400,11 +400,6 @@
   description: trait-pettable-desc
   category: BonusPhysical
   cost: 2
-  conditions:
-  - !type:OneOfSpeciesCondition # kitsune already have this by default
-    invert: true
-    species:
-    - Kitsune
   effects:
   - !type:AddCompsEffect
     components:
