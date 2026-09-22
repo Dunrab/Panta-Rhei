@@ -1,0 +1,40 @@
+﻿- type: constructionGraph
+  id: MushWoodFurniture
+  start: start
+  graph:
+  - node: start
+    actions:
+    - !type:DestroyEntity {}
+    edges:
+    - to: mushwoodchair
+      steps:
+      - material: MushwoodPlank
+        amount: 5
+        doAfter: 3
+    - to: mushwooddogbed
+      steps:
+      - material: MushwoodPlank
+        amount: 5
+        doAfter: 3
+
+  - node: mushwoodchair
+    entity: ChairMushWood
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MushwoodPlank
+      steps:
+      - tool: Screwing
+        doAfter: 1
+
+  - node: mushwooddogbed
+    entity: MushwoodDogBed
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MushwoodPlank
+      steps:
+      - tool: Screwing
+        doAfter: 1

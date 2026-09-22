@@ -1,0 +1,13 @@
+﻿# mushwood tiles
+- type: stack
+  id: FloorTileMushWood
+  name: tiles-mushwood
+  spawn: FloorTileItemMushWood # need to change
+  maxCount: 30
+
+# mushplanks
+- type: stack
+  id: MushwoodPlank
+  name: mushwood-plank
+  spawn: MaterialMushwoodPlank1
+  maxCount: 30

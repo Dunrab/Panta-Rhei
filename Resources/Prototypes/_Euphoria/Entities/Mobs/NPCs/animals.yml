@@ -319,3 +319,152 @@
     name: ghost-role-information-pet-whimperlet-name
     description: ghost-role-information-pet-description
     rules: ghost-role-information-familiar-rules
+
+# mushroom men testing
+- type: entity
+  parent: [ MobBaseAncestorNoShitmed, DVNodeCrawler ] # we give them vent crawling
+  id: MobMythicalMushroom
+  name: walking mushroom
+  description: A cheery fellow. Definitely not a goblin. Or an elf. Or a gnome.
+  components:
+  - type: Sprite
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: alive
+      sprite: _Euphoria/Mobs/mythical_mushroom.rsi
+    - map: [ "enum.HumanoidVisualLayers.Handcuffs" ]
+      color: "#ffffff"
+      sprite: Objects/Misc/handcuffs.rsi
+      state: body-overlay-2
+      visible: false
+    - map: [ "clownedon" ]
+      sprite: "Effects/creampie.rsi"
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: alive
+      Dead:
+        Base: dead
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      50: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      25: 0.8
+      40: 0.6
+  - type: Deathgasp
+    needsCritical: false
+  - type: StatusEffects
+    allowed:
+    - Electrocution
+    - Stunned
+    - Flashed
+    - Pacified
+    - Addicted
+  - type: GhostRole
+    name: ghost-role-information-walking-mushroom-name # need to change
+    description: ghost-role-information-walking-mushroom-description
+    rules: ghost-role-information-freeagent-rules
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    mindRoles:
+    - MindRoleGhostRoleFreeAgent
+    raffle:
+      settings: default
+  - type: GhostTakeoverAvailable
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.2
+        density: 160
+        mask:
+        - SmallMobMask
+        layer:
+        - SmallMobLayer
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile # evil ass shrooms sleeping people
+  - type: HTN
+    rootTask:
+      task: IdleCompound
+  - type: Speech # going to re-use the gnome sounds and speech because it's cool
+    speechSounds: Gnome
+  - type: Emoting
+  - type: Vocal
+    sounds:
+      Male: GnomeSounds
+      Female: GnomeSounds
+      Unsexed: GnomeSounds
+  - type: NoSlip
+  - type: MeleeWeapon
+    soundHit:
+      collection: Punch
+    angle: 30
+    animation: WeaponArcFist
+    attackRate: 1
+    damage:
+      types:
+        Blunt: 5
+    force: true
+    speedModifier: 1.5
+    useSound:
+      path: /Audio/Effects/glass_knock.ogg
+  - type: Clumsy
+    clumsySound:
+      path: /Audio/_DV/Voice/Gnome/gnomescream.ogg
+  - type: PseudoItem
+    shape:
+    - 0,0,0,2
+  - type: Hands
+    activeHandId: Hand
+    hands:
+      Hand:
+        location: Left
+    showInHands: false
+  - type: Puller
+    needsHands: true
+  - type: ComplexInteraction
+  - type: Inventory
+    templateId: pet
+    speciesId: gnome # gonna reuse this template instead of making a new one
+  - type: Butcherable
+    butcheringType: knife
+    spawned:
+    - id: MaterialMushwoodPlank5 # spawn five of our planks
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: DoctorsDelight
+        Quantity: 60
+  # shroom powers
+  - type: Psionic
+  - type: MassSleepPower
+  # language
+  - type: LanguageKnowledge # they are a plant, let them speak rootspeak and basic
+    speaks:
+    - TauCetiBasic
+    - RootSpeak
+    understands:
+    - TauCetiBasic
+    - RootSpeak
+  # leash because it's funny
+  - type: LeashAnchor # there's a specific person that knows who they are that this is for
+    kind: Intrinsic
+  - type: CanEscapeInventory
+  - type: MobPrice
+    price: 50
+  - type: Tag
+    tags:
+    - Trash
+    - VimPilot
+    - ChefPilot
+    - Meat
+    - FootstepSound
