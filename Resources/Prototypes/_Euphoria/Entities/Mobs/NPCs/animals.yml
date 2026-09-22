@@ -413,10 +413,6 @@
     damage:
       types:
         Blunt: 5
-    force: true
-    speedModifier: 1.5
-    useSound:
-      path: /Audio/Effects/glass_knock.ogg
   - type: Clumsy
     clumsySound:
       path: /Audio/_DV/Voice/Gnome/gnomescream.ogg

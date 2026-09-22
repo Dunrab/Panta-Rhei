@@ -2,7 +2,7 @@
 - type: stack
   id: FloorTileMushWood
   name: tiles-mushwood
-  spawn: FloorTileItemMushWood # need to change
+  spawn: FloorTileItemMushWood
   maxCount: 30
 
 # mushplanks
