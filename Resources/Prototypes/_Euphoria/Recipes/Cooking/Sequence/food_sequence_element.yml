@@ -119,7 +119,7 @@
   id: BurnedMess
   name: food-sequence-content-burnedmess
   sprites:
-  - sprite: Objects/Consumable/Food/ingredients.rsi/badrecipe.png
+  - sprite: Objects/Consumable/Food/ingredients.rsi
     state: badrecipe
   tags:
   - Trash
