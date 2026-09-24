@@ -25,6 +25,11 @@
   - type: Appearance
   - type: Item
     sprite: _Euphoria/Objects/Materials/mush_wood.rsi
+    inhandVisuals:
+      left:
+      - state: mushwood-inhand-left
+      right:
+      - state: mushwood-inhand-right
     heldPrefix: wood
   - type: Tag
     tags:
