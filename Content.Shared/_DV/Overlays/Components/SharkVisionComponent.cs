@@ -25,7 +25,7 @@ public sealed partial class SharkVisionComponent : SwitchableVisionOverlayCompon
         "YellowBlood",
         "WhiteBlood",
         "BloodAllulalo",
-        "SynthBlood"
+        "SynthBlood",
         // Euphoria additions end
     ];
 }
