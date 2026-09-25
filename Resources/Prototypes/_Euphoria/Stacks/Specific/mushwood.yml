@@ -7,7 +7,9 @@
 
 # mushplanks
 - type: stack
+  parent: WoodPlank
   id: MushwoodPlank
   name: mushwood-plank
+  icon: { sprite: _Euphoria/Objects/Materials/mush_wood.rsi, state: mushwood }
   spawn: MaterialMushwoodPlank1
   maxCount: 30
