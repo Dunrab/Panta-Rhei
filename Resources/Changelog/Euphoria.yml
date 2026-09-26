@@ -6047,3 +6047,37 @@ Entries:
         item walks away.
   id: 755
   time: '2026-09-23T04:49:04.0000000+00:00'
+- author: deltaSpawn0040
+  changes:
+    - type: Tweak
+      message: >-
+        Food Critic ghost role spawns in the same places that station crew do
+        when latejoining.
+  id: 756
+  time: '2026-09-23T23:21:10.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Fix
+      message: Blackberries should grind properly again.
+  id: 757
+  time: '2026-09-25T03:57:09.0000000+00:00'
+- author: DrCinnamonroll
+  changes:
+    - type: Add
+      message: Den Mantis Drip
+  id: 758
+  time: '2026-09-25T03:58:00.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: Uncooked buns now take less time to craft (5s -> 0.5s)
+  id: 759
+  time: '2026-09-25T13:47:20.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: >-
+        Burned messes and Cucumber slices should now be able to go onto burgers
+        and tacos.
+  id: 760
+  time: '2026-09-26T09:46:49.0000000+00:00'
