@@ -1,5 +1,4 @@
-﻿# Allowed emotes are generally going to be what you see in emote_sounds.yml for a species or any other emote.yml
-# Some of these may be duplicates, but we are gonna roll with this and worry about that in the future if its a problem
+﻿# We have to give the tag of what we want to add to the player emote wise to replace their emotes,
 # Some of the emotes also don't display properly in the emote wheel but the chat trigger will work.
 - type: trait
   id: TraitsEmoteVulpkanin
@@ -13,16 +12,8 @@
       Male: MaleVulpkanin
       Female: FemaleVulpkanin
       Unsexed: MaleVulpkanin
-    allowedEmotes:
-    - Growl
-    - Snarl
-    - Bark
-    - Howl
-    - Awoo
-    - Yip
-    - Yap
-    - Whine
-    - Whimper
+  - !type:AddTagTraitEffect
+    tagsToAdd: VulpEmotes
 
 # felinid
 - type: trait
@@ -37,12 +28,8 @@
       Male: MaleFelinid
       Female: FemaleFelinid
       Unsexed: MaleFelinid
-    allowedEmotes:
-    - Hiss
-    - FelineTrill
-    - Meow
-    - Mew
-    - Purr
+  - !type:AddTagTraitEffect
+    tagsToAdd: FelinidEmotes
 
 # kitsune
 - type: trait
@@ -57,13 +44,8 @@
       Male: MaleKitsune
       Female: FemaleKitsune
       Unsexed: MaleKitsune
-    allowedEmotes:
-    - Growl
-    - Yip
-    - Yap
-    - Whine
-    - Whimper
-    - Squeak
+  - !type:AddTagTraitEffect
+    tagsToAdd: KitsuneEmotes
 
 # slime person
 - type: trait
@@ -78,7 +60,6 @@
       Male: MaleSlime
       Female: FemaleSlime
       Unsexed: MaleSlime
-    allowedEmotes:
-    - Pop
-    - Bubble
-    - Squish
+  - !type:AddTagTraitEffect
+    tagsToAdd: SlimeEmotes
+

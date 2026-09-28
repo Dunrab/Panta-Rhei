@@ -11,8 +11,6 @@ public sealed partial class EmoteSoundsEffect : BaseTraitEffect
 {
     [DataField]
     public Dictionary<Sex, ProtoId<EmoteSoundsPrototype>> Sounds = new();
-    [DataField]
-    public List<ProtoId<EmotePrototype>> AllowedEmotes = new();
 
     public override void Apply(TraitEffectContext ctx)
     {
@@ -21,12 +19,6 @@ public sealed partial class EmoteSoundsEffect : BaseTraitEffect
 
         vocal.Sounds = Sounds;
         ctx.EntMan.Dirty(ctx.Player, vocal);
-
-        if (ctx.EntMan.TryGetComponent<SpeechComponent>(ctx.Player, out var speech))
-        {
-            speech.AllowedEmotes = AllowedEmotes;
-            ctx.EntMan.Dirty(ctx.Player, speech);
-        }
 
         var ev = new SoundsChangedEvent();
         ctx.EntMan.EventBus.RaiseLocalEvent(ctx.Player, ref ev);
