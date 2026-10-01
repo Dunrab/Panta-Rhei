@@ -124,9 +124,9 @@
   effectSuccess:
     popup: Subtle
     sound:
-      path: /Audio/Weapons/punch1.ogg
+      path: /Audio/_Euphoria/Announcements/InteractVerbs/buttocks.ogg # ASS SLAP USA BABY
       params:
-        volume: -3
+        volume: -1
     soundPerceivedByOthers: false
   effectFailure: null
 
