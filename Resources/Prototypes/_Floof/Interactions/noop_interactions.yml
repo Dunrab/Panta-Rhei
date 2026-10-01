@@ -130,8 +130,7 @@
       params:
         volume: -3
     soundPerceivedByOthers: false
-  effectFailure:
-    popup: Subtle
+  effectFailure: null
 
 # suggestive gesture, similar to checking out and needs to be subtle and near the bottom
 - type: Interaction
