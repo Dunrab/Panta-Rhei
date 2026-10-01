@@ -80,5 +80,5 @@ interaction-SuggestiveGesture-success-target-popup = You think that {THE($user)}
 
 interaction-AssSlapGesture-name = Slap Ass
 interaction-AssSlapGesture-description = Slap a coworker on the ass for doing a good job.
-interaction-AssSlapGesture-success-self-popup = You look at {THE($target)} and slap them on the ass.
-interaction-AssSlapGesture-success-target-popup = {THE($user)} just slapped you on the ass...
+interaction-AssSlapGesture-success-self-popup = You slap {THE($target)} on {POSS-ADJ($target)} ass.
+interaction-AssSlapGesture-success-target-popup = {THE($user)} slaps you on the ass!
