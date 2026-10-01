@@ -101,13 +101,11 @@
 # ass slap usa
 - type: Interaction
   id: AssSlapGesture
-  parent: BaseGlobal
+  parent: [BaseGlobal, BaseHands]
   priority: -98 # Due to the nature of this, will keep this subtle
   delay: 0.4
   cooldown: 5
   requiresHands: false # im gonna be evil and let moth roaches slap some ass
-  requiresCanInteract: false
-  contactInteraction: false
   icon: /Textures/Interface/AdminActions/play.png
   range: { max: 0.666 }
   hideByRequirement: true
