@@ -174,7 +174,7 @@
       food:
         maxVol: 100
         reagents:
-        - ReagentId: BlueraspberrySyrup
+        - ReagentId: BlueRaspberrySyrup
           Quantity: 100
 
 - type: entity

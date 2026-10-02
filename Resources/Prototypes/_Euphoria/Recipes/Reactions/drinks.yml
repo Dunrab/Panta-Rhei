@@ -92,7 +92,7 @@
   requiredMixerCategories:
   - Shake
   reactants:
-    BlueraspberrySyrup:
+    BlueRaspberrySyrup:
       amount: 1
     IceCream:
       amount: 1
