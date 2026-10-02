@@ -2,7 +2,7 @@
 reagent-desc-blackberry-milkshake = A delicious milkshake mixed with blackberry syrup
 reagent-name-blueberry-milkshake = Blueberry Milkshake
 reagent-desc-blueberry-milkshake =  A delicious milkshake mixed with blueberry syrup
-reagent-name-blueraspberry-milkshake = Blueberry Milkshake
+reagent-name-blueraspberry-milkshake = Blue Raspberry Milkshake
 reagent-desc-blueraspberry-milkshake =  A delicious milkshake mixed with blue raspberry syrup
 reagent-name-chocolate-milkshake = Chocolate Milkshake
 reagent-desc-chocolate-milkshake = A delicious milkshake mixed with chocolate syrup

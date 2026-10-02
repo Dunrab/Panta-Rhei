@@ -1,7 +1,18 @@
 ﻿- type: reagent
+  abstract: true
+  parent: BaseDrink
+  id: BaseDrinkMileShake
+  group: MilkShakes
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  footstepSound:
+    collection: FootstepSlime
+
+- type: reagent
   id: BlackberryShake
   name: reagent-name-blackberry-milkshake
-  parent: BaseDrink
+  parent: BaseDrinkMileShake
   desc: reagent-desc-blackberry-milkshake
   physicalDesc: reagent-physical-desc-aromatic
   flavor: sweet
@@ -14,14 +25,11 @@
   metamorphicSprite:
     sprite: _Euphoria/Objects/Consumable/Drinks/Milkshakes/blackberry_shake.rsi
     state: icon-empty
-  metamorphicMaxFillLevels: 4
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
 
 - type: reagent
   id: BlueberryShake
   name: reagent-name-blueberry-milkshake
-  parent: BaseDrink
+  parent: BaseDrinkMileShake
   desc: reagent-desc-blueberry-milkshake
   physicalDesc: reagent-physical-desc-aromatic
   flavor: sweet
@@ -34,14 +42,11 @@
   metamorphicSprite:
     sprite: _Euphoria/Objects/Consumable/Drinks/Milkshakes/blueberry_shake.rsi
     state: icon-empty
-  metamorphicMaxFillLevels: 4
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
 
 - type: reagent
   id: BlueraspberryShake
   name: reagent-name-blueraspberry-milkshake
-  parent: BaseDrink
+  parent: BaseDrinkMileShake
   desc: reagent-desc-blueraspberry-milkshake
   physicalDesc: reagent-physical-desc-aromatic
   flavor: sweet
@@ -54,14 +59,11 @@
   metamorphicSprite:
     sprite: _Euphoria/Objects/Consumable/Drinks/Milkshakes/blueraspberry_shake.rsi
     state: icon-empty
-  metamorphicMaxFillLevels: 4
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
 
 - type: reagent
   id: ChocolateShake
   name: reagent-name-chocolate-milkshake
-  parent: BaseDrink
+  parent: BaseDrinkMileShake
   desc: reagent-desc-chocolate-milkshake
   physicalDesc: reagent-physical-desc-aromatic
   flavor: sweet
@@ -74,14 +76,11 @@
   metamorphicSprite:
     sprite: _Euphoria/Objects/Consumable/Drinks/Milkshakes/chocolate_shake.rsi
     state: icon-empty
-  metamorphicMaxFillLevels: 4
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
 
 - type: reagent
   id: RaspberryShake
   name: reagent-name-raspberry-milkshake
-  parent: BaseDrink
+  parent: BaseDrinkMileShake
   desc: reagent-desc-raspberry-milkshake
   physicalDesc: reagent-physical-desc-aromatic
   flavor: sweet
@@ -94,14 +93,11 @@
   metamorphicSprite:
     sprite: _Euphoria/Objects/Consumable/Drinks/Milkshakes/raspberry_shake.rsi
     state: icon-empty
-  metamorphicMaxFillLevels: 4
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
 
 - type: reagent
   id: StrawberryShake
   name: reagent-name-strawberry-milkshake
-  parent: BaseDrink
+  parent: BaseDrinkMileShake
   desc: reagent-desc-strawberry-milkshake
   physicalDesc: reagent-physical-desc-aromatic
   flavor: sweet
@@ -114,9 +110,6 @@
   metamorphicSprite:
     sprite: _Euphoria/Objects/Consumable/Drinks/Milkshakes/strawberry_shake.rsi
     state: icon-empty
-  metamorphicMaxFillLevels: 4
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
 
 # Syrup for the iscream
 
@@ -128,6 +121,7 @@
   physicalDesc: reagent-physical-desc-sticky
   flavor: sweet
   color: "#3e0930"
+  group: MilkShakes
 
 - type: reagent
   id: BlueberrySyrup
@@ -137,6 +131,7 @@
   physicalDesc: reagent-physical-desc-sticky
   flavor: sweet
   color: "#312581"
+  group: MilkShakes
 
 - type: reagent
   id: RaspberrySyrup
@@ -146,6 +141,7 @@
   physicalDesc: reagent-physical-desc-sticky
   flavor: sweet
   color: "#872657"
+  group: MilkShakes
 
 - type: reagent
   id: BlueRaspberrySyrup
@@ -155,6 +151,7 @@
   physicalDesc: reagent-physical-desc-sticky
   flavor: sweet
   color: "#0cbfe9"
+  group: MilkShakes
 
 - type: reagent
   id: StrawberrySyrup
@@ -164,6 +161,7 @@
   physicalDesc: reagent-physical-desc-sticky
   flavor: sweet
   color: "#FA5053"
+  group: MilkShakes
 
 - type: reagent
   id: ChocolateSyrup
@@ -173,3 +171,4 @@
   physicalDesc: reagent-physical-desc-sticky
   flavor: sweet
   color: "#713600"
+  group: MilkShakes
