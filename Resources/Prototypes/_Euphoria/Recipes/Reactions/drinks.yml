@@ -170,7 +170,7 @@
     Sugar:
       amount: 1
   products:
-    BlueraspberrySyrup: 2
+    BlueRaspberrySyrup: 2
 
 - type: reaction
   id: ChocolateSyrup
