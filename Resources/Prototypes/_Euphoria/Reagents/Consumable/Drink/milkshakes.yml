@@ -85,7 +85,7 @@
   desc: reagent-desc-raspberry-milkshake
   physicalDesc: reagent-physical-desc-aromatic
   flavor: sweet
-  color: "#280137"
+  color: "#872657"
   metabolisms:
     Digestion:
       effects:

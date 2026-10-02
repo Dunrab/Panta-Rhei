@@ -139,7 +139,7 @@
 - type: reaction
   id: BlackberrySyrup
   requiredMixerCategories:
-  - Shake
+  - Stir
   reactants:
     BlackberryJuice:
       amount: 1
@@ -151,7 +151,7 @@
 - type: reaction
   id: BlueberrySyrup
   requiredMixerCategories:
-  - Shake
+  - Stir
   reactants:
     BlueberryJuice:
       amount: 1
@@ -163,7 +163,7 @@
 - type: reaction
   id: BlueraspberrySyrup
   requiredMixerCategories:
-  - Shake
+  - Stir
   reactants:
     BlueRaspberryJuice:
       amount: 1
@@ -175,7 +175,7 @@
 - type: reaction
   id: ChocolateSyrup
   requiredMixerCategories:
-  - Shake
+  - Stir
   reactants:
     CocoaPowder: # chocolate powder instead of juice smh
       amount: 1
@@ -187,7 +187,7 @@
 - type: reaction
   id: RaspberrySyrup
   requiredMixerCategories:
-  - Shake
+  - Stir
   reactants:
     RaspberryJuice:
       amount: 1
@@ -199,7 +199,7 @@
 - type: reaction
   id: StrawberrySyrup
   requiredMixerCategories:
-  - Shake
+  - Stir
   reactants:
     StrawberryJuice:
       amount: 1
