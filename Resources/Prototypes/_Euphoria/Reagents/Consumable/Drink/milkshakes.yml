@@ -1,7 +1,7 @@
 ﻿- type: reagent
   abstract: true
   parent: BaseDrink
-  id: BaseDrinkMileShake
+  id: BaseDrinkMilkShake
   group: MilkShakes
   metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-
@@ -12,7 +12,7 @@
 - type: reagent
   id: BlackberryShake
   name: reagent-name-blackberry-milkshake
-  parent: BaseDrinkMileShake
+  parent: BaseDrinkMilkShake
   desc: reagent-desc-blackberry-milkshake
   physicalDesc: reagent-physical-desc-aromatic
   flavor: sweet
@@ -29,7 +29,7 @@
 - type: reagent
   id: BlueberryShake
   name: reagent-name-blueberry-milkshake
-  parent: BaseDrinkMileShake
+  parent: BaseDrinkMilkShake
   desc: reagent-desc-blueberry-milkshake
   physicalDesc: reagent-physical-desc-aromatic
   flavor: sweet
@@ -46,7 +46,7 @@
 - type: reagent
   id: BlueraspberryShake
   name: reagent-name-blueraspberry-milkshake
-  parent: BaseDrinkMileShake
+  parent: BaseDrinkMilkShake
   desc: reagent-desc-blueraspberry-milkshake
   physicalDesc: reagent-physical-desc-aromatic
   flavor: sweet
@@ -63,7 +63,7 @@
 - type: reagent
   id: ChocolateShake
   name: reagent-name-chocolate-milkshake
-  parent: BaseDrinkMileShake
+  parent: BaseDrinkMilkShake
   desc: reagent-desc-chocolate-milkshake
   physicalDesc: reagent-physical-desc-aromatic
   flavor: sweet
@@ -80,7 +80,7 @@
 - type: reagent
   id: RaspberryShake
   name: reagent-name-raspberry-milkshake
-  parent: BaseDrinkMileShake
+  parent: BaseDrinkMilkShake
   desc: reagent-desc-raspberry-milkshake
   physicalDesc: reagent-physical-desc-aromatic
   flavor: sweet
@@ -97,7 +97,7 @@
 - type: reagent
   id: StrawberryShake
   name: reagent-name-strawberry-milkshake
-  parent: BaseDrinkMileShake
+  parent: BaseDrinkMilkShake
   desc: reagent-desc-strawberry-milkshake
   physicalDesc: reagent-physical-desc-aromatic
   flavor: sweet
