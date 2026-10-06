@@ -24,6 +24,7 @@
       Tongue: OrganIPCTongue
       Ears: OrganIPCEars
       Heart: OrganIPCHeart
+      Stomach: OrganIPCStomach # Euphoria - let ipcs drinky special tagged drinks
   - type: HumanoidProfile
     species: IPC
   - type: Sprite

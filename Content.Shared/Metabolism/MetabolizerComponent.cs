@@ -1,5 +1,6 @@
 using Content.Shared.Body.Components;
 using Content.Shared.FixedPoint;
+using Content.Shared.Whitelist;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
@@ -37,6 +38,12 @@ public sealed partial class MetabolizerComponent : Component
     /// </summary>
     [ViewVariables]
     public TimeSpan AdjustedUpdateInterval => UpdateInterval * UpdateIntervalMultiplier;
+
+    /// <summary>
+    /// Reagents allowed to be metabolized by this metabolizer.
+    /// </summary>
+    [DataField]
+    public EntityWhitelist? ReagentWhitelist;
 
     /// <summary>
     ///     From which solution will this metabolizer attempt to metabolize chemicals for a given stage

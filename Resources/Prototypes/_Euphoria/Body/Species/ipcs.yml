@@ -1,0 +1,77 @@
+﻿- type: entity
+  parent: [OrganBaseStomach, OrganIPCInternal, OrganIPCMetabolizer]
+  id: OrganIPCStomach
+  name: IPC Stomach
+  description: "Some shit releated to an organ i dont fucking know shi about robots"
+  components:
+  - type: Stomach
+    specialDigestible:
+      tags:
+      - IPCDrink
+    isSpecialDigestibleExclusive: true
+  - type: SolutionContainerManager
+    solutions:
+      stomach:
+        maxVol: 80
+  sprite: _FarHorizons/Mobs/Species/IPC/organs.rsi
+  layers:
+  - state: heart-on
+
+#- type: entity
+#  id: OrganIPCMetabolizer
+#  abstract: true
+#  components:
+#  - type: Metabolizer
+#    solutionOnBody: false
+#    metabolizerTypes: [IPC]
+#    reagentWhitelist:
+#      tags:
+#      - IPCDrink
+
+- type: entity
+  id: OrganIPCMetabolizer
+  abstract: true
+  components:
+  - type: Metabolizer
+    solutionOnBody: false
+    metabolizerTypes: [IPC]
+    stages:
+    - Digestion
+    - Bloodstream
+    - Metabolites
+    reagentWhitelist:
+      tags:
+      - IPCDrink
+
+- type: metabolizerType
+  id: IPC
+  name: metabolizer-type-ipc
+
+# a test regent
+- type: reagent
+  id: RobotBeer
+  name: robot-testing
+  parent: BaseAlcohol
+  desc: reagent-desc-blackberry-milkshake
+  physicalDesc: reagent-physical-desc-aromatic
+  flavor: sweet
+  color: "#3e0930"
+  tags:
+  - IPCDrink
+  metabolisms:
+    Digestion:
+      metabolites:
+        Oil: 0.1
+      effects:
+      - !type:Drunk
+        boozePower: 12
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: RobotBeer
+          min: 1
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+        damage:
+          types:
+            Poison: 0.1

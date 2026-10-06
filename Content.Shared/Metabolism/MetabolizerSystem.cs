@@ -15,6 +15,7 @@ using Content.Shared.EntityEffects.Effects.Solution;
 using Content.Shared.FixedPoint;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Random.Helpers;
+using Content.Shared.Whitelist;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
@@ -163,6 +164,13 @@ public sealed class MetabolizerSystem : EntitySystem
             if (!_prototypeManager.TryIndex<ReagentPrototype>(reagent.Prototype, out var proto))
                 continue;
 
+            if (stage == "Digestion" &&
+                ent.Comp1.ReagentWhitelist != null &&
+                !CheckReagentWhitelist(proto, ent.Comp1.ReagentWhitelist))
+            {
+                continue;
+            }
+
             // Skip blood reagents
             if (ev.Reagents.Contains(reagent))
                 continue;
@@ -309,6 +317,23 @@ public sealed class MetabolizerSystem : EntitySystem
         }
 
         return true;
+    }
+
+    private bool CheckReagentWhitelist(ReagentPrototype reagent, EntityWhitelist? whitelist)
+    {
+        if (whitelist == null)
+            return true;
+
+        if (whitelist.Tags == null)
+            return true;
+
+        if (reagent.Tags == null)
+            return false;
+
+        if (whitelist.RequireAll)
+            return whitelist.Tags.All(tag => reagent.Tags.Contains(tag));
+
+        return whitelist.Tags.Any(tag => reagent.Tags.Contains(tag));
     }
 }
 
