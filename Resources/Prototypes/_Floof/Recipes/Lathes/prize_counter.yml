@@ -1087,14 +1087,6 @@
     PrizeTicket: 200
 
 - type: latheRecipe
-  id: BwoinkHammer
-  result: BwoinkHammer
-  applyMaterialDiscount: false
-  completetime: 0.1
-  materials:
-    PrizeTicket: 200
-
-- type: latheRecipe
   id: PlushieThrongler
   result: PlushieThrongler
   applyMaterialDiscount: false
@@ -1317,3 +1309,43 @@
   completetime: 0.1
   materials:
     PrizeTicket: 100
+
+- type: latheRecipe
+  id: CJTajaranPlushie
+  result: CJTajaranPlushie
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 100
+
+- type: latheRecipe
+  id: WhiteManPlushie
+  result: WhiteManPlushie
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 100
+
+- type: latheRecipe
+  id: SleepyMGPlushie
+  result: SleepyMGPlushie
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 100
+
+- type: latheRecipe
+  id: AngryOfficerPlushie
+  result: AngryOfficerPlushie
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 100
+
+- type: latheRecipe
+  id: SuperSynthesizerInstrument
+  result: SuperSynthesizerInstrument
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 750
