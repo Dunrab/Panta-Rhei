@@ -85,11 +85,7 @@ public sealed class PopUpOnUseSystem : EntitySystem
         // popuponuses whitelist/blacklist can handle what we can and cant use this on
         EnsureComp<ScentComponent>(target);
 
-        _entityEffects.ApplyEffects(
-            target,
-            ent.Comp.Effects.ToArray(),
-            1f,
-            args.User);
+        _entityEffects.ApplyEffects(target, ent.Comp.Effects.ToArray());
 
         if (ent.Comp.Repeat)
         {

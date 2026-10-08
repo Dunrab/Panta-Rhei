@@ -52,8 +52,4 @@ public sealed partial class PopUpOnUseComponent : Component
     // Entity effect list
     [DataField]
     public List<EntityEffect> Effects = new();
-
-    // Our scent
-    [DataField]
-    public ApplyScentEffect? ScentEffect;
 }

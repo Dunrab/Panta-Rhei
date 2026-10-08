@@ -51,7 +51,7 @@
   - type: PopUpOnUse
     effects:
     - !type:ApplyScentEffect
-      scent: Apple
+      scent: Apples
 
 - type: entity
   parent: BasePerfume
@@ -105,7 +105,7 @@
   - type: PopUpOnUse
     effects:
     - !type:ApplyScentEffect
-      scent: Cinnamon
+      scent: Lemon
 
 - type: entity
   parent: BasePerfume
@@ -159,7 +159,7 @@
   - type: PopUpOnUse
     effects:
     - !type:ApplyScentEffect
-      scent: WarmHoney
+      scent: Warm
 
 - type: entity
   parent: BasePerfume
