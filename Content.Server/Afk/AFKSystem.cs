@@ -49,7 +49,7 @@ public sealed class AFKSystem : EntitySystem
         SubscribeNetworkEvent<InstrumentStopMidiEvent>(HandleMidiStop);
         SubscribeNetworkEvent<InstrumentMidiEventEvent>(HandleMidiEvent);
         SubscribeNetworkEvent<InstrumentSetChannelsEvent>(HandleMidiSetChannels);
-        SubscribeLocalEvent<BoundUserInterfaceMessageAttempt>(OnBoundUiMessageReceived); // supposed to be BoundUserInterfaceMessageReceivedEvent
+        SubscribeLocalEvent<BoundUserInterfaceMessageAttempt>(OnBoundUiMessageAttempt); // Euphoria - this will eventually get replaced with an engine update
     }
 
     private void HandleInputCmd(FullInputCmdMessage msg, EntitySessionEventArgs args)
@@ -82,7 +82,8 @@ public sealed class AFKSystem : EntitySystem
         _afkManager.PlayerDidAction(args.SenderSession);
     }
 
-    private void OnBoundUiMessageReceived(ref BoundUserInterfaceMessageAttempt args)
+    // Euphoria - this will eventually get replaced with an engine update
+    private void OnBoundUiMessageAttempt(BoundUserInterfaceMessageAttempt args)
     {
         if (!TryComp<ActorComponent>(args.Actor, out var actor))
             return;
