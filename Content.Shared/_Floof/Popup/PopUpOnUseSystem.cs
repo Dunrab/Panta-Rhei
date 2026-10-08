@@ -1,4 +1,7 @@
-﻿using Content.Shared.DoAfter;
+﻿using Content.Shared._Coyote.SniffAndSmell;
+using Content.Shared._Euphoria.EntityEffects.Effects;
+using Content.Shared.DoAfter;
+using Content.Shared.EntityEffects;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction;
 using Content.Shared.Popups;
@@ -15,6 +18,7 @@ public sealed class PopUpOnUseSystem : EntitySystem
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelist = default!;
+    [Dependency]private readonly SharedEntityEffectsSystem _entityEffects = default!;
 
     public override void Initialize()
     {
@@ -73,6 +77,18 @@ public sealed class PopUpOnUseSystem : EntitySystem
                 ("user", Identity.Entity(args.User, EntityManager)),
                 ("used", Identity.Entity(args.Used ?? EntityUid.Invalid, EntityManager))),
             args.User,
+            args.User);
+
+        var target = args.Target.Value;
+
+        // we ensure scent comp here becuase we want to be able to apply scents to players that dont have any selected
+        // popuponuses whitelist/blacklist can handle what we can and cant use this on
+        EnsureComp<ScentComponent>(target);
+
+        _entityEffects.ApplyEffects(
+            target,
+            ent.Comp.Effects.ToArray(),
+            1f,
             args.User);
 
         if (ent.Comp.Repeat)
