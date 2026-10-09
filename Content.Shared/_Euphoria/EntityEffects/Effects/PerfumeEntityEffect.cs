@@ -3,16 +3,20 @@ using Content.Shared.EntityEffects;
 
 namespace Content.Shared._Euphoria.EntityEffects.Effects;
 
-public sealed partial class PerfumeEntityEffect : EntityEffectSystem<ScentComponent, ApplyScentEffect>
+public sealed partial class PerfumeEntityEffect : EntityEffectSystem<MetaDataComponent, ApplyScentEffect>
 {
     [Dependency]
     private readonly ScentSystem _scentSystem = default!;
 
-    protected override void Effect(Entity<ScentComponent> entity, ref EntityEffectEvent<ApplyScentEffect> args)
+    protected override void Effect(Entity<MetaDataComponent> entity, ref EntityEffectEvent<ApplyScentEffect> args)
     {
-        entity.Comp.Scents.Clear();
+        // we ensure scent comp here because we want to be able to apply scents to players that don't have any selected
+        // popuponuses whitelist/blacklist can handle what we can and cant use this on
+        var scent = EnsureComp<ScentComponent>(entity);
 
-        _scentSystem.AddScentPrototype(entity, args.Effect.Scent);
+        scent.Scents.Clear();
+
+        _scentSystem.AddScentPrototype((entity.Owner, scent), args.Effect.Scent);
     }
 }
 

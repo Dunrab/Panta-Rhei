@@ -81,10 +81,6 @@ public sealed class PopUpOnUseSystem : EntitySystem
 
         var target = args.Target.Value;
 
-        // we ensure scent comp here becuase we want to be able to apply scents to players that dont have any selected
-        // popuponuses whitelist/blacklist can handle what we can and cant use this on
-        EnsureComp<ScentComponent>(target);
-
         _entityEffects.ApplyEffects(target, ent.Comp.Effects.ToArray());
 
         if (ent.Comp.Repeat)
