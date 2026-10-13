@@ -4,8 +4,10 @@ using Content.Shared.DoAfter;
 using Content.Shared.EntityEffects;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction;
+using Content.Shared.Nutrition.EntitySystems;
 using Content.Shared.Popups;
 using Content.Shared.Whitelist;
+using Lidgren.Network;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Network;
 
@@ -19,6 +21,7 @@ public sealed class PopUpOnUseSystem : EntitySystem
     [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelist = default!;
     [Dependency]private readonly SharedEntityEffectsSystem _entityEffects = default!;
+    [Dependency] private readonly OpenableSystem _openable = default!;
 
     public override void Initialize()
     {
@@ -41,6 +44,10 @@ public sealed class PopUpOnUseSystem : EntitySystem
         if (!CanUse(ent, args.Target.Value))
             return;
 
+        // for items like our lipstick, don't use them if closed
+        if (_openable.IsClosed(ent.Owner, args.User))
+            return;
+
         if (_net.IsServer)
         {
             // Cannot cancel predicted audio.
@@ -61,6 +68,10 @@ public sealed class PopUpOnUseSystem : EntitySystem
 
     private void OnDoAfter(Entity<PopUpOnUseComponent> ent, ref PopUpOnUseDoAfterEvent args)
     {
+        // for items like our lipstick, don't use them if closed
+        if (_net.IsServer && _openable.IsClosed(ent.Owner, args.User))
+            return;
+
         ent.Comp.AudioStream = _audio.Stop(ent.Comp.AudioStream);
 
         if (args.Cancelled)
