@@ -99,6 +99,12 @@
     - FullAuto
     - SemiAuto
     #selectedMode: Burst # Only a pistol should support that for balancing reasons
+    minAngle: 1
+    maxAngle: 2
+  - type: GunWieldBonus
+    wieldBonusExamineMessage: null
+    minAngle: 0
+    maxAngle: 0
   - type: Multishot # Only a pistol should support that for balancing reasons
     missChance: 0
     spreadAddition: 5
