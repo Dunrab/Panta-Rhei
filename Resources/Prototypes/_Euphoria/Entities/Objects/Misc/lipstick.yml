@@ -261,6 +261,33 @@
       layer: Face
 
 - type: entity
+  parent: BaseLipStick
+  id: LipStickBlack
+  name: lip stick
+  description: Black lipstick.
+  components:
+  - type: Sprite
+    sprite: _Euphoria/Objects/Misc/lipstick.rsi
+    scale: 0.7, 0.7
+    layers:
+    - state: lipstick_uncap_color
+      color: "#000000"
+    - state: lipstick_uncap
+  - type: GenericVisualizer
+    visuals:
+      enum.OpenableVisuals.Opened:
+        enum.OpenableVisuals.Layer:
+          True: { state: "lipstick_uncap_color" , color: "#000000" }
+          False: { state: "lipstick" , color: "#000000" }
+  - type: PopUpOnUse
+    effects:
+    - !type:AddFaceMarkingEffect
+      marking: LipStick
+      color: "#000000"
+      organ: Head
+      layer: Face
+
+- type: entity
   parent: BaseItem
   id: LipStickMakeupCloth
   name: Makeup Cloth

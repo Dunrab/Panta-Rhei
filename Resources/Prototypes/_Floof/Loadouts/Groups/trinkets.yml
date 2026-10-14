@@ -60,6 +60,17 @@
   - PerfumeHoney
   - PerfumeLemonZest
   - PerfumePine
+  - LipStickMakeupCloth
+  - LipStickRed
+  - LipStickBlue
+  - LipStickGreen
+  - LipStickYellow
+  - LipStickOrange
+  - LipStickPurple
+  - LipStickPink
+  - LipStickLightBlue
+  - LipStickBlack
+
 
 - type: loadoutGroup
   id: SexToys
