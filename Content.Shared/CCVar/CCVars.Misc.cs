@@ -48,7 +48,7 @@ public sealed partial class CCVars
     /// </summary>
     [CVarControl(AdminFlags.Server)]
     public static readonly CVarDef<string> AfkConfirmSound =
-        CVarDef.Create("afk.confirm_sound", "/Audio/Items/airhorn.ogg", CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("afk.confirm_sound", "/Audio/_DV/CosmicCult/Emotes/cosmic_scream.ogg", CVar.SERVER | CVar.REPLICATED);
 
     /// <summary>
     ///     Flavor limit. This is to ensure that having a large mass of flavors in
