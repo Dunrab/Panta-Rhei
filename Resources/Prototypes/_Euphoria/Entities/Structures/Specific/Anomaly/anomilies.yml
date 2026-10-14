@@ -23,8 +23,8 @@
     color: "#bbbbbb"
   - type: BadFood
   - type: Anomaly
-    corePrototype: AnomalyCoreLiquid
-    coreInertPrototype: AnomalyCoreLiquidInert
+    corePrototype: AnomalyCoreFish
+    coreInertPrototype: AnomalyCoreFishInert
     minPulseLength: 60
     maxPulseLength: 120
     supercriticalSoundAtAnimationStart:
