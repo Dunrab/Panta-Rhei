@@ -28,8 +28,6 @@ public abstract partial class SharedGunUpgradeSystem
         SubscribeLocalEvent<GunUpgradeVampirismComponent, GunShotEvent>(OnVampirismGunShot);
         SubscribeLocalEvent<ProjectileVampirismComponent, ProjectileHitEvent>(OnVampirismProjectileHit);
 
-        SubscribeLocalEvent<GunUpgradeBayonetComponent, GetRelayMeleeWeaponEvent>(OnGetMeleeRelay);
-
         SubscribeLocalEvent<WeaponUpgradeDamageComponent, GetMeleeDamageEvent>(OnGetMeleeDamage);
 
         SubscribeLocalEvent<WeaponUpgradeRangeComponent, GetLightAttackRangeEvent>(OnGetRange);
@@ -93,15 +91,6 @@ public abstract partial class SharedGunUpgradeSystem
             return;
         if (args.Shooter != null)
             _damage.TryChangeDamage(args.Shooter.Value, ent.Comp.DamageOnHit); // may need to revert this shit
-    }
-
-    private void OnGetMeleeRelay(Entity<GunUpgradeBayonetComponent> ent, ref GetRelayMeleeWeaponEvent args)
-    {
-        if (args.Handled)
-            return;
-
-        args.Found = ent.Owner;
-        args.Handled = true;
     }
 
     private void OnGetMeleeDamage(Entity<WeaponUpgradeDamageComponent> ent, ref GetMeleeDamageEvent args)
