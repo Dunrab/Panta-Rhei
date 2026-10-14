@@ -226,6 +226,41 @@
   groupBy: "Perfumes"
 
 - type: loadout
+  id: PerfumeCologneFancy
+  storage:
+    back:
+    - PerfumeCologneFancy
+  groupBy: "Cologne"
+
+- type: loadout
+  id: PerfumeCologneCheap
+  storage:
+    back:
+    - PerfumeCologneCheap
+  groupBy: "Cologne"
+
+- type: loadout
+  id: PerfumeCologneCedarwood
+  storage:
+    back:
+    - PerfumeCologneCedarwood
+  groupBy: "Cologne"
+
+- type: loadout
+  id: PerfumeCologneLeather
+  storage:
+    back:
+    - PerfumeCologneLeather
+  groupBy: "Cologne"
+
+- type: loadout
+  id: PerfumeCologneGrass
+  storage:
+    back:
+    - PerfumeCologneGrass
+  groupBy: "Cologne"
+
+- type: loadout
   id: LipStickMakeupCloth # we want the makeup cloth to show up first
   storage:
     back:

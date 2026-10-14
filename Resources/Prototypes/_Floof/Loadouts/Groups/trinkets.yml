@@ -60,6 +60,11 @@
   - PerfumeHoney
   - PerfumeLemonZest
   - PerfumePine
+  - PerfumeCologneFancy
+  - PerfumeCologneCheap
+  - PerfumeCologneCedarwood
+  - PerfumeCologneLeather
+  - PerfumeCologneGrass
   - LipStickMakeupCloth
   - LipStickRed
   - LipStickBlue
@@ -70,7 +75,6 @@
   - LipStickPink
   - LipStickLightBlue
   - LipStickBlack
-
 
 - type: loadoutGroup
   id: SexToys

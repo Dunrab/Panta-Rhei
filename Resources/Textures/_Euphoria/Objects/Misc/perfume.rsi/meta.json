@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright":"Made by Mnemotechniain (Github) for use in Euphoria. ",
+    "copyright":"Base and fill by Mnemotechniain (Github) and perfumealt and perfumealtfill made by themageofmicrosoftpaints (Github/Discord) for use in Euphoria.",
     "size": {
         "x": 32,
         "y": 32
@@ -12,6 +12,12 @@
       },
       {
         "name": "fill"
+      },
+      {
+        "name": "perfumealt"
+      },
+      {
+        "name": "perfumealtfill"
       }
     ]
 }

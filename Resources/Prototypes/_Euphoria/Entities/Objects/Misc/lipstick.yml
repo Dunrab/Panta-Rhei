@@ -313,3 +313,7 @@
       remove: true
       organ: Head
       layer: Face
+  - type: Construction
+    graph: MakeupCloth
+    node: makeupcloth
+#MaterialCloth1
