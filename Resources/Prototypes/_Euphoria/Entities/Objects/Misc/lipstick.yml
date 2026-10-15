@@ -31,7 +31,10 @@
     userPopUpMsg: lipstick-self-success
     targetPopUpMsg: lipstick-target-success
     popUpDoAfterSound:
-      path: /Audio/Effects/spray3.ogg  # still needs a sound change
+      path: /Audio/Items/Paper/paper_scribble1.ogg
+      params:
+        pitch: 0.7
+        variation: 0.08
     repeat: false
     whitelist:
       components:
