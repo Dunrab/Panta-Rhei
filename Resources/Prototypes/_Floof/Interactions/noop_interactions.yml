@@ -177,16 +177,13 @@
   cooldown: 2
   requiresHands: false # no hands since shnoze
   icon: /Textures/Interface/VerbIcons/examine.svg.192dpi.png
-  range: { max: 0.666 }
+  range: { max: 1.0 }
   hideByRequirement: true
   action:
     !type:ComplexAction
     requireAll: false
     actions:
     - !type:NoOpAction
-  requirement:
-    !type:MobStateRequirement
-    inverted: true
   effectSuccess:
     popup: Subtle
     sound:
