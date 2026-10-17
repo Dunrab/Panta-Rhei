@@ -6556,3 +6556,49 @@ Entries:
         maps.
   id: 815
   time: '2026-10-14T09:48:45.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: Centcomm has allowed for the sale of various perfumes in the sector.
+    - type: Add
+      message: >-
+        Various colors of lipstick have been seen in the sector and will apply a
+        lipstick marking when you used on your self or others.
+  id: 816
+  time: '2026-10-15T09:21:42.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Fix
+      message: Sec roles should now have access to their senior outfits again.
+  id: 817
+  time: '2026-10-15T09:22:37.0000000+00:00'
+- author: ASaltySeabass
+  changes:
+    - type: Tweak
+      message: Calico Sunrise no longer contains alcohol when it shouldn't
+  id: 818
+  time: '2026-10-16T02:36:38.0000000+00:00'
+- author: sprkl
+  changes:
+    - type: Tweak
+      message: The swimsuit can now be worn under clothes.
+  id: 819
+  time: '2026-10-16T07:50:12.0000000+00:00'
+- author: Aureuix
+  changes:
+    - type: Tweak
+      message: >-
+        Changed IPC yaml so their default sprites are done with ingame
+        changeable markings rather than hardcoded external organs.
+    - type: Add
+      message: >-
+        A set of default markings for IPCs, so you can change the color of every
+        limb you could possibly imagine having.
+  id: 820
+  time: '2026-10-16T07:51:00.0000000+00:00'
+- author: JaDiDo
+  changes:
+    - type: Fix
+      message: voresystem fix regarding breathing issues
+  id: 821
+  time: '2026-10-17T01:51:14.0000000+00:00'
