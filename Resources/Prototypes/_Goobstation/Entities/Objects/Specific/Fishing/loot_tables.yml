@@ -57,6 +57,8 @@
       - id: FishPlasma
       - id: FishSquid
       - id: FoodMeatShrimpUnusual
+      - id: ChainsawFish
+      - id: SwordFish
         # Floofstation fish additions end
 
 # Fish from water
