@@ -63,8 +63,8 @@
       path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
   - type: BasicEntityAmmoProvider
     proto: RapidBulletKinetic
-    capacity: 3
-    count: 3
+    capacity: 2 # Euphoria - reduce capacity from 3 to 2
+    count: 2 # Euphoria - reduce count from 3 to 2
   - type: Item
     sprite: _Lavaland/Objects/Weapons/Guns/Basic/kinetic_repeater.rsi
     shape:
