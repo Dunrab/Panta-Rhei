@@ -10,3 +10,18 @@
 
 - type: Tag
   id: BigAssBluntCrafter
+
+- type: Tag
+  id: MagmiteStone # Magmite crusher upgrade
+
+- type: Tag
+  id: GlaciteStone # Glacite crusher upgrade
+
+- type: Tag
+  id: MagmiteUpgradePart # Magmite upgrade part
+
+- type: Tag
+  id: GlaciteUpgradePart # Glacite upgrade part
+
+- type: Tag
+  id: UpgradeableCrusher # a tag for all crushers that can be upgraded
