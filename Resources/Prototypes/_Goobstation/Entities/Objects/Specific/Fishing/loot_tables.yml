@@ -58,7 +58,9 @@
       - id: FishSquid
       - id: FoodMeatShrimpUnusual
       - id: ChainsawFish
+        weight: 0.1
       - id: SwordFish
+        weight: 0.2
         # Floofstation fish additions end
 
 # Fish from water
