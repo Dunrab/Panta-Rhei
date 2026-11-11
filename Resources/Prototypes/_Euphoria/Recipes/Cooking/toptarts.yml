@@ -11,6 +11,8 @@
     Sugar: 5
   solids:
     FoodDoughSlice: 1
+  recipeType:
+  - Assembler
 
 - type: microwaveMealRecipe
   id: RecipeToptartBlueberryRaw
@@ -24,6 +26,8 @@
     Sugar: 5
   solids:
     FoodDoughSlice: 1
+  recipeType:
+  - Assembler
 
 - type: microwaveMealRecipe
   id: RecipeToptartChoclateRaw
@@ -37,6 +41,8 @@
     Sugar: 5
   solids:
     FoodDoughSlice: 1
+  recipeType:
+  - Assembler
 
 # cooking the acutal toptart
 - type: microwaveMealRecipe
@@ -47,6 +53,8 @@
   group: Savory
   solids:
     FoodSnackTopTartStrawberryRaw: 1
+  recipeType:
+  - Assembler
 
 - type: microwaveMealRecipe
   id: RecipeToptartBlueberry
@@ -56,6 +64,8 @@
   group: Savory
   solids:
     FoodSnackTopTartBlueberryRaw: 1
+  recipeType:
+  - Assembler
 
 - type: microwaveMealRecipe
   id: RecipeToptartChocolate
@@ -65,3 +75,5 @@
   group: Savory
   solids:
     FoodSnackTopTartChocolateRaw: 1
+  recipeType:
+  - Assembler
