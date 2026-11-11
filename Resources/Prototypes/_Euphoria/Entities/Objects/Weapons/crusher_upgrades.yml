@@ -2,8 +2,8 @@
 - type: entity
   parent: [WeaponCrusher, BaseSecurityCargoContraband]
   id: WeaponCrusherMagmite
-  name: A Crusher that has a diamond reinforced handle and a Magmite infused blade.
-  description: todo
+  name: magmite crusher
+  description: A Crusher that has a diamond reinforced handle and a Magmite infused blade.
   components:
   - type: Sprite
     sprite: _Euphoria/Objects/Weapons/Crusher/magmite.rsi
@@ -16,13 +16,13 @@
     range: 2.2
     damage:
       types:
-        Slash: 7 # boost damage a little bit
-        Blunt: 6
+        Slash: 6 # boost damage a little bit
+        Blunt: 11
         Heat: 3
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Piercing: 4 # boost damage a little bit
+        Blunt: 4
         Slash: 4
         Heat: 4
         Structural: 35 # upgrade so give it a little more dmg
@@ -56,13 +56,13 @@
     range: 2.2
     damage:
       types:
-        Slash: 7 # boost damage a little bit
-        Blunt: 6
+        Slash: 6 # boost damage a little bit
+        Blunt: 11
         Cold: 3
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Piercing: 4 # boost damage a little bit
+        Blunt: 4
         Slash: 4
         Cold: 4
         Structural: 35 # upgrade so give it a little more dmg
