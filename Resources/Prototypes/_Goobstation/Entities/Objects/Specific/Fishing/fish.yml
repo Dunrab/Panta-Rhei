@@ -47,6 +47,9 @@
       - ReagentId: Blood
         Quantity: 20 # DeltaV - Upstream changes for blood solution
   - type: ZombieImmune
+  - type: Tag
+    tags:
+    - FishDisplay
 
 - type: entity
   id: BaseFishRare

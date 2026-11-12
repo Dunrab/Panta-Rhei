@@ -1,0 +1,97 @@
+﻿# Our testing tank
+- type: entity
+  parent: BaseItem
+  id: FishTankHandHeld
+  name: hand held fish tank
+  description: A glass tank designed to house aquatic life.
+  components:
+  - type: Sprite
+    sprite: _Euphoria/Objects/Misc/Fishtanks/fish_tanks.rsi
+    state: fish_tank_borders
+  - type: Item
+    size: Huge
+  - type: Storage
+    grid:
+    - 0,0,6,2
+    whitelist:
+      tags:
+      - Fish
+      - FishTankWater
+      - FishTankDisplay
+      - FishDisplay
+  - type: ItemMapper
+    sprite: _Euphoria/Objects/Misc/Fishtanks/fish_tanks.rsi
+    mapLayers:
+      fish_tank_bluespace:
+        whitelist:
+          tags:
+          - FishTankWater
+      sand:
+        whitelist:
+          tags:
+          - FishTankDisplay
+      treasure: # state name in the rsi
+        whitelist:
+          tags:
+          - FishDisplay # tag we give to the item that can make the above state display
+  - type: Appearance
+    visuals:
+    - type: MappedItemVisualizer
+
+# Our testing tank
+- type: entity
+  parent: BaseItem
+  id: FishTank
+  name: fish tank
+  description: A glass tank designed to house aquatic life.
+  components:
+  - type: Sprite
+    sprite: _Euphoria/Objects/Misc/Fishtanks/fish_tanks.rsi
+    layers:
+    - state: aquarium_base
+    - state: aquarium_glass_air
+    - state: aquarium_borders
+    #- state: decorations
+  - type: Item
+    size: Huge
+  - type: Storage
+    grid:
+    - 0,0,6,2
+    whitelist:
+      tags:
+      - Fish
+      - FishTankWater
+      - FishTankDisplay
+      - FishDisplay
+  - type: ItemMapper
+    sprite: _Euphoria/Objects/Misc/Fishtanks/fish_tanks.rsi
+    mapLayers:
+      fish_tank_bluespace:
+        whitelist:
+          tags:
+          - FishTankWater
+      sand:
+        whitelist:
+          tags:
+          - FishTankDisplay
+      treasure: # state name in the rsi
+        whitelist:
+          tags:
+          - FishDisplay # tag we give to the item that can make the above state display
+  - type: Appearance
+    visuals:
+    - type: MappedItemVisualizer
+
+# for testing purposes
+- type: entity
+  parent: BaseItem
+  id: FishTankBackground
+  name: fish tank background
+  description: A glass tank designed to house aquatic life.
+  components:
+  - type: Sprite
+    sprite: _Euphoria/Objects/Misc/Fishtanks/fish_tanks.rsi
+    state: fish_tank_bluespace
+  - type: Tag
+    tags:
+    - FishTankWater
