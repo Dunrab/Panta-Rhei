@@ -6,6 +6,9 @@
   id: BassGuitar # regular version
 
 - type: Tag
+  id: TopTart # toptarts
+
+- type: Tag
   id: Lighters
 
 - type: Tag
@@ -25,3 +28,6 @@
 
 - type: Tag
   id: UpgradeableCrusher # a tag for all crushers that can be upgraded
+
+- type: Tag
+  id: SwordFish # Swordfih
