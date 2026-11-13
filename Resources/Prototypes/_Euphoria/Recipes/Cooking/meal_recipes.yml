@@ -178,7 +178,7 @@
   time: 15
   group: Cake
   reagents:
-    ChoclateSyrup: 5
+    ChocolateSyrup: 5
   solids:
     FoodTaiyakiPlain: 1
 
