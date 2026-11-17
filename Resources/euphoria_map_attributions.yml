@@ -6,7 +6,7 @@
 - files: ["radstation.yml"]
   license: "CC-BY-NC-SA-4.0"
   copyright: "Created by BriggsIDP in SS13 and ported to SS14 by CRISOOOOO, Evac shuttle created by Fuinha7."
-  source: "https://github:com/rbertoche/space-station-14/commit/c223fef6cd7e07d16c2816aaf5f2760318ff16a3"
+  source: "https://github.com/rbertoche/space-station-14/commit/c223fef6cd7e07d16c2816aaf5f2760318ff16a3"
 
 - files: ["getaway.yml"]
   license: "CC-BY-NC-SA-4.0"
